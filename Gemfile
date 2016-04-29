@@ -21,4 +21,4 @@ gem "middleman-deploy", "~> 2.0.0.pre.alpha"
 #gem "middleman-gh-pages"
 
 #bootstrap
-#gem "bootstrap-sass" # "3.0.0"
+gem "bootstrap-sass" # "3.0.0"

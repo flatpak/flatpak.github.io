@@ -1,0 +1,153 @@
+%body#page-top
+  %nav#mainNav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand.page-scroll{:href => "#page-top"} Start Bootstrap
+      / Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a.page-scroll{:href => "#about"} About
+          %li
+            %a.page-scroll{:href => "#services"} Services
+          %li
+            %a.page-scroll{:href => "#portfolio"} Portfolio
+          %li
+            %a.page-scroll{:href => "#contact"} Contact
+      / /.navbar-collapse
+    / /.container-fluid
+  %header
+    .header-content
+      .header-content-inner
+        %h1 Your Favorite Source of Free Bootstrap Themes
+        %hr
+          %p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+          %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+  %section#about.bg-primary
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          %h2.section-heading We've got what you need!
+          %hr.light
+            %p.text-faded Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
+            %a.btn.btn-default.btn-xl{:href => "#"} Get Started!
+  %section#services
+    .container
+      .row
+        .col-lg-12.text-center
+          %h2.section-heading At Your Service
+          %hr.primary
+    .container
+      .row
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            %i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
+            %h3 Sturdy Templates
+            %p.text-muted Our templates are updated regularly so they don't break.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+            %h3 Ready to Ship
+            %p.text-muted You can use this theme as is, or you can make changes!
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
+            %h3 Up to Date
+            %p.text-muted We update dependencies to keep things fresh.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            %i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary{"data-wow-delay" => ".3s"}
+            %h3 Made with Love
+            %p.text-muted You have to make your websites with love these days!
+  %section#portfolio.no-padding
+    .container-fluid
+      .row.no-gutter
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/1.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/2.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/3.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/4.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/5.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+        .col-lg-4.col-sm-6
+          %a.portfolio-box{:href => "#"}
+            %img.img-responsive{:alt => "", :src => "img/portfolio/6.jpg"}
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    Category
+                  .project-name
+                    Project Name
+  %aside.bg-dark
+    .container.text-center
+      .call-to-action
+        %h2 Free Download at Start Bootstrap!
+        %a.btn.btn-default.btn-xl.wow.tada{:href => "#"} Download Now!
+  %section#contact
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          %h2.section-heading Let's Get In Touch!
+          %hr.primary
+            %p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+        .col-lg-4.col-lg-offset-2.text-center
+          %i.fa.fa-phone.fa-3x.wow.bounceIn
+          %p 123-456-6789
+        .col-lg-4.text-center
+          %i.fa.fa-envelope-o.fa-3x.wow.bounceIn{"data-wow-delay" => ".1s"}
+          %p
+            %a{:href => "mailto:your-email@your-domain.com"} feedback@startbootstrap.com
+  / jQuery
+  %script{:src => "js/jquery.js"}
+  / Bootstrap Core JavaScript
+  %script{:src => "js/bootstrap.min.js"}
+  / Plugin JavaScript
+  %script{:src => "js/jquery.easing.min.js"}
+  %script{:src => "js/jquery.fittext.js"}
+  %script{:src => "js/wow.min.js"}
+  / Custom Theme JavaScript
+  %script{:src => "js/creative.js"}
