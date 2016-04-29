@@ -17,7 +17,7 @@ gem "sass" #3.2.12
 # gem "middleman-syntax"
 
 #deployment
-gem "middleman-deploy"
+gem "middleman-deploy", "~> 2.0.0.pre.alpha"
 #gem "middleman-gh-pages"
 
 #bootstrap
