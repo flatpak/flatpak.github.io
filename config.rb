@@ -43,6 +43,9 @@ configure :build do
   # activate :minify_javascript
 end
 
+activate :relative_assets
+set :relative_links, true
+
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   # Optional Settings
