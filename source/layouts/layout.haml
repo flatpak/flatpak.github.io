@@ -1,7 +1,7 @@
 !!!5
 %html
   %head
-    %title XDG-APP Placeholder
+    %title Flatpak
     %meta{content: "text/html; charset=UTF8", "http-equiv" => "content-type"}/
     %meta{content: "fixme", name: "description"}/
     %meta{content: "fixme", name: "keywords"}/
@@ -11,8 +11,31 @@
     = stylesheet_link_tag :_animate
     = stylesheet_link_tag "http://overpass-30e2.kxcdn.com/overpass.css"
 
-  %body
-    = yield
+  %body#page-top
+    %nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand.page-scroll{:href => "#page-top"} Flatpack
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a.page-scroll{:href => "#about"} About
+            %li
+              %a.page-scroll{:href => "#users"} Users
+            %li
+              %a.page-scroll{:href => "#developers"} Developers
+            %li
+              %a.page-scroll{:href => "#contributions"} Contributions
+        / /.navbar-collapse
+      / /.container-fluid
+  = yield
 
   = javascript_include_tag :jquery
   = javascript_include_tag "jquery.easing.min"
