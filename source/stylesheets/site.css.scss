@@ -187,10 +187,9 @@ header {
     text-align: center;
     color: #fff;
     background-color: #919191;
-    background-image: url(../img/header.png),
-                      linear-gradient(to bottom, lighten($neutral_color,5%), darken($neutral_color,5%));
-    background-position: 50% 100%;
-    background-size: 200%;
+    background-image: url(../img/header.svgz),
+                      linear-gradient(to bottom, desaturate($key_color,80%), $key_color);
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
