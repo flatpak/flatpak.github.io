@@ -9,10 +9,41 @@
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Self contained and future proof.
+        %h2.section-heading Self-contained and future proof
         %hr.light
-          %p.text-faded It has been a nightmare to deploy your application on Linux. Relying on the skill of the distribution packagers to pick the right version of the distributed library. Users having to update the whole OS to get the new version of the app. But no more…
-          / %a.btn.btn-default.btn-xl{:href => "#"} Show me the Future!
+          %p.text-faded Distributing applications on Linux is a pain: different distributions, different versions, each with different library versions and conventions. Flatpak is here to change all that.
+          %p &nbsp;
+  .container
+    .row
+      .col-lg-4.col-lg-offset-2
+        %h2 Flatpak is
+        %p 
+          
+
+        %p 
+          %em Cross platform
+          \- Flatpak allows the same app to be installed on multiple Linux distributions
+        %p 
+          %em Stable 
+          \- With Flatpak, the same app can be installed on different distribution versions, without having to be updated
+        %p
+          %em Secure
+          \- Flatpak has been designed with security at heart, and provides a sandbox for each application
+
+      .col-lg-4
+        %h2 How it works
+
+        %p 
+          %em Runtimes
+          \- Runtimes contain the libraries and dependencies that you use to build your app. They are consistent across different distributions, and different runtime versions can be installed in parallel, meaning that your dependencies are always available in the form you expect.
+
+        %p 
+          %em Bundles
+          \- If you want to use a library that isn't in a runtime, Flatpak allows it to bundle it as a part of your app. It is also possible to bundle modified versions of libraries that are present in a runtime.
+
+        %p
+          %em Sandboxes
+          \- Flatpak uses Linux technologies to isolate apps from the OS. This provides security for users, since they have limited access to files, system resources and hardware. (These features are still work in progress.)
 %section#users
   .container
     .row
