@@ -24,9 +24,7 @@
       .col-lg-4
         %h3.text-center Secure
         %p Flatpak has been designed with security at heart, and provides a sandbox for each application
-        
-    .row
-      .col-lg-2.col-lg-offset-5
+
     .row
       .col-lg-12.text-center
         %h2 How it works
@@ -49,37 +47,41 @@
         %h1.section-heading.text-center User Information
         %hr.primary
         %p
-          Before you can install applications with Flatpak, you need to install the
-          Flatpak framework itself.
-          If Flatpak is not already installed on your distribution you will need to
+          Flatpak builds applications on top of
           = succeed "." do
-            %a{:href => "getting.html"} install it yourself
-        %h2 Installing Software with Flatpak
+            %i runtimes
         %p
-          At this point you can use the command line tools to install flatpack software, 
-          if you're running an up-to-date distribution such as
-          %a{:href => "https://getfedora.org/"} Fedora 24 Workstation.
-          
-        /%h3 Using GNOME Software
-        /%p
-        /  GNOME Software can
-        /  %a{:href => "https://blogs.gnome.org/hughsie/2015/12/23/gnome-software-and-xdg-app/"} install and remove software
-        /  using Flatpak once remotes have been added manually.
-        /  All software is installed to the home directory and is only usable from your user account.
-        /%iframe.wide{:allowfullscreen => "", :frameborder => "0", :height => "495", :src => "https://www.youtube.com/embed/RsNqT13uIQo?feature=oembed"}
-        /%p
-        /  GNOME Software will automatically install dependancies as required, but you'll need to add a remote manually:
-        /%pre
-        /  :preserve
-        /    $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
-        /    $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
-        /%p
-        /  For Fedora 25 we'll be working on a graphical method to install remotes.
-        /
-        %h3 Using the command line
+          Flatpak has many advantages for users. Applications can be safely updated
+          on a running system, without fear of conflicts occuring during the update
+          process. Multiple versions of the same application can be installed at
+          the same time, which allows having a nightly or experimental version
+          alongside a stable release. In the future, the security first approach
+          of Flatpak will guarantee greater privacy and peace of mind.
+        %h2 Trying Flatpak for yourself
         %p
-          Flatpak can install applications either system-wide or per user.
-          First you need to add the remote repository:
+          A collection of experimental application builds are already available
+          with Flatpak, so you can try it yourself. It is currently easiest to
+          use Flatpak with Fedora or Ubuntu.
+        %h3 1. Install Flatpak
+        %p
+          Before you can install applications with Flatpak, you need to install the
+          Flatpak itself. Currently this has to be done using the command line.
+        %p
+          With Fedora, run:
+        %pre
+          :preserve
+            $ sudo dnf install xdg-app
+        %p
+          Or on Ubuntu, run:
+        %pre
+          :preserve
+            $ sudo apt-get install xdg-app
+        %h3 2. Add some repositories
+        %p
+          Flatpak uses remote repositories as the source for software. For this
+          example we're using two repositories: one which contains GNOME apps,
+          and one which contains the runtime that provides the dependencies
+          they need.
         %pre
           :preserve
             $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
