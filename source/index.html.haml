@@ -27,9 +27,6 @@
         
     .row
       .col-lg-2.col-lg-offset-5
-        %p &nbsp;
-        /=image_tag 'img/logo.svg', :class => 'full'
-        /%p &nbsp;
     .row
       .col-lg-12.text-center
         %h2 How it works
@@ -52,20 +49,6 @@
         %h1.section-heading.text-center User Information
         %hr.primary
         %p
-          Flatpak builds applications on top of
-          = succeed "." do
-            %i runtimes
-        %p
-          Flatpak can be used to safely install, remove and update both applications
-          and runtimes on your Live system.
-          This removes the requirement for workarounds such as using offline updates
-          for updating desktop software.
-          Flatpak can also install multiple versions of the same application.
-          This allows you to have both stable versions of software for day-to-day
-          business critical work, and also the latest developer checkouts for
-          testing the latest features and bugfixes.
-        %h2 Installing the Flatpak framework
-        %p
           Before you can install applications with Flatpak, you need to install the
           Flatpak framework itself.
           If Flatpak is not already installed on your distribution you will need to
@@ -73,24 +56,26 @@
             %a{:href => "getting.html"} install it yourself
         %h2 Installing Software with Flatpak
         %p
-          If you're running an up-to-date distribution such as
-          %a{:href => "https://getfedora.org/"} Fedora 24 Workstation
-          there are two ways of installing software with Flatpak:
-        %h3 Using GNOME Software
-        %p
-          GNOME Software can
-          %a{:href => "https://blogs.gnome.org/hughsie/2015/12/23/gnome-software-and-xdg-app/"} install and remove software
-          using Flatpak once remotes have been added manually.
-          All software is installed to the home directory and is only usable from your user account.
-        %iframe.wide{:allowfullscreen => "", :frameborder => "0", :height => "495", :src => "https://www.youtube.com/embed/RsNqT13uIQo?feature=oembed"}
-        %p
-          GNOME Software will automatically install dependancies as required, but you'll need to add a remote manually:
-        %pre
-          :preserve
-            $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
-            $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
-        %p
-          For Fedora 25 we'll be working on a graphical method to install remotes.
+          At this point you can use the command line tools to install flatpack software, 
+          if you're running an up-to-date distribution such as
+          %a{:href => "https://getfedora.org/"} Fedora 24 Workstation.
+          
+        /%h3 Using GNOME Software
+        /%p
+        /  GNOME Software can
+        /  %a{:href => "https://blogs.gnome.org/hughsie/2015/12/23/gnome-software-and-xdg-app/"} install and remove software
+        /  using Flatpak once remotes have been added manually.
+        /  All software is installed to the home directory and is only usable from your user account.
+        /%iframe.wide{:allowfullscreen => "", :frameborder => "0", :height => "495", :src => "https://www.youtube.com/embed/RsNqT13uIQo?feature=oembed"}
+        /%p
+        /  GNOME Software will automatically install dependancies as required, but you'll need to add a remote manually:
+        /%pre
+        /  :preserve
+        /    $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
+        /    $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+        /%p
+        /  For Fedora 25 we'll be working on a graphical method to install remotes.
+        /
         %h3 Using the command line
         %p
           Flatpak can install applications either system-wide or per user.
@@ -770,7 +755,11 @@
           informational.
           The OARS markup allows the end user to choose software based on some
           common criteria in the software center.
-          
+    .row
+      .col-lg-4.col-lg-offset-4
+        %p &nbsp;
+        =image_tag 'img/logo.svg', :class => 'full'
+        %p &nbsp;          
 %section#contributions
   .container
     .row
