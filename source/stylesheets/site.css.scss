@@ -132,13 +132,13 @@ aside {
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.7);
-        background-color: rgba(255,255,255,0.5);
-        background-image: linear-gradient(to bottom,transparentize(#fff,.1),transparentize(#fff,0.9));
+        background-color: rgba(255,255,255,0.8);
+        /* background-image: linear-gradient(to bottom,transparentize(#fff,.1),transparentize(#fff,0.9)); */
     }
 
     .navbar-default .navbar-header .navbar-brand {
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+      /* color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.6); */
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
