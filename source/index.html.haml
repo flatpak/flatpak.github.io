@@ -49,79 +49,74 @@
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading.text-center User Information
+        %h1.section-heading.text-center Information for users
         %hr.primary
         %p
           Flatpak builds applications on top of
           = succeed "." do
             %i runtimes
         %p
-          Flatpak can be used to safely install, remove and update both applications
-          and runtimes on your Live system.
-          This removes the requirement for workarounds such as using offline updates
-          for updating desktop software.
-          Flatpak can also install multiple versions of the same application.
-          This allows you to have both stable versions of software for day-to-day
-          business critical work, and also the latest developer checkouts for
-          testing the latest features and bugfixes.
-        %h2 Installing the Flatpak framework
+          Flatpak has many advantages for users. Applications can be safely updated
+          on a running system, without fear of conflicts occuring during the update
+          process. Multiple versions of the same application can be installed at
+          the same time, which allows having a nightly or experimental version
+          alongside a stable release. In the future, the security first approach
+          of Flatpak will guarantee greater privacy and peace of mind.
+        %h2 Trying Flatpak for yourself
+        %p
+          A collection of experimental application builds are already available
+          with Flatpak, so you can try it yourself. It is currently easiest to
+          use Flatpak with Fedora or Ubuntu.
+        %h3 1. Install Flatpak
         %p
           Before you can install applications with Flatpak, you need to install the
-          Flatpak framework itself.
-          If Flatpak is not already installed on your distribution you will need to
-          = succeed "." do
-            %a{:href => "getting.html"} install it yourself
-        %h2 Installing Software with Flatpak
+          Flatpak itself. Currently this has to be done using the command line.
         %p
-          If you're running an up-to-date distribution such as
-          %a{:href => "https://getfedora.org/"} Fedora 24 Workstation
-          there are two ways of installing software with Flatpak:
-        %h3 Using GNOME Software
-        %p
-          GNOME Software can
-          %a{:href => "https://blogs.gnome.org/hughsie/2015/12/23/gnome-software-and-xdg-app/"} install and remove software
-          using Flatpak once remotes have been added manually.
-          All software is installed to the home directory and is only usable from your user account.
-        %iframe.wide{:allowfullscreen => "", :frameborder => "0", :height => "495", :src => "https://www.youtube.com/embed/RsNqT13uIQo?feature=oembed"}
-        %p
-          GNOME Software will automatically install dependancies as required, but you'll need to add a remote manually:
+          With Fedora, run:
         %pre
           :preserve
-            $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
-            $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+            $ sudo dnf install xdg-app
         %p
-          For Fedora 25 we'll be working on a graphical method to install remotes.
-        %h3 Using the command line
-        %p
-          Flatpak can install applications either system-wide or per user.
-          First you need to add the remote repository:
+          Or on Ubuntu, run:
         %pre
           :preserve
-            $ curl -O http://sdk.gnome.org/nightly/keys/nightly.gpg
-            $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+            $ sudo apt-get install xdg-app
+        %h3 2. Add some repositories
         %p
-          Then you need to install the runtime:
+          Flatpak uses remote repositories as the source for software. For this
+          example we're using two repositories: one which contains GNOME apps,
+          and one which contains the runtime that provides the dependencies
+          they need.
         %pre
           :preserve
-            $ xdg-app --user install gnome-nightly org.gnome.Platform
+            $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+            $ xdg-app --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps http://sdk.gnome.org/repo-apps/
+        %h3 3. Install the runtime
         %p
-          The list of available apps can be seen with:
+          The runtime provides the dependencies needed by the apps in the GNOME
+          repository.
         %pre
           :preserve
-            $ xdg-app --user remote-ls gnome-nightly --app
+            $ xdg-app --user install gnome org.gnome.Platform 3.20
+        %h3 4. View, install and run apps
         %p
-          And then you can install some app:
-        %pre
-          :preserve  
-            $ xdg-app --user install gnome-nightly org.gnome.Weather
-        %p
-          At this point the app is installed and you should be able to start it like any regular app in your desktop. You can also manually start it via xdg-app:
+          To view the list of available apps, run:
         %pre
           :preserve
-            xdg-app run org.gnome.Weather
+            $ xdg-app --user remote-ls gnome-apps --app
+        %p
+          To install:
+        %pre
+          :preserve
+            $ xdg-app --user install gnome-apps org.gnome.gedit stable
+        %p
+          Installed applications should appear in the usual place. You can also run them from the command line:
+        %pre
+          :preserve
+            $ xdg-app run org.gnome.gedit stable
 
 %section#developers.no-padding
-  
+
 %aside.bg-dark
   .container
     .call-to-action
