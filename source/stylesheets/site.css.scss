@@ -50,6 +50,8 @@ h4,
 h5,
 h6 {
     font-family: 'Overpass','Source Sans', sans-serif;
+    margin-top: 3em;
+    &:first-child { margin-top: 0.3em; }
 }
 
 p {
