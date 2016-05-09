@@ -223,23 +223,23 @@
         %p &nbsp;
         =image_tag 'img/logo.svg', :class => 'full'
         %p &nbsp;          
-%section#contributions
+%section#get-involved
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading.text-center Contributions
+        %h1.section-heading.text-center Get Involved
         %hr.primary
         %p
-          Flatpak is a project made up of contributions from hundreds of users.
-          For more information there is a
+          Flatpak is Free Software and is developed in the open, as a part of the Freedesktop 
+          project. To get in touch, use the 
+            %a{:href => "http://lists.freedesktop.org/mailman/listinfo/xdg-app"} xdg-app mailing list
+          or 
+            %em xdg-app
+          IRC channel on Freenode. Code can be found on
+            %a{:href => "https://github.com/alexlarsson/xdg-app} Github
+          and issues are tracked on 
           = succeed "." do
-            %a{:href => "http://lists.freedesktop.org/mailman/listinfo/xdg-app"} mailing list
-          = succeed "." do
-            %a{:href => "https://bugs.freedesktop.org/enter_bug.cgi?product=xdg-app"} bugzilla
-          
-        %pre
-          :preserve
-            git clone https://github.com/alexlarsson/xdg-app.git
+            %a{:href => "https://bugs.freedesktop.org/enter_bug.cgi?product=xdg-app"} Freedesktop Bugzilla
           
         %h2 Releases
         %p
