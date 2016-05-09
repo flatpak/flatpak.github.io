@@ -139,44 +139,61 @@
         %a{:name => "building-basic"}
         %h2 Building a Basic Application
         %p
-          This tutorial is using xdg-app 0.4.12.
-          Older versions should work too, but minor things may need to be changed in the commands, and not all features may be supported.
-          First of all you need to make sure
+          This tutorial is using xdg-app 0.4.12. Older versions should work too, but minor things may need to be changed in the commands, and not all features may be supported.
+        %h3 1. Install Flatpak
+        %p
+          Before you can install applications with Flatpak, you need to install the
+          Flatpak itself. Currently this has to be done using the command line.
+        %p
+          With Fedora, run:
+        %pre
+          :preserve
+            $ sudo dnf install xdg-app
+        %p
+          Or on Ubuntu, run:
+        %pre
+          :preserve
+            $ sudo apt-get install xdg-app
+        %h3 2. Add a repository
+        %p
+          Flatpak uses remote repositories as the source for software. For this
+          example we're using the GNOME SDK repository, which provides a runtime 
+          that we can use to build our app.
+        %pre
+          :preserve
+            $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+        %h3 3. Install the runtime
+        %p
+          Flatpak requires every app to specify a runtime that it uses for its dependencies.
+          We'll use the GNOME Platform runtime for this. To install it, run:
+        %pre
+          :preserve
+            $ xdg-app --user install gnome org.gnome.Platform 3.20
+        %h3 4. Create your app
+        %p
+          First we need to create the directory structure for the app:
+        %pre
+          :preserve
+            mkdir appdir
+            mkdir appdir/files
+            mkdir appdir/files/bin
+            mkdir appdir/export
+        %p
+          Now let's add something simple: create a file in 
           = succeed "." do
-            %a{:href => "getting.html"} xdg-app is installed
-        %p
-          A fundamental concept in xdg-app is the runtime/application split.
-          Every app depends on a runtime, which supplies the core libraries that the app relies on.
-          Runtimes are typically shared by many applications, but a user can have multiple runtimes installed at the same time.
-        %p
-          For this tutorial we will be using the gnome nightly build runtime.
-          It is available in a xdg-app repostitory on sdk.gnome.org.
-          If you tried the gnome nightly builds from my
-          %a{:href => "https://blogs.gnome.org/alexl/2016/02/11/testing-unstable-gnome-using-xdg-app/"} previous blog entry
-          you will have these already, but otherwise you can get it by doing:
-        %pre
-          :preserve
-            $ wget https://people.gnome.org/~alexl/keys/nightly.gpg
-            $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo
-            $ xdg-app --user install gnome-nightly org.gnome.Platform
-        %p
-          Once it is installed you can also update it by doing:
-        %pre
-          :preserve
-            xdg-app --user update org.gnome.Platform
-        %p
-          Now we have all that we need to create a simple application.
-          Lets start by writing an application.
-          Put this in a file called
+            %code appdir/files/bin/ called 
           = succeed ":" do
             %code hello.sh
+          And add the following:
         %pre
           :preserve
             #!/bin/sh
             echo "Hello world, from a sandbox"
         %p
-          Then we need some information about the application.
-          In xdg-app this is in specified in a key-value file called "metadata".
+          Then we need to provide some information about the application.
+          In Flatpak this is in specified in a key-value file called "metadata", which goes in 
+          = succeed "." do
+            %code appdir
           For a simple app like this it doesn't contain much, so we can create it manually:
         %pre
           :preserve
@@ -189,79 +206,34 @@
           %em> org.test.Hello
           ) as
           well as the runtime the application uses and the command to start the app with.
-        %p
-          An xdg-app really doesn't require more than this, although the application
-          must have a special layout.
-          Using these sources we can create an application directory "appdir" like this:
-        %pre
-          :preserve
-            mkdir appdir
-            mkdir appdir/files
-            mkdir appdir/files/bin
-            mkdir appdir/export
-            cp metadata appdir/
-            cp hello.sh appdir/files/bin/
-            chmod a+x appdir/files/bin/hello.sh
+        %h3 5. Put the app in a repository
         %p
           In order for xdg-app to be able to install this application we need to put it
-          in an  repository.
+          in a repository.
           This is done with the build-export command:
         %pre
           :preserve
               xdg-app build-export repo appdir
         %p
-          This will initialize a local repository in the directory "repo" and export the app to it.
-          We can test it using:
+          This will initialize a local repository in the "repo" directory and export the app to it.
+        %h3 6. Install the app
+        %p
+          Now we're ready to add the repository that was just created and install the app. 
+          This is done with two commands:
         %pre
           :preserve
             xdg-app --user remote-add --no-gpg-verify tutorial-repo repo
             xdg-app --user install tutorial-repo org.test.Hello
+        %h3 7. Run the app
+        %p
+          All that's left is to run the app! This can be done with:
+        %pre
+          :preserve
             xdg-app run org.test.Hello
         %p
           This will print
           = succeed "," do
             %em Hello world, from a sandbox
-        %p
-          If you want to examine the sandbox a bit you can use the
-          %code --command=sh
-          argument to xdg-app run, which will give you a shell inside the application
-          sandbox where you can explore the sandbox.
-          For example:
-        %pre
-          :preserve
-            [alex@localhost ~]$ xdg-app run --command=sh org.test.Hello
-            sh-4.3$ ls -lR /app
-            /app:
-            total 0
-            drwxr-xr-x 1 alex wheel 16 jan 1 1970 bin
-            /app/bin:
-            total 4
-            -rwxr-xr-x 2 alex wheel 45 jan 1 1970 hello.sh
-            sh-4.3$ echo $PATH
-            /app/bin:/usr/bin
-            sh-4.3$ hello.sh
-            Hello world, from a sandbox
-            sh-4.3$ ls -la ~/
-            total 0
-            drwxr-xr-x 3 alex wheel 60 feb 19 16:11 .
-            drwxr-xr-x 3 alex wheel 60 feb 19 16:11 ..
-            drwxr-xr-x 3 alex wheel 60 feb 19 16:11 .var
-            sh-4.3$ ls ~/.var/app/org.test.Hello/
-            cache  config  data
-        %p
-          Here we see that all the files from the application appears in /app, and PATH points to /app/bin which means you can easily run it.
-          We also see that by default the application has no access to any files from the
-          users home directory (it's empty) other than the
-          %code ~/.var/app/org.test.Hello
-          directory where the app can store its own data.
-          You can also explore
-          = succeed "," do
-            %code /usr
-        %p
-          This is a very manual approach to creating a xdg-app, and now we will look at
-          how to use the
-          %code xdg-app build
-          command and an SDK to build applications.
         %a{:name => "building-complex"}
         %h2 Building a Complex Application
         %p
