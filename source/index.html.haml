@@ -116,60 +116,35 @@
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading.text-center Developer Information
-        %hr.primary
+        %h1.section-heading.text-center Building an Application
         %p
-          This page is split up into 6 sections:
-        %ol
-          %li
-            %a{:href => "#building-basic"} Building a Basic Application
-          %li
-            %a{:href => "#building-complex"} Building a Complex Application
-          %li
-            %a{:href => "#automating"}
-              Automating using the
-              %code xdg-app-builder
-              tool
-          %li
-            %a{:href => "#sandbox"} The xdg-app Sandbox
-          %li
-            %a{:href => "#distribute"} How To Distribute a Flatpak
-          %li
-            %a{:href => "#appdata"} Software Center Metadata
-        %a{:name => "building-basic"}
-        %h2 Building a Basic Application
-        %p
-          This tutorial is using xdg-app 0.4.12. Older versions should work too, but minor things may need to be changed in the commands, and not all features may be supported.
+          This tutorial requires xdg-app 0.4.12, which is available on Fedora 23 or 
+          newer, or Ubuntu XXX or newer.
         %h3 1. Install Flatpak
         %p
-          Before you can install applications with Flatpak, you need to install the
-          Flatpak itself. Currently this has to be done using the command line.
-        %p
-          With Fedora, run:
+          First we need to install Flatpak itself.
+          Currently this has to be done using the command line.
+        %p If you are using Fedora, run:
         %pre
           :preserve
             $ sudo dnf install xdg-app
-        %p
-          Or on Ubuntu, run:
+        %p Or if you're on Ubuntu, run:
         %pre
           :preserve
             $ sudo apt-get install xdg-app
-        %h3 2. Add a repository
+        %h3 2. Install a runtime
         %p
-          Flatpak uses remote repositories as the source for software. For this
-          example we're using the GNOME SDK repository, which provides a runtime 
-          that we can use to build our app.
+          Flatpak requires every app to specify a runtime that it uses for its dependencies.
+          We'll use the GNOME Platform runtime for this. To install the runtime, we first 
+          need to add the repository that provides it. To do this, run:
         %pre
           :preserve
             $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
-        %h3 3. Install the runtime
-        %p
-          Flatpak requires every app to specify a runtime that it uses for its dependencies.
-          We'll use the GNOME Platform runtime for this. To install it, run:
+        %p And now install the runtime itself:
         %pre
           :preserve
             $ xdg-app --user install gnome org.gnome.Platform 3.20
-        %h3 4. Create your app
+        %h3 3. Create your app
         %p
           First we need to create the directory structure for the app:
         %pre
@@ -184,17 +159,18 @@
             %code appdir/files/bin/ called 
           = succeed ":" do
             %code hello.sh
-          And add the following:
+          Add the following to the file and save it:
         %pre
           :preserve
             #!/bin/sh
             echo "Hello world, from a sandbox"
         %p
           Then we need to provide some information about the application.
-          In Flatpak this is in specified in a key-value file called "metadata", which goes in 
-          = succeed "." do
+          In Flatpak this is specified in a key-value file called "metadata", which goes in 
+          the
+          = succeed "directory." do
             %code appdir
-          For a simple app like this it doesn't contain much, so we can create it manually:
+          For a simple app this doesn't contain much, so we can create it manually:
         %pre
           :preserve
             [Application]
@@ -206,17 +182,16 @@
           %em> org.test.Hello
           ) as
           well as the runtime the application uses and the command to start the app with.
-        %h3 5. Put the app in a repository
+        %h3 4. Put the app in a repository
         %p
-          In order for xdg-app to be able to install this application we need to put it
-          in a repository.
-          This is done with the build-export command:
+          Congratulations, you have an app! To be able to install it, you need to put it
+          in a repository. This is done with the build-export command:
         %pre
           :preserve
               xdg-app build-export repo appdir
         %p
           This will initialize a local repository in the "repo" directory and export the app to it.
-        %h3 6. Install the app
+        %h3 5. Install the app
         %p
           Now we're ready to add the repository that was just created and install the app. 
           This is done with two commands:
@@ -224,7 +199,7 @@
           :preserve
             xdg-app --user remote-add --no-gpg-verify tutorial-repo repo
             xdg-app --user install tutorial-repo org.test.Hello
-        %h3 7. Run the app
+        %h3 6. Run the app
         %p
           All that's left is to run the app! This can be done with:
         %pre
@@ -235,7 +210,9 @@
           = succeed "," do
             %em Hello world, from a sandbox
         %p
-          For a more detailed information on how to flatpak a more complex application,
+          Ta da!
+        %p
+          For a more detailed information on how to Flatpak a more complex application,
           =link_to 'see here.', 'developer.html'
         %a{:name => "distribute"}
         %h2 How To Distribute a Flatpak
