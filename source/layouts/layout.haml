@@ -22,18 +22,31 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand.page-scroll{:href => "#page-top"} Flatpak
+          -if (current_page.path == 'index.html')
+            %a.navbar-brand.page-scroll{:href => "#page-top"} Flatpak
+          -else
+            %a.navbar-brand.page-scroll{:href => "index.html"} Flatpak
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-            %li
-              %a.page-scroll{:href => "#about"} About
-            %li
-              %a.page-scroll{:href => "#users"} Users
-            %li
-              %a.page-scroll{:href => "#developers"} Developers
-            %li
-              %a.page-scroll{:href => "#contributions"} Contributions
+            -if (current_page.path == 'index.html')
+              %li
+                %a.page-scroll{:href => "#about"} About
+              %li
+                %a.page-scroll{:href => "#users"} Users
+              %li
+                %a.page-scroll{:href => "#developers"} Developers
+              %li
+                %a.page-scroll{:href => "#contributions"} Contributions
+            -else
+              %li
+                %a.page-scroll{:href => "index.html#about"} About
+              %li
+                %a.page-scroll{:href => "index.html#users"} Users
+              %li
+                %a.page-scroll{:href => "index.html#developers"} Developers
+              %li
+                %a.page-scroll{:href => "index.html#contributions"} Contributions
         / /.navbar-collapse
       / /.container-fluid
   = yield
