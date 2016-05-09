@@ -82,26 +82,29 @@
           :preserve
             $ curl -O https://sdk.gnome.org/nightly/keys/nightly.gpg
             $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly http://sdk.gnome.org/nightly/repo/
+        %h3 3. Install the runtime
         %p
-          Then you need to install the runtime:
+          The runtime provides the dependencies needed by the apps in the GNOME
+          repository.
         %pre
           :preserve
-            $ xdg-app --user install gnome-nightly org.gnome.Platform
+            $ xdg-app --user install gnome org.gnome.Platform 3.20
+        %h3 4. View, install and run apps
         %p
-          The list of available apps can be seen with:
+          To view the list of available apps, run:
         %pre
           :preserve
-            $ xdg-app --user remote-ls gnome-nightly --app
+            $ xdg-app --user remote-ls gnome-apps --app
         %p
-          And then you can install some app:
-        %pre
-          :preserve  
-            $ xdg-app --user install gnome-nightly org.gnome.Weather
-        %p
-          At this point the app is installed and you should be able to start it like any regular app in your desktop. You can also manually start it via xdg-app:
+          To install:
         %pre
           :preserve
-            xdg-app run org.gnome.Weather
+            $ xdg-app --user install gnome-apps org.gnome.gedit stable
+        %p
+          Installed applications should appear in the usual place. You can also run them from the command line:
+        %pre
+          :preserve
+          $ xdg-app run org.gnome.gedit stable
 
 %section#developers.no-padding
   
