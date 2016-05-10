@@ -491,3 +491,27 @@ body {
 }
 
 .wide { width: 100%; }
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 3em;
+  tr {
+    &:hover { background-color: lighten($neutral_color, 40%); }
+  }
+  td,th {
+    font-size: 110%;
+    padding: 0.2em 0.5em;
+    &.nowrap {
+      white-space: nowrap;
+      min-width: 10em;
+    }
+  }
+  &.full { 
+    width: 100%;
+    border: 1px solid lighten($neutral_color,30%);
+    th {
+      background-color: $key_color;
+      color: #fff;
+    }
+  }
+}

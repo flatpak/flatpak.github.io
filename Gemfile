@@ -6,7 +6,7 @@ gem "middleman" #, github: "middleman/middleman", branch: "v3-stable"
 #gem "middleman-blog"
 gem "middleman-livereload" #3.1.0
 #gem "nokogiri" #1.6.0 (xml html smarts)
-#gem "redcarpet"
+gem "redcarpet"
 gem "haml" #4.0.4
 gem "sass" #3.2.12
 
