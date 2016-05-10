@@ -3,7 +3,7 @@
     .header-content-inner
       %h1 the future of application distribution
       %hr
-        %p Long gone are the days of trying to keep up with Linux distributions. Decouple your app from the OS Now!
+        %p The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out How
 %section#about.bg-primary
   .container
@@ -17,13 +17,13 @@
     .row
       .col-lg-4.col-sm-6
         %h3.text-center Cross platform
-        %p Flatpak allows the same app to be installed on multiple Linux distributions
+        %p Build and install the same app on different Linux distributions
       .col-lg-4.col-sm-6
         %h3.text-center Stable
-        %p With Flatpak, the same app can be installed on different distribution versions, without having to be updated
+        %p Install and run the same app on different distribution versions
       .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
         %h3.text-center Secure
-        %p Flatpak has been designed with security at heart, and provides a sandbox for each application
+        %p Apps are isolated from the host system and from other apps
 
     .row
       .col-lg-12.text-center
@@ -31,33 +31,31 @@
     .row
       .col-lg-4.col-sm-6
         %h3.text-center Runtimes
-        %p Runtimes contain the libraries and dependencies that you use to build your app. They are consistent across different distributions, and different runtime versions can be installed in parallel, meaning that your dependencies are always available in the form you expect.
+        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. Runtimes can also be installed independently of distributions, so apps no longer have to be updated to keep pace with distribution changes.
       .col-lg-4.col-sm-6
         %h3.text-center Bundles
-        %p If you want to use a library that isn't in a runtime, Flatpak allows it to bundle it as a part of your app. It is also possible to bundle modified versions of libraries that are present in a runtime.
+        %p Dependencies that aren't in a runtime can be bundled as a part of the app. Dependencies can be used that aren't in a distribution, or you can use a different version from the one that's in the distribution.
       .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
         %h3.text-center Sandboxes
-        %p Flatpak uses Linux technologies to isolate apps from the OS. This provides security for users, since they have limited access to files, system resources and hardware. (These features are still work in progress.)
+        %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress.)
         
         
 %section#users
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading.text-center User Information
+        %h1.section-heading.text-center Flatpak for Users
         %hr.primary
         %p
-          Flatpak has many advantages for users. Applications can be safely updated
-          on a running system, without fear of conflicts occuring during the update
-          process. Multiple versions of the same application can be installed at
-          the same time, which allows having a nightly or experimental version
-          alongside a stable release. In the future, the security first approach
-          of Flatpak will guarantee greater privacy and peace of mind.
-        %h2 Trying Flatpak for yourself
+          With Flatpak, applications can be safely updated on a running system, without 
+          fear of conflicts occuring. Flatpak also allows multiple versions of the same 
+          application can be installed at the same time, which is great for testing 
+          development or testing versions. And in the future, Flatpak's security first approach 
+          guarantee greater privacy and peace of mind.
+        %h2 Try Flatpak for yourself
         %p
-          A collection of experimental application builds are already available
-          with Flatpak, so you can try it yourself. It is currently easiest to
-          use Flatpak with Fedora or Ubuntu.
+          A collection of applications are available as Flatpaks, which you can try yourself.
+          This is currently possible with Fedora 23 or newer, or Ubuntu XXX or newer.
         %h3 1. Install Flatpak
         %p
           Before you can install applications with Flatpak, you need to install the
@@ -123,11 +121,13 @@
   .container
     .row
       .col-lg-10.col-lg-offset-1
+        %h1.section-heading.text-center Flatpak for Developers
+        %hr.primary
         %p
-          Developers can quickly get started using the tutorial below. Otherwise, 
-          see the more detailed 
+          Developers can quickly get started using the tutorial below. More detailed information is available in 
+          the 
           =link_to 'developers page.', 'developer.html'
-        %h2 Building an Application
+        %h2 Build an Application
         %p
           This tutorial requires xdg-app 0.4.12, which is available on Fedora 23 or 
           newer, or Ubuntu XXX or newer.
@@ -253,10 +253,3 @@
           and issues are tracked on 
           = succeed "." do
             %a{:href => "https://bugs.freedesktop.org/enter_bug.cgi?product=xdg-app"} Freedesktop Bugzilla
-          
-        %h2 Releases
-        %p
-          See
-          %a{:href => "http://www.freedesktop.org/software/xdg-app/releases"} here
-          for tarballs.
-          Please note, the old name of Flatpak was xdg-app.
