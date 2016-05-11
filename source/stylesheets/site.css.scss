@@ -19,7 +19,7 @@ body {
 
 body {
     font-family: Overpass,'Source Sans', sans-serif;
-    font-size: 11pt;
+    font-size: 10pt;
 }
 
 hr {
@@ -38,6 +38,8 @@ a {
     -moz-transition: all .35s;
     transition: all .35s;
 }
+
+ul { font-size: 12pt; }
 
 a:hover,
 a:focus {

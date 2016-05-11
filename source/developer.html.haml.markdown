@@ -44,9 +44,10 @@
 
   * The files that make up the app
   * A metadata file that specifies the runtime required by the app
-  * Exported files which the host environment needs access to, such as the application's desktop file, icon and D-Bus service file
+  * Exported files which the host environment needs access to, 
+    such as the application's desktop file, icon and D-Bus service file
   
-
+  &nbsp;
   
       metadata    # A keyfile which provides information about the application, 
                   # including information that is necessary for setting up the sandbox 
