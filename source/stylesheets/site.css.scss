@@ -53,14 +53,14 @@ h4,
 h5,
 h6 {
     font-family: 'Overpass','Source Sans', sans-serif;
-    margin-top: 2em;
+    margin-top: 1.5em;
     &:first-child { margin-top: 0.3em; }
     &.voffset { margin-top: 3em; }
 }
 
 h1 { font-size: 200%; }
 h2 { font-size: 180%; }
-h3 { font-size: 160%; }
+h3 { font-size: 130%; font-weight: 800; color: $neutral_color; }
 
 p {
     margin-bottom: 20px;
