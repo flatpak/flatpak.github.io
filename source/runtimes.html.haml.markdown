@@ -1,4 +1,4 @@
-<section class=""><div class="container"><div class="row"><div class="col-lg-12">
+<section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   In order to run xdg-app applications you need to have a runtime for it. This page lists the runtimes maintained by the Gnome project.
 
