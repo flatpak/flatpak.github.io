@@ -152,13 +152,14 @@
 
       $ xdg-app build-finish dictionary --socket=x11 --share=network --command=gnome-dictionary
 
-  At this point you have successfully built an xdg-app and prepared it to be run. To test the app, run:
+  At this point you have successfully built an xdg-app and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
 
       $ xdg-app build-export repo dictionary
-      $ xdg-app --user install tutorial org.gnome.Dictionary
+      $ xdg-app --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
+      $ xdg-app --user install tutorial-repo org.gnome.Dictionary
       $ xdg-app run org.gnome.Dictionary
 
-  This exports the app, creates a repository called tutorial, installs the Dictionary application and runs it.
+  This exports the app, creates a repository called tutorial-repo, installs the Dictionary application and runs it.
 
   ## Building more complex apps with xdg-app-builder
 
