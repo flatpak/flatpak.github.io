@@ -86,8 +86,8 @@
 
   As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. The GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime, for example. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
 
-      $ wget http://sdk.gnome.org/keys/gnome-sdk.gpg
-      $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome http://sdk.gnome.org/repo/
+      $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+      $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
 
   You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed.)
 
@@ -96,7 +96,7 @@
 
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applicatons. In this case we are going to use the gnome-apps repository and install gedit:
 
-      $ xdg-app --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps http://sdk.gnome.org/repo-apps/
+      $ xdg-app --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
       $ xdg-app --user install gnome-apps org.gnome.gedit stable
 
   You can now use the following command to get a shell in the 'devel sandbox':
@@ -370,7 +370,7 @@
 
   While it is relatively simple to host an xdg-app repository, there are some important details to be aware of.
 
-  archive-z2 repositories contain a single file for each file in the application. This means that pull operations will do a lot of http requests. Since new requests are slow, it is important to enable HTTP keep-alive on the web server.
+  archive-z2 repositories contain a single file for each file in the application. This means that pull operations will do a lot of HTTP requests. Since new requests are slow, it is important to enable HTTP keep-alive on the web server.
 
   OSTree supports something called static deltas. These are single files in the repo that contains all the data needed to go between two revisions (or from nothing to a revision). Creating such deltas will take up more space on the server, but will make downloads much faster. This can be done with the build-update-repo --generate-static-deltas.
 

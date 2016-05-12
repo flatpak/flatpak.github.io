@@ -20,8 +20,8 @@
 
   A custom apt repository is available for Debian Jesse. To install, run the following as root:
 
-      wget -O - http://sdk.gnome.org/apt/debian/conf/alexl.gpg.key|apt-key add -
-      echo "deb [arch=amd64] http://sdk.gnome.org/apt/debian/ jessie main" > /etc/apt/sources.list.d/xdg-app.list
+      wget -O - https://sdk.gnome.org/apt/debian/conf/alexl.gpg.key|apt-key add -
+      echo "deb [arch=amd64] https://sdk.gnome.org/apt/debian/ jessie main" > /etc/apt/sources.list.d/xdg-app.list
       apt update
       apt install xdg-app
 
