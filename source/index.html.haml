@@ -52,7 +52,7 @@
         %p
           With Flatpak, applications can be safely updated on a running system, without 
           fear of conflicts occuring. Flatpak also allows multiple versions of the same 
-          application can be installed at the same time, which is great for testing 
+          application to be installed at the same time, which is great for testing 
           development or testing versions. And in the future, Flatpak's security first approach 
           guarantee greater privacy and peace of mind.
         %h2 Try Flatpak for yourself
@@ -88,7 +88,7 @@
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
             $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
-            $ xdg-app --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+            $ xdg-app --user remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
         %h3 3. Install a runtime
         %p
           The runtime provides the dependencies needed by the apps in the GNOME
@@ -99,7 +99,7 @@
         %p Once this is complete, you're all set to install some apps!
         %h3 4. View, install and run apps
         %p
-          To view what apps are availalbe in the gnome-apps repository, just run:
+          To view which apps are availalbe in the gnome-apps repository, just run:
         %pre
           :preserve
             $ xdg-app --user remote-ls gnome-apps --app
@@ -227,9 +227,9 @@
           = succeed "." do
             %em Hello world, from a sandbox
         %p
-          Ta da! That's it: you've successfully built, installed and run your first 
-          Flatpak. For a more detailed information about how to build and distribute apps using 
-          Flatpak
+          Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many 
+          of these steps are simplified by xdg-app's built in tools. For information on how to use 
+          them, as well as how to build and distribute more complex apps 
           =link_to 'see the developers page.', 'developer.html'
     .row
       .col-lg-4.col-lg-offset-4

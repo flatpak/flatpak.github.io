@@ -10,7 +10,7 @@
 
   ### Ubuntu
 
-  `xdg-app` is available for Ubuntu 14.04, 15.04 and 15.10, using a PPA. To install, run:
+  `xdg-app` is available for Ubuntu 14.04, 15.04, 15.10 and 16.04 using a PPA. To install, run:
 
       sudo add-apt-repository ppa:alexlarsson/xdg-app
       sudo apt-get update
