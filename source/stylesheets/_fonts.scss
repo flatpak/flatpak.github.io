@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Overpass";
   src: local("Overpass ExtraLight"),
-        local(Overpass_ExtraLight),    
-        url(../fonts/Overpass_ExtraLight.ttf); 
+        local(Overpass-ExtraLight),    
+        url(../fonts/Overpass-ExtraLight.ttf); 
   font-weight: 100;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Overpass";
   src: local("Overpass Light"),
         local(Overpass-Light),    
-        url(../fonts/Overpass_Light.ttf); 
+        url(../fonts/Overpass-Light.ttf); 
   font-weight: 200;
 }
 
@@ -18,18 +18,18 @@
   font-family: "Overpass";
   src: local("Overpass Regular"),
         local(Overpass),
-        local(Overpass_Regular),    
-        url(../fonts/Overpass_Regular.ttf); 
-  font-weight: 300;
+        local(Overpass-Regular),    
+        url(../fonts/Overpass-Regular.ttf); 
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Overpass";
   src: local("Overpass Bold"),
         local(Overpass-Bold),
-        local(Overpass_Bold),    
-        url(../fonts/Overpass_Bold.ttf); 
-  font-weight: 500;
+        local(Overpass-Bold),    
+        url(../fonts/Overpass-Bold.ttf); 
+  font-weight: 700;
 }
 
 /* Oblique */
@@ -37,8 +37,8 @@
 @font-face {
   font-family: "Overpass";
   src: local("Overpass ExtraLight Italic"),
-        local(Overpass_ExtraLight_Italic),    
-        url(../fonts/Overpass_ExtraLight_Italic.ttf); 
+        local(Overpass-ExtraLight-Italic),    
+        url(../fonts/Overpass-ExtraLight-Italic.ttf); 
   font-weight: 100;
 }
 
@@ -46,24 +46,24 @@
   font-family: "Overpass";
   src: local("Overpass Light Italic"),
         local(Overpass-Light-Italic),
-        url(../fonts/Overpass_Light_Italic.ttf); 
+        url(../fonts/Overpass-Light-Italic.ttf); 
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Overpass";
   src: local("Overpass Italic"),
-        local(Overpass_Italic),
-        local(Overpass_Regular_Italic),    
-        url(../fonts/Overpass_Italic.ttf); 
-  font-weight: 300;
+        local(Overpass-Italic),
+        local(Overpass-Regular-Italic),    
+        url(../fonts/Overpass-Regular-Italic.ttf); 
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Overpass";
   src: local("Overpass Bold Italic"),
         local(Overpass-Bold-Italic),
-        local(Overpass_Bold_Italic),
-        url(../fonts/Overpass_Bold_Italic.ttf); 
-  font-weight: 500;
+        local(Overpass-Bold-Italic),
+        url(../fonts/Overpass-Bold-Italic.ttf); 
+  font-weight: 700;
 }
