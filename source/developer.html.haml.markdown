@@ -256,7 +256,7 @@
    * No access to processes outside the sandbox.
    * Limited syscalls.  For instance, apps can't use nonstandard network socket types or ptrace other processes.
    * Limited access to the session D-Bus instance - an app can only own its own name on the bus.
-   * No access to host services like X, systemd D-Bus, or PulseAudio.
+   * No access to host services like X, system D-Bus, or PulseAudio.
 
   Most applications will need access to some of these resources in order to be useful, and xdg-app provides a number of ways to give an application access to them. The build-finish command is the simplest of these. As was seen in a previous example, this can be used to add access to graphics sockets and network resources:
 
