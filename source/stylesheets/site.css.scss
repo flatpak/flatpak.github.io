@@ -18,9 +18,9 @@ body {
 }
 
 body {
-  font-family: Overpass, 'Source Sans', sans-serif;
-  font-size: 12pt;
-  font-weight: 300;
+  font-family: 'Source Sans Pro', 'Source Sans', sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Overpass','Source Sans', sans-serif;
+  font-family: 'Overpass','Source Sans Pro', 'Source Sans', sans-serif;
   margin-top: 1.5em;
   &:first-child { margin-top: 0.3em; }
   &.voffset { margin-top: 3em; }
@@ -105,6 +105,7 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
+  font-family: 'Overpass','Source Sans Pro', 'Source Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: $key_color;
