@@ -243,8 +243,8 @@
 
   ### Example manifests
 
-  A complete manifest for [GNOME Dictionary built from Git is available](https://github.com/alexlarsson/gnome-apps-nightly/blob/master/org.gnome.Dictionary.json)
-  , in addition to manifests for [a range of other GNOME applications](https://github.com/alexlarsson/gnome-apps-nightly).
+  A complete manifest for [GNOME Dictionary built from Git is available](https://git.gnome.org/browse/gnome-apps-nightly/tree/org.gnome.Dictionary.json)
+  , in addition to manifests for [a range of other GNOME applications](https://git.gnome.org/browse/gnome-apps-nightly/tree/).
 
   ## Working with the sandbox
 
