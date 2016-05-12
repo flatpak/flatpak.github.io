@@ -11,7 +11,7 @@
       .col-lg-8.col-lg-offset-2.text-center
         %h2.section-heading Self-contained and future proof
         %hr.light
-          %p.text-faded Distributing applications on Linux is a pain: different distributions, different versions, each with different library versions and conventions. Flatpak is here to change all that.
+          %p.text-faded Distributing applications on Linux is a pain: different distributions in multiple versions, each with their own versions of libraries. Flatpak is here to change all that.
           %p &nbsp;
   .container
     .row
@@ -28,13 +28,16 @@
     .row
       .col-lg-12.text-center
         %h2.voffset How it works
+        %hr.light
+          %p.text-faded Flatpak is based on some basic ideas.
+          %p &nbsp;
     .row
       .col-lg-4.col-sm-6
         %h3.text-center Runtimes
-        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. Runtimes can also be installed independently of distributions, so apps no longer have to be updated to keep pace with distribution changes.
+        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. They mean that apps no longer have to be updated to keep pace with distribution changes.
       .col-lg-4.col-sm-6
         %h3.text-center Bundles
-        %p Dependencies that aren't in a runtime can be bundled as a part of the app. Dependencies can be used that aren't in a distribution, or you can use a different version from the one that's in the distribution.
+        %p Dependencies that aren't in a runtime can be bundled as a part of the app. This makes it possible to use dependencies can be used that aren't in a distribution, and to use a different version of a dependency than the one that's in a distribution.
       .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
         %h3.text-center Sandboxes
         %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress.)
@@ -55,11 +58,14 @@
         %h2 Try Flatpak for yourself
         %p
           A collection of applications are available as Flatpaks, which you can try yourself.
-          This is currently possible with Fedora 23 or newer, or Ubuntu XXX or newer.
         %h3 1. Install Flatpak
         %p
-          Before you can install applications with Flatpak, you need to install the
+          Before you can install applications with Flatpak, you need to install
           Flatpak itself. Currently this has to be done using the command line.
+          This section contains instructions for installing Flatpak on Fedora or Ubuntu.
+          Details on how to install xdg-app on other distros are available on the 
+          = succeed "." do
+            %a{:href => "getting.html"} getting XDG-App page
         %p
           With Fedora, run:
         %pre
@@ -72,14 +78,10 @@
             $ sudo add-apt-repository ppa:alexlarsson/xdg-app
             $ sudo apt-get update
             $ sudo apt-get install xdg-app
-        %p 
-          Details on how to install xdg-app on other distros 
-          = succeed "." do
-            %a{:href => "getting.html"} are available
-        %h3 2. Add some repositories
+        %h3 2. Add repositories
         %p
-          Flatpak uses remote repositories as the source for software. For this
-          example we're using two repositories: one which contains GNOME apps,
+          Flatpak allows you to install software from remote repositories. For this
+          example we're going to use two repositories: one which contains GNOME apps,
           and one which contains the runtime that provides the dependencies
           they need.
         %pre
@@ -87,19 +89,17 @@
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
             $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
             $ xdg-app --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
-        %h3 3. Install the runtime
+        %h3 3. Install a runtime
         %p
           The runtime provides the dependencies needed by the apps in the GNOME
           repository.
-        %p
-          Read more about 
-          =link_to 'Runtimes.', 'runtimes.html'
         %pre
           :preserve
             $ xdg-app --user install gnome org.gnome.Platform 3.20
+        %p Once this is complete, you're all set to install some apps!
         %h3 4. View, install and run apps
         %p
-          To view the list of available apps, run:
+          To view what apps are availalbe in the gnome-apps repository, just run:
         %pre
           :preserve
             $ xdg-app --user remote-ls gnome-apps --app
@@ -130,13 +130,14 @@
           Developers can quickly get started using the tutorial below. More detailed information is available in 
           the 
           =link_to 'developers page.', 'developer.html'
-        %h2 Build an Application
-        %p
-          This tutorial requires xdg-app 0.4.12, which is available on Fedora 23 or 
-          newer, or Ubuntu XXX or newer.
+        %h2 Build, Install & Run an App
         %h3 1. Install Flatpak
         %p
-          First we need to install Flatpak itself. If you are using Fedora, run:
+          First we need to install Flatpak itself. The instructions here are for Fedora or Ubuntu
+          Details for other distros can be found on the
+          = succeed "." do
+            %a{:href => "getting.html"} getting XDG-App page
+          If you are using Fedora, run:
         %pre
           :preserve
             $ sudo dnf install xdg-app
@@ -147,10 +148,6 @@
             $ sudo add-apt-repository ppa:alexlarsson/xdg-app
             $ sudo apt-get update
             $ sudo apt-get install xdg-app
-        %p 
-          Details on how to install xdg-app on other distros 
-          = succeed "." do
-            %a{:href => "getting.html"} are available
         %h3 2. Install a runtime
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
@@ -231,8 +228,8 @@
             %em Hello world, from a sandbox
         %p
           Ta da! That's it: you've successfully built, installed and run your first 
-          Flatpak. For a more detailed information about how to Flatpak a more complex 
-          application,
+          Flatpak. For a more detailed information about how to build and distribute apps using 
+          Flatpak
           =link_to 'see the developers page.', 'developer.html'
     .row
       .col-lg-4.col-lg-offset-4
