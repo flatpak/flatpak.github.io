@@ -22,3 +22,7 @@ gem "middleman-deploy", "~> 2.0.0.pre.alpha"
 
 #bootstrap
 gem "bootstrap-sass" # "3.0.0"
+
+#Ubuntu specific gems
+gem "rb-inotify"
+gem "therubyracer"
