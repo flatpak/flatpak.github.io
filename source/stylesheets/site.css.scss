@@ -509,13 +509,22 @@ table {
   tr {
     &:hover { background-color: lighten($neutral_color, 40%); }
   }
-  td,th {
-    font-size: 110%;
+  td {
     padding: 0.4em 0.5em;
-    &.nowrap {
-      white-space: nowrap;
-      min-width: 10em;
+    &:first-child {
+      font-weight: bold;
+      font-size: 90%;
+      color: $neutral_color;
     }
+  }
+  th { 
+    font-size: 80%;
+    text-transform: uppercase;
+    padding: .5em;
+  }
+  .nowrap {
+    white-space: nowrap;
+    min-width: 12em;
   }
   &.full { 
     width: 100%;
