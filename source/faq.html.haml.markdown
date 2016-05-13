@@ -3,8 +3,6 @@
 
   # Frequently Asked Questions
 
-  This page lists the runtimes that are currently available for xdg-app.
-
   ## Why the name flatpak?
 
   IKEA is a world-wide known brand whose success was partly built upon having developed and refined the idea of flatpacking
