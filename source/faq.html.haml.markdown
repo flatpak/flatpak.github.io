@@ -3,8 +3,6 @@
 
   # Frequently Asked Questions
 
-  This page lists the runtimes that are currently available for xdg-app.
-
   ## Question
   
   Answer.
