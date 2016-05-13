@@ -62,21 +62,21 @@
           Before you can install applications with Flatpak, you need to install
           Flatpak itself. Currently this has to be done using the command line.
           This section contains instructions for installing Flatpak on Fedora or Ubuntu.
-          Details on how to install xdg-app on other distros are available on the 
+          Details on how to install flatpak on other distros are available on the 
           = succeed "." do
-            %a{:href => "getting.html"} getting XDG-App page
+            %a{:href => "getting.html"} getting flatpak page
         %p
           With Fedora, run:
         %pre
           :preserve
-            $ sudo dnf install xdg-app
+            $ sudo dnf install flatpak
         %p
-          On Ubuntu, xdg-app is available through a PPA. To install it, run:
+          On Ubuntu, flatpak is available through a PPA. To install it, run:
         %pre
           :preserve
-            $ sudo add-apt-repository ppa:alexlarsson/xdg-app
+            $ sudo add-apt-repository ppa:alexlarsson/flatpak
             $ sudo apt-get update
-            $ sudo apt-get install xdg-app
+            $ sudo apt-get install flatpak
         %h3 2. Add repositories
         %p
           Flatpak allows you to install software from remote repositories. For this
@@ -86,32 +86,32 @@
         %pre
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
-            $ xdg-app --user remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+            $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+            $ flatpak --user remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
         %h3 3. Install a runtime
         %p
           The runtime provides the dependencies needed by the apps in the GNOME
           repository.
         %pre
           :preserve
-            $ xdg-app --user install gnome org.gnome.Platform 3.20
+            $ flatpak --user install gnome org.gnome.Platform 3.20
         %p Once this is complete, you're all set to install some apps!
         %h3 4. View, install and run apps
         %p
           To view which apps are availalbe in the gnome-apps repository, just run:
         %pre
           :preserve
-            $ xdg-app --user remote-ls gnome-apps --app
+            $ flatpak --user remote-ls gnome-apps --app
         %p
           To download and install an app, like gedit, run:
         %pre
           :preserve
-            $ xdg-app --user install gnome-apps org.gnome.gedit stable
+            $ flatpak --user install gnome-apps org.gnome.gedit stable
         %p
           Installed applications should appear in the usual place. You can also run them from the command line:
         %pre
           :preserve
-            $ xdg-app run org.gnome.gedit stable
+            $ flatpak run org.gnome.gedit stable
 
 %section#developers.no-padding
   
@@ -134,18 +134,18 @@
           First we need to install Flatpak itself. The instructions here are for Fedora or Ubuntu
           Details for other distros can be found on the
           = succeed "." do
-            %a{:href => "getting.html"} getting XDG-App page
+            %a{:href => "getting.html"} getting flatpak page
           If you are using Fedora, run:
         %pre
           :preserve
-            $ sudo dnf install xdg-app
+            $ sudo dnf install flatpak
         %p
-          On Ubuntu, xdg-app is available through a PPA. To install it, run:
+          On Ubuntu, flatpak is available through a PPA. To install it, run:
         %pre
           :preserve
-            $ sudo add-apt-repository ppa:alexlarsson/xdg-app
+            $ sudo add-apt-repository ppa:alexlarsson/flatpak
             $ sudo apt-get update
-            $ sudo apt-get install xdg-app
+            $ sudo apt-get install flatpak
         %h3 2. Install a runtime
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
@@ -154,11 +154,11 @@
         %pre
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+            $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
         %p And then install the runtime itself:
         %pre
           :preserve
-            $ xdg-app --user install gnome org.gnome.Platform 3.20
+            $ flatpak --user install gnome org.gnome.Platform 3.20
         %h3 3. Create your app
         %p
           First we need to create the directory structure for the app:
@@ -203,7 +203,7 @@
           in a repository. This is done with the build-export command:
         %pre
           :preserve
-              xdg-app build-export repo hello
+              flatpak build-export repo hello
         %p
           This will initialize a local repository in the "repo" directory and export the app to it.
         %h3 5. Install
@@ -212,21 +212,21 @@
           This is done with two commands:
         %pre
           :preserve
-            xdg-app --user remote-add --no-gpg-verify tutorial-repo repo
-            xdg-app --user install tutorial-repo org.test.Hello
+            flatpak --user remote-add --no-gpg-verify tutorial-repo repo
+            flatpak --user install tutorial-repo org.test.Hello
         %h3 6. Run
         %p
           All that's left is to run the app. This can be done with:
         %pre
           :preserve
-            xdg-app run org.test.Hello
+            flatpak run org.test.Hello
         %p
           This will print
           = succeed "." do
             %em Hello world, from a sandbox
         %p
           Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many 
-          of these steps are simplified by xdg-app's built in tools. For information on how to use 
+          of these steps are simplified by flatpak's built in tools. For information on how to use 
           them, as well as how to build and distribute more complex apps 
           =link_to 'see the developers page.', 'developer.html'
     .row
