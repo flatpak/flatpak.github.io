@@ -1,0 +1,16 @@
+- title: About
+  link: "#about"
+- title: Users
+  link: "#users"
+  submenu:
+  - title: Getting Flatpak
+    link: getting.html
+- title: Developers
+  link: "#developers"
+  submenu:
+  - title: Detailed Instructions
+    link: developer.html
+- title: Get&nbsp;Involved
+  link: "#get-involved"
+- title: FAQ
+  link: "faq.html"
