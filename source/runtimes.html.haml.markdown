@@ -31,11 +31,6 @@
     </tr>
     <tr>
       <td>org.gnome.Sdk</td>
-      <td></td>
-      <td>3.20</td>
-    </tr>
-    <tr>
-      <td>org.</td>
       <td>The development runtime used to build apps, and required by apps like gnome-builder</td>
       <td>3.16, 3.18, 3.20</td>
     </tr>
