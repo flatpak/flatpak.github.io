@@ -1,0 +1,15 @@
+#bs-example-navbar-collapse-1.collapse.navbar-collapse
+  %ul.nav.navbar-nav.navbar-right
+    -if (current_page.path == 'index.html')
+      - data.menu.each do |i|
+        %li
+          = "<a class='page-scroll' href='#{i.link}'>#{i.title}</a>"
+    -else
+      - data.menu.each do |i|
+        - if i.link.match('^#').nil?
+          %li
+            = "<a class='page-scroll' href='#{i.link}'>#{i.title}</a>"
+        - else
+          %li
+            = "<a href='index.html#{i.link}'>#{i.title}</a>"
+  / /.navbar-collapse
