@@ -1,17 +1,17 @@
 <section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
-  # Getting Started with flatpak
+  # Getting Started with Flatpak
 
-  This guide contains everything you need to know to build and distribute applications using flatpak. It includes an introduction to the basic concepts and a simple app building tutorial, before moving on to cover automated building and repository hosting.
+  This guide contains everything you need to know to build and distribute applications using Flatpak. It includes an introduction to the basic concepts and a simple app building tutorial, before moving on to cover automated building and repository hosting.
 
-  Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flat-pak-builder installed on your system. See [getting flatpak](getting.html) for more details on this.
+  Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](getting.html) for more details on this.
 
   ### Table of Contents
   <ul data-toc data-toc-headings="h2"></ul>
 
   ## Key Concepts
 
-  Flatpak is best understood through its key concepts: runtimes, bundles, SDKs and sandboxes. These help to explain how flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
+  Flatpak is best understood through its key concepts: runtimes, bundles, SDKs and sandboxes. These help to explain how Flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
 
   ### Runtimes
 
@@ -33,7 +33,7 @@
 
   ### Sandboxes
 
-  With flatpak, each app is built and run in an isolated environment. By default, the application can only 'see' itself and its runtime. Access to user files, network, graphics sockets, subsystems on the bus and devices all has to be explicitly granted. (As will be described later, flatpak provides several ways to do this.) Access to other things, such as other processes, is (deliberately) not possible.
+  With Flatpak, each app is built and run in an isolated environment. By default, the application can only 'see' itself and its runtime. Access to user files, network, graphics sockets, subsystems on the bus and devices all has to be explicitly granted. (As will be described later, Flatpak provides several ways to do this.) Access to other things, such as other processes, is (deliberately) not possible.
 
   ## The flatpak Command
 
@@ -41,7 +41,7 @@
 
   ## Anatomy of a Flatpak App
 
-  Each flatpak app has the following basic structure:
+  Each Flatpak app has the following basic structure:
 
       metadata    # A keyfile which provides information about the application,
                   # including information that is necessary for setting up the sandbox
@@ -83,7 +83,7 @@
 
   ## Building Simple Apps
 
-  `flatpak` provides a simple set of tools for building and distributing applications. These allow creating new flatpaks, into which new or existing applications can be built. This section describes how to build a simple application which doesn't require any additional dependencies outside of the runtime it is built against.
+  The `flatpak` utility provides a simple set of commands for building and distributing applications. These allow creating new Flatpaks, into which new or existing applications can be built. This section describes how to build a simple application which doesn't require any additional dependencies outside of the runtime it is built against.
 
   ### Installing an SDK
 
@@ -166,13 +166,13 @@
 
   ## Building More Complex Apps With flatpak-builder
 
-  If an application requires additional dependencies that aren't provided by its runtime, flatpak allows them to be bundled as modules as part of the app itself. This requires building each module inside the application, which can be a lot of work. For this reason, the flatpak-builder tool is provided to automate the build process.
+  If an application requires additional dependencies that aren't provided by its runtime, Flatpak allows them to be bundled as modules as part of the app itself. This requires building each module inside the application, which can be a lot of work. The `flatpak-builder` tool can automate this multi-step build process.
 
   flatpak-builder takes care of the routine commands used to build an app and any bundled modules, thus allowing application building to be automated. To do this, it expects modules to be built in a standard manner by following what is called the [Build API](https://github.com/cgwalters/build-api). If any modules don't conform to this API, they will need to be modified.
 
   ### Manifests
 
-  flatpak-builder uses a json file to describe the parameters for building an app, as well as each of the modules to be bundled. This file is called the manifest. Module sources can be of several types, including archives (`.tar`, `.zip`), Git, Bzr, patch files or shell commands that are run.
+  The input to flatpak-builder is a json file that describes the parameters for building an app, as well as each of the modules to be bundled. This file is called the manifest. Module sources can be of several types, including .tar or .zip archives, Git or Bzr repositories, patch files or shell commands that are run.
 
   The GNOME Dictionary manifest is short, because the only module is the application itself:
 
