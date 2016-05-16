@@ -502,6 +502,11 @@ img.full {
   width: 100%;
   height: auto;
 }
+iframe.full {
+  display: block;
+  min-height: 400px;
+  width: 100%;
+}
 
 body {
     webkit-tap-highlight-color: #222;
