@@ -23,7 +23,7 @@
 
   No. While flatpak has been developed by people with a long involvement in the GNOME and Fedora communities it is not tied
   to either, in fact it was designed with the explicit goal of allowing it to build applications using any library stack or
-  programming language an application author might want. At the same we its was also built to be distribution agnostic and
+  programming language an application author might want. At the same it was also built to be distribution agnostic and
   allow deployment on any Linux operating system out there, in fact we made sure to reach out and discuss flatpak with
   representatives of other distributions from very early on in the project.
 
@@ -38,9 +38,9 @@
   It can be, but it doesn't have to be. Since a desktop application would require quite extensive changes in order to
   be usable when run inside a container you will likely see flatpak mostly deployed as a convenient library bundling technology
   early on, with the sandboxing or containerization being phased in over time for most applications. In general though we
-  try to avoid using the term container when speaking about flatpak is it tends to cause comparisons with Docker and Rocket,
-  comparisons which quickly stops making technical sense due to the very different problem spaces these technologies
-  tries to address. And thus we prefer using the term sandboxing.
+  try to avoid using the term container when speaking about flatpak as it tends to cause comparisons with Docker and Rocket,
+  comparisons which quickly stop making technical sense due to the very different problem spaces these technologies
+  try to address. And thus we prefer using the term sandboxing.
 
   ### How does flatpak relate to freedesktop.org technologies such as desktop files and appstream metadata?
 
