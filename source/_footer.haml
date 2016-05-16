@@ -2,8 +2,9 @@
   .container
     .row
       .col-lg-3.col-lg-offset-1
-        %a.navbar-brand.page-scroll{:href => "#page-top"} Flatpak
-      %ul.col-lg-4
+        %a.navbar-brand.page-scroll{:href => "#page-top"} 
+          =image_tag 'img/logo.svg', :title => 'Flatpack', :class => 'full'
+      %ul.col-lg-7
         - data.menu.each do |i|
           %li.toplevel
             /id links on index page
@@ -19,5 +20,3 @@
                 - i.submenu.each do |j|
                   %li
                     = "<a class='page-scroll' href='#{j.link}'>#{j.title}</a>"
-      .col-lg-3
-        %p FIXME: twitter, social media

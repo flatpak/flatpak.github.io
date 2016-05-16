@@ -551,25 +551,34 @@ table {
     &:active,&:focus { color: #fff; }
   }
   .navbar-brand {
+    display: block;
     padding-top: 0;
     color: #fff;
     text-transform: uppercase;
     font-family: $overpass;
     font-weight: bold;
+    height: inherit;
   }
-  li {
-    list-style: none;
+  ul {
     display: block;
-    font-size: 80%;
-    &.toplevel {
-      text-transform: uppercase;
-      margin-bottom: 1em;
-    }
-    ul {
-      margin: 0; padding: 0;
-      li {
-        text-transform: none;
-        padding-left: 1em;
+    li {
+      list-style: none;
+      display: block;
+      font-size: 80%;
+      width: 45%;
+      float: left;
+      &.toplevel {
+        text-transform: uppercase;
+        margin-bottom: 1em;
+      }
+      a { display: block; }
+      ul {
+        margin: 0; padding: 0;
+        li {
+          text-transform: none;
+          /* padding-left: 1em; */
+          a { color: darken($neutral_color,20%); }
+        }
       }
     }
   }
