@@ -3,12 +3,12 @@
 - title: Users
   link: "#users"
   submenu:
-  - title: Getting Flatpak
+  - title: Downloading Flatpak
     link: getting.html
 - title: Developers
   link: "#developers"
   submenu:
-  - title: Detailed Instructions
+  - title: Getting Started with Flatpack
     link: developer.html
 - title: Get&nbsp;Involved
   link: "#get-involved"
