@@ -108,7 +108,7 @@
       $ flatpak --user install gnome org.gnome.Platform 3.20
       $ flatpak --user install gnome org.gnome.Sdk 3.20
 
-  This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applicatons. In this case we are going to use the gnome-apps repository and install gedit:
+  This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
       $ flatpak --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
       $ flatpak --user install gnome-apps org.gnome.gedit stable
@@ -139,13 +139,13 @@
 
   ### Building
 
-  `flatpak build` is used to build an application using an SDK. This command is used to provide access to an sandbox. For example, the following will create a file inside the appdir sandbox (in the files directory):
+  `flatpak build` is used to build an application using an SDK. This command is used to provide access to a sandbox. For example, the following will create a file inside the appdir sandbox (in the files directory):
 
       $ flatpak build dictionary touch /app/some_file
 
   (It is best to remove this file before continuing.)
 
-  The build command allows existing applications that have been made using the traditional configure, make, make install routine to be built inside an flatpak. You can try this using GNOME Dictionary. First, download the source files, extract them and switch to the resulting directory:
+  The build command allows existing applications that have been made using the traditional configure, make, make install routine to be built inside a flatpak. You can try this using GNOME Dictionary. First, download the source files, extract them and switch to the resulting directory:
 
       $ wget https://download.gnome.org/sources/gnome-dictionary/3.20/gnome-dictionary-3.20.0.tar.xz
       $ tar xvf gnome-dictionary-3.20.0.tar.xz
@@ -166,7 +166,7 @@
 
       $ flatpak build-finish dictionary --socket=x11 --share=network --command=gnome-dictionary
 
-  At this point you have successfully built an flatpak and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
+  At this point you have successfully built a flatpak and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
 
       $ flatpak build-export repo dictionary
       $ flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
@@ -226,11 +226,11 @@
 
   ### File renaming
 
-  Files that are exported by an flatpak must be named using the application ID. However, application's source files will typically not follow this convention. To get around this, flatpak-builder allows renaming application icons, desktop files and AppData files as a part of the build process, using the rename-icon, rename-desktop-file and rename-appdata properties.
+  Files that are exported by a flatpak must be named using the application ID. However, application's source files will typically not follow this convention. To get around this, flatpak-builder allows renaming application icons, desktop files and AppData files as a part of the build process, using the rename-icon, rename-desktop-file and rename-appdata properties.
 
   ### Example
 
-  You can try flatpak-builder for yourself, using the repository that and app that was created in the previous section. To do this, place the manifest json from above into a file called `org.gnome.Dictionary.json` and run the following command:
+  You can try flatpak-builder for yourself, using the repository that was created in the previous section. To do this, place the manifest json from above into a file called `org.gnome.Dictionary.json` and run the following command:
 
       $ flatpak-builder --repo=repo dictionary2 org.gnome.Dictionary.json
 
@@ -264,7 +264,7 @@
   <a name="WorkingWithTheSandbox"></a>
   ## Working with the Sandbox
 
-  By default, an flatpak has extremely limited access to the host environment. This includes:
+  By default, a flatpak has extremely limited access to the host environment. This includes:
 
    * No access to any host files except the runtime, the app and `~/.var/app/$APPID`. Only the last of these is writable.
    * No access to the network.
@@ -386,7 +386,7 @@
 
   ### Hosting a repository
 
-  While it is relatively simple to host an flatpak repository, there are some important details to be aware of.
+  While it is relatively simple to host a flatpak repository, there are some important details to be aware of.
 
   archive-z2 repositories contain a single file for each file in the application. This means that pull operations will do a lot of HTTP requests. Since new requests are slow, it is important to enable HTTP keep-alive on the web server.
 
