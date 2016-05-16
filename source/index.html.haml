@@ -77,16 +77,16 @@
           Before you can install applications with Flatpak, you need to install
           Flatpak itself. Currently this has to be done using the command line.
           This section contains instructions for installing Flatpak on Fedora or Ubuntu.
-          Details on how to install flatpak on other distros are available on the 
-          = succeed "." do
-            %a{:href => "getting.html"} getting flatpak page
+          Details on how to install Flatpak on other distros are available on the 
+          %a{:href => "getting.html"} getting Flatpak
+          page.
         %p
           With Fedora, run:
         %pre
           :preserve
             $ sudo dnf install flatpak
         %p
-          On Ubuntu, flatpak is available through a PPA. To install it, run:
+          On Ubuntu, Flatpak is available through a PPA. To install it, run:
         %pre
           :preserve
             $ sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -123,7 +123,7 @@
           :preserve
             $ flatpak --user install gnome-apps org.gnome.gedit stable
         %p
-          Installed applications should appear in the usual place. You can also run them from the command line:
+          Installed applications should appear in the usual place in your desktop. You can also run them from the command line:
         %pre
           :preserve
             $ flatpak run org.gnome.gedit stable
@@ -146,16 +146,16 @@
           =link_to 'developers page.', 'developer.html'
         %h3 1. Install Flatpak
         %p
-          First we need to install Flatpak itself. The instructions here are for Fedora or Ubuntu
+          First we need to install Flatpak itself. The instructions here are for Fedora or Ubuntu.
           Details for other distros can be found on the
-          = succeed "." do
-            %a{:href => "getting.html"} getting flatpak page
+          %a{:href => "getting.html"} getting Flatpak
+          page.
           If you are using Fedora, run:
         %pre
           :preserve
             $ sudo dnf install flatpak
         %p
-          On Ubuntu, flatpak is available through a PPA. To install it, run:
+          On Ubuntu, Flatpak is available through a PPA. To install it, run:
         %pre
           :preserve
             $ sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -165,7 +165,7 @@
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
           We'll use the GNOME 3.20 development platform runtime for this. To install the runtime, 
-          we first need to add the repository that provides it. To do this, run:
+          we first need to add the repository that provides it. Run:
         %pre
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
@@ -241,7 +241,7 @@
             %em Hello world, from a sandbox
         %p
           Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many 
-          of these steps are simplified by flatpak's built in tools. For information on how to use 
+          of these steps are simplified by Flatpak's built in tools. For information on how to use 
           them, as well as how to build and distribute more complex apps 
           =link_to 'see the developers page.', 'developer.html'        
 %section#get-involved
