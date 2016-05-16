@@ -7,16 +7,8 @@
   Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flat-pak-builder installed on your system. See [getting flatpak](getting.html) for more details on this.
 
   ### Table of Contents
+  <ul data-toc data-toc-headings="h2"></ul>
 
-  - [Key Concepts](#KeyConcepts)
-  - [The flatpak Command](#TheFlatpakCommand)
-  - [Anatomy of a Flatpak App](#AppAnatomy)
-  - [Building Simple Apps](#BuildingSimpleApps)
-  - [Building More Complex Apps with flatpak-builder](#ComplexAppsWithFlatpakBuilder)
-  - [Working with the Sandbox](#WorkingWithTheSandbox)
-  - [Distributing Applications](#DistributingApplications)
-
-  <a name="KeyConcepts"></a>
   ## Key Concepts
 
   Flatpak is best understood through its key concepts: runtimes, bundles, SDKs and sandboxes. These help to explain how flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
@@ -43,12 +35,10 @@
 
   With flatpak, each app is built and run in an isolated environment. By default, the application can only 'see' itself and its runtime. Access to user files, network, graphics sockets, subsystems on the bus and devices all has to be explicitly granted. (As will be described later, flatpak provides several ways to do this.) Access to other things, such as other processes, is (deliberately) not possible.
 
-  <a name="TheFlatpakCommand"></a>
   ## The flatpak Command
 
   `flatpak` is the tool that is used install, remove and update runtimes and applications. It can also be used to view what is currently installed, and has commands for building and distributing application bundles. `flatpak --help` provides a full list of available commands.
 
-  <a name="AppAnatomy"></a>
   ## Anatomy of a Flatpak App
 
   Each flatpak app has the following basic structure:
@@ -91,7 +81,6 @@
 
   Many Linux distributions provide an app store or app center for browsing and installing applications. [AppData](https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps) is a standard format for providing application information that can be used by app stores, such as an application description and screenshots. Flatpak makes use of the AppData standard, and application authors are recommended to use it to include information about their applications.
 
-  <a name="BuildingSimpleApps"></a>
   ## Building Simple Apps
 
   `flatpak` provides a simple set of tools for building and distributing applications. These allow creating new flatpaks, into which new or existing applications can be built. This section describes how to build a simple application which doesn't require any additional dependencies outside of the runtime it is built against.
@@ -175,7 +164,6 @@
 
   This exports the app, creates a repository called tutorial-repo, installs the Dictionary application and runs it.
 
-  <a name="ComplexAppsWithFlatpakBuilder"></a>
   ## Building More Complex Apps With flatpak-builder
 
   If an application requires additional dependencies that aren't provided by its runtime, flatpak allows them to be bundled as modules as part of the app itself. This requires building each module inside the application, which can be a lot of work. For this reason, the flatpak-builder tool is provided to automate the build process.
@@ -261,7 +249,6 @@
   A complete manifest for [GNOME Dictionary built from Git is available](https://git.gnome.org/browse/gnome-apps-nightly/tree/org.gnome.Dictionary.json)
   , in addition to manifests for [a range of other GNOME applications](https://git.gnome.org/browse/gnome-apps-nightly/tree/).
 
-  <a name="WorkingWithTheSandbox"></a>
   ## Working with the Sandbox
 
   By default, a flatpak has extremely limited access to the host environment. This includes:
@@ -358,7 +345,6 @@
 
       --socket=system-bus --socket=session-bus
 
-  <a name="DistributingApplications"></a>
   ## Distributing Applications
 
   As has already been seen, flatpak installs runtimes and apps from repositories. To do this, it uses [OSTree](https://ostree.readthedocs.io/en/latest/)
