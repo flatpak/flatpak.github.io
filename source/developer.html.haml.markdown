@@ -14,6 +14,19 @@
   Flatpak is best understood through its key concepts: runtimes, bundles, SDKs and sandboxes. These help to explain how Flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
   
 =partial "graph.svg"
+:css
+  @keyframes linespulse {
+    0% { stroke-dashoffset: 12; }
+    100% { stroke-dashoffset: 0; }
+  }
+  path {
+    animation-name: linespulse;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
 
 :markdown
   ### Runtimes<a id="runtimes"></a>
