@@ -19,6 +19,10 @@
     0% { stroke-dashoffset: 12; }
     100% { stroke-dashoffset: 0; }
   }
+  @keyframes spin {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(359deg); }
+  }
   path {
     animation-name: linespulse;
     animation-duration: 1s;
@@ -31,6 +35,9 @@
   a tspan:hover { font-size: 140%; }
   #gnome { transform: matrix(1.999999,0,0,1.999999,170.75063,-2129.837); transition: transform 200ms ease-in-out; }
   #gnome:hover { transform: matrix(1.999999,0,0,1.999999,170.75063,-2134.837); }
+  #cog {
+    animation: spin 3s infinite normal linear forwards;
+  }
 
 :markdown
   ### Runtimes<a id="runtimes"></a>
