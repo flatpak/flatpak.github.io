@@ -58,3 +58,7 @@ end
 #activate :redcarpet
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true #, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-68811788-1' # Replace with your property ID.
+end
