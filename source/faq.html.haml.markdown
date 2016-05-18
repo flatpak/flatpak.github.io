@@ -2,7 +2,9 @@
 :markdown
 
   # Frequently Asked Questions
-
+  
+  <ul data-toc data-toc-headings="h3"></ul>
+  
   ### Why the name Flatpak?
 
   IKEA is a world-wide known brand whose success was partly built upon having developed and refined the idea of flatpacking
