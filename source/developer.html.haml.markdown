@@ -11,7 +11,7 @@
 
   ## Key Concepts
 
-  Flatpak is best understood through its key concepts: runtimes, bundles, SDKs and sandboxes. These help to explain how Flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
+  Flatpak is best understood through its key concepts: runtimes, dowels, SDKs and sandboxes. These help to explain how Flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
   
 =partial "graph.svg"
 :css
@@ -39,11 +39,11 @@
 
   Flatpak identifies runtimes (as well as SDKs and applications) by a triple of name/arch/branch. The name is expected to be in inverse-dns notation, which needs to match the D-Bus name used for the application. For example: '`org.gnome.Sdk/x86_64/3.14`' or '`org.gnome.Builder/i686/master`'.
 
-  ### Application bundles<a id="bundles"></a>
+  ### Dowels<a id="dowels"></a>
 
   If an application requires any dependencies that aren't in its runtime, they can be bundled along with the application itself. This allows apps to use dependencies that aren't available in a distribution, or to use a different version of a dependency from the one that's installed on the host.
 
-  Both runtimes and app bundles can be installed per-user and system-wide.
+  Both runtimes and dowels can be installed per-user and system-wide.
 
   ### SDKs (Software Developer Kits)<a id="sdks"></a>
 
@@ -186,11 +186,11 @@
 
   If an application requires additional dependencies that aren't provided by its runtime, Flatpak allows them to be bundled as modules as part of the app itself. This requires building each module inside the application, which can be a lot of work. The `flatpak-builder` tool can automate this multi-step build process.
 
-  flatpak-builder takes care of the routine commands used to build an app and any bundled modules, thus allowing application building to be automated. To do this, it expects modules to be built in a standard manner by following what is called the [Build API](https://github.com/cgwalters/build-api). If any modules don't conform to this API, they will need to be modified.
+  flatpak-builder takes care of the routine commands used to build an app and any bundled modules (dowels), thus allowing application building to be automated. To do this, it expects modules to be built in a standard manner by following what is called the [Build API](https://github.com/cgwalters/build-api). If any modules don't conform to this API, they will need to be modified.
 
   ### Manifests
 
-  The input to flatpak-builder is a json file that describes the parameters for building an app, as well as each of the modules to be bundled. This file is called the manifest. Module sources can be of several types, including .tar or .zip archives, Git or Bzr repositories, patch files or shell commands that are run.
+  The input to flatpak-builder is a json file that describes the parameters for building an app, as well as each of the dowel modules to be bundled. This file is called the manifest. Module sources can be of several types, including .tar or .zip archives, Git or Bzr repositories, patch files or shell commands that are run.
 
   The GNOME Dictionary manifest is short, because the only module is the application itself:
 

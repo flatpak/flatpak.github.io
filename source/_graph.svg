@@ -275,10 +275,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="464.33421"
+     inkscape:cx="463.33421"
      inkscape:cy="169.18444"
      inkscape:document-units="px"
-     inkscape:current-layer="a7979"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      borderlayer="true"
@@ -327,9 +327,9 @@
        ry="19" />
     <a
        id="a7817"
-       xlink:href="#bundles"
+       xlink:href="#dowels"
        xlink:title="Dependencies shipped with the app itself."
-       href="#bundles"
+       href="#dowels"
        class="page-scroll"
        transform="translate(-29,-416.20014)">
       <rect
@@ -381,7 +381,7 @@
              sodipodi:role="line"
              id="tspan7458-5"
              x="397.22186"
-             y="550.83972">BUNDLES</tspan></text>
+             y="550.83972">DOWELS</tspan></text>
       </g>
       <g
          style="display:inline;fill:#4a90d9;fill-opacity:1;enable-background:new"
