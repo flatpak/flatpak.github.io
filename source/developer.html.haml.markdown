@@ -27,6 +27,8 @@
     animation-timing-function: linear;
     animation-fill-mode: forwards;
   }
+  a tspan { transition: font-size 200ms ease-in-out; }
+  a tspan:hover { font-size: 140%; }
 
 :markdown
   ### Runtimes<a id="runtimes"></a>
