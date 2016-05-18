@@ -307,7 +307,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -327,9 +327,9 @@
        ry="19" />
     <a
        id="a7817"
-       xlink:href="#dowels"
+       xlink:href="#bundledlibraries"
        xlink:title="Dependencies shipped with the app itself."
-       href="#dowels"
+       href="#bundledlibraries"
        class="page-scroll"
        transform="translate(-29,-416.20014)">
       <rect
@@ -381,7 +381,7 @@
              sodipodi:role="line"
              id="tspan7458-5"
              x="397.22186"
-             y="550.83972">DOWELS</tspan></text>
+             y="550.83972">BUNDLED LIBRARIES</tspan></text>
       </g>
       <g
          style="display:inline;fill:#4a90d9;fill-opacity:1;enable-background:new"
