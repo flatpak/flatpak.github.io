@@ -24,10 +24,10 @@
             %span.icon-bar
             %span.icon-bar
           -if (current_page.path == 'index.html')
-            %a.navbar-brand.page-scroll{:href => "#page-top"} Flatpak
+            = link_to "Flatpak", "#page-top", :class => "navbar-brand page-scroll"
           -else
-            %a.navbar-brand.page-scroll{:href => "index.html"} Flatpak
-        
+            = link_to "Flatpak", "index.html", :class => "navbar-brand page-scroll"
+
         = partial "navigation"
       / /.container-fluid
   = yield
