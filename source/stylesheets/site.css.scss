@@ -206,11 +206,15 @@ header {
   min-height: auto;
   text-align: center;
   color: #fff;
-  background-color: #919191;
-  background-image: url(../img/header_bottom.png),
+  background-color: $key_color;
+  background-image: linear-gradient(to bottom, transparentize($key_color,1),
+                                               $key_color,
+                                               $key_color,
+                                               transparentize($key_color,1)),
+                    url(../img/header_bottom.png),
                     url(../img/header.png),
                     linear-gradient(to bottom, desaturate($key_color,80%), $key_color);
-  background-position: center bottom, center top, center;
+  background-position: center, center bottom, center top, center;
   background-repeat: no-repeat;
 }
 
