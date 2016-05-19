@@ -36,7 +36,7 @@
   #gnome { transform: matrix(1.999999,0,0,1.999999,170.75063,-2129.837); transition: transform 200ms ease-in-out; }
   #gnome:hover { transform: matrix(1.999999,0,0,1.999999,170.75063,-2134.837); }
   #cog {
-    animation: spin 3s infinite normal linear forwards;
+    animation: spin 6s infinite normal linear forwards;
   }
 
 :markdown
