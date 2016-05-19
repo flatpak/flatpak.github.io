@@ -9,14 +9,14 @@
           %li.toplevel
             /id links on index page
             - if (current_page.path == 'index.html')
-              = link_to i.title, i.link, :class => "pqge-scroll"
+              = link_to i.title, i.link, :class => "page-scroll"
             - else
               - if (i.link.match('^#'))
                 = "<a class='page-scroll' href='index.html#{i.link}'>#{i.title}</a>"
               - else
-                = link_to i.title, i.link, :class => "pqge-scroll"
+                = link_to i.title, i.link, :class => "page-scroll"
             - if !i.submenu.nil?
               %ul
                 - i.submenu.each do |j|
                   %li
-                    = link_to j.title, j.link, :class => "pqge-scroll"
+                    = link_to j.title, j.link, :class => "page-scroll"
