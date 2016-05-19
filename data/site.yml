@@ -1,7 +1,6 @@
 name: Flatpak
-domain: http://jimmac.github.io/xdg-app-website
-punchline: "We couldn't think of a better name."
-#disqusid: 'racefpv'
+domain: http://flatpak.org
+punchline: The Future of Application Distribution
 
 ## If unspecified, timezone defaults to UTC
 ## For more TZs, see the top of:
