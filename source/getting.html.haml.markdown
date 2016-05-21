@@ -35,9 +35,9 @@
 
   ### Arch
 
-  A `flatpak` package is available in the Archlinux official repositories.
+  A `flatpak` package is available in the official repositories.
   
-  Also `flatpak-git` is available in the AUR if you want to try out the latest development snapshot.
+  Also `flatpak-git` is available in the AUR for the latest development snapshot.
 
   ### Mageia
 
