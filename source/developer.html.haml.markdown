@@ -231,7 +231,7 @@
 
   flatpak-builder performs a cleanup phase after the build, which can be used to remove headers and development docs, among other things. Two properties in the manifest file can be used for this. First, a list of filename patterns can be included:
 
-      cleanup": [ "/include", "/bin/foo-*", "*.a" ]
+      "cleanup": [ "/include", "/bin/foo-*", "*.a" ]
 
   The second cleanup property is a list of commands that are run during the cleanup phase:
 
