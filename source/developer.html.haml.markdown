@@ -60,11 +60,11 @@
 
   ### Sandboxes<a id="sandboxes"></a>
 
-  With Flatpak, each app is built and run in an isolated environment. By default, the application can only 'see' itself and its runtime. Access to user files, network, graphics sockets, subsystems on the bus and devices all has to be explicitly granted. (As will be described later, Flatpak provides several ways to do this.) Access to other things, such as other processes, is (deliberately) not possible.
+  With Flatpak, each app is built and run in an isolated environment. By default, the application can only 'see' itself and its runtime. Access to user files, network, graphics sockets, subsystems on the bus and devices have to be explicitly granted. (As will be described later, Flatpak provides several ways to do this.) Access to other things, such as other processes, is (deliberately) not possible.
 
   ## The flatpak Command
 
-  `flatpak` is the tool that is used install, remove and update runtimes and applications. It can also be used to view what is currently installed, and has commands for building and distributing application bundles. `flatpak --help` provides a full list of available commands.
+  `flatpak` is the tool that is used to install, remove and update runtimes and applications. It can also be used to view what is currently installed, and has commands for building and distributing application bundles. `flatpak --help` provides a full list of available commands.
 
   ## Anatomy of a Flatpak App
 
@@ -119,7 +119,7 @@
       $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
       $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
 
-  You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed.)
+  You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed)
 
       $ flatpak --user install gnome org.gnome.Platform 3.20
       $ flatpak --user install gnome org.gnome.Sdk 3.20
@@ -374,8 +374,7 @@
 
   ## Distributing Applications
 
-  As has already been seen, flatpak installs runtimes and apps from repositories. To do this, it uses [OSTree](https://ostree.readthedocs.io/en/latest/)
-  . This is similar to Git, but has been designed to handle trees of large binaries. Like Git, it has the concept of repositories and commits. Applications are stored as branches.
+  As has already been seen, flatpak installs runtimes and apps from repositories. To do this, it uses [OSTree](https://ostree.readthedocs.io/en/latest/). This is similar to Git, but has been designed to handle trees of large binaries. Like Git, it has the concept of repositories and commits. Applications are stored as branches.
 
   To distribute an application, it must be exported to a repository. This is done using the build-export command:
 
@@ -393,7 +392,7 @@
 
   ### AppData
 
-  As already described, flatpak uses the AppData standard to store user visible information about applications. This information needs to be accessible to clients in order to be displayed in app stores. To do this, build-update-repo scans all the branches in the repository for AppData data, which is collected and committed into a repository-wide AppStream branch. flatpak then keeps a local copy of this branch for each remote, which can manually updated using the update command. For example:
+  As already described, flatpak uses the AppData standard to store user visible information about applications. This information needs to be accessible to clients in order to be displayed in app stores. To do this, build-update-repo scans all the branches in the repository for AppData data, which is collected and committed into a repository-wide AppStream branch. flatpak then keeps a local copy of this branch for each remote, which can be manually updated using the update command. For example:
 
       $ flatpak --user update --appstream nightly
 
