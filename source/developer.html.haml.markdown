@@ -350,11 +350,11 @@
 
       --socket=wayland
 
-  Allow the application play sounds using PulseAudio:
+  Allow the application to play sounds using PulseAudio:
 
       --socket=pulseaudio
 
-  Allow the application access the network:
+  Allow the application to access the network:
 
       --share=network
 
