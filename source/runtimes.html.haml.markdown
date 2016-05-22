@@ -173,11 +173,15 @@
       org.gnome.Epiphany
       org.gnome.Evince
       org.gnome.Games
+      org.gnome.Gitg
+      org.gnome.Glade
       org.gnome.Maps
       org.gnome.News
       org.gnome.Polari
+      org.gnome.Rhythmbox
       org.gnome.Software.XdgApp
       org.gnome.Todo
+      org.gnome.Totem
       org.gnome.Weather
       org.gnome.bijiben
       org.gnome.clocks
