@@ -35,6 +35,11 @@
       <td>3.16, 3.18, 3.20</td>
     </tr>
     <tr>
+      <td>org.gnome.Sdk.Locale</td>
+      <td>Locale info addin for org.gnome.Sdk</td>
+      <td>3.20</td>
+    </tr>
+    <tr>
       <td>org.gnome.Sdk.Debug</td>
       <td>Debug info addin for org.gnome.Sdk</td>
       <td>3.20</td>
@@ -62,6 +67,16 @@
     <tr>
       <td>org.freedesktop.Sdk.Debug</td>
       <td>Debug info Addin for org.freedesktop.Sdk</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>org.freedesktop.BasePlatform</td>
+      <td>Yocto based core for org.freedesktop.Platform</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>org.freedesktop.BaseSdk</td>
+      <td>Yocto based core for org.freedesktop.Sdk</td>
       <td>1.4</td>
     </tr>
   </table>
