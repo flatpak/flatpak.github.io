@@ -62,7 +62,7 @@
     <tr>
       <td>org.freedesktop.Sdk.Locale</td>
       <td>Locale addins for org.freedesktop.Sdk</td>
-      <td>1.0, 1.2, 1.4</td>
+      <td>1.4</td>
     </tr>
     <tr>
       <td>org.freedesktop.Sdk.Debug</td>
