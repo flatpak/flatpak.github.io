@@ -13,10 +13,8 @@ punchline: The Future of Application Distribution
 # Global meta tags on each page <>
 # To have page-specific tags added, please add a YAML list to "tags:"
 # in that page's frontmatter block (the part at the top between ---)
-keywords:
-  - xdgapp
-  - xdg
-  - zapp
-  - flatpack
-  - flatpak
+title: Flatpak
+site: The Future of Application Distribution
+description: "FIXME"
+keywords: xdg-app xdg zapp flatpack flatpak
 
