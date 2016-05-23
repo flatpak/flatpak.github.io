@@ -316,7 +316,7 @@
 
   flatpak run can also be used to permanently override an application's permissions:
 
-      $ flatpak override --filesystem=home org.gnome.Dictionary
+      $ flatpak --user override --filesystem=home org.gnome.Dictionary
       $ flatpak run --command=ls org.gnome.Dictionary ~/
 
   It is also possible to remove permissions using the same method. You can use the following command to see what happens when access to the filesystem is removed, for example:
