@@ -126,7 +126,7 @@
 
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
-      $ flatpak --user remote-add --gpg-key=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+      $ flatpak --user remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
       $ flatpak --user install gnome-apps org.gnome.gedit stable
 
   You can now use the following command to get a shell in the 'devel sandbox':
