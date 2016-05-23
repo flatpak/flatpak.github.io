@@ -9,7 +9,7 @@
 
   Stable runtimes are currently available in Freedesktop and GNOME flavours. These are hosted at [https://sdk.gnome.org/repo/](https://sdk.gnome.org/repo/) and signed with the key at [https://sdk.gnome.org/keys/gnome-sdk.gpg](https://sdk.gnome.org/keys/gnome-sdk.gpg). The repository can be added with:
 
-      $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+      $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
 
   GNOME runtimes are released with each major release and contain the main GNOME platform libraries. They are based on the official freedesktop.org runtime. At the moment they only receive minor bug fixing and security updates, but should be considered ABI stable and frozen.
 
@@ -72,7 +72,7 @@
 
   The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with
 
-      $ flatpak --user remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
+      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
 
   ### Available nightly runtimes
 
@@ -144,8 +144,8 @@
   
   Additionally there is a repo with nightly builds of some GNOME applications, which can be listed with:
 
-      $ flatpak --user remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
-      $ flatpak --user remote-ls gnome-nightly-apps --app
+      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
+      $ flatpak remote-ls gnome-nightly-apps --app
 
   This includes the following apps:
 
@@ -174,10 +174,10 @@
 
   All these apps are using a version name of "master". For example, to install gedit run:
 
-      $ flatpak --user install gnome-nightly-apps org.gnome.gedit master
+      $ flatpak install gnome-nightly-apps org.gnome.gedit master
 
   And to update it:
 
-      $ flatpak --user update org.gnome.gedit master
+      $ flatpak update org.gnome.gedit master
 
 </div></div></div></section>
