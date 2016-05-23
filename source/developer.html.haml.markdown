@@ -185,11 +185,11 @@
   At this point you have successfully built a flatpak and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
 
       $ flatpak build-export repo dictionary
-      $ flatpak remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
-      $ flatpak install tutorial-repo org.gnome.Dictionary
+      $ flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
+      $ flatpak --user install tutorial-repo org.gnome.Dictionary
       $ flatpak run org.gnome.Dictionary
 
-  This exports the app, creates a repository called tutorial-repo, installs the Dictionary application and runs it.
+  This exports the app, creates a repository called tutorial-repo, installs the Dictionary application in the per-user installation area and runs it.
 
   ## Building More Complex Apps With flatpak-builder
 
@@ -261,7 +261,7 @@
 
   It is now possible to update the installed version of the Dictionary application with the new version that was built and exported by flatpak-builder:
 
-      $ flatpak update org.gnome.Dictionary
+      $ flatpak --user update org.gnome.Dictionary
 
   To check that the application has been successfully updated, you can compare the sha256 commit of the installed app with the commit ID that was printed by flatpak-builder:
 

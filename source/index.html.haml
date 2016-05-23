@@ -227,8 +227,11 @@
           This is done with two commands:
         %pre
           :preserve
-            flatpak remote-add --no-gpg-verify tutorial-repo repo
-            flatpak install tutorial-repo org.test.Hello
+            flatpak --user remote-add --no-gpg-verify tutorial-repo repo
+            flatpak --user install tutorial-repo org.test.Hello
+        %p
+          This will install the remote and the app in the users homedirectory due to the --user argument.
+          This is useful for test builds and other local things.
         %h3 6. Run
         %p
           All that's left is to run the app. This can be done with:
