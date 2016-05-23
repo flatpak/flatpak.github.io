@@ -116,22 +116,30 @@
 
   As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. For example the GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
 
-      $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-      $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  <pre>
+  <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  </pre>
 
   You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed)
 
-      $ flatpak install gnome org.gnome.Platform 3.20
-      $ flatpak install gnome org.gnome.Sdk 3.20
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.20
+  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Sdk 3.20
+  </pre>
+  
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
-      $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
-      $ flatpak install gnome-apps org.gnome.gedit stable
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
+  </pre>
 
   You can now use the following command to get a shell in the 'devel sandbox':
-
-      $ flatpak run --devel --command=bash org.gnome.gedit
+  
+  <pre>
+  <span class="unselectable">$ </span>flatpak run --devel --command=bash org.gnome.gedit
+  </pre>
 
   This gives you an environment which has the application bundle mounted in `/app`, and the SDK it was built against mounted in `/usr`. You can explore these two directories to see what a typical flatpak looks like, as well as what is included in the SDK.
 
@@ -139,7 +147,9 @@
 
   To create an application, the first step is to use the build-init command. This creates a directory into which an applcation can be built, which contains the correct directory structure and a metadata file which contains information about the app. The format for build-init is:
 
-      flatpak build-init DIRECTORY APPNAME SDK RUNTIME [BRANCH]
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-init DIRECTORY APPNAME SDK RUNTIME [BRANCH]
+  </pre>
 
   - `DIRECTORY` is the name of the directory that will be created to contain the application
   - `APPNAME` is the D-Bus name of the application
@@ -149,7 +159,9 @@
 
   For example, to build the GNOME Dictionary application using the GNOME 3.20 SDK, the command would look like:
 
-      $ flatpak build-init dictionary org.gnome.Dictionary org.gnome.Sdk org.gnome.Platform 3.20
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-init dictionary org.gnome.Dictionary org.gnome.Sdk org.gnome.Platform 3.20
+  </pre>
 
   You can try this command now. In the next step we will build an application inside the resulting dictionary directory.
 
@@ -157,22 +169,28 @@
 
   `flatpak build` is used to build an application using an SDK. This command is used to provide access to a sandbox. For example, the following will create a file inside the appdir sandbox (in the files directory):
 
-      $ flatpak build dictionary touch /app/some_file
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak build dictionary touch /app/some_file
+  </pre>
+  
   (It is best to remove this file before continuing.)
 
   The build command allows existing applications that have been made using the traditional configure, make, make install routine to be built inside a flatpak. You can try this using GNOME Dictionary. First, download the source files, extract them and switch to the resulting directory:
 
-      $ wget https://download.gnome.org/sources/gnome-dictionary/3.20/gnome-dictionary-3.20.0.tar.xz
-      $ tar xvf gnome-dictionary-3.20.0.tar.xz
-      $ cd gnome-dictionary-3.20.0/
+  <pre>
+  <span class="unselectable">$ </span>wget https://download.gnome.org/sources/gnome-dictionary/3.20/gnome-dictionary-3.20.0.tar.xz
+  <span class="unselectable">$ </span>tar xvf gnome-dictionary-3.20.0.tar.xz
+  <span class="unselectable">$ </span>cd gnome-dictionary-3.20.0/
+  </pre>
 
   Then you can use the build command to build and install the source inside the dictionary directory that was previously made:
-
-      $ flatpak build ../dictionary ./configure --prefix=/app
-      $ flatpak build ../dictionary make
-      $ flatpak build ../dictionary make install
-      $ cd ..
+  
+  <pre>
+  <span class="unselectable">$ </span>flatpak build ../dictionary ./configure --prefix=/app
+  <span class="unselectable">$ </span>flatpak build ../dictionary make
+  <span class="unselectable">$ </span>flatpak build ../dictionary make install
+  <span class="unselectable">$ </span>cd ..
+  </pre>
 
   Since these are run in a sandbox, the compiler and other tools from the SDK are used to build and install, rather than those on the host system.
 
@@ -180,14 +198,18 @@
 
   Once an application has been built, the build-finish command needs to be used to specify access to different parts of the host, such as networking and graphics sockets. This command is also used to specify the command that is used to run the app (done by modifying the metadata file), and to create the application's exports directory. For example:
 
-      $ flatpak build-finish dictionary --socket=x11 --share=network --command=gnome-dictionary
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-finish dictionary --socket=x11 --share=network --command=gnome-dictionary
+  </pre>
+  
   At this point you have successfully built a flatpak and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
 
-      $ flatpak build-export repo dictionary
-      $ flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
-      $ flatpak --user install tutorial-repo org.gnome.Dictionary
-      $ flatpak run org.gnome.Dictionary
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-export repo dictionary
+  <span class="unselectable">$ </span>flatpak --user remote-add --no-gpg-verify --if-not-exists tutorial-repo repo
+  <span class="unselectable">$ </span>flatpak --user install tutorial-repo org.gnome.Dictionary
+  <span class="unselectable">$ </span>flatpak run org.gnome.Dictionary
+  </pre>
 
   This exports the app, creates a repository called tutorial-repo, installs the Dictionary application in the per-user installation area and runs it.
 
@@ -247,8 +269,10 @@
 
   You can try flatpak-builder for yourself, using the repository that was created in the previous section. To do this, place the manifest json from above into a file called `org.gnome.Dictionary.json` and run the following command:
 
-      $ flatpak-builder --repo=repo dictionary2 org.gnome.Dictionary.json
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak-builder --repo=repo dictionary2 org.gnome.Dictionary.json
+  </pre>
+  
   This will:
 
    * Create a new directory (called dictionary2)
@@ -261,16 +285,22 @@
 
   It is now possible to update the installed version of the Dictionary application with the new version that was built and exported by flatpak-builder:
 
-      $ flatpak --user update org.gnome.Dictionary
+  <pre>
+  <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary
+  </pre>
 
   To check that the application has been successfully updated, you can compare the sha256 commit of the installed app with the commit ID that was printed by flatpak-builder:
 
-      $ flatpak info org.gnome.Dictionary
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak info org.gnome.Dictionary
+  </pre>
+  
   And finally, you can run the new version of the Dictionary app:
 
-      $ flatpak run org.gnome.Dictionary
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak run org.gnome.Dictionary
+  </pre>
+  
   ### Example manifests
 
   A complete manifest for [GNOME Dictionary built from Git is available](https://git.gnome.org/browse/gnome-apps-nightly/tree/org.gnome.Dictionary.json)
@@ -290,7 +320,9 @@
 
   Most applications will need access to some of these resources in order to be useful, and flatpak provides a number of ways to give an application access to them. The build-finish command is the simplest of these. As was seen in a previous example, this can be used to add access to graphics sockets and network resources:
 
-      $ flatpak build-finish dictionary2 --socket=x11 --share=network --command=gnome-dictionary
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-finish dictionary2 --socket=x11 --share=network --command=gnome-dictionary
+  </pre>
 
   These arguments translate into several properties in the application metadata file:
 
@@ -306,19 +338,25 @@
 
   Note that in this example access to the filesystem wasn't granted. This can be tested by installing the resulting application and running:
 
-      $ flatpak run --command=ls org.gnome.Dictionary ~/
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak run --command=ls org.gnome.Dictionary ~/
+  </pre>
+  
   build-finish allows a whole range of resources to be added to an application. Run `flatpak build-finish --help` to view the full list.
 
   There are several ways to override the permissions that are set in an application's metadata file. One of these is to override them using flatpak run, which accepts the same parameters as build-finish. For example, this will let the Dictionary application see your home directory:
 
-      $ flatpak run --filesystem=home --command=ls org.gnome.Dictionary ~/
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak run --filesystem=home --command=ls org.gnome.Dictionary ~/
+  </pre>
+  
   flatpak run can also be used to permanently override an application's permissions:
 
-      $ flatpak --user override --filesystem=home org.gnome.Dictionary
-      $ flatpak run --command=ls org.gnome.Dictionary ~/
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak --user override --filesystem=home org.gnome.Dictionary
+  <span class="unselectable">$ </span>flatpak run --command=ls org.gnome.Dictionary ~/
+  </pre>
+  
   It is also possible to remove permissions using the same method. You can use the following command to see what happens when access to the filesystem is removed, for example:
 
        $ flatpak run --nofilesystem=home --command=ls org.gnome.Dictionary ~/
@@ -378,24 +416,30 @@
 
   To distribute an application, it must be exported to a repository. This is done using the build-export command:
 
-      $ flatpak build-export [OPTION…] LOCATION DIRECTORY [BRANCH]
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-export [OPTION…] LOCATION DIRECTORY [BRANCH]
+  </pre>
+  
   The resulting repository is in an archive-z2 format. To allow users to use a repository, all you have to do is copy it to a web server and give them the URL.
 
   ### Managing repositories
 
   The flatpak build-update-repo command provides most of the tools for managing repositories. For example, to set a user readable name for a repository:
 
-      $ flatpak build-update-repo --title="Nice name" repo
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-update-repo --title="Nice name" repo
+  </pre>
+  
   build-update also lets you prune (`--prune`) unused objects and deltas from the repository, and even remove older revisions (using `--prune-depth`) which is useful for things like automatic nightly build repositories.
 
   ### AppData
 
   As already described, flatpak uses the AppData standard to store user visible information about applications. This information needs to be accessible to clients in order to be displayed in app stores. To do this, build-update-repo scans all the branches in the repository for AppData data, which is collected and committed into a repository-wide AppStream branch. flatpak then keeps a local copy of this branch for each remote, which can be manually updated using the update command. For example:
 
-      $ flatpak update --appstream gnome
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak update --appstream gnome
+  </pre>
+  
   ### Hosting a repository
 
   While it is relatively simple to host a flatpak repository, there are some important details to be aware of.
@@ -411,6 +455,8 @@
 
   OSTree requires signatures for every commit and on repository summary files. These objects are created by the build-update-repo and build-export commands, as well as indirectly by flatpak-builder. A GPG key should therefore be passed to each of these commands, and optionally the gpg home directory to use. For example:
 
-      $ flatpak build-export --gpg-sign=KEYID --gpg-homedir=/some/dir appdir repo
-
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-export --gpg-sign=KEYID --gpg-homedir=/some/dir appdir repo
+  </pre>
+  
 </div></div></div></section>

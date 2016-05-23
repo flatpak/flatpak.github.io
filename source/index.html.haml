@@ -82,51 +82,64 @@
           page.
         %p
           With Fedora, run:
-        %pre
-          :preserve
-            $ sudo dnf install flatpak
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>sudo dnf install flatpak
+          </pre>
+          
         %p
           On Ubuntu, Flatpak is available through a PPA. To install it, run:
-        %pre
-          :preserve
-            $ sudo add-apt-repository ppa:alexlarsson/flatpak
-            $ sudo apt-get update
-            $ sudo apt-get install flatpak
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
+          <span class="unselectable">$ </span>sudo apt-get update
+          <span class="unselectable">$ </span>sudo apt-get install flatpak
+          </pre>
+          
         %h3 2. Add repositories
         %p
           Flatpak allows you to install software from remote repositories. For this
           example we're going to use two repositories: one which contains GNOME apps,
           and one which contains the runtime that provides the dependencies
           they need.
-        %pre
-          :preserve
-            $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
-            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+          </pre>
+        
         %h3 3. Install a runtime
         %p
           The runtime provides the dependencies needed by the apps in the GNOME
           repository.
-        %pre
-          :preserve
-            $ flatpak install gnome org.gnome.Platform 3.20
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.20
+          </pre>
+          
         %p Once this is complete, you're all set to install some apps!
         %h3 4. View, install and run apps
         %p
           To view which apps are availalbe in the gnome-apps repository, just run:
-        %pre
-          :preserve
-            $ flatpak remote-ls gnome-apps --app
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak remote-ls gnome-apps --app
+          </pre>
         %p
           To download and install an app, like gedit, run:
-        %pre
-          :preserve
-            $ flatpak install gnome-apps org.gnome.gedit stable
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
+          </pre>
+          
         %p
           Installed applications should appear in the usual place in your desktop. You can also run them from the command line:
-        %pre
-          :preserve
-            $ flatpak run org.gnome.gedit
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak run org.gnome.gedit
+          </pre>
 
 %section#developers.no-padding
   
@@ -156,33 +169,41 @@
             $ sudo dnf install flatpak
         %p
           On Ubuntu, Flatpak is available through a PPA. To install it, run:
-        %pre
-          :preserve
-            $ sudo add-apt-repository ppa:alexlarsson/flatpak
-            $ sudo apt-get update
-            $ sudo apt-get install flatpak
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
+          <span class="unselectable">$ </span>sudo apt-get update
+          <span class="unselectable">$ </span>sudo apt-get install flatpak
+          </pre>
+          
         %h3 2. Install a runtime
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
           We'll use the GNOME 3.20 development platform runtime for this. To install the runtime, 
           we first need to add the repository that provides it. Run:
-        %pre
-          :preserve
-            $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+          </pre>
+          
         %p And then install the runtime itself:
-        %pre
-          :preserve
-            $ flatpak install gnome org.gnome.Platform 3.20
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.20
+          </pre>
+          
         %h3 3. Create your app
         %p
           First we need to create the directory structure for the app:
-        %pre
-          :preserve
-            mkdir hello
-            mkdir hello/files
-            mkdir hello/files/bin
-            mkdir hello/export
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>mkdir hello
+          <span class="unselectable">$ </span>mkdir hello/files
+          <span class="unselectable">$ </span>mkdir hello/files/bin
+          <span class="unselectable">$ </span>mkdir hello/export
+          </pre>
+          
         %p
           Now let's add something simple: create a file in 
           %code hello/files/bin/
@@ -216,28 +237,32 @@
         %p
           Congratulations, you've made an app! To be able to install it, you need to put it
           in a repository. This is done with the build-export command:
-        %pre
-          :preserve
-              flatpak build-export repo hello
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak build-export repo hello
+          </pre>
+          
         %p
           This will initialize a local repository in the "repo" directory and export the app to it.
         %h3 5. Install
         %p
           Now we're ready to add the repository that was just created and install the app. 
           This is done with two commands:
-        %pre
-          :preserve
-            flatpak --user remote-add --no-gpg-verify tutorial-repo repo
-            flatpak --user install tutorial-repo org.test.Hello
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak --user remote-add --no-gpg-verify tutorial-repo repo
+          <span class="unselectable">$ </span>flatpak --user install tutorial-repo org.test.Hello
+          </pre>
         %p
           This will install the remote and the app in the users homedirectory due to the --user argument.
           This is useful for test builds and other local things.
         %h3 6. Run
         %p
           All that's left is to run the app. This can be done with:
-        %pre
-          :preserve
-            flatpak run org.test.Hello
+        :preserve
+          <pre>
+          <span class="unselectable">$ </span>flatpak run org.test.Hello
+          </pre>
         %p
           This will print
           = succeed "." do

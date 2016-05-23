@@ -596,4 +596,12 @@ table {
     }
   }
 }
-  
+
+.unselectable {
+  @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
+    #{$quirk}user-select: none;
+  }
+  color: $neutral_color;
+  font-weight: bold;
+  font-size: 90%;
+}
