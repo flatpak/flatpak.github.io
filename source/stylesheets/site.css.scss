@@ -245,6 +245,10 @@ header .header-content .header-content-inner p {
   text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
 
+pre {
+  margin: 2em 0;
+}
+
 @media(min-width:768px) {
   header {
     min-height: 100%;
