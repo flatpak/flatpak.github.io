@@ -394,7 +394,7 @@
 
   As already described, flatpak uses the AppData standard to store user visible information about applications. This information needs to be accessible to clients in order to be displayed in app stores. To do this, build-update-repo scans all the branches in the repository for AppData data, which is collected and committed into a repository-wide AppStream branch. flatpak then keeps a local copy of this branch for each remote, which can be manually updated using the update command. For example:
 
-      $ flatpak update --appstream nightly
+      $ flatpak update --appstream gnome
 
   ### Hosting a repository
 
