@@ -35,6 +35,11 @@
       <td>3.16, 3.18, 3.20</td>
     </tr>
     <tr>
+      <td>org.gnome.Sdk.Locale</td>
+      <td>Locale info addin for org.gnome.Sdk</td>
+      <td>3.20</td>
+    </tr>
+    <tr>
       <td>org.gnome.Sdk.Debug</td>
       <td>Debug info addin for org.gnome.Sdk</td>
       <td>3.20</td>
@@ -57,11 +62,21 @@
     <tr>
       <td>org.freedesktop.Sdk.Locale</td>
       <td>Locale addins for org.freedesktop.Sdk</td>
-      <td>1.0, 1.2, 1.4</td>
+      <td>1.4</td>
     </tr>
     <tr>
       <td>org.freedesktop.Sdk.Debug</td>
       <td>Debug info Addin for org.freedesktop.Sdk</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>org.freedesktop.BasePlatform</td>
+      <td>Yocto based core for org.freedesktop.Platform</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>org.freedesktop.BaseSdk</td>
+      <td>Yocto based core for org.freedesktop.Sdk</td>
       <td>1.4</td>
     </tr>
   </table>
@@ -105,41 +120,6 @@
       <td>Debug info addin for org.gnome.Sdk</td>
       <td>master</td>
     </tr>
-    <tr>
-      <td>org.freedesktop.Platform</td>
-      <td>Smaller runtime with basic platform including X11, Wayland, Mesa, D-Bus, SDL, etc. Used as a base for org.gnome.Platform and other runtimes.</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.Platform.Locale</td>
-      <td>Addins to org.gnome.Platform that adds locale data and translations</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.Sdk</td>
-      <td>The development runtime used by org.freedesktop.Platform</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.Sdk.Locale</td>
-      <td>Locale addins for org.freedesktop.Sdk</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.Sdk.Debug</td>
-      <td>Debug info Addin for org.freedesktop.Sdk</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.BasePlatform</td>
-      <td>Yocto based core for org.freedesktop.Platform</td>
-      <td>master</td>
-    </tr>
-    <tr>
-      <td>org.freedesktop.BaseSdk</td>
-      <td>Yocto based core for org.freedesktop.Sdk</td>
-      <td>master</td>
-    </tr>
   </table>
   
   Additionally there is a repo with nightly builds of some GNOME applications, which can be listed with:
@@ -158,11 +138,15 @@
       org.gnome.Epiphany
       org.gnome.Evince
       org.gnome.Games
+      org.gnome.Gitg
+      org.gnome.Glade
       org.gnome.Maps
       org.gnome.News
       org.gnome.Polari
+      org.gnome.Rhythmbox
       org.gnome.Software.XdgApp
       org.gnome.Todo
+      org.gnome.Totem
       org.gnome.Weather
       org.gnome.bijiben
       org.gnome.clocks
