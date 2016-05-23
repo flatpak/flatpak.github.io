@@ -52,7 +52,7 @@
 
   If an application requires any dependencies that aren't in its runtime, they can be bundled along with the application itself. This allows apps to use dependencies that aren't available in a distribution, or to use a different version of a dependency from the one that's installed on the host.
 
-  Both runtimes and bundled libraries can be installed per-user and system-wide.
+  Both runtimes and app bundles can be installed per-user and system-wide.
 
   ### SDKs (Software Developer Kits)<a id="sdks"></a>
 
