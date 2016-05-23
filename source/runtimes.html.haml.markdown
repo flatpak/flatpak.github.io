@@ -144,7 +144,6 @@
       org.gnome.News
       org.gnome.Polari
       org.gnome.Rhythmbox
-      org.gnome.Software.XdgApp
       org.gnome.Todo
       org.gnome.Totem
       org.gnome.Weather
@@ -153,8 +152,6 @@
       org.gnome.eog
       org.gnome.gedit
       org.gnome.iagno
-
-  Of particular interest is org.gnome.Software.XdgApp, which lets you browse and install flatpak apps with a graphical tool.
 
   All these apps are using a version name of "master". For example, to install gedit run:
 
