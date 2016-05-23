@@ -3,13 +3,13 @@
 
   # Runtimes
 
-  This page lists the runtimes that are currently available for xdg-app.
+  This page lists the runtimes that are currently available for flatpak.
 
   ## Stable Runtimes
 
   Stable runtimes are currently available in Freedesktop and GNOME flavours. These are hosted at [https://sdk.gnome.org/repo/](https://sdk.gnome.org/repo/) and signed with the key at [https://sdk.gnome.org/keys/gnome-sdk.gpg](https://sdk.gnome.org/keys/gnome-sdk.gpg). The repository can be added with:
 
-      $ xdg-app remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+      $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
 
   GNOME runtimes are released with each major release and contain the main GNOME platform libraries. They are based on the official freedesktop.org runtime. At the moment they only receive minor bug fixing and security updates, but should be considered ABI stable and frozen.
 
@@ -72,7 +72,7 @@
 
   The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with
 
-      $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
+      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
 
   ### Available nightly runtimes
 
@@ -144,8 +144,8 @@
   
   Additionally there is a repo with nightly builds of some GNOME applications, which can be listed with:
 
-      $ xdg-app --user remote-add --gpg-key=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
-      $ xdg-app --user remote-ls gnome-nightly-apps --app
+      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
+      $ flatpak remote-ls gnome-nightly-apps --app
 
   This includes the following apps:
 
@@ -170,14 +170,14 @@
       org.gnome.gedit
       org.gnome.iagno
 
-  Of particular interest is org.gnome.Software.XdgApp, which lets you browse and install xdg-app with a graphical tool.
+  Of particular interest is org.gnome.Software.XdgApp, which lets you browse and install flatpak apps with a graphical tool.
 
   All these apps are using a version name of "master". For example, to install gedit run:
 
-      $ xdg-app --user install gnome-nightly-apps org.gnome.gedit master
+      $ flatpak install gnome-nightly-apps org.gnome.gedit master
 
   And to update it:
 
-      $ xdg-app --user update org.gnome.gedit master
+      $ flatpak update org.gnome.gedit master
 
 </div></div></div></section>
