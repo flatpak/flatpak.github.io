@@ -72,7 +72,7 @@
 
   The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with
 
-      $ flatpak --user remote-add --gpg-key=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
+      $ flatpak --user remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
 
   ### Available nightly runtimes
 
@@ -144,7 +144,7 @@
   
   Additionally there is a repo with nightly builds of some GNOME applications, which can be listed with:
 
-      $ flatpak --user remote-add --gpg-key=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
+      $ flatpak --user remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
       $ flatpak --user remote-ls gnome-nightly-apps --app
 
   This includes the following apps:
