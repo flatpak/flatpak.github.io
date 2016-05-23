@@ -114,7 +114,7 @@
 
   ### Installing an SDK
 
-  As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. The GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime, for example. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
+  As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. For example the GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
 
       $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
       $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
@@ -350,11 +350,11 @@
 
       --socket=wayland
 
-  Allow the application play sounds using PulseAudio:
+  Allow the application to play sounds using PulseAudio:
 
       --socket=pulseaudio
 
-  Allow the application access the network:
+  Allow the application to access the network:
 
       --share=network
 
