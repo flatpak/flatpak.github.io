@@ -407,6 +407,7 @@
   ### GPG signatures
 
   By default OSTree refuses to pull from a remote repository that is not signed. To disable GPG verification, the `--no-gpg-verify` option needs to be used when a remote is added. Alternatively, it can be disabled on an existing remote using flatpak remote-modify.
+  Note that gpg signatures are required for the user to be able to install trusted remotes that can be updated from without needing to be root.
 
   OSTree requires signatures for every commit and on repository summary files. These objects are created by the build-update-repo and build-export commands, as well as indirectly by flatpak-builder. A GPG key should therefore be passed to each of these commands, and optionally the gpg home directory to use. For example:
 
