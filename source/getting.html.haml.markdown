@@ -35,7 +35,9 @@
 
   ### Arch
 
-  A `flatpak` package is available in the AUR.
+  A `flatpak` package is available in the official repositories.
+  
+  Also `flatpak-git` is available in the AUR for the latest development snapshot.
 
   ### Mageia
 
