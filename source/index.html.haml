@@ -101,27 +101,27 @@
         %pre
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
-            $ flatpak --user remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
         %h3 3. Install a runtime
         %p
           The runtime provides the dependencies needed by the apps in the GNOME
           repository.
         %pre
           :preserve
-            $ flatpak --user install gnome org.gnome.Platform 3.20
+            $ flatpak install gnome org.gnome.Platform 3.20
         %p Once this is complete, you're all set to install some apps!
         %h3 4. View, install and run apps
         %p
           To view which apps are availalbe in the gnome-apps repository, just run:
         %pre
           :preserve
-            $ flatpak --user remote-ls gnome-apps --app
+            $ flatpak remote-ls gnome-apps --app
         %p
           To download and install an app, like gedit, run:
         %pre
           :preserve
-            $ flatpak --user install gnome-apps org.gnome.gedit stable
+            $ flatpak install gnome-apps org.gnome.gedit stable
         %p
           Installed applications should appear in the usual place in your desktop. You can also run them from the command line:
         %pre
@@ -169,11 +169,11 @@
         %pre
           :preserve
             $ wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-            $ flatpak remote-add --user --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+            $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
         %p And then install the runtime itself:
         %pre
           :preserve
-            $ flatpak --user install gnome org.gnome.Platform 3.20
+            $ flatpak install gnome org.gnome.Platform 3.20
         %h3 3. Create your app
         %p
           First we need to create the directory structure for the app:
@@ -227,8 +227,8 @@
           This is done with two commands:
         %pre
           :preserve
-            flatpak --user remote-add --no-gpg-verify tutorial-repo repo
-            flatpak --user install tutorial-repo org.test.Hello
+            flatpak remote-add --no-gpg-verify tutorial-repo repo
+            flatpak install tutorial-repo org.test.Hello
         %h3 6. Run
         %p
           All that's left is to run the app. This can be done with:
