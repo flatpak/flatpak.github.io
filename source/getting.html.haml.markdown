@@ -6,7 +6,7 @@
 
   ### Fedora
 
-  A `flatpak` package is available for Fedora from version 22.
+  A `flatpak` package will be available shortly for Fedora from version 22.
 
   ### Ubuntu
 
