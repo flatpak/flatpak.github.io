@@ -10,7 +10,7 @@
 
   ### Ubuntu
 
-  A `flatpak` package is available for Ubuntu 14.04, 15.04, 15.10 and 16.04 using a PPA. To install, run:
+  A `flatpak` package is available for Ubuntu 16.04 using a PPA. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
