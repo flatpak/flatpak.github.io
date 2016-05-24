@@ -29,18 +29,6 @@
   <span class="unselectable">$ </span>apt install flatpak
   </pre>
 
-  This will install Flatpak, but by default Debian disallows user-namespaces as non-root, which means Flatpak will not work. To enable this run:
-
-  <pre>
-  <span class="unselectable">$ </span>sysctl kernel.unprivileged_userns_clone=1
-  </pre>
-
-  To make this change permanent (after reboot), run:
-
-  <pre>
-  <span class="unselectable">$ </span>echo 'kernel.unprivileged_userns_clone = 1' > /etc/sysctl.d/10-unpriv-ns.conf
-  </pre>
-
   ### Arch
 
   A `flatpak` package is available in the official repositories.
