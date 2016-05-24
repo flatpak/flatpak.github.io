@@ -85,7 +85,7 @@
 
   Regular nightly builds are available of the latest GNOME and Freedesktop runtimes from Git. These are not stable and have no guarantees on ABI stability or if they even work. However, they are a useful way to test the latest version that is in development. The same repository also contains a few applications built against this runtime allowing you to test it.
 
-  The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with
+  The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with:
 
       $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
 
