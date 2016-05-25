@@ -79,6 +79,8 @@
 
   `flatpak` is the tool that is used to install, remove and update runtimes and applications. It can also be used to view what is currently installed, and has commands for building and distributing application bundles. `flatpak --help` provides a full list of available commands.
 
+  Most `flatpak` commands are performed system-wide by default. To perform a command for the current user only, use the `--user` option.
+
   ## Anatomy of a Flatpak App
 
   Each Flatpak app has the following basic structure:
