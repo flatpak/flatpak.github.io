@@ -23,7 +23,7 @@
     0% { transform: rotateZ(0deg); }
     100% { transform: rotateZ(359deg); }
   }
-  path {
+  path.moving {
     animation-name: linespulse;
     animation-duration: 1s;
     animation-iteration-count:infinite;
