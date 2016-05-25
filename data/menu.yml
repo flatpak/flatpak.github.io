@@ -1,11 +1,11 @@
 - title: About
   link: "#about"
-- title: Users
+- title: Run
   link: "#users"
   submenu:
   - title: Downloading Flatpak
     link: getting.html
-- title: Developers
+- title: Build
   link: "#developers"
   submenu:
   - title: Getting Started with Flatpack
