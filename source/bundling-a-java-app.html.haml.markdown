@@ -23,14 +23,14 @@
 
   <pre>
   <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-  <span class="unselectable">$ </span>flatpak --user remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
   </pre>
 
   You now have enabled a new Flatpak repo called ```gnome```. Next, install version 1.4 of the Freedesktop SDK and runtime from your newly enabled gnome repository:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak --user install gnome org.freedesktop.Platform 1.4
-  <span class="unselectable">$ </span>flatpak --user install gnome org.freedesktop.Sdk 1.4
+  <span class="unselectable">$ </span>flatpak install gnome org.freedesktop.Platform 1.4
+  <span class="unselectable">$ </span>flatpak install gnome org.freedesktop.Sdk 1.4
   </pre>
 
   ## Create the Flatpak application
@@ -144,11 +144,18 @@
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak cp applicationIcon.png /app/share/icons/hicolor/128x128/apps/com.sweethome3d.App.png
   </pre>
 
-  Finally, create the ```/app/share/appdata/``` directory in the sandbox, and copy the appdata file over:
+  Create the ```/app/share/appdata/``` directory in the sandbox, and copy the appdata file over:
   <pre>
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak mkdir -p /app/share/appdata/
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak cp com.sweethome3d.App.appdata.xml /app/share/appdata/
   </pre>
+
+  After adding the AppData file, use the following command to generate the Appstream files:
+  <pre>
+  <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak appstream-compose --prefix=/app --origin=flatpak --basename=com.sweethome3d.App  com.sweethome3d.App
+  </pre>
+
+  This reads the desktop file, the icon and the appdata file and produces appstream files in ```/app/share/app-info/```. Note that this step is done automatically if you are automating your build process with [Flatpak-builder](developer.html#Building_More_Complex_Apps_With_flatpak_builder)
 
   ## Finalize the build
   Next, we finalize the build of the Flatpak application. In this step, we tell Flatpak what the sandboxed application should have access to outside of the sandbox, and the name of the executable. In this Sweethome3D example, Sweethome3D needs access to the network, and to X11 (since it is a GUI application):
