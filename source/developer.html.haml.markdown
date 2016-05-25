@@ -32,7 +32,7 @@
     animation-fill-mode: forwards;
   }
   a tspan { transition: font-size 200ms ease-in-out; }
-  a tspan:hover { font-size: 140%; }
+  a tspan:hover { font-size: 120%; }
   #gnome { transform: matrix(1.999999,0,0,1.999999,170.75063,-2129.837); transition: transform 200ms ease-in-out; }
   #gnome:hover { transform: matrix(1.999999,0,0,1.999999,170.75063,-2134.837); }
   #cog {
