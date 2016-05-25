@@ -588,6 +588,8 @@ table {
       ul {
         margin: 0; padding: 0;
         li {
+          display: block;
+          width: 100%;
           text-transform: none;
           /* padding-left: 1em; */
           a { color: darken($neutral_color,20%); }
