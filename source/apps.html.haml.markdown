@@ -26,29 +26,29 @@
 
   The GNOME nightly apps repository includes a collection of GNOME applications that are built daily from Git master. It includes:
 
-      org.gnome.Builder
-      org.gnome.Calculator
-      org.gnome.Calendar
-      org.gnome.Characters
-      org.gnome.Dictionary
-      org.gnome.Documents
-      org.gnome.Epiphany
-      org.gnome.Evince
-      org.gnome.Games
-      org.gnome.Gitg
-      org.gnome.Glade
-      org.gnome.Maps
-      org.gnome.News
-      org.gnome.Polari
-      org.gnome.Rhythmbox
-      org.gnome.Todo
-      org.gnome.Totem
-      org.gnome.Weather
-      org.gnome.bijiben
-      org.gnome.clocks
-      org.gnome.eog
-      org.gnome.gedit
-      org.gnome.iagno
+  * [Builder](https://wiki.gnome.org/Apps/Builder)
+  * Calculator
+  * [Calendar](https://wiki.gnome.org/Apps/Calendar)
+  * Characters
+  * [Dictionary](https://wiki.gnome.org/Apps/Dictionary)
+  * [Documents](https://wiki.gnome.org/Apps/Documents)
+  * [Web](https://wiki.gnome.org/Apps/Epiphany) (Epiphany)
+  * [Evince](https://wiki.gnome.org/Apps/Evince)
+  * Games
+  * [Gitg](https://wiki.gnome.org/Apps/Gitg)
+  * [Glade](https://wiki.gnome.org/Apps/Glade)
+  * [Maps](https://wiki.gnome.org/Apps/Maps)
+  * News
+  * [Polari](https://wiki.gnome.org/Apps/Polari)
+  * [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox)
+  * [Todo](https://wiki.gnome.org/Apps/Todo)
+  * [Videos](https://wiki.gnome.org/Apps/Totem) (Totem)
+  * [Weather](https://wiki.gnome.org/Apps/Weather)
+  * Notes (Bijiben)
+  * [Clocks](https://wiki.gnome.org/Apps/Clocks)
+  * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
+  * [Gedit](https://wiki.gnome.org/Apps/Gedit)
+  * [Iagno](https://wiki.gnome.org/Apps/Iagno)
 
   To add the GNOME nightly apps repository, run:
 

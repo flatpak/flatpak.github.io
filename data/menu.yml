@@ -4,6 +4,9 @@
   link: "getting.html"
 - title: Run
   link: "#users"
+  submenu:
+  - title: Apps
+    link: apps.html
 - title: Build
   link: "#developers"
   submenu:
