@@ -5,6 +5,8 @@
         %a.navbar-brand.page-scroll{:href => "#page-top"} 
           =image_tag 'img/logo.svg', :title => 'Flatpak', :class => 'full'
       %ul.col-lg-7
+        %li.toplevel
+          = link_to "Home", "index.html"
         - data.menu.each do |i|
           %li.toplevel
             /id links on index page
