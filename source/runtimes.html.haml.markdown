@@ -121,44 +121,5 @@
       <td>master</td>
     </tr>
   </table>
-  
-  Additionally there is a repo with nightly builds of some GNOME applications, which can be listed with:
-
-      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
-      $ flatpak remote-ls gnome-nightly-apps --app
-
-  This includes the following apps:
-
-      org.gnome.Builder
-      org.gnome.Calculator
-      org.gnome.Calendar
-      org.gnome.Characters
-      org.gnome.Dictionary
-      org.gnome.Documents
-      org.gnome.Epiphany
-      org.gnome.Evince
-      org.gnome.Games
-      org.gnome.Gitg
-      org.gnome.Glade
-      org.gnome.Maps
-      org.gnome.News
-      org.gnome.Polari
-      org.gnome.Rhythmbox
-      org.gnome.Todo
-      org.gnome.Totem
-      org.gnome.Weather
-      org.gnome.bijiben
-      org.gnome.clocks
-      org.gnome.eog
-      org.gnome.gedit
-      org.gnome.iagno
-
-  All these apps are using a version name of "master". For example, to install gedit run:
-
-      $ flatpak install gnome-nightly-apps org.gnome.gedit master
-
-  And to update it:
-
-      $ flatpak update org.gnome.gedit master
 
 </div></div></div></section>
