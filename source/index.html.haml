@@ -275,11 +275,14 @@
         %p
           Flatpak is Free Software and is developed in the open, as a part of the Freedesktop 
           project. To get in touch, use the 
-          %a{:href => "http://lists.freedesktop.org/mailman/listinfo/xdg-app"} xdg-app mailing list
+          =link_to "xdg-app mailing list", "http://lists.freedesktop.org/mailman/listinfo/xdg-app"
           or 
           %em #flatpak
           IRC channel on Freenode. Code can be found on
-          %a{:href => "https://github.com/flatpak/flatpak"} Github
+          =link_to "Github", "https://github.com/flatpak/flatpak"
+          (along with a 
+          = succeed ")" do
+            = link_to "wiki", "https://github.com/flatpak/flatpak/wiki"
           and issues are tracked on 
           = succeed "." do
-            %a{:href => "https://github.com/flatpak/flatpak/issues"} Github Issues
+            = link_to "Github Issues", "https://github.com/flatpak/flatpak/issues"
