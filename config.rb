@@ -63,5 +63,5 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-68811788-1' # Replace with your property ID.
 end
 
-activate :asset_hash
+activate :asset_hash, :ignore => %w(.ico)
 
