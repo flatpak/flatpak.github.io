@@ -70,11 +70,11 @@
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
 
-  * Darktable
-  * GIMP
+  * [Darktable](http://www.darktable.org/)
+  * [GIMP](http://gimp.org)
   * GIMP GTK+3 branch
-  * Inkscape
-  * MyPaint
+  * [Inkscape](http://inkscape.org)
+  * [MyPaint](http://mypaint.org)
 
   These applications require the org.gnome.Platform 3.20 runtime: see the [runtimes page](runtimes.html) for details on how to install this. To add the nightly-graphics repository, run:
 
