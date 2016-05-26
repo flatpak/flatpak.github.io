@@ -1,10 +1,9 @@
 - title: About
   link: "#about"
+- title: Download
+  link: "getting.html"
 - title: Run
   link: "#users"
-  submenu:
-  - title: Downloading Flatpak
-    link: getting.html
 - title: Build
   link: "#developers"
   submenu:
