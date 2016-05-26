@@ -14,8 +14,8 @@
 
   <pre>
   <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
-  <span class="unselectable">$ </span>sudo apt-get update
-  <span class="unselectable">$ </span>sudo apt-get install flatpak
+  <span class="unselectable">$ </span>sudo apt update
+  <span class="unselectable">$ </span>sudo apt install flatpak
   </pre>
 
   ### Debian
