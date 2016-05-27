@@ -573,27 +573,38 @@ table {
   }
   ul {
     display: block;
+    @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
+      #{$quirk}column-count: 1; /* just one column for small res */
+    }
     li {
       list-style: none;
       display: block;
       font-size: 80%;
-      width: 50%;
-      float: left;
       &.toplevel {
         text-transform: uppercase;
         margin-bottom: 1em;
       }
       a { display: block; }
       ul {
+        @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
+         #{$quirk}column-count: 1;
+        }
         margin: 0; padding: 0;
         li {
-          display: block;
-          width: 100%;
           text-transform: none;
           /* padding-left: 1em; */
           a { color: darken($neutral_color,20%); }
         }
       }
+    }
+  }
+}
+
+//2 column footer nav for large sizes
+@media(min-width:768px) {
+  #footer ul {
+    @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
+     #{$quirk}column-count: 2;
     }
   }
 }
