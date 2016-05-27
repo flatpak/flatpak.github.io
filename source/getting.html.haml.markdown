@@ -28,7 +28,7 @@
   <pre>
   <span class="unselectable">$ </span>dnf install flatpak
   </pre>
-  
+
   ### Mageia
 
   A `flatpak` package is available in Cauldron.
