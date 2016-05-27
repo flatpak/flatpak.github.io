@@ -21,13 +21,23 @@
   and the OCI format that is developed by the [Open Container Initiative](https://www.opencontainers.org/).
   It has also spawned new technologies such as Bubblewrap which is shared between Flatpak and Project Atomic.
 
-  ### Is Flatpak tied to GNOME? Is it tied to Fedora?
+  ### Is Flatpak tied to GNOME?
 
-  No. While Flatpak has been developed by people with a long involvement in the GNOME and Fedora communities it is not tied
-  to either. In fact, it was designed with the explicit goal of allowing it to build applications using any library stack or
-  programming language an application author might want. At the same it was also built to be distribution agnostic and
-  allow deployment on any Linux operating system out there. We've reached out and discussed Flatpak with representatives of other
-  distributions from very early on in the project.
+  No. While Flatpak has been developed by people with a long involvement in the GNOME community it is not tied
+  to any desktop. In fact, it was designed with the explicit goal of allowing it to build applications using any library stack or
+  programming language an application author might want.
+
+  ### Is Flatpak tied to Fedora?
+
+  No. The people developing Flatpak have a background in Fedora, and solving the application problem for distributions like Fedora is
+  a strong motivation. But Flatpak was built to be distribution agnostic and allow deployment on any Linux operating system out there.
+  We've reached out and discussed Flatpak with representatives of other distributions from very early on in the project.
+
+  ### Is Flatpak tied to Linux?
+
+  Yes. We are explicitly using many features of the linux kernel (bind mounts, namespaces, seccomp, etc) to create the sandbox that
+  Flatpak apps are running in. It may be possible to use equivalent technologies on other kernels, but that would be a non-trivial
+  amount of work, and we don't consider this one of our priorities.
 
   ### Is Flatpak the same as xdg-app?
 
