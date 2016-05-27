@@ -71,7 +71,7 @@
   These applications require the nightly version of the org.gnome.Platform runtime: see the [runtimes page](runtimes.html) for details on how to install this. All the apps in the repository use the version name of "master". For example, to install gedit run:
 
   <pre>
-  <span class="unselectable">$ </span>latpak install gnome-nightly-apps org.gnome.gedit master
+  <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit master
   </pre>
 
   And to update it:
