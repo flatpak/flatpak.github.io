@@ -30,25 +30,25 @@
   * Calculator
   * [Calendar](https://wiki.gnome.org/Apps/Calendar)
   * Characters
+  * [Clocks](https://wiki.gnome.org/Apps/Clocks)
   * [Dictionary](https://wiki.gnome.org/Apps/Dictionary)
   * [Documents](https://wiki.gnome.org/Apps/Documents)
-  * [Web](https://wiki.gnome.org/Apps/Epiphany) (Epiphany)
   * [Evince](https://wiki.gnome.org/Apps/Evince)
+  * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
   * Games
+  * [Gedit](https://wiki.gnome.org/Apps/Gedit)
   * [Gitg](https://wiki.gnome.org/Apps/Gitg)
   * [Glade](https://wiki.gnome.org/Apps/Glade)
+  * [Iagno](https://wiki.gnome.org/Apps/Iagno)
   * [Maps](https://wiki.gnome.org/Apps/Maps)
   * News
+  * Notes (Bijiben)
   * [Polari](https://wiki.gnome.org/Apps/Polari)
   * [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox)
   * [Todo](https://wiki.gnome.org/Apps/Todo)
   * [Videos](https://wiki.gnome.org/Apps/Totem) (Totem)
+  * [Web](https://wiki.gnome.org/Apps/Epiphany) (Epiphany)
   * [Weather](https://wiki.gnome.org/Apps/Weather)
-  * Notes (Bijiben)
-  * [Clocks](https://wiki.gnome.org/Apps/Clocks)
-  * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
-  * [Gedit](https://wiki.gnome.org/Apps/Gedit)
-  * [Iagno](https://wiki.gnome.org/Apps/Iagno)
 
   To add the GNOME nightly apps repository, run:
 
