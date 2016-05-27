@@ -6,7 +6,11 @@
 
   ### Fedora
 
-  A `flatpak` package will be available shortly for Fedora from version 22.
+  A `flatpak` package is available for Fedora 23 and newer. To install, run the following as root:
+
+  <pre>
+  <span class="unselectable">$ </span>dnf install flatpak
+  </pre>
 
   ### Ubuntu
 
