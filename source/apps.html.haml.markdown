@@ -20,9 +20,9 @@
   <span class="unselectable">$ </span>flatpak remote-ls gnome-apps --app
   </pre>
 
-  Applications in this repository require the 3.20 version of the org.gnome.Platform runtime: see the [runtimes page](runtimes.html) for details on how to install it.
+  Applications in this repository require the 3.20 version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to install it.
 
-  Stable GNOME applictaions also use the version name of "stable". To install one, you therefore run:
+  Stable GNOME applications also use the version name of "stable". To install one, you therefore run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
@@ -33,7 +33,7 @@
   The GNOME nightly apps repository includes a collection of GNOME applications that are built daily from Git master. It includes:
 
   * [Builder](https://wiki.gnome.org/Apps/Builder)
-  * Calculator
+  * [Calculator](https://wiki.gnome.org/Apps/Calculator)
   * [Calendar](https://wiki.gnome.org/Apps/Calendar)
   * Characters
   * [Clocks](https://wiki.gnome.org/Apps/Clocks)
@@ -41,14 +41,14 @@
   * [Documents](https://wiki.gnome.org/Apps/Documents)
   * [Evince](https://wiki.gnome.org/Apps/Evince)
   * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
-  * Games
+  * [Games](https://wiki.gnome.org/Apps/Games)
   * [Gedit](https://wiki.gnome.org/Apps/Gedit)
   * [Gitg](https://wiki.gnome.org/Apps/Gitg)
   * [Glade](https://wiki.gnome.org/Apps/Glade)
   * [Iagno](https://wiki.gnome.org/Apps/Iagno)
   * [Maps](https://wiki.gnome.org/Apps/Maps)
   * News
-  * Notes (Bijiben)
+  * [Notes](https://wiki.gnome.org/Apps/Bijiben) (Bijiben)
   * [Polari](https://wiki.gnome.org/Apps/Polari)
   * [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox)
   * [Todo](https://wiki.gnome.org/Apps/Todo)
@@ -68,7 +68,9 @@
   <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps --app
   </pre>
 
-  These applications require the nightly version of the org.gnome.Platform runtime: see the [runtimes page](runtimes.html) for details on how to install this. All the apps in the repository use the version name of "master". For example, to install gedit run:
+  These applications require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to install this.
+  
+  All the apps in the repository use the version name of "master". For example, to install gedit run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit master
@@ -90,7 +92,9 @@
   * [Inkscape](http://inkscape.org)
   * [MyPaint](http://mypaint.org)
 
-  These applications require the org.gnome.Platform 3.20 runtime: see the [runtimes page](runtimes.html) for details on how to install this. To add the nightly-graphics repository, run:
+  These applications require the org.gnome.Platform 3.20 runtime. See the [runtimes page](runtimes.html) for details on how to install this.
+  
+  To add the nightly-graphics repository, run:
 
   <pre>
   <span class="unselectable">$ </span>wget http://209.132.179.2/keys/nightly.gpg
