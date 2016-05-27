@@ -33,7 +33,7 @@
   The GNOME nightly apps repository includes a collection of GNOME applications that are built daily from Git master. It includes:
 
   * [Builder](https://wiki.gnome.org/Apps/Builder)
-  * Calculator
+  * [Calculator](https://wiki.gnome.org/Apps/Calculator)
   * [Calendar](https://wiki.gnome.org/Apps/Calendar)
   * Characters
   * [Clocks](https://wiki.gnome.org/Apps/Clocks)
@@ -41,14 +41,14 @@
   * [Documents](https://wiki.gnome.org/Apps/Documents)
   * [Evince](https://wiki.gnome.org/Apps/Evince)
   * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
-  * Games
+  * [Games](https://wiki.gnome.org/Apps/Games)
   * [Gedit](https://wiki.gnome.org/Apps/Gedit)
   * [Gitg](https://wiki.gnome.org/Apps/Gitg)
   * [Glade](https://wiki.gnome.org/Apps/Glade)
   * [Iagno](https://wiki.gnome.org/Apps/Iagno)
   * [Maps](https://wiki.gnome.org/Apps/Maps)
   * News
-  * Notes (Bijiben)
+  * [Notes](https://wiki.gnome.org/Apps/Bijiben) (Bijiben)
   * [Polari](https://wiki.gnome.org/Apps/Polari)
   * [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox)
   * [Todo](https://wiki.gnome.org/Apps/Todo)
