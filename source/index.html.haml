@@ -29,18 +29,6 @@
       .col-lg-12.text-center
         %h2.voffset How it works
         %hr.light
-          %p.text-faded Flatpak is based on some basic ideas.
-          %p &nbsp;
-    .row
-      .col-lg-4.col-sm-6
-        %h3.text-center#runtimes Runtimes
-        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. It means that apps no longer have to be updated to keep pace with distribution changes.
-      .col-lg-4.col-sm-6
-        %h3.text-center#bundledlibraries Bundled Libraries
-        %p Dependencies that aren't in a runtime can be bundled as part of the app. This makes it possible to use dependencies that aren't in a distribution, and to use a different version of a dependency than the one that's in a distribution.
-      .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
-        %h3.text-center#sandboxes Sandboxes
-        %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress)
     .row
       .col-lg-12.text-center
         =partial "graph.svg"
@@ -73,7 +61,18 @@
           #gnome:hover { transform: matrix(1.999999,0,0,1.999999,170.75063,-2134.837); }
           #cog {
             animation: spin 6s infinite normal linear forwards;
-          }        
+          }
+    .row
+      .col-lg-4.col-sm-6
+        %h3.text-center#runtimes Runtimes
+        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. It means that apps no longer have to be updated to keep pace with distribution changes.
+      .col-lg-4.col-sm-6
+        %h3.text-center#bundledlibraries Bundled Libraries
+        %p Dependencies that aren't in a runtime can be bundled as part of the app. This makes it possible to use dependencies that aren't in a distribution, and to use a different version of a dependency than the one that's in a distribution.
+      .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
+        %h3.text-center#sandboxes Sandboxes
+        %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress)
+    
         
 %section#users
   .container
