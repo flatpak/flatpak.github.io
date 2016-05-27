@@ -2,7 +2,7 @@
 :markdown
   # Getting Flatpak
 
-  Flatpak is available for the most common Linux distributions.
+  Flatpak is available for the most common Linux distributions. After installing it, it is necessary to log out and in again in order to make Flatpak apps appear in your desktop.
 
   ### Fedora
 
