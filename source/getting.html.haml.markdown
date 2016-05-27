@@ -23,7 +23,7 @@
 
   ### Fedora
 
-  A `flatpak` package is available for Fedora 23 and newer. To install, run the following as root:
+  A `flatpak` package is available for Fedora 24 (and soon for Fedora 23). To install, run the following as root:
 
   <pre>
   <span class="unselectable">$ </span>dnf install flatpak
