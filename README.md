@@ -20,4 +20,4 @@ to deploy your changes:
     bundle exec middleman build
     bundle exec middleman deploy
 
-This will push the site from ./build into origin/gh-pages branch.
+This will push the site from ./build into origin/master branch.
