@@ -33,6 +33,12 @@
   a strong motivation. But Flatpak was built to be distribution agnostic and allow deployment on any Linux operating system out there.
   We've reached out and discussed Flatpak with representatives of other distributions from very early on in the project.
 
+  ### Is Flatpak tied to Linux?
+
+  Yes. We are explicitly using many features of the linux kernel (bind mounts, namespaces, seccomp, etc) to create the sandbox that
+  Flatpak apps are running in. It may be possible to use equivalent technologies on other kernels, but that would be a non-trivial
+  amount of work, and we don't consider this one of our priorities.
+
   ### Is Flatpak the same as xdg-app?
 
   Yes, while xdg-app was a fine name to use during development we wanted something with wider appeal and more sparkle
