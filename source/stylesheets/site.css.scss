@@ -211,10 +211,9 @@ header {
                                                transparentize($key_color,.3),
                                                transparentize($key_color,.3),
                                                transparentize($key_color,1)),
-                    url(../img/header_bottom.png),
                     url(../img/header.png),
                     linear-gradient(to bottom, desaturate($key_color,80%), $key_color);
-  background-position: center, center bottom, center top, center;
+  background-position: center, center top, center;
   background-repeat: no-repeat;
 }
 
