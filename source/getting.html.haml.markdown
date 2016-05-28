@@ -2,13 +2,11 @@
 :markdown
   # Getting Flatpak
 
-  Flatpak is available for the most common Linux distributions. After installing it, it is necessary to log out and in again in order to make Flatpak apps appear in your desktop.
+  Flatpak is available for the most common Linux distributions. After installing it, it is necessary to log out and in again for Flatpak apps to appear in your desktop.
 
   ### Arch
 
-  A `flatpak` package is available in the official repositories.
-
-  Also `flatpak-git` is available in the AUR for the latest development snapshot.
+  A `flatpak` package is available in the official repositories. `flatpak-git` is also available in the AUR for the latest development snapshot.
 
   ### Debian
 
@@ -23,10 +21,10 @@
 
   ### Fedora
 
-  A `flatpak` package is available for Fedora 24 (and soon for Fedora 23). To install, run the following as root:
+  A `flatpak` package is available for Fedora 24 (and soon for Fedora 23). To install, run the following:
 
   <pre>
-  <span class="unselectable">$ </span>dnf install flatpak
+  <span class="unselectable">$ </span>sudo dnf install flatpak
   </pre>
 
   ### Mageia
