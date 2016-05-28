@@ -110,7 +110,7 @@
   The graphics apps use "master" as their version name, so to install one, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak update org.gimp.GimpDevel master
+  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
   </pre>
 
 </div></div></div></section>
