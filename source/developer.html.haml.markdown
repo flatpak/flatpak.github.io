@@ -1,3 +1,6 @@
+---
+title: Getting Started with Flatpak
+---
 <section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Getting Started with Flatpak
