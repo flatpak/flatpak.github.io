@@ -70,9 +70,11 @@ title: Getting Started with Flatpak
   Flatpak tries to avoid reinventing the wheel. We build on existing technologies where it makes sense. Many of the important ingredients for Flatpak are inherited from Linux containers and related initiatives:
 
   * The [bubblewrap](https://github.com/projectatomic/bubblewrap) utility from [Project Atomic](http://www.projectatomic.io/), which lets unprivileged users set up and run containers, using kernel features such as
+   * Cgroups
    * Namespaces
    * Bind mounts
    * Seccomp rules
+  * [systemd](https://www.freedesktop.org/wiki/Software/systemd/) to set up cgroups for our sandbox
   * [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/), a well-established way to provide high-level APIs to application
   * The OCI format from the [Open Container Initiative](https://www.opencontainers.org/), as a convenient transport format for single-file bundles
   * The [OSTree](https://ostree.readthedocs.io/en/latest/) system for versioning and distributing filesystem trees
