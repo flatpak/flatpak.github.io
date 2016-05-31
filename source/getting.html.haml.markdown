@@ -24,7 +24,7 @@ title: Getting Flatpak
 
   ### Fedora
 
-  A `flatpak` package is available for Fedora 24 (and soon for Fedora 23). To install, run the following:
+  A `flatpak` package is available for Fedora 23 and newer. To install, run the following:
 
   <pre>
   <span class="unselectable">$ </span>sudo dnf install flatpak
