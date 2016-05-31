@@ -20,7 +20,7 @@ title: Flatpak Frequently Asked Questions
 
   Flatpak is a technology that brings toghether many of the lessons learned by its creator Alexander Larsson during his long tenure
   as a Linux desktop developer and having spent time inside Red Hat working on container technologies. Flatpak builds upon existing
-  technologies such as namespaces, bind mounts and seccomp in the Linux kernel, OSTree from [Project Atomic](http://www.projectatomic.io/)
+  technologies such as cgroups, namespaces, bind mounts and seccomp in the Linux kernel, OSTree from [Project Atomic](http://www.projectatomic.io/)
   and the OCI format that is developed by the [Open Container Initiative](https://www.opencontainers.org/).
   It has also spawned new technologies such as Bubblewrap which is shared between Flatpak and Project Atomic.
 
@@ -41,6 +41,10 @@ title: Flatpak Frequently Asked Questions
   Yes. We are explicitly using many features of the linux kernel (bind mounts, namespaces, seccomp, etc) to create the sandbox that
   Flatpak apps are running in. It may be possible to use equivalent technologies on other kernels, but that would be a non-trivial
   amount of work, and we don't consider this one of our priorities.
+
+  ### Is Flatpak tied to systemd?
+
+  Somewhat. We currently rely on systemd (in particular, systemd user sessions, ie. `systemd --user`) to set up cgroups for our sandbox.
 
   ### Is Flatpak the same as xdg-app?
 
