@@ -125,4 +125,7 @@ title: Flatpak Runtimes
     </tr>
   </table>
 
+  ## KDE Runtimes
+
+  KDE project started providing [experimental runtimes](https://community.kde.org/Flatpak).
 </div></div></div></section>
