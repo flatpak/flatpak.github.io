@@ -116,4 +116,8 @@ title: Flatpak Apps
   <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
   </pre>
 
+  ## LibreOffice
+
+  The Libre Office project is providing its Office Suite in the Flatpak format. Head over to [libreoffice.org](http://www.libreoffice.org/download/flatpak/) website for details.
+
 </div></div></div></section>
