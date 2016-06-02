@@ -72,4 +72,9 @@ title: Flatpak Frequently Asked Questions
 
   However, the build features of Flatpak run fine outside a session, so you can build things on a server.
 
+  ### Is Flatpak compatible with other desktop isolation frameworks?
+
+  In general unprivileged container systems can't stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
+
+  It is certainly possible for Flatpak and Flatpak applications to coexist with applications that are packaged in other ways, on the same host system.
 </div></div></div></section>
