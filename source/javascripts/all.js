@@ -8,10 +8,10 @@
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
+    $('body').on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top - 80)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -27,14 +27,6 @@
         $('.navbar-toggle:visible').click();
     });
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
@@ -42,7 +34,14 @@
         }
     })
 
+    $('#toc').toc({
+      'headings': 'h3',
+    }).on('click', 'a', function(event) {
+      $(this).addClass('page-scroll');
+    });
+    
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
+    
 
 })(jQuery); // End of use strict

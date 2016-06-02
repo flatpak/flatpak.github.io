@@ -6,7 +6,7 @@ title: Flatpak Frequently Asked Questions
 
   # Frequently Asked Questions
   
-  <ul data-toc data-toc-headings="h3"></ul>
+  <ul id="toc"></ul>
   
   ### Why the name Flatpak?
 
