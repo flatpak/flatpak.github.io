@@ -107,7 +107,7 @@ title: Flatpak Apps
   List the apps in the repository:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps --app
+  <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
   </pre>
 
   The graphics apps use "master" as their version name, so to install one, run:
