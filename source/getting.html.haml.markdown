@@ -13,7 +13,9 @@ title: Getting Flatpak
 
   ### Debian
 
-  A custom apt repository is available for Debian Jessie. To install, run the following as root:
+  An in-development official `flatpak` package is available in [Debian Experimental](https://wiki.debian.org/DebianExperimental).
+
+  For Debian Jessie, there is a custom apt repository available. To install, run the following as root:
 
   <pre>
   <span class="unselectable">$ </span>wget -O - https://sdk.gnome.org/apt/debian/conf/alexl.gpg.key|apt-key add -
