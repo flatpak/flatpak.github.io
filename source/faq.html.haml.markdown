@@ -77,4 +77,11 @@ title: Flatpak Frequently Asked Questions
   In general unprivileged container systems can't stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
 
   It is certainly possible for Flatpak and Flatpak applications to coexist with applications that are packaged in other ways, on the same host system.
+
+  ### Can I host my flatpak app on github?
+
+  Flatpak repositories can't (currently) be put on github in a convenient way.
+  As an alternative, you can create a single-file bundle, and put that up on github
+  as a 'release'. Note that bundles have some drawbacks, compared to a repository.
+
 </div></div></div></section>
