@@ -245,7 +245,7 @@ title: Getting Started with Flatpak
 
   ## Building More Complex Apps With flatpak-builder
 
-  If an application requires additional dependencies that aren't provided by its runtime, Flatpak allows them to be bundled as modules as part of the app itself. This requires building each module inside the application, which can be a lot of work. The `flatpak-builder` tool can automate this multi-step build process.
+  If an application requires additional dependencies that aren't provided by its runtime, Flatpak allows them to be bundled as part of the app itself. This requires building each module inside the application build directory, which can be a lot of work. The `flatpak-builder` tool can automate this multi-step build process.
 
   flatpak-builder takes care of the routine commands used to build an app and any bundled libraries, thus allowing application building to be automated. To do this, it expects modules to be built in a standard manner by following what is called the [Build API](https://github.com/cgwalters/build-api). If any modules don't conform to this API, they will need to be modified.
 
@@ -488,5 +488,28 @@ title: Getting Started with Flatpak
   <pre>
   <span class="unselectable">$ </span>flatpak build-export --gpg-sign=KEYID --gpg-homedir=/some/dir appdir repo
   </pre>
-  
+
+  ### Single-file bundles
+
+  Hosting a repository is the preferred way to distribute an application, but sometimes a single-file bundle that you can make available from a website or send as an email attachment is more convenient. Flatpak supports this with the build-bundle and build-import-bundle commands to convert an application in a repository to a bundle and back:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-bundle [OPTION...] LOCATION FILENAME NAME [BRANCH]
+  <span class="unselectable">$ </span>flatpak build-import-bundle [OPTION...] LOCATION FILENAME
+  </pre>
+
+  For example, to create a bundle named `dictionary.pak` containing the GNOME dictionary app from the repository at ~/repositories/apps, run:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-bundle ~/repositories/apps dictionary.pak org.gnome.Dictionary
+  </pre>
+
+  To import the bundle into a repository on another machine, run:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak build-import-bundle ~/my-apps dictionary.pak
+  </pre>
+
+  Note that bundles have some drawbacks, compared to repositories. For example, distributing updates is much more convenient with a hosted repository, since users can just run `flatpak update`.
+
 </div></div></div></section>
