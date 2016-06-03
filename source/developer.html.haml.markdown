@@ -128,6 +128,16 @@ title: Getting Started with Flatpak
 
   Many Linux distributions provide an app store or app center for browsing and installing applications. [AppData](https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps) is a standard format for providing application information that can be used by app stores, such as an application description and screenshots. Flatpak makes use of the AppData standard, and application authors are recommended to use it to include information about their applications.
 
+  ### Extensions
+
+  Applications and runtimes can define extension points, where optional pieces can be plugged into the filesystem. flatpak is using this to separate translations and debuginfo from the main application, and to include certain parts of the host filesystem, such as timezone information or GL libraries.
+
+  When flatpak is setting up a sandbox, it is looking for extensions that are declared in the application and runtime metadata, and mounts the matching pieces. A typical extension section in a metadata file looks like this:
+
+      [Extension org.gnome.Platform.Locale]
+      directory=share/runtime/locale
+      subdirectories=true
+
   ## Building Simple Apps
 
   The `flatpak` utility provides a simple set of commands for building and distributing applications. These allow creating new Flatpaks, into which new or existing applications can be built. This section describes how to build a simple application which doesn't require any additional dependencies outside of the runtime it is built against.
