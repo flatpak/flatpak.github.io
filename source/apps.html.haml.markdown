@@ -118,6 +118,6 @@ title: Flatpak Apps
 
   ## LibreOffice
 
-  The Libre Office project is providing its Office Suite in the Flatpak format. Head over to [libreoffice.org](http://www.libreoffice.org/download/flatpak/) website for details.
+  The LibreOffice project is providing its Office Suite in the Flatpak format. Head over to the [LibreOffice](http://www.libreoffice.org/download/flatpak/) website for details.
 
 </div></div></div></section>
