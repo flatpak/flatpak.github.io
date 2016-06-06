@@ -13,7 +13,7 @@
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 80)
         }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+        //event.preventDefault();
     });
 
     // Highlight the top nav as scrolling occurs
@@ -37,9 +37,5 @@
     $('#toc').on('click', 'a', function(event) {
       $(this).addClass('page-scroll');
     });
-    
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
-    
 
 })(jQuery); // End of use strict
