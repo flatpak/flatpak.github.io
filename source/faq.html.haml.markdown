@@ -61,7 +61,7 @@ title: Flatpak Frequently Asked Questions
   comparisons which quickly stop making technical sense due to the very different problem spaces these technologies
   try to address. And thus we prefer using the term sandboxing.
 
-  ### How does flatpak relate to freedesktop.org technologies such as desktop files and appstream metadata?
+  ### How does Flatpak relate to freedesktop.org technologies such as desktop files and appstream metadata?
 
   These standards are incorporated as mandatory parts in the flatpak definition. By relying on these standards
   we are building on years of investment and support under Linux.
