@@ -10,7 +10,7 @@ title: Getting Started with Flatpak
   Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](getting.html) for more details on this.
 
   ### Table of Contents
-  <ul data-toc data-toc-headings="h2"></ul>
+  <ul id="toc" data-toc data-toc-headings="h2"></ul>
 
   ## Key Concepts
 

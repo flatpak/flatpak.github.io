@@ -34,9 +34,7 @@
         }
     })
 
-    $('#toc').toc({
-      'headings': 'h3',
-    }).on('click', 'a', function(event) {
+    $('#toc').on('click', 'a', function(event) {
       $(this).addClass('page-scroll');
     });
     
