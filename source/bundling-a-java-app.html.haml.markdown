@@ -241,7 +241,7 @@ title: Bundling a Java Application with Flatpak
   <span class="unselectable">$ </span>flatpak run com.sweethome3d.App
   </pre>
 
-  Finally, enable a the new repo as we did before, then install and run the application:
+  Finally, enable the new repo as we did before, then install and run the application:
   <pre>
   <span class="unselectable">$ </span>flatpak --user remote-add --no-gpg-verify sweethome-repo2 repo
   <span class="unselectable">$ </span>flatpak --user install sweethome-repo2 com.sweethome3d.App
