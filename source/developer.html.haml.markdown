@@ -130,13 +130,23 @@ title: Getting Started with Flatpak
 
   ### Extensions
 
-  Applications and runtimes can define extension points, where optional pieces can be plugged into the filesystem. flatpak is using this to separate translations and debuginfo from the main application, and to include certain parts of the host filesystem, such as timezone information or GL libraries.
+  Applications and runtimes can define extension points, where optional pieces can be plugged into the filesystem. Flatpak is using this to separate translations and debuginfo from the main application, and to include certain parts that are provided separately, such as GL libraries or gstreamer plugins.
 
-  When flatpak is setting up a sandbox, it is looking for extensions that are declared in the application and runtime metadata, and mounts the matching pieces. A typical extension section in a metadata file looks like this:
+  When flatpak is setting up a sandbox, it is looking for extension points that are declared in the application and runtime metadata, and mounts runtimes with a matching name. A typical extension section in a metadata file looks like this:
 
-      [Extension org.gnome.Platform.Locale]
-      directory=share/runtime/locale
+      [Extension org.gnome.Platform.GL]
+      version=1.4
+      directory=lib/GL
+
+  More complicated extension points can accept multiple extensions that get mounted
+  below a single directory. For example, the gstreamer extension:
+
+      [Extension org.freedesktop.Platform.GStreamer]
+      version=1.4
+      directory=lib/extensions/gstreamer-1.0
       subdirectories=true
+
+  The subdirectories=true key instructs flatpak to mount e.g. a org.freedesktop.Platform.GStreamer.mp3 runtime on /usr/lib/extensions/gstreamer-1.0/mp3 in the sandbox. The gstramer libraries in the org.freedesktop.Platform runtime have been configured to look in this place for plugins.
 
   ## Building Simple Apps
 
@@ -295,6 +305,14 @@ title: Getting Started with Flatpak
 
   Files that are exported by a flatpak must be named using the application ID. However, application's source files will typically not follow this convention. To get around this, flatpak-builder allows renaming application icons, desktop files and AppData files as a part of the build process, using the rename-icon, rename-desktop-file and rename-appdata properties.
 
+  ### Splitting things up
+
+  By default, flatpak-builder splits off translations into a separate .Locale runtime,
+  and debuginfo into a .Debug runtime, and adds these 'standard' extension points to
+  the application metadata. You can turn this off with the separate-locales and no-debuginfo keys, but there shouldn't be any reason for it.
+
+  When flatpak-builder exports the build into a repository, it automatically includes the .Locale and .Debug runtimes. If you do the exporting manually, don't forget to include them.
+
   ### Example
 
   You can try flatpak-builder for yourself, using the repository that was created in the previous section. To do this, place the manifest json from above into a file called `org.gnome.Dictionary.json` and run the following command:
@@ -311,18 +329,20 @@ title: Getting Started with Flatpak
    * Finish the build, by setting permissions (in this case giving access to X and the network)
    * Export the resulting build to the tutorial repository, which contains the Dictionary app that was previously installed
 
-  flatpak-builder will also do some other useful things, like creating a separately installable debug runtime (called `org.gnome.Dictionary.Debug` in this case) and separately installable translations runtimes (called `org.gnome.Dictionary.Locale.$lang`).
+  flatpak-builder will also do some other useful things, like creating a separately installable debug runtime (called `org.gnome.Dictionary.Debug` in this case) and a separately installable translation runtime (called `org.gnome.Dictionary.Locale`).
 
   It is now possible to update the installed version of the Dictionary application with the new version that was built and exported by flatpak-builder:
 
   <pre>
   <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary
+  <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary.Locale
   </pre>
 
   To check that the application has been successfully updated, you can compare the sha256 commit of the installed app with the commit ID that was printed by flatpak-builder:
 
   <pre>
   <span class="unselectable">$ </span>flatpak info org.gnome.Dictionary
+  <span class="unselectable">$ </span>flatpak info org.gnome.Dictionary.Locale
   </pre>
   
   And finally, you can run the new version of the Dictionary app:
