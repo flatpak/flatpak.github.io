@@ -10,7 +10,27 @@ title: Flatpak Apps
 
   ## Stable GNOME applications
 
-  A collection of GNOME applications are available from the latest upstream release (version 3.20). These can be found in the gnome-apps repository, which can be added with:
+  A collection of GNOME applications are available from the latest upstream release (version 3.20). This includes:
+
+  * [Builder](https://wiki.gnome.org/Apps/Builder)
+  * [Calculator](https://wiki.gnome.org/Apps/Calculator)
+  * [Calendar](https://wiki.gnome.org/Apps/Calendar)
+  * Characters
+  * [Clocks](https://wiki.gnome.org/Apps/Clocks)
+  * [Dictionary](https://wiki.gnome.org/Apps/Dictionary)
+  * [Evince](https://wiki.gnome.org/Apps/Evince)
+  * [Eye of Gnome](https://wiki.gnome.org/Apps/EyeOfGnome)
+  * [Gedit](https://wiki.gnome.org/Apps/Gedit)
+  * [Iagno](https://wiki.gnome.org/Apps/Iagno)
+  * [Maps](https://wiki.gnome.org/Apps/Maps)
+  * [Notes](https://wiki.gnome.org/Apps/Bijiben) (Bijiben)
+  * [Polari](https://wiki.gnome.org/Apps/Polari)
+  * [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox)
+  * [Todo](https://wiki.gnome.org/Apps/Todo)
+  * [Weather](https://wiki.gnome.org/Apps/Weather)
+  * [Web](https://wiki.gnome.org/Apps/Epiphany) (Epiphany)
+
+  These can be found in the gnome-apps repository, which can be added with:
 
   <pre>
   <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
