@@ -131,5 +131,5 @@ title: Flatpak Runtimes
 
   ## KDE Runtimes
 
-  KDE project started providing [experimental runtimes](https://community.kde.org/Flatpak).
+  The KDE project has started to provide experimental runtimes. See their [Flatpak page](https://community.kde.org/Flatpak) for details on how to use them.
 </div></div></div></section>
