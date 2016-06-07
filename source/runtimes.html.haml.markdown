@@ -12,7 +12,9 @@ title: Flatpak Runtimes
 
   Stable runtimes are currently available in Freedesktop and GNOME flavours. These are hosted at [https://sdk.gnome.org/repo/](https://sdk.gnome.org/repo/) and signed with the key at [https://sdk.gnome.org/keys/gnome-sdk.gpg](https://sdk.gnome.org/keys/gnome-sdk.gpg). The repository can be added with:
 
-      $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  </pre>
 
   GNOME runtimes are released with each major release and contain the main GNOME platform libraries. They are based on the official freedesktop.org runtime. At the moment they only receive minor bug fixing and security updates, but should be considered ABI stable and frozen.
 
@@ -90,7 +92,9 @@ title: Flatpak Runtimes
 
   The nightly repository is available at [https://sdk.gnome.org/nightly/repo/](https://sdk.gnome.org/nightly/repo/). All releases are manually signed with the key at [https://sdk.gnome.org/nightly/keys/nightly.gpg](https://sdk.gnome.org/nightly/keys/nightly.gpg). This repository can be added with:
 
-      $ flatpak remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg gnome-nightly https://sdk.gnome.org/nightly/repo/
+  </pre>
 
   ### Available nightly runtimes
 
