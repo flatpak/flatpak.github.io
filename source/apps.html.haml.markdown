@@ -62,6 +62,7 @@ title: Flatpak Apps
   To add the GNOME nightly apps repository, run:
 
   <pre>
+  <span class="unselectable">$ </span>wget https://sdk.gnome.org/nightly/keys/nightly.gpg
   <span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
   </pre>
 
