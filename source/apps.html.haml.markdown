@@ -3,9 +3,42 @@ title: Flatpak Apps
 ---
 <section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
-
   # Apps
+  
+  ## Nightly graphics apps
 
+  The nightly-graphics repository contains daily development builds of common graphics applications, including:
+
+  * [Darktable](http://www.darktable.org/)
+  * [GIMP](http://gimp.org)
+  * GIMP GTK+3 branch
+  * [Inkscape](http://inkscape.org)
+  * [MyPaint](http://mypaint.org)
+
+  These applications require the org.gnome.Platform 3.20 runtime. See the [runtimes page](runtimes.html) for details on how to install this.
+  
+  To add the nightly-graphics repository, run:
+
+  <pre>
+  <span class="unselectable">$ </span>wget http://209.132.179.2/keys/nightly.gpg
+  <span class="unselectable">$ </span>flatpak remote-add --user --gpg-import=nightly.gpg nightly-graphics http://209.132.179.2/repo/
+  </pre>
+
+  List the apps in the repository:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
+  </pre>
+
+  The graphics apps use "master" as their version name, so to install one, run:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
+  </pre>
+
+  ## LibreOffice
+
+  LibreOffice is available as a Flatpak. See their [Flatpak page](http://www.libreoffice.org/download/flatpak/) for details.
   A growing number of apps are available as Flatpaks. This includes LibreOffice, a collection of nightly graphics application builds like GIMP, Inkscape and MyPaint, and numerous stable and nightly GNOME applications.
 
   ## Stable GNOME applications
@@ -106,39 +139,6 @@ title: Flatpak Apps
   <span class="unselectable">$ </span>flatpak update org.gnome.gedit master
   </pre>
 
-  ## Nightly graphics apps
 
-  The nightly-graphics repository contains daily development builds of common graphics applications, including:
-
-  * [Darktable](http://www.darktable.org/)
-  * [GIMP](http://gimp.org)
-  * GIMP GTK+3 branch
-  * [Inkscape](http://inkscape.org)
-  * [MyPaint](http://mypaint.org)
-
-  These applications require the org.gnome.Platform 3.20 runtime. See the [runtimes page](runtimes.html) for details on how to install this.
-  
-  To add the nightly-graphics repository, run:
-
-  <pre>
-  <span class="unselectable">$ </span>wget http://209.132.179.2/keys/nightly.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --user --gpg-import=nightly.gpg nightly-graphics http://209.132.179.2/repo/
-  </pre>
-
-  List the apps in the repository:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
-  </pre>
-
-  The graphics apps use "master" as their version name, so to install one, run:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
-  </pre>
-
-  ## LibreOffice
-
-  LibreOffice is available as a Flatpak. See their [Flatpak page](http://www.libreoffice.org/download/flatpak/) for details.
 
 </div></div></div></section>
