@@ -6,7 +6,7 @@ title: Flatpak Apps
 
   # Apps
 
-  A variety of apps are currently available to install as Flatpaks. This includes stable and nightly GNOME applications, and a collection of nightly graphics application builds.
+  A growing number of apps are available as Flatpaks. This includes LibreOffice, a collection of nightly graphics application builds like GIMP, Inkscape and MyPaint, and numerous stable and nightly GNOME applications.
 
   ## Stable GNOME applications
 
