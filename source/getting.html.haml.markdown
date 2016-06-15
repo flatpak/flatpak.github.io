@@ -1,5 +1,6 @@
 ---
 title: Getting Flatpak
+description: How to download and install Flatpak on your system to get started.
 ---
 <section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown

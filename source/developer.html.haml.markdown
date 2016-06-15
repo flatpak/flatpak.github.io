@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Flatpak
+description: Learn how to distribute your application as a Flatpak.
 ---
 <section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
