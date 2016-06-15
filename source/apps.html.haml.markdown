@@ -21,7 +21,7 @@ title: Flatpak Apps
 
   <pre>
   <span class="unselectable">$ </span>wget http://209.132.179.2/keys/nightly.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --user --gpg-import=nightly.gpg nightly-graphics http://209.132.179.2/repo/
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg nightly-graphics http://209.132.179.2/repo/
   </pre>
 
   List the apps in the repository:
