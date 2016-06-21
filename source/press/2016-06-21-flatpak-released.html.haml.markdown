@@ -32,7 +32,7 @@
   
   [![Alexander Larsson. Photo by Garrett LeSage](/img/CC-BY-SA-4.0-Garrett-LeSage-sm.jpg "Alexander Larsson. Photo by Garrett LeSage")](/img/CC-BY-SA-4.0-Garrett-LeSage.jpg)
 
-  Flatpak is the brainchild of Alexander Larsson, Principal Software Engineer at Red Hat. Larson has been working in the Linux desktop space for 18 years. He was the principal author of GVfs (GNOME's Virtual Filesystem) and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
+  Flatpak is the brainchild of Alexander Larsson, Principal Software Engineer at Red Hat. Larsson has been working in the Linux desktop space for 18 years. He was the principal author of GVfs (GNOME's Virtual Filesystem) and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
 
   Flatpak builds on several cutting edge technologies. Under the hood, it makes significant use of [OSTree](https://ostree.readthedocs.org), which can be described as “Git for large binaries”. This provides much of the functionality for hosting software repositories. It also makes Flatpak extremely efficient: applications and libraries that are installed with Flatpak are de-duplicated, saving disk space; “static deltas” reduce the size of downloads for software updates.
 
