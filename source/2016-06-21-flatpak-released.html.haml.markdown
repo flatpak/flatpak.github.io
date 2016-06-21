@@ -24,29 +24,31 @@
 
   Flatpak apps are sandboxed. From within this magic box, the only things the app can “see” are itself and a limited set of libraries and operating system interfaces. This effectively isolates apps from each other as well as from the host system. This greatly reduces the means through which applications can steal user data or seek to exploit one another.
 
-  Sandboxing will be the next major step forward for Flatpak: initial releases have concentrated on application building, distribution and installation, and while the foundations of sandboxing are in place, there are still missing pieces. Another major part of this work is the widescale move towards the Wayland display server on Linux, due to the inherently insecure nature of X11.
+  Initial Flatpak releases have concentrated on application building, distribution and installation, and while the foundations of sandboxing are in place, there are still missing pieces. “The next Flatpak release will be all about sandboxing”, says Larsson. “Application authors will see a much more complete set of interfaces for interacting with the operating system from within a sandbox.”
 
-  ## Background
+  Another major part of this work is the widescale move towards the Wayland display server on Linux. X11 is inherently insecure, which makes it impossible to sandbox applications that are using it. In that sense, the growing maturity of Wayland perfectly fits with Flatpak's emergence, and paves the way for much more complete security model for Linux distributions.
+
+  ## Background to Flatpak
   
   [![Alexander Larsson. Photo by Garrett LeSage](/img/CC-BY-SA-4.0-Garrett-LeSage-sm.jpg "Alexander Larsson. Photo by Garrett LeSage")](/img/CC-BY-SA-4.0-Garrett-LeSage.jpg)
 
-  Flatpak is the brainchild of Alexander Larsson, Principal Software Engineer at Red Hat. Larson has been working in the Linux desktop space for 18 years. He was the principal author of GVFS (GNOME's Virtual Filesystem), and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
+  Flatpak is the brainchild of Alexander Larsoon, Principal Software Engineer at Red Hat. Larson has been working in the Linux desktop space for 18 years. He was the principal author of GVfs (GNOME's Virtual Filesystem), and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
 
   Flatpak builds on several cutting edge technologies. Under the hood, it makes significant use of [OSTree](https://ostree.readthedocs.org), which can be described as “Git for large binaries”. This provides much of the functionality for hosting software repositories. It also makes Flatpak very efficient: applications and libraries that are installed with Flatpak are de-duplicated, saving disk space, and “static deltas” reduce the size of update downloads.
 
-  Much of the sandboxing functionality found in Flatpak makes use of Linux kernel features (such as cgroups and namespaces), which helps to make it portable across distributions.
+  For sandboxing, Flatpak makes use of the [Bubblewrap](https://github.com/projectatomic/bubblewrap) utilty, as well as several Linux kernel features (such as cgroups and namespaces), which helps to make it portable across distributions.
 
   ## Rapid community growth and adoption
 
-  It is well known that Fedora is making major plans around Flatpak. Commenting on the Flatpak, Christian F.K. Schaller (Senior Manager at Red Hat and member of the Fedora Workstation Working Group) stated: “The Fedora Workstation team are very excited about Flatpak and the prospects it brings for making the Linux desktop easier to develop for. We plan to continue supporting this effort going forward and help advocate it to a wider audience."
+  It is well known that Fedora is making major plans around Flatpak. Commenting on Flatpak, Christian F.K. Schaller (Senior Manager at Red Hat and member of the Fedora Workstation Working Group) stated: “The Fedora Workstation team are very excited about Flatpak and the prospects it brings for making the Linux desktop easier to develop for. We plan to continue supporting this effort going forward and help advocate it to a wider audience."
 
-  But Flatpak has also been seeing interest and adoption from other parties. One early adopter of Flatpak is [Endless Computers](https://endlessm.com/). Speaking about the launch of Flatpak, Jonathan Blandford (VP of Software Engineering at Endless) said: “The Flatpak launch represents a major milestone in providing a unified context for Linux developers. At Endless, we’re proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps. We encourage others to do so as well in what we hope to be a revolution among Linux app creation and adoption.”
+  Flatpak has also been seeing interest and adoption from other parties. One early adopter of Flatpak is [Endless Computers](https://endlessm.com/). Speaking about the launch of Flatpak, Jonathan Blandford (VP of Software Engineering at Endless) said: “The Flatpak launch represents a major milestone in providing a unified context for Linux developers. At Endless, we’re proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps. We encourage others to do so as well in what we hope to be a revolution among Linux app creation and adoption.”
 
   ![Endless Computers and its App ecosystem](/img/endless-apps.png "Endless Computers and its App ecosystem")
 
-  Other distributions are showing interest though, as well as other Free Software companies. Simon McVittie, Senior Software Engineer at Collabora and Debian developer: “Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS's stability and flexibility. Flatpak also retains the ability to deploy security updates, making it a significant enhancement for the many Debian-based desktop and embedded distributions, both in the community and in commercial products.”
+  Other distributions are showing interest, as well as other Free Software companies. Simon McVittie is Senior Software Engineer at Collabora and a Debian developer, and is himself looking to Flatpak: “Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS's stability and flexibility. Flatpak also retains the ability to deploy security updates, making it a significant enhancement for the many Debian-based desktop and embedded distributions, both in the community and in commercial products.”
 
-  One reason for the surge in interest in Flatpak is due to its upstream, flexible nature. It is hosted on Freedesktop.org and Github, and is licensed with the LGPL, with no copyright assignment or contributor license agreement is required. Flatpak is also a flexible system that can be used as part of downstream and bespoke solutions.
+  One reason for the surge in interest in Flatpak is due to its adaptability and the fact that it is a genuinely upstream project. It can be used and adapted as part of downstream and bespoke solutions, is hosted on Freedesktop.org and Github, and is licensed with the LGPL, with no copyright assignment or contributor license agreement is required.
 
   Larsson is obviously pleased by the momentum behind Flatpak. “It's exciting to see the growing interest in what we are doing, as developers realise the possibilities of the technology,” he said.
 
