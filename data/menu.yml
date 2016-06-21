@@ -18,5 +18,8 @@
     link: bundling-a-java-app.html
 - title: Get&nbsp;Involved
   link: "#get-involved"
+- title: Press
+  link: "/press"
+  onlyfooter: true
 - title: FAQ
   link: "faq.html"
