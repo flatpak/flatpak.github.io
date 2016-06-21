@@ -36,7 +36,7 @@
 
   Flatpak builds on several cutting edge technologies. Under the hood, it makes significant use of [OSTree](https://ostree.readthedocs.org), which can be described as “Git for large binaries”. This provides much of the functionality for hosting software repositories. It also makes Flatpak extremely efficient: applications and libraries that are installed with Flatpak are de-duplicated, saving disk space; “static deltas” reduce the size of downloads for software updates.
 
-  For sandboxing, Flatpak makes use of the [Bubblewrap](https://github.com/projectatomic/bubblewrap) utilty, as well as several Linux kernel features (such as cgroups and namespaces), which helps to make it portable across distributions.
+  For sandboxing, Flatpak makes use of the [Bubblewrap](https://github.com/projectatomic/bubblewrap) utility, as well as several Linux kernel features (such as cgroups and namespaces), which helps to make it portable across distributions.
 
   ## Rapid community growth and adoption
 
