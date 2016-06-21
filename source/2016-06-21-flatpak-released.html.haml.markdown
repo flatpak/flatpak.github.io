@@ -25,6 +25,8 @@
   Sandboxing will be the next major step forward for Flatpak: initial releases have concentrated on application building, distribution and installation, and while the foundations of sandboxing are in place, there are still missing pieces. Another major part of this work is the widescale move towards the Wayland display server on Linux, due to the inherently insecure nature of X11.
 
   ## Background
+  
+  [![Alexander Larsson. Photo by Garrett LeSage](/img/CC-BY-SA-4.0-Garrett-LeSage-sm.jpg)](/img/CC-BY-SA-4.0-Garrett-LeSage.jpg)
 
   Flatpak is the brainchild of Alexander Larsoon, Principal Software Engineer at Red Hat. Larson has been working in the Linux desktop space for 18 years. He was the principal author of GVFS (GNOME's Virtual Filesystem), and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
 

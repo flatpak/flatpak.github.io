@@ -503,7 +503,7 @@ img::-moz-selection {
   background: 0 0;
 }
 
-img.full {
+img.full, .container img {
   display: block;
   width: 100%;
   height: auto;
