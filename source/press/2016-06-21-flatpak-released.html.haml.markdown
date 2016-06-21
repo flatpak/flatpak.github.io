@@ -1,3 +1,7 @@
+---
+title: Flatpak Released
+description: Announcing Flatpak – Next Generation Linux Applications
+---
 <section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Announcing Flatpak – Next Generation Linux Applications
