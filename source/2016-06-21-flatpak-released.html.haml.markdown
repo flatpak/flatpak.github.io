@@ -6,6 +6,8 @@
 
   ## Build once, run anywhere
 
+  <img alt="" src="/img/logo2.svg" class="fright">
+  
   The Linux desktop has long been held back by platform fragmentation. This has been a burden on developers, and creates a high barrier to entry for third party application developers. Flatpak aims to change all that. From the very start its primary goal has been to allow the same application to run across a myriad of Linux distributions and operating systems. In doing so, it greatly increases the number of users that application developers can easily reach.
 
   Speaking about the goals behind Flatpak, Alexander Larsson, its lead developer, said: “Application developers on Linux have always been prevented from having a proper relationship with their users. With Flatpak we're aiming to change that, so developers can have direct contact with their users, and so they know exactly what their users are getting. With this launch we are making that goal a reality.”

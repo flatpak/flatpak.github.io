@@ -508,6 +508,12 @@ img.full, .container img {
   width: 100%;
   height: auto;
 }
+  img.fright {
+    display: block;
+    width: auto;
+    height: auto;
+    float: right;
+  }
 iframe.full {
   display: block;
   min-height: 400px;
