@@ -14,7 +14,7 @@
               = link_to i.title, i.link, :class => "page-scroll"
             - else
               - if (i.link.match('^#'))
-                = "<a class='page-scroll' href='index.html#{i.link}'>#{i.title}</a>"
+                = "<a class='page-scroll' href='/index.html#{i.link}'>#{i.title}</a>"
               - else
                 = link_to i.title, i.link, :class => "page-scroll"
             - if !i.submenu.nil?
