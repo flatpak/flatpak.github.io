@@ -2,7 +2,7 @@
 :markdown
   # Announcing Flatpak – Next Generation Linux Applications
 
-  Stockholm, Sweden – 20th June 2016 – The development team behind Flatpak is excited to announce the general availablity of their new framework for desktop applications on Linux. Previously named xdg-app, [Flatpak is available on a range of major Linux distributions](http://flatpak.org/getting.html).
+  Stockholm, Sweden – 21<sup>st</sup> June 2016 – The development team behind Flatpak is excited to announce the general availablity of their new framework for desktop applications on Linux. Previously named xdg-app, [Flatpak is available on a range of major Linux distributions](http://flatpak.org/getting.html).
 
   ## Build once, run anywhere
 
