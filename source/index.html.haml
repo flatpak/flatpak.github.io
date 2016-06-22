@@ -235,8 +235,9 @@ description: The days of chasing multiple Linux distributions are over. Standalo
             echo "Hello world, from a sandbox"
         %p
           Now we need to provide some information about the application.
-          In Flatpak this is specified in a key-value file called "metadata", which goes in 
-          the
+          In Flatpak this is specified in a key-value file called 
+          %code metadata
+          , which goes in the
           = succeed "directory." do
             %code hello
           For a simple app this doesn't contain much, so we can create it manually:
