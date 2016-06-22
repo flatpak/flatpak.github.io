@@ -12,7 +12,7 @@
 - title: Build
   link: "#developers"
   submenu:
-  - title: Getting Started with Flatpack
+  - title: Getting Started with Flatpak
     link: developer.html
   - title: Bundling a Java Application with Flatpak
     link: bundling-a-java-app.html
