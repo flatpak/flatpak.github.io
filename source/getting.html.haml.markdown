@@ -35,7 +35,19 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Mageia
 
-  A `flatpak` package is available in Cauldron.
+  A `flatpak` package is available in Cauldron. To install, run the following as root:
+
+  #### If using DNF
+
+  <pre>
+  <span class="unselectable">$ </span>dnf install flatpak
+  </pre>
+
+  #### If using urpmi
+
+  <pre>
+  <span class="unselectable">$ </span>urpmi flatpak
+  </pre>
 
   ### Ubuntu
 
