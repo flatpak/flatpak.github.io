@@ -33,6 +33,10 @@ description: How to download and install Flatpak on your system to get started.
   <span class="unselectable">$ </span>sudo dnf install flatpak
   </pre>
 
+  ### Gentoo
+
+  An unofficial overlay is available [here](https://github.com/fosero/flatpak-overlay)
+
   ### Mageia
 
   A `flatpak` package is available in Cauldron. To install, run the following as root:
