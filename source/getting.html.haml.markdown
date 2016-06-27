@@ -21,6 +21,7 @@ description: How to download and install Flatpak on your system to get started.
   <pre>
   <span class="unselectable">$ </span>wget -O - https://sdk.gnome.org/apt/debian/conf/alexl.gpg.key|apt-key add -
   <span class="unselectable">$ </span>echo "deb [arch=amd64] https://sdk.gnome.org/apt/debian/ jessie main" > /etc/apt/sources.list.d/flatpak.list
+  <span class="unselectable">$ </span>apt install apt-transport-https
   <span class="unselectable">$ </span>apt update
   <span class="unselectable">$ </span>apt install flatpak
   </pre>
