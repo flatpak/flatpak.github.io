@@ -12,7 +12,6 @@ description: Applications distributed as Flatpaks, ready to download.
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
 
-  * [darktable](http://www.darktable.org/)
   * [GIMP](http://gimp.org) (including a GTK+3 version)
   * [Inkscape](http://inkscape.org)
   * [MyPaint](http://mypaint.org)
