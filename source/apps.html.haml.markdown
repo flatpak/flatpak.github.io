@@ -6,14 +6,17 @@ description: Applications distributed as Flatpaks, ready to download.
 :markdown
   # Apps
   
+  This page lists some of the applications that are available as Flatpaks. If you want to try them and are new to Flatpak, it is best to run through the [introduction to installing and running Flatpaks](index.html#users) first.
+  
   ## Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
 
-  * [GIMP](http://gimp.org)
-  * GIMP GTK+3 branch
+  * [darktable](http://www.darktable.org/)
+  * [GIMP](http://gimp.org) (including a GTK+3 version)
   * [Inkscape](http://inkscape.org)
   * [MyPaint](http://mypaint.org)
+  * [Scribus](https://www.scribus.net/)
 
   These applications require the org.gnome.Platform 3.20 runtime. See the [runtimes page](runtimes.html) for details on how to install this.
   
