@@ -43,6 +43,21 @@ description: Applications distributed as Flatpaks, ready to download.
   LibreOffice is available as a Flatpak. See their [Flatpak page](http://www.libreoffice.org/download/flatpak/) for details.
   A growing number of apps are available as Flatpaks. This includes LibreOffice, a collection of nightly graphics application builds like GIMP, Inkscape and MyPaint, and numerous stable and nightly GNOME applications.
 
+  ## Pitivi
+
+  Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
+
+  <pre>
+  <span class="unselectable">$ </span>wget http://flatpak.pitivi.org/pitivi.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --from=pitivi.flatpakrepo pitivi
+  </pre>
+
+  It is then simply a case of picking the version you want and installing. For example, to install master:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi master
+  </pre>
+
   ## Stable GNOME applications
 
   A collection of GNOME applications are available from the latest upstream release (version 3.20). This includes:
