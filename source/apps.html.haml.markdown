@@ -5,8 +5,47 @@ description: Applications distributed as Flatpaks, ready to download.
 <section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Apps
-  
-  This page lists some of the applications that are available as Flatpaks. If you want to try them and are new to Flatpak, it is best to run through the [introduction to installing and running Flatpaks](index.html#users) first.
+
+  A growing number of apps are available as Flatpaks, including LibreOffice, Telegram, GIMP, Inkscape, MyPaint and numerous core GNOME applications. This page provides an overview of what's available, along with instructions on how to try them. If you are new to Flatpak, it recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before trying them.
+
+  Each application requires a runtime. See the [runtimes page](runtimes.html) for details on how to install these.
+
+  ## LibreOffice
+
+  LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install it, run:
+
+  <pre>
+  <span class="unselectable">$ </span>wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
+  <span class="unselectable">$ </span>flatpak install --user --bundle LibreOffice.flatpak
+  </pre>
+
+  For more information, see the LibreOffice [Flatpak page](http://www.libreoffice.org/download/flatpak/).
+
+  ## Telegram
+
+  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being made available by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
+
+  <pre>
+  <span class="unselectable">$ </span>wget https://jgrulich.fedorapeople.org/telegram/keys/telegram.asc
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=telegram.asc telegram-desktop https://jgrulich.fedorapeople.org/telegram/repo/
+  <span class="unselectable">$ </span>flatpak install telegram-desktop org.telegram.TelegramDesktopDevel
+  <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
+  </pre>
+
+  ## Pitivi
+
+  Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
+
+  <pre>
+  <span class="unselectable">$ </span>wget http://flatpak.pitivi.org/pitivi.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --from=pitivi.flatpakrepo pitivi
+  </pre>
+
+  It is then simply a case of picking the version you want and installing. For example, to install master:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi master
+  </pre>
   
   ## Nightly graphics apps
 
@@ -17,7 +56,7 @@ description: Applications distributed as Flatpaks, ready to download.
   * [MyPaint](http://mypaint.org)
   * [Scribus](https://www.scribus.net/)
 
-  These applications require the org.gnome.Platform 3.20 runtime. See the [runtimes page](runtimes.html) for details on how to install this.
+  These applications require the org.gnome.Platform 3.20 runtime.
   
   To add the nightly-graphics repository, run:
 
@@ -36,37 +75,6 @@ description: Applications distributed as Flatpaks, ready to download.
 
   <pre>
   <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
-  </pre>
-
-  ## LibreOffice
-
-  LibreOffice is available as a Flatpak. See their [Flatpak page](http://www.libreoffice.org/download/flatpak/) for details.
-  A growing number of apps are available as Flatpaks. This includes LibreOffice, a collection of nightly graphics application builds like GIMP, Inkscape and MyPaint, and numerous stable and nightly GNOME applications.
-
-  ## Pitivi
-
-  Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
-
-  <pre>
-  <span class="unselectable">$ </span>wget http://flatpak.pitivi.org/pitivi.flatpakrepo
-  <span class="unselectable">$ </span>flatpak remote-add --from=pitivi.flatpakrepo pitivi
-  </pre>
-
-  It is then simply a case of picking the version you want and installing. For example, to install master:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi master
-  </pre>
-
-  ## Telegram
-
-  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being made available by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
-
-  <pre>
-  <span class="unselectable">$ </span>wget https://jgrulich.fedorapeople.org/telegram/keys/telegram.asc
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=telegram.asc telegram-desktop https://jgrulich.fedorapeople.org/telegram/repo/
-  <span class="unselectable">$ </span>flatpak install telegram-desktop org.telegram.TelegramDesktopDevel
-  <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
   </pre>
 
   ## Stable GNOME applications
