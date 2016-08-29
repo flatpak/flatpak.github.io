@@ -19,7 +19,7 @@ description: FAQ about the Flatpak project.
 
   ### What is the origin of the Flatpak technology?
 
-  Flatpak is a technology that brings toghether many of the lessons learned by its creator Alexander Larsson during his long tenure
+  Flatpak is a technology that brings together many of the lessons learned by its creator Alexander Larsson during his long tenure
   as a Linux desktop developer and having spent time inside Red Hat working on container technologies. Flatpak builds upon existing
   technologies such as cgroups, namespaces, bind mounts and seccomp in the Linux kernel, OSTree from [Project Atomic](http://www.projectatomic.io/)
   and the OCI format that is developed by the [Open Container Initiative](https://www.opencontainers.org/).
