@@ -22,3 +22,10 @@
                 - i.submenu.each do |j|
                   %li
                     = link_to j.title, j.link, :class => "page-scroll"
+      .col-lg-1
+        <a href="https://twitter.com/FlatpakApps">
+        =partial "twitter.svg"
+        </a>
+        :css
+          #twitterbird path { transition: fill 400ms ease-in-out; }
+          #twitterbird path:hover { fill: #fff !important; }
