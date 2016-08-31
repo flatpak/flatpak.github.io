@@ -49,6 +49,13 @@ a:focus {
   color: lighten($key_color,5%);
 }
 
+a[name] { /* add some padding to named anchors for external linking */
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
