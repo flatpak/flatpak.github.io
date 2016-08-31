@@ -10,7 +10,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   Each application requires a runtime. See the [runtimes page](runtimes.html) for details on how to install these.
 
-  ## LibreOffice
+  ## <a name="libreoffice"></a>LibreOffice
 
   LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install it, run:
 
@@ -21,7 +21,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   For more information, see the LibreOffice [Flatpak page](http://www.libreoffice.org/download/flatpak/).
 
-  ## Telegram
+  ## <a name="telegram"></a>Telegram
 
   Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being made available by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
 
@@ -32,7 +32,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
   </pre>
 
-  ## Pitivi
+  ## <a name="pitivi"></a>Pitivi
 
   Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
 
@@ -47,7 +47,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi master
   </pre>
   
-  ## Nightly graphics apps
+  ## <a name="nightly-graphics"></a>Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
 
@@ -77,7 +77,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
   </pre>
 
-  ## Stable GNOME applications
+  ## <a name="stable-gnome"></a>Stable GNOME applications
 
   A collection of GNOME applications are available from the latest upstream release (version 3.20). This includes:
 
@@ -120,7 +120,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
   </pre>
 
-  ## Nightly GNOME applications
+  ## <a name="nightly-gnome"></a>Nightly GNOME applications
 
   The GNOME nightly apps repository includes a collection of GNOME applications that are built daily from Git master. It includes:
 
