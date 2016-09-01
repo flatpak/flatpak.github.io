@@ -1,10 +1,10 @@
 %section#footer.bg-black
   .container
     .row
-      .col-lg-3.col-lg-offset-1
+      .col-lg-3.col-lg-offset-1.col-sm-3.hidden-xs
         %a.navbar-brand.page-scroll{:href => "#page-top"} 
           =image_tag '/img/logo.svg', :title => 'Flatpak', :class => 'full'
-      %ul.col-lg-7
+      %ul.col-lg-7.col-lg-offset-0.col-sm-8.col-sm-offset-0.col-xs-7.col-xs-offset-2
         %li.toplevel
           = link_to "Home", "index.html"
         - data.menu.each do |i|
@@ -22,7 +22,7 @@
                 - i.submenu.each do |j|
                   %li
                     = link_to j.title, j.link, :class => "page-scroll"
-      .col-lg-1
+      .col-lg-1.col-sm-1.col-xs-1
         <a href="https://twitter.com/FlatpakApps">
         =partial "twitter.svg"
         </a>
