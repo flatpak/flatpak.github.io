@@ -51,7 +51,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
 
-  * [GIMP](http://gimp.org) (including a GTK+3 version)
+  * [GIMP](http://gimp.org)
   * [Inkscape](http://inkscape.org)
   * [MyPaint](http://mypaint.org)
   * [Scribus](https://www.scribus.net/)
