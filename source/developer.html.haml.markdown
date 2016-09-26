@@ -510,6 +510,53 @@ description: Learn how to distribute your application as a Flatpak.
   <span class="unselectable">$ </span>flatpak build-export --gpg-sign=KEYID --gpg-homedir=/some/dir appdir repo
   </pre>
 
+  ### Referring to repositories
+
+  A convenient way to point users to the repository containing your application is
+  to provide a .flatpakrepo file that they can download and install. To install
+  a .flatpakrepo file manually, use the command
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --from foo.flatpakrepo
+  </pre>
+
+  A typical .flatpakrepo file looks like this:
+
+  <pre>
+  [Flatpak Repo]
+  Title=GEdit
+  Url=http://sdk.gnome.org/repo-apps/
+  GPGKey=mQENBFUUCGcBCAC/K9WeV4xCaKr3...
+  </pre>
+
+  If your repository contains just a single application, it may be more convenient
+  to use a .flatpakref file instead, which contains enough information to add the
+  repository and install the application at the same time. To install a .flatpakref
+  file manually, use the command
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install --from foo.flatpakref
+  </pre>
+
+  A typical .flatpakref file looks like this:
+
+  <pre>
+  [Flatpak Ref]
+  Title=GEdit
+  Name=org.gnome.gedit
+  Branch=stable
+  Url=http://sdk.gnome.org/repo-apps/
+  IsRuntime=False
+  GPGKey=mQENBFUUCGcBCAC/K9WeV4xCaKr3...
+  </pre>
+
+  Note that the GPGKey key in these files contains the base64-encoded gpg key,
+  which you can get with the following command:
+
+  <pre>
+  <span class="unselectable">$ </span>base64 --wrap=0 < foo.gpg
+  </pre>
+
   ### Single-file bundles
 
   Hosting a repository is the preferred way to distribute an application, but sometimes a single-file bundle that you can make available from a website or send as an email attachment is more convenient. Flatpak supports this with the build-bundle and build-import-bundle commands to convert an application in a repository to a bundle and back:
