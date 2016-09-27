@@ -14,7 +14,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Debian
 
-  An in-development official `flatpak` package is available in [Debian Experimental](https://wiki.debian.org/DebianExperimental).
+  A `flatpak` package is available in [Debian Testing](https://wiki.debian.org/DebianTesting) and newer.
 
   For Debian Jessie, there is a custom apt repository available. To install, run the following as root:
 
@@ -56,7 +56,9 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Ubuntu
 
-  A `flatpak` package is available for Ubuntu 16.04 using a PPA. To install, run:
+  A `flatpak` package is available in [Ubuntu 16.10](https://wiki.ubuntu.com/YakketyYak) and newer.
+  
+  For Ubuntu 16.04 a PPA is available. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
