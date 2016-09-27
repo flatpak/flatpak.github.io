@@ -14,7 +14,12 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Debian
 
-  An in-development official `flatpak` package is available in [Debian Experimental](https://wiki.debian.org/DebianExperimental).
+  An official `flatpak` package is available in Debian testing and unstable. To install, run the following as root:
+
+  <pre>
+  <span class="unselectable">$ </span>apt update
+  <span class="unselectable">$ </span>apt install flatpak
+  </pre>
 
   For Debian Jessie, there is a custom apt repository available. To install, run the following as root:
 
