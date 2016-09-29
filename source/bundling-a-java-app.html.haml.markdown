@@ -239,7 +239,6 @@ description: How to bundle your Java application for distribution as a Flatpak.
   Now, with these two files created, running the following command will download the tarball, extract it, move the files into the correct locations, finalize the build, and export the repo:
   <pre>
   <span class="unselectable">$ </span>flatpak-builder --repo=repo sweethome3d-flatpak com.sweethome3d.App.json
-  <span class="unselectable">$ </span>flatpak run com.sweethome3d.App
   </pre>
 
   Finally, enable the new repo as we did before, then install and run the application:
