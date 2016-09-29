@@ -28,12 +28,12 @@ description: Currently available runtimes.
     <tr>
       <td>org.gnome.Platform</td>
       <td>The standard Gnome runtime used by most gnome apps</td>
-      <td>3.16, 3.18, 3.20</td>
+      <td>3.16, 3.18, 3.20, 3.22</td>
     </tr>
     <tr>
       <td>org.gnome.Platform.Locale</td>
       <td>Addins to org.gnome.Platform that adds locale data and translations</td>
-      <td>3.20</td>
+      <td>3.20, 3.22</td>
     </tr>
     <tr>
       <td>org.gnome.Sdk</td>
