@@ -38,17 +38,17 @@ description: Currently available runtimes.
     <tr>
       <td>org.gnome.Sdk</td>
       <td>The development runtime used to build apps, and required by apps like gnome-builder</td>
-      <td>3.16, 3.18, 3.20</td>
+      <td>3.16, 3.18, 3.20, 3.22</td>
     </tr>
     <tr>
       <td>org.gnome.Sdk.Locale</td>
       <td>Locale info addin for org.gnome.Sdk</td>
-      <td>3.20</td>
+      <td>3.20. 3.22</td>
     </tr>
     <tr>
       <td>org.gnome.Sdk.Debug</td>
       <td>Debug info addin for org.gnome.Sdk</td>
-      <td>3.20</td>
+      <td>3.20, 3.22</td>
     </tr>
     <tr>
       <td>org.freedesktop.Platform</td>
