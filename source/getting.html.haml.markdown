@@ -16,15 +16,7 @@ description: How to download and install Flatpak on your system to get started.
 
   A `flatpak` package is available in [Debian Testing](https://wiki.debian.org/DebianTesting) and newer.
 
-  For Debian Jessie, there is a custom apt repository available. To install, run the following as root:
-
-  <pre>
-  <span class="unselectable">$ </span>wget -O - https://sdk.gnome.org/apt/debian/conf/alexl.gpg.key|apt-key add -
-  <span class="unselectable">$ </span>echo "deb [arch=amd64] https://sdk.gnome.org/apt/debian/ jessie main" > /etc/apt/sources.list.d/flatpak.list
-  <span class="unselectable">$ </span>apt install apt-transport-https
-  <span class="unselectable">$ </span>apt update
-  <span class="unselectable">$ </span>apt install flatpak
-  </pre>
+  For Debian Jessie, a `flatpak` package is available in the official [backports repository](https://backports.debian.org/Instructions/).
 
   ### Fedora
 
