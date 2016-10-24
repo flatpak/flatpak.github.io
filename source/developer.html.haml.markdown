@@ -103,8 +103,8 @@ description: Learn how to distribute your application as a Flatpak.
 
       [Application]
       name=org.gnome.gedit
-      runtime=org.gnome.Platform/x86_64/3.20
-      sdk=org.gnome.Sdk/x86_64/3.20
+      runtime=org.gnome.Platform/x86_64/3.22
+      sdk=org.gnome.Sdk/x86_64/3.22
       command=gedit
 
       [Context]
@@ -158,20 +158,22 @@ description: Learn how to distribute your application as a Flatpak.
   As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. For example the GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
   </pre>
 
   You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed)
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.20 org.gnome.Sdk//3.20
+  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.22
+  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Sdk 3.22
   </pre>
   
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
-  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
+  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
   </pre>
 
   You can now use the following command to get a shell in the 'devel sandbox':
@@ -217,9 +219,9 @@ description: Learn how to distribute your application as a Flatpak.
   The build command allows existing applications that have been made using the traditional configure, make, make install routine to be built inside a flatpak. You can try this using GNOME Dictionary. First, download the source files, extract them and switch to the resulting directory:
 
   <pre>
-  <span class="unselectable">$ </span>wget https://download.gnome.org/sources/gnome-dictionary/3.20/gnome-dictionary-3.20.0.tar.xz
-  <span class="unselectable">$ </span>tar xvf gnome-dictionary-3.20.0.tar.xz
-  <span class="unselectable">$ </span>cd gnome-dictionary-3.20.0/
+  <span class="unselectable">$ </span>wget https://download.gnome.org/sources/gnome-dictionary/3.22/gnome-dictionary-3.22.0.tar.xz
+  <span class="unselectable">$ </span>tar xvf gnome-dictionary-3.22.0.tar.xz
+  <span class="unselectable">$ </span>cd gnome-dictionary-3.22.0/
   </pre>
 
   Then you can use the build command to build and install the source inside the dictionary directory that was previously made:
@@ -267,7 +269,7 @@ description: Learn how to distribute your application as a Flatpak.
       {
         "app-id": "org.gnome.Dictionary",
         "runtime": "org.gnome.Platform",
-        "runtime-version": "3.20",
+        "runtime-version": "3.22",
         "sdk": "org.gnome.Sdk",
         "command": "gnome-dictionary",
         "finish-args": [ 
@@ -280,7 +282,7 @@ description: Learn how to distribute your application as a Flatpak.
             "sources": [
               {
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-dictionary/3.20/gnome-dictionary-3.20.0.tar.xz",
+                "url": "https://download.gnome.org/sources/gnome-dictionary/3.22/gnome-dictionary-3.22.0.tar.xz",
                 "sha256": "efb36377d46eff9291d3b8fec37baab2355f9dc8bc7edb791b6a625574716121"
               }
             ]
@@ -334,6 +336,7 @@ description: Learn how to distribute your application as a Flatpak.
 
   <pre>
   <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary
+  <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary.Locale
   </pre>
 
   To check that the application has been successfully updated, you can compare the sha256 commit of the installed app with the commit ID that was printed by flatpak-builder:
