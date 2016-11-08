@@ -46,6 +46,14 @@ description: How to download and install Flatpak on your system to get started.
   <span class="unselectable">$ </span>urpmi flatpak
   </pre>
 
+  ### openSUSE
+
+  A `flatpak` package is available for [openSUSE Tumbleweed](https://en.opensuse.org/Portal:Tumbleweed). To install, run the following:
+
+  <pre>
+  <span class="unselectable">$ </span>sudo zypper install flatpak
+  </pre>
+
   ### Ubuntu
 
   A `flatpak` package is available in [Ubuntu 16.10](https://wiki.ubuntu.com/YakketyYak) and newer.
