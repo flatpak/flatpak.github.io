@@ -147,7 +147,7 @@ description: Learn how to distribute your application as a Flatpak.
       directory=lib/extensions/gstreamer-1.0
       subdirectories=true
 
-  The subdirectories=true key instructs flatpak to mount e.g. a org.freedesktop.Platform.GStreamer.mp3 runtime on /usr/lib/extensions/gstreamer-1.0/mp3 in the sandbox. The gstramer libraries in the org.freedesktop.Platform runtime have been configured to look in this place for plugins.
+  The subdirectories=true key instructs flatpak to mount e.g. a org.freedesktop.Platform.GStreamer.mp3 runtime on /usr/lib/extensions/gstreamer-1.0/mp3 in the sandbox. The gstreamer libraries in the org.freedesktop.Platform runtime have been configured to look in this place for plugins.
 
   ## Building Simple Apps
 
