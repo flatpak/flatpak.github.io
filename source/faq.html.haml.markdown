@@ -58,7 +58,7 @@ description: FAQ about the Flatpak project.
   It can be, but it doesn't have to be. Since a desktop application would require quite extensive changes in order to
   be usable when run inside a container you will likely see Flatpak mostly deployed as a convenient library bundling technology
   early on, with the sandboxing or containerization being phased in over time for most applications. In general though we
-  try to avoid using the term container when speaking about Flatpak as it tends to cause comparisons with Docker and Rocket,
+  try to avoid using the term container when speaking about Flatpak as it tends to cause comparisons with Docker and rkt,
   comparisons which quickly stop making technical sense due to the very different problem spaces these technologies
   try to address. And thus we prefer using the term sandboxing.
 
