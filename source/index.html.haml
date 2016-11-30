@@ -122,9 +122,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
 
         :preserve
           <pre>
-          <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
-          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+          <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+          <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
           </pre>
         
         %h3 3. Install a runtime
@@ -133,7 +132,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           repository.
         :preserve
           <pre>
-          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.22
+          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22
           </pre>
           
         %p Once this is complete, you're all set to install some apps!
@@ -148,7 +147,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           To download and install an app, like gedit, run:
         :preserve
           <pre>
-          <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
+          <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
           </pre>
           
         %p
@@ -197,18 +196,17 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h3 2. Install a runtime
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
-          We'll use the GNOME 3.20 development platform runtime for this. To install the runtime, 
+          We'll use the GNOME 3.22 development platform runtime for this. To install the runtime, 
           we first need to add the repository that provides it. Run:
         :preserve
           <pre>
-          <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-          <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+          <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
           </pre>
           
         %p And then install the runtime itself:
         :preserve
           <pre>
-          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.22
+          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22
           </pre>
           
         %h3 3. Create your app
@@ -245,7 +243,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           :preserve
             [Application]
             name=org.test.Hello
-            runtime=org.gnome.Platform/x86_64/3.20
+            runtime=org.gnome.Platform/x86_64/3.22
             command=hello.sh
         %p
           This specifies the application identifier (
