@@ -155,25 +155,23 @@ description: Learn how to distribute your application as a Flatpak.
 
   ### Installing an SDK
 
-  As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. For example the GNOME 3.20 SDK is used to build applications that use the GNOME 3.20 runtime. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
+  As described above, an SDK is a special type of runtime that is used to build applcations. Typically, an SDK is paired with a runtime that will be used by the app at runtime. For example the GNOME 3.22 SDK is used to build applications that use the GNOME 3.22 runtime. The rest of this guide uses this SDK and runtime for its examples. To do this, download the repository GPG key and then add the repository that contains the runtime and SDK:
 
   <pre>
-  <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome https://sdk.gnome.org/repo/
+  <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
   </pre>
 
   You can now download and install the runtime and SDK. (If you have already completed the tutorial on the Flatpak homepage, you will already have the runtime installed)
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform 3.22
-  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Sdk 3.22
+  <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22 org.gnome.Sdk//3.22
   </pre>
   
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
-  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
+  <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
+  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
   </pre>
 
   You can now use the following command to get a shell in the 'devel sandbox':
@@ -198,10 +196,10 @@ description: Learn how to distribute your application as a Flatpak.
   - `RUNTIME` is the name of the runtime that will be required by the application
   - `BRANCH` is typically the version of the SDK and runtime that will be used
 
-  For example, to build the GNOME Dictionary application using the GNOME 3.20 SDK, the command would look like:
+  For example, to build the GNOME Dictionary application using the GNOME 3.22 SDK, the command would look like:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak build-init dictionary org.gnome.Dictionary org.gnome.Sdk org.gnome.Platform 3.20
+  <span class="unselectable">$ </span>flatpak build-init dictionary org.gnome.Dictionary org.gnome.Sdk org.gnome.Platform 3.22
   </pre>
 
   You can try this command now. In the next step we will build an application inside the resulting dictionary directory.
@@ -336,7 +334,6 @@ description: Learn how to distribute your application as a Flatpak.
 
   <pre>
   <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary
-  <span class="unselectable">$ </span>flatpak --user update org.gnome.Dictionary.Locale
   </pre>
 
   To check that the application has been successfully updated, you can compare the sha256 commit of the installed app with the commit ID that was printed by flatpak-builder:
@@ -379,8 +376,8 @@ description: Learn how to distribute your application as a Flatpak.
 
       [Application]
       name=org.gnome.Dictionary
-      runtime=org.gnome.Platform/x86_64/3.20
-      sdk=org.gnome.Sdk/x86_64/3.20
+      runtime=org.gnome.Platform/x86_64/3.22
+      sdk=org.gnome.Sdk/x86_64/3.22
       command=gnome-dictionary
 
       [Context]
