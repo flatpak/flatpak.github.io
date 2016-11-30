@@ -126,17 +126,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
           </pre>
         
-        %h3 3. Install a runtime
-        %p
-          The runtime provides the dependencies needed by the apps in the GNOME
-          repository.
-        :preserve
-          <pre>
-          <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22
-          </pre>
-          
         %p Once this is complete, you're all set to install some apps!
-        %h3 4. View, install and run apps
+        %h3 3. View, install and run apps
         %p
           To view which apps are available in the gnome-apps repository, just run:
         :preserve
@@ -149,7 +140,9 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <pre>
           <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
           </pre>
-          
+          This will automatically find and install the required runtime that the application depends on from
+          the set of configured remotes.
+
         %p
           Installed applications should appear in the usual place in your desktop. You can also run them from the command line:
         :preserve
