@@ -37,14 +37,13 @@ description: Applications distributed as Flatpaks, ready to download.
   Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
 
   <pre>
-  <span class="unselectable">$ </span>wget http://flatpak.pitivi.org/pitivi.flatpakrepo
-  <span class="unselectable">$ </span>flatpak remote-add --from=pitivi.flatpakrepo pitivi
+  <span class="unselectable">$ </span>flatpak remote-add --from pitivi http://flatpak.pitivi.org/pitivi.flatpakrepo
   </pre>
 
   It is then simply a case of picking the version you want and installing. For example, to install master:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi master
+  <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
   
   ## <a name="nightly-graphics"></a>Nightly graphics apps
@@ -56,13 +55,12 @@ description: Applications distributed as Flatpaks, ready to download.
   * [MyPaint](http://mypaint.org)
   * [Scribus](https://www.scribus.net/)
 
-  These applications require the org.gnome.Platform 3.20 runtime.
+  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
   
   To add the nightly-graphics repository, run:
 
   <pre>
-  <span class="unselectable">$ </span>wget http://209.132.179.2/keys/nightly.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg nightly-graphics http://209.132.179.2/repo/
+  <span class="unselectable">$ </span>flatpak remote-add --from nightly-graphics http://209.132.179.2/nightly-graphics.flatpakrepo
   </pre>
 
   List the apps in the repository:
@@ -71,10 +69,10 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
   </pre>
 
-  The graphics apps use "master" as their version name, so to install one, run:
+  To install gimp for example, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel master
+  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel
   </pre>
 
   ## <a name="stable-gnome"></a>Stable GNOME applications
@@ -102,8 +100,7 @@ description: Applications distributed as Flatpaks, ready to download.
   These can be found in the gnome-apps repository, which can be added with:
 
   <pre>
-  <span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/
+  <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
   </pre>
 
   You can then list available apps using:
@@ -112,12 +109,11 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls gnome-apps --app
   </pre>
 
-  Applications in this repository require the 3.20 version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to install it.
-
-  Stable GNOME applications also use the version name of "stable". To install one, you therefore run:
+  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
+  You can then install for instance gedit like this:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit stable
+  <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
   </pre>
 
   ## <a name="nightly-gnome"></a>Nightly GNOME applications
@@ -151,8 +147,7 @@ description: Applications distributed as Flatpaks, ready to download.
   To add the GNOME nightly apps repository, run:
 
   <pre>
-  <span class="unselectable">$ </span>wget https://sdk.gnome.org/nightly/keys/nightly.gpg
-  <span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/
+  <span class="unselectable">$ </span>flatpak remote-add --from gnome-nightly-apps https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
   </pre>
 
   And to list the apps in the repository:
@@ -161,18 +156,18 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps --app
   </pre>
 
-  These applications require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to install this.
+  Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
   
-  All the apps in the repository use the version name of "master". For example, to install gedit run:
+  And to install an app:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit master
+  <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit
   </pre>
 
   And to update it:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak update org.gnome.gedit master
+  <span class="unselectable">$ </span>flatpak update org.gnome.gedit
   </pre>
 
 
