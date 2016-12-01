@@ -68,7 +68,7 @@ description: How to bundle your Java application for distribution as a Flatpak.
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak cp -ra SweetHome3D-5.2/* /app/SweetHome3D
   </pre>
 
-  Finally, make a sybmolic link for the Sweethome3D binary in ```/app/SweetHome3D/SweetHome3D``` to the ```/app/bin/``` directory in the sandbox.
+  Finally, make a symbolic link for the Sweethome3D binary in ```/app/SweetHome3D/SweetHome3D``` to the ```/app/bin/``` directory in the sandbox.
 
   <pre>
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak ln -s /app/SweetHome3D/SweetHome3D /app/bin
