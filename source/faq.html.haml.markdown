@@ -45,7 +45,7 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak tied to systemd?
 
-  Somewhat. We currently rely on systemd (in particular, systemd user sessions, ie. `systemd --user`) to set up cgroups for our sandbox.
+  No. Versions of flatpak 0.6.10 relied on systemd for cgroups setup, but this is no longer required.
 
   ### Is Flatpak the same as xdg-app?
 
