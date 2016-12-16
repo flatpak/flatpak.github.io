@@ -13,3 +13,22 @@
     link: "/docs/basics/runtimes.html"
   - title: FAQ
     link: "/docs/basics/faq.html"
+- title: Developer's Guide
+  link: "/docs/guide/index.html"
+  submenu:
+  - title: Key Concepts
+    link: "/docs/guide/index.html#Key_Concepts"
+  - title: Technologies
+    link: "/docs/guide/index.html#Technologies"
+  - title: The flatpak Command
+    link: "/docs/guide/index.html#The_flatpak_Command"
+  - title: Anatomy of a Flatpak App
+    link: "/docs/guide/index.html#Anatomy_of_a_Flatpak_App"
+  - title: Building Simple Apps
+    link: "/docs/guide/index.html#Building_Simple_Apps"
+  - title: Building More Complex Apps With flatpak-builder
+    link: "/docs/guide/index.html#Building_More_Complex_Apps_With_flatpak_builder"
+  - title: Working with the Sandbox
+    link: "/docs/guide/index.html#Working_with_the_Sandbox"
+  - title: Distributing Applications
+    link: "/docs/guide/index.html#Distributing_Applications"

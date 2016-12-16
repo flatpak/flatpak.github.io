@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Flatpak
+title: Flatpak Developer's Guide
 description: Learn how to distribute your application as a Flatpak.
 ---
-<section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
-  # Getting Started with Flatpak
+  # Flatpak Developer's Guide
 
   This guide contains everything you need to know to build and distribute applications using Flatpak. It includes an introduction to the basic concepts and a simple app building tutorial, before moving on to cover automated building and repository hosting.
 

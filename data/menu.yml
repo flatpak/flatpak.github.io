@@ -12,8 +12,8 @@
 - title: Build
   link: "#developers"
   submenu:
-  - title: Getting Started with Flatpak
-    link: developer.html
+  - title: Flatpak Developer's Guide
+    link: "/docs/guide/index.html"
   - title: Bundling a Java Application with Flatpak
     link: bundling-a-java-app.html
 - title: Get&nbsp;Involved
