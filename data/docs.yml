@@ -32,3 +32,8 @@
     link: "/docs/guide/index.html#Working_with_the_Sandbox"
   - title: Distributing Applications
     link: "/docs/guide/index.html#Distributing_Applications"
+- title: Cookbook
+  link: "/docs/cookbook/bundling-a-java-app.html"
+  submenu:
+  - title: Bundling a Java Application with Flatpak
+    link: "/docs/cookbook/bundling-a-java-app.html"

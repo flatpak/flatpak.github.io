@@ -15,7 +15,7 @@
   - title: Flatpak Developer's Guide
     link: "/docs/guide/index.html"
   - title: Bundling a Java Application with Flatpak
-    link: bundling-a-java-app.html
+    link: "/docs/cookbook/bundling-a-java-app.html"
 - title: Get&nbsp;Involved
   link: "#get-involved"
 - title: Press
