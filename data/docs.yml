@@ -1,5 +1,5 @@
 - title: Docs Home
-  link: "/docs"
+  link: "/docs/"
 - title: Basics
   link: "/docs/basics/run.html"
   submenu:
@@ -11,3 +11,5 @@
     link: "/docs/basics/apps.html"
   - title: Runtimes
     link: "/docs/basics/runtimes.html"
+  - title: FAQ
+    link: "/docs/basics/faq.html"
