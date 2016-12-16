@@ -68,3 +68,4 @@ activate :asset_hash
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
 
 redirect "getting.html", to: "/docs/basics/getting.html"
+redirect "apps.html", to: "/docs/basics/apps.html"

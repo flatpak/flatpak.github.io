@@ -6,7 +6,7 @@
   link: "#users"
   submenu:
   - title: Apps
-    link: apps.html
+    link: /docs/basics/apps.html
   - title: Runtimes
     link: "/runtimes.html"
 - title: Build

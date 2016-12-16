@@ -2,7 +2,7 @@
 title: Flatpak Apps
 description: Applications distributed as Flatpaks, ready to download.
 ---
-<section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Apps
 
@@ -43,7 +43,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
-  
+
   ## <a name="nightly-graphics"></a>Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
@@ -54,7 +54,7 @@ description: Applications distributed as Flatpaks, ready to download.
   * [Scribus](https://www.scribus.net/)
 
   Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
-  
+
   To add the nightly-graphics repository, run:
 
   <pre>
@@ -155,7 +155,7 @@ description: Applications distributed as Flatpaks, ready to download.
   </pre>
 
   Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
-  
+
   And to install an app:
 
   <pre>

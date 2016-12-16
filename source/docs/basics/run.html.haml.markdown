@@ -15,7 +15,7 @@ description: How to install and run a Flatpak application.
 
  Various applications are available as Flatpaks, including stable and nightly
  GNOME applications, and a collection of nightly builds of graphics applications like
- GIMP, Inkscape and MyPaint.See the [apps page](/apps.html) for more details.
+ GIMP, Inkscape and MyPaint.See the [apps page](/docs/basics/apps.html) for more details.
 
  In the near future, you will be able to install flatpaks painlessly from graphical tools
  such as GNOME Software. Until then, you can use the commandline tool to install and update flatpaks.
