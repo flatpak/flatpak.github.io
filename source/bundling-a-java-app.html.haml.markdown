@@ -8,7 +8,7 @@ description: How to bundle your Java application for distribution as a Flatpak.
 
   This tutorial will walk you through bundling a pre-built Java application using Flatpak. Many Java applications ship a pre-built tarball with the Java dependencies included, and this tutorial will step through an example of taking such a tarball and creating a Flatpak application from it.
 
-  To complete this tutorial, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](getting.html) for details on installing Flatpak on your system.
+  To complete this tutorial, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](/docs/basics/getting.html) for details on installing Flatpak on your system.
 
   ## Get the Application Tarball
   The application that we are going to bundle with Flatpak is Sweethome3D -- an application that lets you map a plan of the interior of your house so you can design and then view your design plans in 3D. Sweethome3D ships a prebuilt tarball that contains all the Java dependencies it requires, as well as the pre-built binary.

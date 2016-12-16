@@ -5,3 +5,5 @@
   submenu:
   - title: Install and Run a Flatpak
     link: "/docs/basics/run.html"
+  - title: Getting Flatpak
+    link: "/docs/basics/getting.html"

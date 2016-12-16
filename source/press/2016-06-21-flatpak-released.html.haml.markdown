@@ -6,12 +6,12 @@ description: Announcing Flatpak – Next Generation Linux Applications
 :markdown
   # Announcing Flatpak – Next Generation Linux Applications
 
-  Stockholm, Sweden – 21<sup>st</sup> June 2016 – The development team behind Flatpak is excited to announce the general availablity of their new framework for desktop applications on Linux. Previously named xdg-app, [Flatpak is available on a range of major Linux distributions](http://flatpak.org/getting.html).
+  Stockholm, Sweden – 21<sup>st</sup> June 2016 – The development team behind Flatpak is excited to announce the general availablity of their new framework for desktop applications on Linux. Previously named xdg-app, [Flatpak is available on a range of major Linux distributions](http://flatpak.org/docs/basics/getting.html).
 
   ## Build once, run anywhere
 
   <img alt="" src="/img/logo2.svg" class="fright">
-  
+
   The Linux desktop has long been held back by platform fragmentation. This has been a burden on developers, and creates a high barrier to entry for third party application developers. Flatpak aims to change all that. From the very start its primary goal has been to allow the same application to run across a myriad of Linux distributions and operating systems. In doing so, it greatly increases the number of users that application developers can easily reach.
 
   Speaking about the goals behind Flatpak, Alexander Larsson, its lead developer, said: “Application developers on Linux have always been prevented from having a direct relationship with their users. With Flatpak we're aiming to change that, so developers know exactly what their users are getting. With this launch we are making that goal a reality.”
@@ -33,7 +33,7 @@ description: Announcing Flatpak – Next Generation Linux Applications
   Another major part of this work is the widescale move towards the Wayland display server on Linux. X11 is inherently insecure, which makes it impossible to sandbox applications that are using it. In that sense, the growing maturity of Wayland complements Flatpak's emergence, and paves the way for much more complete security model for Linux distributions.
 
   ## Background to Flatpak
-  
+
   [![Alexander Larsson. Photo by Garrett LeSage](/img/CC-BY-SA-4.0-Garrett-LeSage-sm.jpg "Alexander Larsson. Photo by Garrett LeSage")](/img/CC-BY-SA-4.0-Garrett-LeSage.jpg)
 
   Flatpak is the brainchild of Alexander Larsson, Principal Software Engineer at Red Hat. Larsson has been working in the Linux desktop space for 18 years. He was the principal author of GVfs (GNOME's Virtual Filesystem) and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.
