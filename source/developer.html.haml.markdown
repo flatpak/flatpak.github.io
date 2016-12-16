@@ -46,7 +46,7 @@ description: Learn how to distribute your application as a Flatpak.
 :markdown
   ### Runtimes<a id="runtimes"></a>
 
-  Runtimes provide the environment that each application runs in, including the basic dependencies they might require. Each runtime can be thought of as a `/usr` filesystem (indeed, when an app is run, its runtime is mounted at `/usr`). Various runtimes are available, from more minimal (but more stable) Freedesktop runtimes, to larger runtimes produced by desktops like GNOME or KDE. (The [runtimes page](runtimes.html) provides an overview of the runtimes that are currently available.)
+  Runtimes provide the environment that each application runs in, including the basic dependencies they might require. Each runtime can be thought of as a `/usr` filesystem (indeed, when an app is run, its runtime is mounted at `/usr`). Various runtimes are available, from more minimal (but more stable) Freedesktop runtimes, to larger runtimes produced by desktops like GNOME or KDE. (The [runtimes page](/docs/basics/runtimes.html) provides an overview of the runtimes that are currently available.)
 
   Each application must be built against a runtime, and this runtime must be installed on a host system in order for the application to run. Users can install multiple different runtimes at the same time, including different versions of the same runtime.
 

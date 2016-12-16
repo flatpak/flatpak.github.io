@@ -8,7 +8,7 @@
   - title: Apps
     link: /docs/basics/apps.html
   - title: Runtimes
-    link: "/runtimes.html"
+    link: "/docs/basics/runtimes.html"
 - title: Build
   link: "#developers"
   submenu:
