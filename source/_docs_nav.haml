@@ -1,0 +1,11 @@
+%aside#tocSidebar.sidebar-container
+ %nav#toc.sidebar{"data-waypoint" => "sidebar"}
+  .toc-block-container
+   - data.docs.each do |i|
+    .toc-block
+     = "<a class='docs-section-heading' href='#{i.link}'>#{i.title}</a>"
+     - if !i.submenu.nil?
+      %ul
+       - i.submenu.each do |j|
+        %li.doc-item
+         = "<a href='#{j.link}'>#{j.title}</a>"
