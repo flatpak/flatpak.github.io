@@ -2,13 +2,13 @@
 title: Bundling a Java Application with Flatpak
 description: How to bundle your Java application for distribution as a Flatpak.
 ---
-<section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Bundling a Java Application with Flatpak
 
   This tutorial will walk you through bundling a pre-built Java application using Flatpak. Many Java applications ship a pre-built tarball with the Java dependencies included, and this tutorial will step through an example of taking such a tarball and creating a Flatpak application from it.
 
-  To complete this tutorial, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](getting.html) for details on installing Flatpak on your system.
+  To complete this tutorial, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](/docs/basics/getting.html) for details on installing Flatpak on your system.
 
   ## Get the Application Tarball
   The application that we are going to bundle with Flatpak is Sweethome3D -- an application that lets you map a plan of the interior of your house so you can design and then view your design plans in 3D. Sweethome3D ships a prebuilt tarball that contains all the Java dependencies it requires, as well as the pre-built binary.
@@ -21,7 +21,7 @@ description: How to bundle your Java application for distribution as a Flatpak.
   </pre>
 
   ## Install the Flatpak Freedesktop SDK and runtime
-  Every Flatpak application is required to specify a runtime that provides the core dependencies when the application is run. A Flatpak SDK is used just by you, the developer when building and bundling the application. See the [Developer page](developer.html) for further details on how the runtimes and SDKs work.
+  Every Flatpak application is required to specify a runtime that provides the core dependencies when the application is run. A Flatpak SDK is used just by you, the developer when building and bundling the application. See the [Developer page](/docs/guide/index.html) for further details on how the runtimes and SDKs work.
 
   For this example of bundling up Sweethome3D, we are going to use the Freedesktop SDK and runtime. The Freedesktop SDK and runtime are available in from the [GNOME SDK repository](https://sdk.gnome.org/). If you haven't previously set up this repository, you need to download the GPG key, then enable the repository:
 
@@ -159,7 +159,7 @@ description: How to bundle your Java application for distribution as a Flatpak.
   <span class="unselectable">$ </span>flatpak build sweethome3d-flatpak appstream-compose --prefix=/app --origin=flatpak --basename=com.sweethome3d.App  com.sweethome3d.App
   </pre>
 
-  This reads the desktop file, the icon and the appdata file and produces appstream files in ```/app/share/app-info/```. Note that this step is done automatically if you are automating your build process with [Flatpak-builder](developer.html#Building_More_Complex_Apps_With_flatpak_builder)
+  This reads the desktop file, the icon and the appdata file and produces appstream files in ```/app/share/app-info/```. Note that this step is done automatically if you are automating your build process with [Flatpak-builder](/docs/guide/index.html#Building_More_Complex_Apps_With_flatpak_builder)
 
   ## Finalize the build
   Next, we finalize the build of the Flatpak application. In this step, we tell Flatpak what the sandboxed application should have access to outside of the sandbox, and the name of the executable. In this Sweethome3D example, Sweethome3D needs access to the network, and to X11 (since it is a GUI application):
@@ -190,7 +190,7 @@ description: How to bundle your Java application for distribution as a Flatpak.
 
 
   ## Automating this process with flatpak-builder
-  The above steps have walked you through generating a Flatpak application using a series of manual steps. If you need to automate this process, there the [Flatpak-builder](developer.html#Building_More_Complex_Apps_With_flatpak_builder) tool that lets you specify all the details of your Flatpak application, and will download and build the application automatically.
+  The above steps have walked you through generating a Flatpak application using a series of manual steps. If you need to automate this process, there the [Flatpak-builder](/docs/guide/index.html#Building_More_Complex_Apps_With_flatpak_builder) tool that lets you specify all the details of your Flatpak application, and will download and build the application automatically.
 
   First, in a clean working directory from the steps above, create a new file called ```com.sweethome3d.App.json``` with the following contents:
   <pre>

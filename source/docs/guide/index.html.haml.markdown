@@ -1,14 +1,14 @@
 ---
-title: Getting Started with Flatpak
+title: Flatpak Developer's Guide
 description: Learn how to distribute your application as a Flatpak.
 ---
-<section class="bg-dark"><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
-  # Getting Started with Flatpak
+  # Flatpak Developer's Guide
 
   This guide contains everything you need to know to build and distribute applications using Flatpak. It includes an introduction to the basic concepts and a simple app building tutorial, before moving on to cover automated building and repository hosting.
 
-  Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](getting.html) for more details on this.
+  Example tutorials are used throughout this guide. To complete them, it is necessary to have flatpak and flatpak-builder installed on your system. See [getting Flatpak](/docs/basics/getting.html) for more details on this.
 
   ### Table of Contents
   <ul id="toc" data-toc data-toc-headings="h2"></ul>
@@ -16,7 +16,7 @@ description: Learn how to distribute your application as a Flatpak.
   ## Key Concepts
 
   Flatpak is best understood through its key concepts: runtimes, bundled libraries, SDKs and sandboxes. These help to explain how Flatpak differs from traditional application distribution on Linux, as well as the framework's capabilities.
-  
+
 =partial "graph.svg"
 :css
   @keyframes linespulse {
@@ -46,7 +46,7 @@ description: Learn how to distribute your application as a Flatpak.
 :markdown
   ### Runtimes<a id="runtimes"></a>
 
-  Runtimes provide the environment that each application runs in, including the basic dependencies they might require. Each runtime can be thought of as a `/usr` filesystem (indeed, when an app is run, its runtime is mounted at `/usr`). Various runtimes are available, from more minimal (but more stable) Freedesktop runtimes, to larger runtimes produced by desktops like GNOME or KDE. (The [runtimes page](runtimes.html) provides an overview of the runtimes that are currently available.)
+  Runtimes provide the environment that each application runs in, including the basic dependencies they might require. Each runtime can be thought of as a `/usr` filesystem (indeed, when an app is run, its runtime is mounted at `/usr`). Various runtimes are available, from more minimal (but more stable) Freedesktop runtimes, to larger runtimes produced by desktops like GNOME or KDE. (The [runtimes page](/docs/basics/runtimes.html) provides an overview of the runtimes that are currently available.)
 
   Each application must be built against a runtime, and this runtime must be installed on a host system in order for the application to run. Users can install multiple different runtimes at the same time, including different versions of the same runtime.
 
@@ -166,7 +166,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22 org.gnome.Sdk//3.22
   </pre>
-  
+
   This might be a good time to try installing an application and having a look 'under the hood'. To do this, you need to add a repository that contains applications. In this case we are going to use the gnome-apps repository and install gedit:
 
   <pre>
@@ -175,7 +175,7 @@ description: Learn how to distribute your application as a Flatpak.
   </pre>
 
   You can now use the following command to get a shell in the 'devel sandbox':
-  
+
   <pre>
   <span class="unselectable">$ </span>flatpak run --devel --command=bash org.gnome.gedit
   </pre>
@@ -211,7 +211,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak build dictionary touch /app/some_file
   </pre>
-  
+
   (It is best to remove this file before continuing.)
 
   The build command allows existing applications that have been made using the traditional configure, make, make install routine to be built inside a flatpak. You can try this using GNOME Dictionary. First, download the source files, extract them and switch to the resulting directory:
@@ -223,7 +223,7 @@ description: Learn how to distribute your application as a Flatpak.
   </pre>
 
   Then you can use the build command to build and install the source inside the dictionary directory that was previously made:
-  
+
   <pre>
   <span class="unselectable">$ </span>flatpak build ../dictionary ./configure --prefix=/app
   <span class="unselectable">$ </span>flatpak build ../dictionary make
@@ -240,7 +240,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak build-finish dictionary --socket=x11 --share=network --command=gnome-dictionary
   </pre>
-  
+
   At this point you have successfully built a flatpak and prepared it to be run. To test the app, you need to export the Dictionary to a repository, add that repository and then install and run the app:
 
   <pre>
@@ -270,9 +270,9 @@ description: Learn how to distribute your application as a Flatpak.
         "runtime-version": "3.22",
         "sdk": "org.gnome.Sdk",
         "command": "gnome-dictionary",
-        "finish-args": [ 
-           "--socket=x11", 
-           "--share=network"  
+        "finish-args": [
+           "--socket=x11",
+           "--share=network"
         ],
         "modules": [
           {
@@ -319,7 +319,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak-builder --repo=repo dictionary2 org.gnome.Dictionary.json
   </pre>
-  
+
   This will:
 
    * Create a new directory (called dictionary2)
@@ -342,13 +342,13 @@ description: Learn how to distribute your application as a Flatpak.
   <span class="unselectable">$ </span>flatpak info org.gnome.Dictionary
   <span class="unselectable">$ </span>flatpak info org.gnome.Dictionary.Locale
   </pre>
-  
+
   And finally, you can run the new version of the Dictionary app:
 
   <pre>
   <span class="unselectable">$ </span>flatpak run org.gnome.Dictionary
   </pre>
-  
+
   ### Example manifests
 
   A complete manifest for [GNOME Dictionary built from Git is available](https://git.gnome.org/browse/gnome-apps-nightly/tree/org.gnome.Dictionary.json)
@@ -389,7 +389,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak run --command=ls org.gnome.Dictionary ~/
   </pre>
-  
+
   build-finish allows a whole range of resources to be added to an application. Run `flatpak build-finish --help` to view the full list.
 
   There are several ways to override the permissions that are set in an application's metadata file. One of these is to override them using flatpak run, which accepts the same parameters as build-finish. For example, this will let the Dictionary application see your home directory:
@@ -397,14 +397,14 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak run --filesystem=home --command=ls org.gnome.Dictionary ~/
   </pre>
-  
+
   flatpak run can also be used to permanently override an application's permissions:
 
   <pre>
   <span class="unselectable">$ </span>flatpak --user override --filesystem=home org.gnome.Dictionary
   <span class="unselectable">$ </span>flatpak run --command=ls org.gnome.Dictionary ~/
   </pre>
-  
+
   It is also possible to remove permissions using the same method. You can use the following command to see what happens when access to the filesystem is removed, for example:
 
        $ flatpak run --nofilesystem=home --command=ls org.gnome.Dictionary ~/
@@ -467,7 +467,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak build-export [OPTION…] LOCATION DIRECTORY [BRANCH]
   </pre>
-  
+
   The resulting repository is in an archive-z2 format. To allow users to use a repository, all you have to do is copy it to a web server and give them the URL.
 
   ### Managing repositories
@@ -477,7 +477,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak build-update-repo --title="Nice name" repo
   </pre>
-  
+
   build-update also lets you prune (`--prune`) unused objects and deltas from the repository, and even remove older revisions (using `--prune-depth`) which is useful for things like automatic nightly build repositories.
 
   ### AppData
@@ -487,7 +487,7 @@ description: Learn how to distribute your application as a Flatpak.
   <pre>
   <span class="unselectable">$ </span>flatpak update --appstream gnome
   </pre>
-  
+
   ### Hosting a repository
 
   While it is relatively simple to host a flatpak repository, there are some important details to be aware of.

@@ -66,3 +66,11 @@ end
 activate :asset_hash
 
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
+
+redirect "getting.html", to: "/docs/basics/getting.html"
+redirect "apps.html", to: "/docs/basics/apps.html"
+redirect "runtimes.html", to: "/docs/basics/runtimes.html"
+redirect "faq.html", to: "/docs/basics/faq.html"
+redirect "developer.html", to: "/docs/guide/index.html"
+redirect "bundling-a-java-app.html", to: "/docs/cookbook/bundling-a-java-app.html"
+

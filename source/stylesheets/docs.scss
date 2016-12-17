@@ -1,0 +1,133 @@
+// Docs sidebar
+// Based on https://github.com/middleman/middleman-guides/tree/master/source/stylesheets/modules/_layout.scss
+// Based on https://github.com/middleman/middleman-guides/tree/master/source/stylesheets/modules/_documentation-nav.scss
+
+.doc-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 150px;
+  padding-right: 15px; }
+  .doc-container:before, .doc-container:after {
+    content: " ";
+    display: table; }
+  .doc-container:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .doc-container {
+       width: 700px;
+         } }
+  @media (min-width: 992px) {
+    .doc-container {
+
+      width: 920px;
+      } }
+  @media (min-width: 1200px) {
+    .doc-container {
+      width: 1000px;
+       } }
+
+.docs-card-title{
+    height: 60px;
+}
+
+.docs-card-description{
+    height: 100px;
+}
+
+
+#tocSidebar{
+  aside {
+      display: block;
+  }
+  ul,ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+  }
+}
+
+.sidebar {
+    background: white;
+    overflow: hidden;
+    padding-bottom: .75em;
+    padding-top: .75em;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-container {
+    float: left;
+    word-wrap: break-word;
+}
+
+@media screen and (min-width: 40em) {
+    .sidebar-container {
+        width:10em;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 53.75em) {
+    .sidebar-container {
+        width:12.5em;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .sidebar-container {
+        width:12.5em;
+        margin-left: 20%;
+    }
+}
+
+.toc-block-container {
+  display: none;
+  height: 100vh;
+  //overflow: scroll;
+
+  /*@include media($medium-screen-up) {
+    display: block;
+  }*/
+}
+
+@media screen and (min-width: 40em) {
+    .toc-block-container {
+        display:block
+    }
+}
+
+.docs-section-heading {
+    color: #8990a1;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.doc-item {
+    border-bottom: 1px dotted #efefef
+}
+
+.doc-item:last-child {
+    border: none
+}
+
+.doc-item a {
+    color: #4c515f;
+    display: block;
+    padding: 0.34em 0.5em;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease
+}
+
+.doc-item a:hover {
+    background: #fdf7e8
+}
+
+.doc-item-active {
+    background: #fcf3d9
+}
+
+
+

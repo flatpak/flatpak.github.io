@@ -2,13 +2,13 @@
 title: Flatpak Apps
 description: Applications distributed as Flatpaks, ready to download.
 ---
-<section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
   # Apps
 
   A growing number of apps are available as Flatpaks, including LibreOffice, Telegram, GIMP, Inkscape, MyPaint and numerous core GNOME applications. This page provides an overview of what's available, along with instructions on how to try them. If you are new to Flatpak, it recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before trying them.
 
-  Each application requires a runtime. See the [runtimes page](runtimes.html) for details on how to install these.
+  Each application requires a runtime. See the [runtimes page](/docs/basics/runtimes.html) for details on how to install these.
 
   ## <a name="libreoffice"></a>LibreOffice
 
@@ -43,7 +43,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
-  
+
   ## <a name="nightly-graphics"></a>Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
@@ -53,8 +53,8 @@ description: Applications distributed as Flatpaks, ready to download.
   * [MyPaint](http://mypaint.org)
   * [Scribus](https://www.scribus.net/)
 
-  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
-  
+  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](/docs/basics/runtimes.html) for details on how to add the gnome remote so they will be found.
+
   To add the nightly-graphics repository, run:
 
   <pre>
@@ -107,7 +107,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls gnome-apps --app
   </pre>
 
-  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
+  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](/docs/basics/runtimes.html) for details on how to add the gnome remote so they will be found.
   You can then install for instance gedit like this:
 
   <pre>
@@ -154,8 +154,8 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps --app
   </pre>
 
-  Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
-  
+  Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](/docs/basics/runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
+
   And to install an app:
 
   <pre>

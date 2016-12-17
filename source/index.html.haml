@@ -34,7 +34,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
             0% { transform: rotateZ(0deg); }
             100% { transform: rotateZ(359deg); }
           }
-          .splashlabel, 
+          .splashlabel,
           .splashlabel text,
           .splashlabel tspan {
             fill: #fff !important;
@@ -65,8 +65,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
       .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
         %h3.text-center#sandboxes Sandboxes
         %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress)
-    
-        
+
+
 %section#users
   .container
     .row
@@ -74,16 +74,16 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h1.section-heading.text-center Install and Run a Flatpak
         %hr.primary
         %p
-          With Flatpak, applications can be safely updated on a running system, without 
-          fear of conflicts occuring. Flatpak also allows multiple versions of the same 
-          application to be installed at the same time, which is great for testing 
-          development or testing versions. And in the future, Flatpak's security first approach 
+          With Flatpak, applications can be safely updated on a running system, without
+          fear of conflicts occuring. Flatpak also allows multiple versions of the same
+          application to be installed at the same time, which is great for testing
+          development or testing versions. And in the future, Flatpak's security first approach
           guarantee greater privacy and peace of mind.
         %p
           Various applications are available as Flatpaks, including stable and nightly
           GNOME applications, and a collection of nightly builds of graphics applications like
           GIMP, Inkscape and MyPaint. See the
-          %a{:href => "apps.html"} apps page
+          %a{:href => "/docs/basics/apps.html"} apps page
           for more details.
         %p
           In the near future, you will be able to install flatpaks painlessly from graphical tools
@@ -94,8 +94,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           Before you can install applications with Flatpak, you need to install
           Flatpak itself. Currently this has to be done using the command line.
           This section contains instructions for installing Flatpak on Fedora or Ubuntu.
-          Details on how to install Flatpak on other distros are available on the 
-          %a{:href => "getting.html"} getting Flatpak
+          Details on how to install Flatpak on other distros are available on the
+          %a{:href => "/docs/basics/getting.html"} getting Flatpak
           page.
         %p
           With Fedora 23 or later, run:
@@ -103,7 +103,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <pre>
           <span class="unselectable">$ </span>sudo dnf install flatpak
           </pre>
-          
+
         %p
           On Ubuntu, Flatpak is available through a PPA. To install it, run:
         :preserve
@@ -112,7 +112,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <span class="unselectable">$ </span>sudo apt update
           <span class="unselectable">$ </span>sudo apt install flatpak
           </pre>
-          
+
         %h3 2. Add repositories
         %p
           Flatpak allows you to install software from remote repositories. For this
@@ -125,7 +125,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
           <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
           </pre>
-        
+
         %p Once this is complete, you're all set to install some apps!
         %h3 3. View, install and run apps
         %p
@@ -151,7 +151,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           </pre>
 
 %section#developers.no-padding
-  
+
 %aside.bg-dark
   .container
     .call-to-action
@@ -163,14 +163,14 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h1.section-heading.text-center Create an App with Flatpak
         %hr.primary
         %p
-          Developers can quickly get started using the tutorial below. More detailed information is available in 
-          the 
-          =link_to 'developers page.', 'developer.html'
+          Developers can quickly get started using the tutorial below. More detailed information is available in
+          the
+          =link_to 'developers\'s guide.', '/docs/guide/index.html'
         %h3 1. Install Flatpak
         %p
           First we need to install Flatpak itself. The instructions here are for Fedora or Ubuntu.
           Details for other distros can be found on the
-          %a{:href => "getting.html"} getting Flatpak
+          %a{:href => "/docs/basics/getting.html"} getting Flatpak
           page.
           If you are using Fedora, run:
         :preserve
@@ -185,23 +185,23 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <span class="unselectable">$ </span>sudo apt update
           <span class="unselectable">$ </span>sudo apt install flatpak
           </pre>
-          
+
         %h3 2. Install a runtime
         %p
           Flatpak requires every app to specify a runtime that it uses for its dependencies.
-          We'll use the GNOME 3.22 development platform runtime for this. To install the runtime, 
+          We'll use the GNOME 3.22 development platform runtime for this. To install the runtime,
           we first need to add the repository that provides it. Run:
         :preserve
           <pre>
           <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
           </pre>
-          
+
         %p And then install the runtime itself:
         :preserve
           <pre>
           <span class="unselectable">$ </span>flatpak install gnome org.gnome.Platform//3.22
           </pre>
-          
+
         %h3 3. Create your app
         %p
           First we need to create the directory structure for the app:
@@ -212,11 +212,11 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <span class="unselectable">$ </span>mkdir hello/files/bin
           <span class="unselectable">$ </span>mkdir hello/export
           </pre>
-          
+
         %p
-          Now let's add something simple: create a file in 
+          Now let's add something simple: create a file in
           %code hello/files/bin/
-          called 
+          called
           = succeed "." do
             %code hello.sh
           Then add the following to the file and save it:
@@ -226,7 +226,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
             echo "Hello world, from a sandbox"
         %p
           Now we need to provide some information about the application.
-          In Flatpak this is specified in a key-value file called 
+          In Flatpak this is specified in a key-value file called
           %code metadata
           , which goes in the
           = succeed "directory." do
@@ -251,12 +251,12 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           <pre>
           <span class="unselectable">$ </span>flatpak build-export repo hello
           </pre>
-          
+
         %p
           This will initialize a local repository in the "repo" directory and export the app to it.
         %h3 5. Install
         %p
-          Now we're ready to add the repository that was just created and install the app. 
+          Now we're ready to add the repository that was just created and install the app.
           This is done with two commands:
         :preserve
           <pre>
@@ -278,10 +278,10 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           = succeed "." do
             %em Hello world, from a sandbox
         %p
-          Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many 
-          of these steps are simplified by Flatpak's built in tools. For information on how to use 
-          them, as well as how to build and distribute more complex apps 
-          =link_to 'see the developers page.', 'developer.html'        
+          Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many
+          of these steps are simplified by Flatpak's built in tools. For information on how to use
+          them, as well as how to build and distribute more complex apps
+          =link_to 'see the developer\'s guide.', '/docs/guide/index.html'
 %section#get-involved
   .container
     .row
@@ -289,16 +289,16 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h1.section-heading.text-center Get Involved
         %hr.primary
         %p
-          Flatpak is Free Software and is developed in the open, as a part of the Freedesktop 
-          project. To get in touch, use the 
+          Flatpak is Free Software and is developed in the open, as a part of the Freedesktop
+          project. To get in touch, use the
           =link_to "xdg-app mailing list", "http://lists.freedesktop.org/mailman/listinfo/xdg-app"
-          or 
+          or
           %em #flatpak
           IRC channel on Freenode. Code can be found on
           =link_to "Github", "https://github.com/flatpak/flatpak"
-          (along with a 
+          (along with a
           = succeed ")" do
             = link_to "wiki", "https://github.com/flatpak/flatpak/wiki"
-          and issues are tracked on 
+          and issues are tracked on
           = succeed "." do
             = link_to "Github Issues", "https://github.com/flatpak/flatpak/issues"

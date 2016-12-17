@@ -2,13 +2,13 @@
 title: Flatpak Frequently Asked Questions
 description: FAQ about the Flatpak project.
 ---
-<section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
+<section class=""><div class="doc-container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
 
   # Frequently Asked Questions
-  
+
   <ul id="toc" data-toc data-toc-headings="h3"></ul>
-  
+
   ### Why the name Flatpak?
 
   IKEA is a world-wide known brand whose success was partly built upon having developed and refined the idea of flatpacking
@@ -68,7 +68,7 @@ description: FAQ about the Flatpak project.
   we are building on years of investment and support under Linux.
 
   ### Can Flatpak be used on servers too?
-  
+
   Flatpak is designed to run inside a desktop session and relies on certain session services, such as a dbus session bus and a systemd --user instance. So, is not a good match for a server.
 
   However, the build features of Flatpak run fine outside a session, so you can build things on a server.

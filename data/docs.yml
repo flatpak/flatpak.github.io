@@ -1,0 +1,39 @@
+- title: Docs Home
+  link: "/docs/"
+- title: Basics
+  link: "/docs/basics/run.html"
+  submenu:
+  - title: Install and Run a Flatpak
+    link: "/docs/basics/run.html"
+  - title: Getting Flatpak
+    link: "/docs/basics/getting.html"
+  - title: Apps
+    link: "/docs/basics/apps.html"
+  - title: Runtimes
+    link: "/docs/basics/runtimes.html"
+  - title: FAQ
+    link: "/docs/basics/faq.html"
+- title: Developer's Guide
+  link: "/docs/guide/index.html"
+  submenu:
+  - title: Key Concepts
+    link: "/docs/guide/index.html#Key_Concepts"
+  - title: Technologies
+    link: "/docs/guide/index.html#Technologies"
+  - title: The flatpak Command
+    link: "/docs/guide/index.html#The_flatpak_Command"
+  - title: Anatomy of a Flatpak App
+    link: "/docs/guide/index.html#Anatomy_of_a_Flatpak_App"
+  - title: Building Simple Apps
+    link: "/docs/guide/index.html#Building_Simple_Apps"
+  - title: Building More Complex Apps With flatpak-builder
+    link: "/docs/guide/index.html#Building_More_Complex_Apps_With_flatpak_builder"
+  - title: Working with the Sandbox
+    link: "/docs/guide/index.html#Working_with_the_Sandbox"
+  - title: Distributing Applications
+    link: "/docs/guide/index.html#Distributing_Applications"
+- title: Cookbook
+  link: "/docs/cookbook/bundling-a-java-app.html"
+  submenu:
+  - title: Bundling a Java Application with Flatpak
+    link: "/docs/cookbook/bundling-a-java-app.html"
