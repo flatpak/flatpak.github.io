@@ -18,13 +18,22 @@
          } }
   @media (min-width: 992px) {
     .doc-container {
-      
-      width: 920px; 
+
+      width: 920px;
       } }
   @media (min-width: 1200px) {
     .doc-container {
       width: 1000px;
        } }
+
+.docs-card-title{
+    height: 60px;
+}
+
+.docs-card-description{
+    height: 100px;
+}
+
 
 #tocSidebar{
   aside {
