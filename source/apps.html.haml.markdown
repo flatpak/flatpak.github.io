@@ -8,14 +8,16 @@ description: Applications distributed as Flatpaks, ready to download.
 
   A growing number of apps are available as Flatpaks, including LibreOffice, Telegram, GIMP, Inkscape, MyPaint and numerous core GNOME applications. This page provides an overview of what's available, along with instructions on how to try them. If you are new to Flatpak, it recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before trying them.
 
-  Each application requires a runtime. See the [runtimes page](runtimes.html) for details on how to install these.
-  
+  Each application requires a runtime, but most are automatically installed when needed. If not, the commands needed are included below.
+
+  All the examples below install the applications system-wide and requires admin privileges. You can also add --user to the commandline examples to install to your homedirectory which needs no privileges.
+
   You can update all installed applications by running:
 
   <pre>
   <span class="unselectable">$ flatpak update
   </pre>
-  
+
 
   ## <a name="libreoffice"></a>LibreOffice
 
@@ -23,7 +25,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   <pre>
   <span class="unselectable">$ </span>wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
-  <span class="unselectable">$ </span>flatpak install --user --bundle LibreOffice.flatpak
+  <span class="unselectable">$ </span>flatpak install --bundle LibreOffice.flatpak
   </pre>
 
   For more information, see the LibreOffice [Flatpak page](http://www.libreoffice.org/download/flatpak/).
@@ -60,7 +62,7 @@ description: Applications distributed as Flatpaks, ready to download.
   Preview release of MonoDevelop as a Flatpak is available here:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak install --user --from https://download.mono-project.com/repo/monodevelop.flatpakref
+  <span class="unselectable">$ </span>flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
   <span class="unselectable">$ </span>flatpak run com.xamarin.MonoDevelop
   </pre>
 
@@ -71,7 +73,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
-  <span class="unselectable">$ </span>flatpak --user install tingping io.github.Hexchat
+  <span class="unselectable">$ </span>flatpak install tingping io.github.Hexchat
   </pre>
 
   ## <a name="gnome-twitch"></a>Gnome Twitch
@@ -79,7 +81,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
-  <span class="unselectable">$ </span>flatpak --user install tingping com.vinszent.GnomeTwitch
+  <span class="unselectable">$ </span>flatpak install tingping com.vinszent.GnomeTwitch
   </pre>
 
   ## <a name="pithos"></a>Pithos – Pandora Radio Client
@@ -87,7 +89,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
-  <span class="unselectable">$ </span>flatpak --user install tingping io.github.Pithos
+  <span class="unselectable">$ </span>flatpak install tingping io.github.Pithos
   </pre>
 
   ## <a name="pithos"></a>Transmission Gtk
@@ -95,7 +97,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
-  <span class="unselectable">$ </span>flatpak --user install tingping io.github.TransmissionRemoteGtk
+  <span class="unselectable">$ </span>flatpak install tingping io.github.TransmissionRemoteGtk
   </pre>
 
   ## <a name="pithos"></a>Gnome Mpv
@@ -103,7 +105,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
-  <span class="unselectable">$ </span>flatpak --user install tingping io.github.GnomeMpv
+  <span class="unselectable">$ </span>flatpak install tingping io.github.GnomeMpv
   </pre>
 
   ## <a name="pitivi"></a>Pitivi
