@@ -9,6 +9,13 @@ description: Applications distributed as Flatpaks, ready to download.
   A growing number of apps are available as Flatpaks, including LibreOffice, Telegram, GIMP, Inkscape, MyPaint and numerous core GNOME applications. This page provides an overview of what's available, along with instructions on how to try them. If you are new to Flatpak, it recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before trying them.
 
   Each application requires a runtime. See the [runtimes page](runtimes.html) for details on how to install these.
+  
+  You can update all installed applications by running:
+
+  <pre>
+  <span class="unselectable">$ flatpak update
+  </pre>
+  
 
   ## <a name="libreoffice"></a>LibreOffice
 
