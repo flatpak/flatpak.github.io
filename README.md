@@ -13,7 +13,7 @@ To run a local web server to test the site:
     bundle exec middleman server
 
 Edit the haml/scss files and commit your changes, pushing to 
-origin/master.
+origin/source.
 
 to deploy your changes:
 
