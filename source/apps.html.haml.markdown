@@ -30,6 +30,75 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
   </pre>
 
+  ## <a name="spotify"></a>Spotify
+
+  Builds of the [Spotify](https://spotify.com/) desktop client are being made available. To install, run:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+  <span class="unselectable">$ </span>flatpak run com.spotify.Client
+  </pre>
+
+  ## <a name="skype"></a>Skype
+
+  Builds of the alpha version of the [Skype](https://skype.com/) desktop client are being made available. To install, run:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
+  <span class="unselectable">$ </span>flatpak run com.skype.Client
+  </pre>
+
+  ## <a name="monodevelop"></a>MonoDevelop
+
+  Preview release of MonoDevelop as a Flatpak is available here:
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak install --user --from https://download.mono-project.com/repo/monodevelop.flatpakref
+  <span class="unselectable">$ </span>flatpak run com.xamarin.MonoDevelop
+  </pre>
+
+  See also: http://www.monodevelop.com/download/linux/
+
+  ## <a name="hexchat"></a>Hexchat
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
+  <span class="unselectable">$ </span>flatpak --user install tingping io.github.Hexchat
+  </pre>
+
+  ## <a name="gnome-twitch"></a>Gnome Twitch
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
+  <span class="unselectable">$ </span>flatpak --user install tingping com.vinszent.GnomeTwitch
+  </pre>
+
+  ## <a name="pithos"></a>Pithos – Pandora Radio Client
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
+  <span class="unselectable">$ </span>flatpak --user install tingping io.github.Pithos
+  </pre>
+
+  ## <a name="pithos"></a>Transmission Gtk
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
+  <span class="unselectable">$ </span>flatpak --user install tingping io.github.TransmissionRemoteGtk
+  </pre>
+
+  ## <a name="pithos"></a>Gnome Mpv
+
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists tingping https://dl.tingping.se/flatpak/tingping.flatpakrepo
+  <span class="unselectable">$ </span>flatpak --user install tingping io.github.GnomeMpv
+  </pre>
+
   ## <a name="pitivi"></a>Pitivi
 
   Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
@@ -43,7 +112,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
-  
+
   ## <a name="nightly-graphics"></a>Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
@@ -54,7 +123,7 @@ description: Applications distributed as Flatpaks, ready to download.
   * [Scribus](https://www.scribus.net/)
 
   Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
-  
+
   To add the nightly-graphics repository, run:
 
   <pre>
@@ -75,7 +144,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="stable-gnome"></a>Stable GNOME applications
 
-  A collection of GNOME applications are available from the latest upstream release (version 3.20). This includes:
+  A collection of GNOME applications are available from the latest upstream release (version 3.22). This includes:
 
   * [Builder](https://wiki.gnome.org/Apps/Builder)
   * [Calculator](https://wiki.gnome.org/Apps/Calculator)
@@ -155,7 +224,7 @@ description: Applications distributed as Flatpaks, ready to download.
   </pre>
 
   Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
-  
+
   And to install an app:
 
   <pre>
