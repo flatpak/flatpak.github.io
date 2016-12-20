@@ -37,13 +37,13 @@ description: How to download and install Flatpak on your system to get started.
   If using `DNF`
 
   <pre>
-  <span class="unselectable">$ </span>dnf install flatpak
+  <span class="unselectable"># </span>dnf install flatpak
   </pre>
 
   If using `urpmi`
 
   <pre>
-  <span class="unselectable">$ </span>urpmi flatpak
+  <span class="unselectable"># </span>urpmi flatpak
   </pre>
 
   ### openSUSE
