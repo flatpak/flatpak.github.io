@@ -70,7 +70,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   See also: http://www.monodevelop.com/download/linux/
 
-  ## <a name="hexchat"></a>Hexchat
+  ## <a name="hexchat"></a>HexChat
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -94,7 +94,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping io.github.Pithos
   </pre>
 
-  ## <a name="pithos"></a>Transmission Gtk
+  ## <a name="transmission-remote-gtk"></a>Transmission Remote Gtk
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -102,7 +102,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping io.github.TransmissionRemoteGtk
   </pre>
 
-  ## <a name="pithos"></a>Gnome Mpv
+  ## <a name="gnome-mpv"></a>Gnome Mpv
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
