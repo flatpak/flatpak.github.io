@@ -14,7 +14,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="libreoffice"></a>LibreOffice
 
-  LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install it, run:
+  LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install LibreOffice, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -26,7 +26,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="telegram"></a>Telegram
 
-  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being made available by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
+  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being produced by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -36,7 +36,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="spotify"></a>Spotify
 
-  Builds of the [Spotify](https://spotify.com/) desktop client are being made available. To install, run:
+  Builds of the latest [Spotify](https://spotify.com/) desktop client are being produced by Alex Larsson. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
@@ -45,7 +45,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="skype"></a>Skype
 
-  Builds of the alpha version of the [Skype](https://skype.com/) desktop client are being made available. To install, run:
+  Builds of the alpha version of the [Skype](https://skype.com/) desktop client are being made available by Alex Larsson. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
@@ -54,16 +54,18 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="monodevelop"></a>MonoDevelop
 
-  Preview release of MonoDevelop as a Flatpak is available here:
+  MonoDevelop is available as a Flatpak preview from Xamarin:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
   <span class="unselectable">$ </span>flatpak run com.xamarin.MonoDevelop
   </pre>
 
-  See also: http://www.monodevelop.com/download/linux/
+  See the [MonoDevelop Linux download page](http://www.monodevelop.com/download/linux/) for more information.
 
   ## <a name="hexchat"></a>HexChat
+
+  Builds of the popular IRC client, from their developers:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -71,7 +73,9 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping io.github.Hexchat
   </pre>
 
-  ## <a name="gnome-twitch"></a>Gnome Twitch
+  ## <a name="gnome-twitch"></a>GNOME Twitch
+
+  GNOME client for the Twitch video platform:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -79,7 +83,9 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping com.vinszent.GnomeTwitch
   </pre>
 
-  ## <a name="pithos"></a>Pithos – Pandora Radio Client
+  ## <a name="pithos"></a>Pithos
+
+  Flatpak builds of the Pandora radio client:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -87,7 +93,9 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping io.github.Pithos
   </pre>
 
-  ## <a name="transmission-remote-gtk"></a>Transmission Remote Gtk
+  ## <a name="transmission-remote-gtk"></a>Transmission Remote GTK
+
+  GTK remote client for Transmission:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -95,7 +103,9 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install tingping io.github.TransmissionRemoteGtk
   </pre>
 
-  ## <a name="gnome-mpv"></a>Gnome Mpv
+  ## <a name="gnome-mpv"></a>GNOME MPV
+
+  GTK+ front-end for the MPV video player:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
