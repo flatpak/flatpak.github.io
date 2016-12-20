@@ -24,6 +24,7 @@ description: Applications distributed as Flatpaks, ready to download.
   LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install it, run:
 
   <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
   <span class="unselectable">$ </span>flatpak install --bundle LibreOffice.flatpak
   </pre>
@@ -35,6 +36,7 @@ description: Applications distributed as Flatpaks, ready to download.
   Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being made available by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
 
   <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
   <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
   </pre>
@@ -176,6 +178,7 @@ description: Applications distributed as Flatpaks, ready to download.
   These can be found in the gnome-apps repository, which can be added with:
 
   <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --from gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
   </pre>
 
@@ -223,6 +226,7 @@ description: Applications distributed as Flatpaks, ready to download.
   To add the GNOME nightly apps repository, run:
 
   <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
   <span class="unselectable">$ </span>flatpak remote-add --from gnome-nightly-apps https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
   </pre>
 
