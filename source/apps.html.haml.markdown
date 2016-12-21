@@ -14,7 +14,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="libreoffice"></a>LibreOffice
 
-  LibreOffice is available as a standalone Flatpak file. This relies on the org.gnome.Platform 3.20 runtime, as well as the org.gnome.Platform.Locale runtime for it to appear in language other than US English. To download and install LibreOffice, run:
+  LibreOffice is available as a standalone Flatpak file.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -26,7 +26,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="telegram"></a>Telegram
 
-  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being produced by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
+  Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being produced by [Jan Grulich](http://www.jgrulich.cz/).
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
@@ -35,7 +35,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="spotify"></a>Spotify
 
-  Builds of the latest [Spotify](https://spotify.com/) desktop client are being produced by Alex Larsson. To install, run:
+  Builds of the latest [Spotify](https://spotify.com/) desktop client are being produced by Alex Larsson.
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
@@ -44,7 +44,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="skype"></a>Skype
 
-  Builds of the alpha version of the [Skype](https://skype.com/) desktop client are being made available by Alex Larsson. To install, run:
+  Builds of the alpha version of the [Skype](https://skype.com/) desktop client are being made available by Alex Larsson.
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
@@ -53,7 +53,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="monodevelop"></a>MonoDevelop
 
-  MonoDevelop is available as a Flatpak preview from Xamarin:
+  MonoDevelop is available as a Flatpak preview from Xamarin.
 
   <pre>
   <span class="unselectable">$ </span>flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
@@ -64,7 +64,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="hexchat"></a>HexChat
 
-  Builds of the popular IRC client, from their developers:
+  Builds of the popular IRC client.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -74,7 +74,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="gnome-twitch"></a>GNOME Twitch
 
-  GNOME client for the Twitch video platform:
+  GNOME client for the Twitch video platform.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -84,7 +84,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="pithos"></a>Pithos
 
-  Flatpak builds of the Pandora radio client:
+  Flatpak builds of the Pandora radio client.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -94,7 +94,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="transmission-remote-gtk"></a>Transmission Remote GTK
 
-  GTK remote client for Transmission:
+  GTK+ remote client for Transmission.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -104,7 +104,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="gnome-mpv"></a>GNOME MPV
 
-  GTK+ front-end for the MPV video player:
+  GTK+ front-end for the MPV video player.
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
@@ -114,7 +114,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
   ## <a name="pitivi"></a>Pitivi
 
-  Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. These require the 3.20 version of the org.gnome.Platform runtime. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
+  Multiple versions of the [Pitivi video editor](http://www.pitivi.org/) are available as Flatkpaks, including stable, 0.96 and master. The Pitivi Flatpak repository can be added by downloading and installing a repository file:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-add --from pitivi http://flatpak.pitivi.org/pitivi.flatpakrepo
@@ -135,8 +135,6 @@ description: Applications distributed as Flatpaks, ready to download.
   * [MyPaint](http://mypaint.org)
   * [Scribus](https://www.scribus.net/)
 
-  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
-
   To add the nightly-graphics repository, run:
 
   <pre>
@@ -149,7 +147,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
   </pre>
 
-  To install gimp for example, run:
+  To install an application, like the GIMP, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel
@@ -190,8 +188,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-ls gnome-apps --app
   </pre>
 
-  Applications in this repository require the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome remote so they will be found.
-  You can then install for instance gedit like this:
+  To install an application, like gedit, run:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome-apps org.gnome.gedit
@@ -232,21 +229,19 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak remote-add --from gnome-nightly-apps https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
   </pre>
 
-  And to list the apps in the repository:
+  List the apps in the repository:
 
   <pre>
   <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps --app
   </pre>
 
-  Applications in this repository require the nightly version of the org.gnome.Platform runtime. See the [runtimes page](runtimes.html) for details on how to add the gnome-nightly remote so they will be found.
-
-  And to install an app:
+  Install an app:
 
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit
   </pre>
 
-  And to update it:
+  Update it:
 
   <pre>
   <span class="unselectable">$ </span>flatpak update org.gnome.gedit
