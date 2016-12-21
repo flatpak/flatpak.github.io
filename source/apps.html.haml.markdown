@@ -29,7 +29,6 @@ description: Applications distributed as Flatpaks, ready to download.
   Experimental nightly builds of the [Telegram](https://telegram.org/) desktop client are being produced by [Jan Grulich](http://www.jgrulich.cz/). These require the 3.20 version of the org.gnome.Platform runtime. To install, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
   <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
   <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
   </pre>
