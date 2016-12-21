@@ -6,11 +6,11 @@ description: Applications distributed as Flatpaks, ready to download.
 :markdown
   # Apps
 
-  This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them. If you are new to Flatpak, it is recommended to complete the [introduction to installing and running Flatpaks](index.html#users) first.
+  This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them.
 
-  The instructions on this page require Flatpak 0.6.13 or newer. All the examples install the apps system-wide and therefore require admin privileges. To install to your home directory and avoid the need for a password, just add `--user` to the install command.
+  The instructions on this page require Flatpak 0.6.13 or newer. To find out how to install it, see [Getting Flatpak](getting.html). It is also recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before installing the apps on this page.
 
-  Once you have installed some applications, to update them run `flatpak update`.
+  All the examples install the apps system-wide and therefore require admin privileges. To install to your home directory and avoid the need for a password, just add `--user` to the install command. Once you have installed some applications, to update them run `flatpak update`.
 
   ## <a name="libreoffice"></a>LibreOffice
 
