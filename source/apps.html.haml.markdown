@@ -136,33 +136,6 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install baedert org.baedert.corebird stable
   </pre>
 
-  ## <a name="nightly-graphics"></a>Nightly graphics apps
-
-  The nightly-graphics repository contains daily development builds of common graphics applications, including:
-
-  * [GIMP](http://gimp.org)
-  * [Inkscape](http://inkscape.org)
-  * [MyPaint](http://mypaint.org)
-  * [Scribus](https://www.scribus.net/)
-
-  To add the nightly-graphics repository, run:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --from nightly-graphics http://209.132.179.2/nightly-graphics.flatpakrepo
-  </pre>
-
-  List the apps in the repository:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak remote-ls nightly-graphics --app
-  </pre>
-
-  To install an application, like the GIMP, run:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak install nightly-graphics org.gimp.GimpDevel
-  </pre>
-
   ## <a name="stable-gnome"></a>Stable GNOME applications
 
   A collection of GNOME applications are available from the latest upstream release (version 3.22). This includes:
