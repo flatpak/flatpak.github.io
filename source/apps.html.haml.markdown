@@ -126,7 +126,7 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
 
-  ## <a name="corebird"/>Corebird
+  ## <a name="corebird"></a>Corebird
 
   GNOME client for Twitter.
  
