@@ -126,6 +126,16 @@ description: Applications distributed as Flatpaks, ready to download.
   <span class="unselectable">$ </span>flatpak install pitivi org.pitivi.Pitivi//master
   </pre>
 
+  ## <a name="corebird"/>Corebird
+
+  GNOME client for Twitter.
+ 
+  <pre>
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists baedert https://raw.githubusercontent.com/baedert/corebird-flatpak/master/baedert.flatpakrepo
+  <span class="unselectable">$ </span>flatpak install baedert org.baedert.corebird stable
+  </pre>
+
   ## <a name="nightly-graphics"></a>Nightly graphics apps
 
   The nightly-graphics repository contains daily development builds of common graphics applications, including:
