@@ -81,7 +81,9 @@ description: FAQ about the Flatpak project.
 
   ### Are there any IDEs that support Flatpak?
 
-  The short answer is: no, at this point, there is no IDE with fully fleshed out Flatpak support. But flatpak-builder is a really nice commandline tool for building flatpak apps. If you cannot live without IDE integration, you should check out [GNOME Builder](https://wiki.gnome.org/Apps/Builder); its 3.20 version has initial support for Flatpak. The next version should greatly improve this.
+  Yes!
+
+  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected flatpak runtime and any external dependencies. Support for running your application inside flatpak is also supported. By developing your application within the exact same environment as your users you can squash those "Works for me" bugs before they reach your users!
 
   ### Can I host my flatpak app on github?
 
