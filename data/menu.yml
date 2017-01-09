@@ -1,25 +1,23 @@
-- title: About
-  link: "#about"
-- title: Getting Flatpak
-  link: "/getting.html"
-- title: Run
-  link: "#users"
-  submenu:
-  - title: Apps
-    link: apps.html
-  - title: Runtimes
-    link: "/runtimes.html"
-- title: Build
-  link: "#developers"
-  submenu:
-  - title: Getting Started with Flatpak
-    link: developer.html
-  - title: Bundling a Java Application with Flatpak
-    link: bundling-a-java-app.html
-- title: Get&nbsp;Involved
-  link: "#get-involved"
+- title: Features
+  link: "#features"
+- title: Applications
+  link: "/apps.html"
+- title: Command Line
+  link: "/command-line.html"
+  onlyfooter: true
+- title: Hello World
+  link: "/hello-world.html"
+- title: Developer Docs
+  link: "http://flatpak.readthedocs.io/en/latest/"
+  onlyfooter: true
+- title: Runtimes
+  link: "/runtimes.html"
+  onlyfooter: true
 - title: Press
   link: "/press"
   onlyfooter: true
 - title: FAQ
   link: "/faq.html"
+- title: About & Contact
+  link: "#about"
+
