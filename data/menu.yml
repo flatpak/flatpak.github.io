@@ -1,5 +1,7 @@
 - title: Features
   link: "#features"
+- title: Get Flatpak
+  link: "/getting.html"
 - title: Applications
   link: "/apps.html"
 - title: Command Line
