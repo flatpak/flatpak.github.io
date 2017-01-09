@@ -1,16 +1,16 @@
 ---
-title: Flatpak Apps
+title: Flatpak Applications
 description: Applications distributed as Flatpaks, ready to download.
 ---
 <section class=""><div class="container"><div class="row"><div class="col-lg-10 col-lg-offset-1">
 :markdown
-  # Apps
+  # Flatpak Applications
 
   This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them.
 
-  The instructions on this page require Flatpak 0.6.13 or newer. To find out how to install it, see [Getting Flatpak](getting.html). It is also recommended to complete the [introduction to installing and running Flatpaks](index.html#users) before installing the apps on this page.
+  The instructions on this page require Flatpak 0.6.13 or newer. To find out how to install it, see [Getting Flatpak](getting.html). For instructions on how to update and manage applications once they have been installed, see the [command line tutorial](command-line.html).
 
-  All the examples install the apps system-wide and therefore require admin privileges. To install to your home directory and avoid the need for a password, just add `--user` to the install command. Once you have installed some applications, to update them run `flatpak update`.
+  All the examples install the apps system-wide and therefore require admin privileges. To install to your home directory and avoid the need for a password, just add `--user` to the install command. 
 
   ## <a name="libreoffice"></a>LibreOffice
 
@@ -223,13 +223,5 @@ description: Applications distributed as Flatpaks, ready to download.
   <pre>
   <span class="unselectable">$ </span>flatpak install gnome-nightly-apps org.gnome.gedit
   </pre>
-
-  Update it:
-
-  <pre>
-  <span class="unselectable">$ </span>flatpak update org.gnome.gedit
-  </pre>
-
-
 
 </div></div></div></section>
