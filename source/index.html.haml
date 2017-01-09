@@ -7,64 +7,72 @@ description: The days of chasing multiple Linux distributions are over. Standalo
     .header-content-inner
       %h1 the future of application distribution
       %hr
-        %p The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out How
+        %p Flatpak is the next-generation technology for building and installing applications. It has the power to revolutionize the Linux application ecosystem.
+        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Learn More
+      %h5.largegap Projects that are using and supporting Flatpak
+      %span logo
+      %span logo
+      %span logo
+      %span logo
+      %span logo
+      %span logo
+      %span logo
 %section#about.bg-primary
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Flatpak is the new framework for desktop applications on Linux
+        %h2.section-heading Flatpak Features
         %hr.light
-          %p.text-faded Distributing applications on Linux is a pain: different distributions in multiple versions, each with their own versions of libraries and packaging formats. Flatpak is here to change all that. It allows the same app to be installed on different Linux distributions, including different versions. And it has been designed from the ground up with security in mind, so that apps are isolated from each other and from the host system.
-          %p &nbsp;
+    .row
+      .col-lg-2.col-sm-3.col-lg-offset-1
+        %h3 For users
+      .col-lg-8.col-sm-9
+        %ul
+          %li
+            %h4 Access a wide varienty of applications
+            %p The list of Flatpak apps is growing all he time, and includes Spotify, Skype and Telegram.
+          %li
+            %h4 Newer versions of applications
+            %p Get the latest versions faster, direct form the authors.
+          %li
+            %h4 Safely update your apps without having to reboot
+            %p Unlike with package managers, Flatpak applications can be safely updated on the fly.
+          %li
+            %h4 Install different versions of the same application
+            %p Simultaneously install multiple versions of the same app — this i great for testing.
+          %li
+            %h4 Secure, sandboxed applications
+            %p Flatpak's sandboxing technology prevents exploits and hinders malicious applications.
+          %li
+            %a.btn.btn-primary.btn-xl{:href => "#"} Install Flatpak Applications
+    .row.largegap
+      .col-lg-2.col-sm-3.col-lg-offset-1
+        %h3 For developers
+      .col-lg-8.col-sm-9
+        %ul
+          %li
+            %h4 Run the same app on all the main Linux distributions
+            %p Create one app bundle and distribute it to the entire Linux desktop market.
+          %li
+            %h4 Consistent environmnet for development, testing and deployment
+            %p Develop and test your application in an environment that's identical to the one users have.
+          %li
+            %h4 Easy-to-use, fully-documented build tools
+            %p 
+              Flatpak's build tools are simple and easy to use, and come with a 
+              =link_to 'full set of documentation.', 'http://flatpak.readthedocs.io/en/latest/'
+          %li
+            %h4 Maintained collections of basic dependencies
+            %p Runtimes provide stable sets of dependencies to be used in applications.
+          %li
+            %h4 Pick and choose application dependencies
+            %p Dependencies that aren't in a runtime can be bundled as a part of an application. Deelopers get to control dependency versions. Libraries can be patched.
+          %li
+            %h4 Future-proof builds
+            %p Runtimes are forward compatible, irrespective of distribution changes. Flatpak applications run on new Linux distribution versions as they are released.
+          %li
+            %a.btn.btn-primary.btn-xl{:href => "http://flatpak.readthedocs.io/en/latest/building-simple-apps/#creating-an-app"} Create an Application in 5 minutes
 
-    .row
-      .col-lg-12.text-center
-        %h2.voffset How it works
-        %hr.light
-    .row
-      .col-lg-12.text-center
-        =partial "graph.svg"
-        :css
-          @keyframes linespulse {
-            0% { stroke-dashoffset: 12; }
-            100% { stroke-dashoffset: 0; }
-          }
-          @keyframes spin {
-            0% { transform: rotateZ(0deg); }
-            100% { transform: rotateZ(359deg); }
-          }
-          .splashlabel, 
-          .splashlabel text,
-          .splashlabel tspan {
-            fill: #fff !important;
-          }
-          path.moving {
-            stroke: #fff !important;
-            animation-name: linespulse;
-            animation-duration: 1s;
-            animation-iteration-count:infinite;
-            animation-direction: normal;
-            animation-timing-function: linear;
-            animation-fill-mode: forwards;
-          }
-          a tspan { transition: font-size 200ms ease-in-out; }
-          a tspan:hover { font-size: 120%; }
-          #gnome { transform: matrix(1.999999,0,0,1.999999,170.75063,-2129.837); transition: transform 200ms ease-in-out; }
-          #gnome:hover { transform: matrix(1.999999,0,0,1.999999,170.75063,-2134.837); }
-          #cog {
-            animation: spin 6s infinite normal linear forwards;
-          }
-    .row
-      .col-lg-4.col-sm-6
-        %h3.text-center#runtimes Runtimes
-        %p Runtimes contain the dependencies that are used by apps. They are always the same, whatever Linux distribution is being used. It means that apps no longer have to be updated to keep pace with distribution changes.
-      .col-lg-4.col-sm-6
-        %h3.text-center#bundledlibraries Bundled Libraries
-        %p Dependencies that aren't in a runtime can be bundled as part of the app. This makes it possible to use dependencies that aren't in a distribution, and to use a different version of a dependency than the one that's in a distribution.
-      .col-lg-4.col-lg-offset-0.col-sm-6.col-sm-offset-3
-        %h3.text-center#sandboxes Sandboxes
-        %p Flatpak isolates apps from the host OS as well as from other applications. This provides security for users and a predictable environment for developers. (Some of these features are work in progress)
     
         
 %section#users
