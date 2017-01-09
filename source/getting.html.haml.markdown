@@ -8,6 +8,8 @@ description: How to download and install Flatpak on your system to get started.
 
   Flatpak is available for the most common Linux distributions. After installing it, it is necessary to log out and in again for Flatpak apps to appear in your desktop.
 
+  Once you've installed Flatpak, you can [get some apps](apps.html) or [create your own in 5 minutes](hello-world.html).
+
   ### Arch
 
   A `flatpak` package is available in the official repositories. `flatpak-git` is also available in the AUR for the latest development snapshot.
