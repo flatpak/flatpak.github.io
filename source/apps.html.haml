@@ -16,7 +16,7 @@ loadjqueryui: true
           For instructions on how to update and manage applications once they have been installed, see the 
           =link_to "command line tutorial.", "command-line.html"
 
-        %ul#tabs.nav.nav-pills{"role" => "tablist"}
+        %ul#tabs.nav.nav-tabs{"role" => "tablist"}
           %li.active{:role => "presentation"}
             %a{:href => "#graphical", :role => "tab", "data-toggle" => "tab"} Graphical
           %li{:role => "presentation"}
@@ -24,15 +24,15 @@ loadjqueryui: true
         
         .tab-content.mediumgap
           %div#graphical.tab-pane.active.fade.in{:role => "tabpanel"}
-            .row.appslist
-              .col-xs-6.col-lg-3
+            .appslist
+              .col-xs-6.col-sm-4
                 Libre Office 
-              .col-xs-6.col-lg-2.right
+              .col-xs-6.col-sm-2.right
                 %a.btn.btn-default{:href => "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"}
                   Download
-              .col-xs-6.col-lg-3
+              .col-xs-6.col-sm-4
                 Telegram
-              .col-xs-6.col-lg-2.right
+              .col-xs-6.col-sm-2.right
                 %a.btn.btn-default{:href => "https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref"}
                   Download
           %div#cli.tab-pane.fade{:role => "tabpanel"}

@@ -527,6 +527,8 @@ body {
 .floatright { display: inline-block; float: right; }
 .toneddown { opacity: 0.5; }
 
+.appslist :not(.right) { padding-top: 7px; }
+
 table {
   border-collapse: collapse;
   margin-bottom: 3em;
