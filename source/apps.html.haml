@@ -1,0 +1,70 @@
+---
+title: Flatpak Applications
+description: Applications distributed as Flatpaks, ready to download.
+loadjqueryui: true
+---
+%section
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1 Flatpak Applications
+        %p 
+          This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them.
+        %p 
+          The instructions on this page require Flatpak 0.6.13 or newer. To find out how to install it, see 
+          =link_to "Getting Flatpak.", "getting.html"
+          For instructions on how to update and manage applications once they have been installed, see the 
+          =link_to "command line tutorial.", "command-line.html"
+
+        %ul#tabs.nav.nav-pills{"role" => "tablist"}
+          %li.active{:role => "presentation"}
+            %a{:href => "#graphical", :role => "tab", "data-toggle" => "tab"} Graphical
+          %li{:role => "presentation"}
+            %a{:href => "#cli", :role => "tab", "data-toggle" => "tab"} Command Line
+        
+        .tab-content.mediumgap
+          %div#graphical.tab-pane.active.fade.in{:role => "tabpanel"}
+            .row.appslist
+              .col-xs-6.col-lg-3
+                Libre Office 
+              .col-xs-6.col-lg-2.right
+                %a.btn.btn-default{:href => "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"}
+                  Download
+              .col-xs-6.col-lg-3
+                Telegram
+              .col-xs-6.col-lg-2.right
+                %a.btn.btn-default{:href => "https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref"}
+                  Download
+          %div#cli.tab-pane.fade{:role => "tabpanel"}
+            %a{:name => "libreoffice"}
+            %h2 LibreOffice
+              
+            LibreOffice is available as a standalone Flatpak file.
+            
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+                <span class="unselectable">$ </span>wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
+                <span class="unselectable">$ </span>flatpak install --bundle LibreOffice.flatpak
+
+            For more information, see the LibreOffice 
+            = succeed "." do
+              = link_to "Flatpak page", "http://www.libreoffice.org/download/flatpak/"
+
+            %a{:name => "telegram"}          
+            %h2 Telegram
+
+            Experimental nightly builds of the 
+            = link_to "Telegram", "https://telegram.org" 
+            desktop client are being produced by 
+            = link_to "Jan Grulich", "http://www.jgrulich.cz"
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
+
+:javascript
+$(function () {
+
+});

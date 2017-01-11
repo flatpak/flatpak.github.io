@@ -354,12 +354,17 @@ pre {
 }
 
 .btn-default {
-  border-color: #fff;
-  color: #222;
-  background-color: #fff;
+  border-color: $key_color;
+  color: #fff;
+  background-color: $key_color;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
+  .hader-content &, .bg-primary & {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+  }
 }
 
 .btn-default:hover,
@@ -463,6 +468,9 @@ fieldset[disabled] .btn-default.active {
   border-radius: 300px;
   text-transform: uppercase;
   font-weight: 700;
+  .appslist & {
+    margin: 4px;
+  }
 }
 
 .btn-xl {
@@ -514,7 +522,9 @@ body {
 
 .wide { width: 100%; }
 .largegap { margin-top: 5em; }
+.mediumgap { margin-top: 2em; }
 .right { text-align: right; }
+.floatright { display: inline-block; float: right; }
 .toneddown { opacity: 0.5; }
 
 table {

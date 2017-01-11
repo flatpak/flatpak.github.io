@@ -16,6 +16,13 @@
     = stylesheet_link_tag :animate
     /= stylesheet_link_tag "http://overpass-30e2.kxcdn.com/overpass.css"
 
+  = javascript_include_tag "jquery-2.2.4.min"
+  = javascript_include_tag "jquery.easing.min"
+  = javascript_include_tag "jquery.toc.min"
+  = javascript_include_tag :bootstrap
+  = javascript_include_tag :all
+  = google_analytics_universal_tag
+
   %body#page-top
     %nav#mainNav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
@@ -35,9 +42,4 @@
       / /.container-fluid
   = yield
   = partial "footer"
-  = javascript_include_tag :jquery
-  = javascript_include_tag "jquery.easing.min"
-  = javascript_include_tag "jquery.toc.min"
-  = javascript_include_tag :bootstrap
-  = javascript_include_tag :all
-  = google_analytics_universal_tag
+
