@@ -43,6 +43,7 @@ loadjqueryui: true
               = app_download "Pitivi", ""
               = app_download "GNOME MPV", ""
               = app_download "Corebird", ""
+              = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
               
             .appslist.row
               .col-xs-12
@@ -105,6 +106,19 @@ loadjqueryui: true
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.blender.Blender
+
+            %a{:name => "picard"}
+            %h4 Picard
+
+            Experimental builds of the
+            = link_to "MusicBrainz's Picard" "https://picard.musicbrainz.org/"
+            releases are being produced by
+            = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
 
 :javascript
 $(function () {
