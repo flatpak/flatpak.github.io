@@ -527,7 +527,11 @@ body {
 .floatright { display: inline-block; float: right; }
 .toneddown { opacity: 0.5; }
 
-.appslist :not(.right) { padding-top: 7px; }
+.appslist {
+  margin-top: 3em;
+  &:first-child { margin-top: 1em; }
+  :not(.right) { padding-top: 7px; }
+}
 
 table {
   border-collapse: collapse;

@@ -15,6 +15,8 @@ loadjqueryui: true
           =link_to "Getting Flatpak.", "getting.html"
           For instructions on how to update and manage applications once they have been installed, see the 
           =link_to "command line tutorial.", "command-line.html"
+          
+
 
         %ul#tabs.nav.nav-tabs{"role" => "tablist"}
           %li.active{:role => "presentation"}
@@ -24,17 +26,43 @@ loadjqueryui: true
         
         .tab-content.mediumgap
           %div#graphical.tab-pane.active.fade.in{:role => "tabpanel"}
-            .appslist
-              .col-xs-6.col-sm-4
-                Libre Office 
-              .col-xs-6.col-sm-2.right
-                %a.btn.btn-default{:href => "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"}
-                  Download
-              .col-xs-6.col-sm-4
-                Telegram
-              .col-xs-6.col-sm-2.right
-                %a.btn.btn-default{:href => "https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref"}
-                  Download
+
+            .appslist.row            
+              = app_download "Libre Office", "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"
+              = app_download "Telegram", ""
+              = app_download "Spotify", ""
+              = app_download "Skype", ""
+              = app_download "MonoDevelop", ""
+
+                  
+            .appslist.row
+              = app_download "GNOME Twitch", ""
+              = app_download "Pithos", ""
+              = app_download "Transmission", ""
+              = app_download "Pitivi", ""
+              = app_download "GNOME MPV", ""
+              = app_download "Corebird", ""
+              
+            .appslist.row
+              .col-xs-12
+                %h4 GNOME Stable Apps
+              = app_download "Builder", ""
+              = app_download "Calculator", ""
+              = app_download "Calendar", ""
+              = app_download "Clocks", ""
+              = app_download "Dictionary", ""
+              = app_download "Evince", ""
+              = app_download "Eye of GNOME", ""
+              = app_download "Gedit", ""
+              = app_download "Iagno", ""
+              = app_download "Maps", ""
+              = app_download "Notes", ""
+              = app_download "Polari", ""
+              = app_download "Rhythmbox", ""
+              = app_download "Todo", ""
+              = app_download "Weather", ""
+              = app_download "Web", ""
+              
           %div#cli.tab-pane.fade{:role => "tabpanel"}
             %a{:name => "libreoffice"}
             %h4 LibreOffice

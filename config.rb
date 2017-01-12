@@ -28,11 +28,16 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+
+   # download app tile
+   def app_download(appname,uri)
+     "<div class='col-xs-6 col-sm-4'>#{appname}</div>
+     <div class='col-xs-6 col-sm-2 right'>
+     <a class='btn btn-default' href='#{uri}'>Download</a>
+     </div>"
+   end
+end
 
 # Build-specific configuration
 configure :build do
