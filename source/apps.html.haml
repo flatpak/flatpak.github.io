@@ -33,6 +33,7 @@ loadjqueryui: true
               = app_download "Spotify", ""
               = app_download "Skype", ""
               = app_download "MonoDevelop", ""
+              = app_download "Blender", "https://www.daitauha.fr/static/flatpak/blender.flatpakref"
 
                   
             .appslist.row
@@ -91,6 +92,19 @@ loadjqueryui: true
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
+
+            %a{:name => "blender"}
+            %h4 Blender
+
+            Experimental builds of the
+            = link_to "Blender" "https://blender.org"
+            releases are being produced by
+            = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.blender.Blender
 
 :javascript
 $(function () {
