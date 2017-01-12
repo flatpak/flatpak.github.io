@@ -1,7 +1,6 @@
 ---
 title: Flatpak Applications
 description: Applications distributed as Flatpaks, ready to download.
-loadjqueryui: true
 ---
 %section
   .container
@@ -48,6 +47,26 @@ loadjqueryui: true
             .appslist.row
               .col-xs-12
                 %h4 GNOME Stable Apps
+              = app_download "Builder", "#"
+              = app_download "Calculator", "#"
+              = app_download "Calendar", "#"
+              = app_download "Clocks", "#"
+              = app_download "Dictionary", "#"
+              = app_download "Evince", "#"
+              = app_download "Eye of GNOME", "#"
+              = app_download "Gedit", "#"
+              = app_download "Iagno", "#"
+              = app_download "Maps", "#"
+              = app_download "Notes", "#"
+              = app_download "Polari", "#"
+              = app_download "Rhythmbox", "#"
+              = app_download "Todo", "#"
+              = app_download "Weather", "#"
+              = app_download "Web", "#"
+
+            .appslist.row
+              .col-xs-12
+                %h4 GNOME Untable Apps
               = app_download "Builder", "#"
               = app_download "Calculator", "#"
               = app_download "Calendar", "#"
@@ -114,11 +133,24 @@ loadjqueryui: true
             = link_to "MusicBrainz's Picard" "https://picard.musicbrainz.org/"
             releases are being produced by
             = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
-
+            
             %pre
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
+
+            %a{:name => "spotify"}
+            %h4 Spotify
+
+            %p
+              Builds of the latest 
+              = link_to "Spotify", "https://spotify.com/"
+              desktop client are being produced by Alex Larsson.
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.spotify.Client
 
 :javascript
 $(function () {
