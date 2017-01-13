@@ -8,23 +8,22 @@ description: Applications distributed as Flatpaks, ready to download.
       .col-lg-10.col-lg-offset-1
         %h1 Flatpak Applications
         %p 
-          This page lists some of the apps that are available as Flatpaks, along with instructions for how to try them.
-        %p 
-          The instructions on this page require Flatpak 0.6.13 or newer. To find out how to install it, see 
-          =link_to "Getting Flatpak.", "getting.html"
-          For instructions on how to update and manage applications once they have been installed, see the 
-          =link_to "command line tutorial.", "command-line.html"
-          
-
+          This page lists some of the apps that are available as Flatpaks, along with instructions for how 
+          to try them. If you don't have it already, you'll need to
+          =link_to "get Flatpak.", "getting.html"
 
         %ul#tabs.nav.nav-tabs{"role" => "tablist"}
           %li.active{:role => "presentation"}
-            %a{:href => "#graphical", :role => "tab", "data-toggle" => "tab"} Graphical
+            %a{:href => "#graphical", :role => "tab", "data-toggle" => "tab"} Click to Download
           %li{:role => "presentation"}
             %a{:href => "#cli", :role => "tab", "data-toggle" => "tab"} Command Line
         
         .tab-content.mediumgap
           %div#graphical.tab-pane.active.fade.in{:role => "tabpanel"}
+
+            %p
+              Click to download is available with Fedora 25, OpenSUSE Tumbleweed, Debian Testing and Arch 
+              Cauldron.
 
             .appslist.row            
               = app_download "Libre Office", "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"
@@ -85,6 +84,13 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "Web", "#"
               
           %div#cli.tab-pane.fade{:role => "tabpanel"}
+
+            %p
+              These command line instructions require Flatpak 0.6.13 or newer.
+              Once installed, applications can be launched from the usual place in your desktop. For more
+              information on how to update and manage your applications, see the 
+              =link_to "command line tutorial.", "command-line.html"
+
             %a{:name => "libreoffice"}
             %h4 LibreOffice
               
