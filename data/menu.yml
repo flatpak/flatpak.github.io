@@ -10,7 +10,7 @@
 - title: Hello World
   link: "/hello-world.html"
 - title: Developer Docs
-  link: "http://flatpak.readthedocs.io/en/latest/"
+  link: "http://flatpak.readthedocs.io/"
   onlyfooter: true
 - title: Runtimes
   link: "/runtimes.html"

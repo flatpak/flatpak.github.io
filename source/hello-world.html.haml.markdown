@@ -7,7 +7,7 @@ description: Create a Flatpak application in five minutes.
 
   # Hello World
 
-  Developers can quickly get started using the tutorial below. More detailed information is available in the [developers page](developer.html').
+  Developers can quickly get started using the tutorial below. More detailed information is available in the [Flatpak developer documentation](http://flatpak.readthedocs.io/').
 
   ## 1. Install Flatpak
 
