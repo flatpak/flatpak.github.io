@@ -17,10 +17,8 @@ description: How to use the command line to manage installed applications.
   To list all the Flatpak applications that you have installed, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak list --app
+  <span class="unselectable">$ </span>flatpak list
   </pre>
-
-  Here, the `--app` option specifies that only applications should be listed. Without it, runtimes are also listed (see the runtimes section below for more details).
 
   Application names are given in reverse DNS format - like a reversed web address - with three parts separated by dots. This is a unique identifier that is used throughout Flatpak.
 
