@@ -1,0 +1,465 @@
+---
+title: Flatpak Runtimes
+description: Available Flatpak runtimes.
+---
+%section
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1 Runtimes
+        %p 
+          This page provides information about available Flatpak runtimes. It is primarily intended as information for application developers and distributors. See the 
+          =link_to "developer documentation", "http://flatpak.readthedocs.io/"
+          for more information about using runtimes and SDKs.
+        %h2 Available runtimes
+        %p
+          There are currently two main runtimes available: Freedesktop and GNOME. The Freedesktop runtime is the standard runtime that can be used for any application and contains a set of essential libraries and services, including D-Bus, GLib, PulseAudio, X11 and Wayland,
+        %p
+          The GNOME runtime is based on the Freedesktop runtime and adds the GNOME platform, including libraries like GStreamer, GTK+, GVFS and more. It is appropriate for any application that makes use of the GNOME platform.
+        %p
+          A KDE runtime is in development.
+
+        %ul#tabs.nav.nav-tabs{"role" => "tablist"}
+          %li.active{:role => "presentation"}
+            %a{:href => "#freedesktop", :role => "tab", "data-toggle" => "tab"} Freedesktop
+          %li{:role => "presentation"}
+            %a{:href => "#gnome", :role => "tab", "data-toggle" => "tab"} GNOME
+          %li{:role => "presentation"}
+            %a{:href => "#gnome-nightlies", :role => "tab", "data-toggle" => "tab"} GNOME Nightlies
+        
+        .tab-content.mediumgap
+          %div#freedesktop.tab-pane.active.fade.in{:role => "tabpanel"}
+
+            %p
+              Freedesktop runtimes are hosted at 
+              =link_to "sdk.gnome.org", "https://sdk.gnome.org/repo/"
+              and signed with 
+              = succeed "." do
+                =link_to "this key", "https://sdk.gnome.org/keys/gnome-sdk.gpg"
+              To add this repository, run:
+
+            %p
+            :preserve
+              <pre>
+              <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+              </pre>
+            %p
+              Available runtimes:
+
+            %table
+              %tbody
+                %tr
+                  %td ID
+                  %td Description
+                %tr
+                  %td org.freedesktop.Platform
+                  %td Runtime
+                %tr
+                  %td org.freedesktop.Platform.locale
+                  %td Runtime translations (extension)
+                %tr
+                  %td org.freedesktop.Sdk
+                  %td SDK
+                %tr
+                  %td org.freedesktop.Sdk.debug
+                  %td SDK debug information (extension)
+                %tr
+                  %td org.freedesktop.Sdk.locale
+                  %td SDK translations (extension)
+
+            %h3 Runtime details
+            %p
+              The latest version of the Freedesktop runtime is 1.4 and includes the following:
+            %pre
+              :preserve
+                 acl 2.2.52
+                 alsa-lib 1.1.0
+                 alsa-plugins 1.1.0
+                 aspell 0.60.6
+                 attr 2.4.47
+                 autoconf-archive 2016.03.20
+                 base-files 3.0.14
+                 bash 4.3.30
+                 bzip2 1.0.6
+                 ca-certificates 20150426
+                 cairo 1.14.6
+                 clang 3.8.0
+                 coreutils 8.24
+                 cpio 2.11
+                 cracklib 2.9.5
+                 cups 2.1.0
+                 curl 7.44.0
+                 db 6.0.30
+                 dbus 1.10.8
+                 desktop-file-utils 0.22
+                 elfutils 0.163
+                 file 5.24
+                 findutils 4.5.14
+                 fontconfig 2.11.95
+                 freetype 2.6.3
+                 freetype-bootstrap 2.6.3
+                 gawk 4.1.3
+                 gdk-pixbuf2 2.34.0
+                 geoclue2 2.4.3
+                 glib-networking 2.48.0
+                 glib2 2.48.0
+                 glibc 2.22
+                 gnupg 2.1.7
+                 gobject-introspection 1.48.0
+                 gpgme 1.5.4
+                 graphite2 1.3.6
+                 grep 2.21
+                 gstreamer 1.8.0
+                 gstreamer-plugins-bad 1.8.0
+                 gstreamer-plugins-base 1.8.0
+                 gstreamer-plugins-good 1.8.0
+                 gzip 1.6
+                 harfbuzz 1.2.6
+                 hicolor-icon-theme 0.15
+                 hunspell 1.3.3
+                 hyphen 2.8.8
+                 icu 55.1
+                 initscripts-functions 1.0
+                 iso-codes 3.58
+                 itstool 2.0.2
+                 json-glib 1.2.0
+                 krb5 1.13.2
+                 krb5-locale-en-us 1.13.2
+                 lcms 2.6
+                 ldd 2.22
+                 less 479
+                 libacl1 2.2.52
+                 libappstream-glib 0.5.11
+                 libarchive 3.2.1
+                 libasm1 0.163
+                 libassuan0 2.2.1
+                 libatomic-ops 7.4.2
+                 libatomic1 5.2.0
+                 libattr1 2.4.47
+                 libblkid1 2.26.2
+                 libbz2-1 1.0.6
+                 libc6 2.22
+                 libc6-utils 2.22
+                 libcap2 2.24
+                 libcom-err2 1.42.9
+                 libcrypto1.0.0 1.0.2h
+                 libcurl4 7.44.0
+                 libdrm 2.4.67
+                 libdw1 0.163
+                 libelf1 0.163
+                 libepoxy 1.3.1
+                 liberation-fonts 2.00.1
+                 libexif-locale-en-gb 0.6.21
+                 libexif12 0.6.21
+                 libexpat1 2.1.0
+                 libffi6 3.2.1
+                 libflac8 1.3.1
+                 libgcc1 5.2.0
+                 libgcrypt 1.6.3
+                 libgdbm-compat4 1.11
+                 libgdbm4 1.11
+                 libgif4 4.1.6
+                 libgmp10 6.0.0
+                 libgnutls28 3.3.17.1
+                 libgomp 5.2.0
+                 libgpg-error0 1.19
+                 libgpgme-pthread11 1.5.4
+                 libice 1.0.9
+                 libicudata55 55.1
+                 libicui18n55 55.1
+                 libicuio55 55.1
+                 libicule55 55.1
+                 libicutu55 55.1
+                 libicuuc55 55.1
+                 libjpeg62 8d+1.4.0
+                 libjson-c2 0.12
+                 libksba8 1.3.3
+                 libltdl7 2.4.6
+                 liblzma5 5.2.1
+                 libmount1 2.26.2
+                 libncurses5 5.9
+                 libncursesw5 5.9
+                 libnpth0 1.2
+                 libogg0 1.3.2
+                 libpanel5 5.9
+                 libpanelw5 5.9
+                 libpciaccess 0.13.4
+                 libpcre1 8.38
+                 libpcrecpp0 8.38
+                 libpcreposix0 8.38
+                 libpng16-16 1.6.17
+                 libpopt0 1.16
+                 libproxy 0.4.11
+                 libpython2.7-1.0 2.7.9
+                 libpython3.4m1.0 3.4.3
+                 libreadline6 6.3
+                 libsamplerate0 0.1.8
+                 libsasl2-3 2.1.26
+                 libsm 1.2.2
+                 libsndfile1 1.0.25
+                 libsoup 2.54.0
+                 libspeex1 1.2rc2
+                 libspeexdsp1 1.2rc3
+                 libsqlite3-0 3.8.10.2
+                 libssl1.0.0 1.0.2h
+                 libssp0 5.2.0
+                 libstdc++6 5.2.0
+                 libtasn1-6 4.5
+                 libtheora 1.1.1
+                 libtiff5 4.0.4
+                 libtinfo5 5.9
+                 libuuid1 2.26.2
+                 libva 1.6.2
+                 libva-vdpau-driver 0.7.4
+                 libvdpau 1.1.1
+                 libverto1 0.2.6
+                 libvorbis 1.3.5
+                 libvpx 1.5.0
+                 libwebp 0.4.3
+                 libx11 1.6.3
+                 libxau 1.0.8
+                 libxcb 1.11
+                 libxcomposite 0.4.4
+                 libxcursor 1.1.14
+                 libxdamage 1.1.4
+                 libxdmcp 1.1.2
+                 libxext 1.3.3
+                 libxfixes 5.0.1
+                 libxft 2.3.2
+                 libxi 1.7.4
+                 libxinerama 1.1.3
+                 libxkbcommon 0.5.0
+                 libxml2 2.9.2
+                 libxml2-python 2.9.2
+                 libxpm 3.5.11
+                 libxrandr 1.5.0
+                 libxrender 0.9.9
+                 libxscrnsaver 1.2.2
+                 libxshmfence 1.2
+                 libxslt 1.1.28
+                 libxt 1.1.5
+                 libxtst 1.2.2
+                 libxv 1.0.10
+                 libxxf86vm 1.1.4
+                 libz1 1.2.8
+                 llvm 3.8.0
+                 mesa 11.2.2
+                 ncurses 5.9
+                 ncurses-terminfo-base 5.9
+                 nettle 3.1.1
+                 nspr 4.10.8
+                 nss 3.19.2
+                 openssl 1.0.2h
+                 openssl-conf 1.0.2h
+                 orc 0.4.25
+                 p11-kit 0.23.2
+                 pinentry 0.9.2
+                 pixman 0.34.0
+                 procps 3.3.10
+                 pulseaudio 8.0
+                 python-2 2.7.9
+                 python3 3.4.3
+                 sdl2 2.0.4
+                 sdl2_image 2.0.1
+                 sdl2_mixer 2.0.1
+                 sdl2_net 2.0.1
+                 sdl2_ttf 2.0.14
+                 sed 4.2.2
+                 shared-mime-info 1.6
+                 sqlite3 3.8.10.2
+                 tar 1.28
+                 task-freedesktop-contents-platform qemux86_64 1.0
+                 tzdata 2016i
+                 unzip 6.0
+                 update-alternatives-opkg 0.1.8+git0+53274f0875
+                 util-linux-getopt 2.26.2
+                 util-linux-uuidgen 2.26.2
+                 wayland 1.10.0
+                 wayland-protocols 1.3
+                 which 2.21
+                 xcb-proto 1.11
+                 xcb-util 0.4.0
+                 xcb-util-cursor 0.1.2
+                 xcb-util-image 0.4.0
+                 xcb-util-keysyms 0.4.0
+                 xcb-util-renderutil 0.3.9
+                 xcb-util-wm 0.4.1
+                 xdg-user-dirs 0.15
+                 xkeyboard-config 2.15
+                 xorg-x11-proto-bigreqs 1.1.2
+                 xorg-x11-proto-composite 0.4.2
+                 xorg-x11-proto-damage 1.2.1
+                 xorg-x11-proto-dmx 2.3.1
+                 xorg-x11-proto-dri2 2.8
+                 xorg-x11-proto-dri3 1.0
+                 xorg-x11-proto-evieext 1.1.1
+                 xorg-x11-proto-fixes 5.0
+                 xorg-x11-proto-fonts 2.1.3
+                 xorg-x11-proto-gl 1.4.17
+                 xorg-x11-proto-input 2.3.1
+                 xorg-x11-proto-kb 1.0.7
+                 xorg-x11-proto-present 1.0
+                 xorg-x11-proto-randr 1.5.0
+                 xorg-x11-proto-record 1.14.2
+                 xorg-x11-proto-render 0.11.1
+                 xorg-x11-proto-resource 1.2.0
+                 xorg-x11-proto-scrnsaver 1.2.2
+                 xorg-x11-proto-video 2.3.2
+                 xorg-x11-proto-x 7.0.28
+                 xorg-x11-proto-xcmisc 1.2.2
+                 xorg-x11-proto-xext 7.3.0
+                 xorg-x11-proto-xf86bigfont 1.2.0
+                 xorg-x11-proto-xf86dga 2.1
+                 xorg-x11-proto-xf86dri 2.1.1
+                 xorg-x11-proto-xf86misc 0.9.3
+                 xorg-x11-proto-xf86vidmode 2.3.1
+                 xorg-x11-proto-xinerama 1.2.1
+                 xorg-x11-proto-xproxymanagement 1.0.3
+                 xorg-x11-util-macros 1.19.0
+                 xorg-x11-xtrans-devel 1.3.5
+                 xz 5.2.1
+                 zip 3.0
+              
+          %div#gnome.tab-pane.fade{:role => "tabpanel"}
+
+            %p
+              GNOME runtimes are hosted at 
+              =link_to "sdk.gnome.org", "https://sdk.gnome.org/repo/"
+              and signed with 
+              = succeed "." do
+                =link_to "this key", "https://sdk.gnome.org/keys/gnome-sdk.gpg"
+              To add this repository, run:
+            :preserve
+              <pre>
+              <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+              </pre>
+            %p
+              Available runtimes:
+
+            %table
+              %tbody
+                %tr
+                  %td ID
+                  %td Description
+                %tr
+                  %td org.gnome.Platform
+                  %td Runtime
+                %tr
+                  %td org.gnome.Platform.locale
+                  %td Runtime translations (extension)
+                %tr
+                  %td org.gnome.Sdk
+                  %td SDK
+                %tr
+                  %td org.gnome.Sdk.debug
+                  %td SDK debug information (extension)
+                %tr
+                  %td org.gnome.Sdk.locale
+                  %td SDK translations (extension)
+
+            %h3 Runtime details
+            %p
+              The latest version of the GNOME runtime is 3.22. It includes everything from the 1.4 Freedesktop runtime, as well as:
+
+            %pre
+              :preserve
+                 adwaita-icon-theme 3.22.0
+                 at-spi2-atk 2.21.91
+                 at-spi2-core 2.21.4
+                 atk 2.22.0
+                 cantarell-fonts 0.0.25
+                 clutter 1.26.0
+                 clutter-gst 3.0.20
+                 clutter-gtk 1.8.2
+                 cogl 1.22.2
+                 dbus-glib 0.106
+                 dconf 0.26.0
+                 enchant 1.6.0
+                 gcab 0.7
+                 gcr 3.20.0
+                 gdk-pixbuf 2.36.0
+                 gjs 1.46.0
+                 glib 2.50.2
+                 glib-networking 2.50.0
+                 gnome-common 3.18.0
+                 gnome-themes-standard 3.22.2
+                 gobject-introspection 1.50.0
+                 gsettings-desktop-schemas 3.22.0
+                 gstreamer 1.8.3
+                 gstreamer-plugins-bad 1.8.3
+                 gstreamer-plugins-base 1.8.3
+                 gstreamer-plugins-good 1.8.3
+                 gtk2 2.24.31
+                 gtk3 3.22.6
+                 gvfs 1.30.1
+                 json-glib 1.2.2
+                 libcanberra 0.30
+                 libcroco 0.6.11
+                 libdatrie 0.2.9
+                 libnotify 0.7.6
+                 librsvg 2.40.16
+                 libsecret 0.18.5
+                 libsoup 2.56.0
+                 libthai 0.1.22
+                 mozjs24 24.2.0
+                 pango 1.40.3
+                 pcre2 10.22
+                 pycairo 1.10.0
+                 pygobject 3.22.0
+                 python-gstreamer 1.8.0
+                 vala 0.34.2
+                 vte 0.46.0
+                 wayland-protocols-updated 1.7
+                 wayland-updated 1.12.0
+                 webkitgtk4 2.14.2
+                 yelp-tools 3.18.0
+                 yelp-xsl 3.20.1
+                 zenity 3.22.0
+
+          %div#gnome-nightlies.tab-pane.fade{:role => "tabpanel"}
+
+            %p
+              The GNOME nightly runtimes provide nightly development snapshots of the GNOME runtimes. They are unstable and are useful for testing and development purposes only.
+            %p
+              GNOME nightly runtimes are hosted at 
+              =link_to "sdk.gnome.org", "https://sdk.gnome.org/nightly/repo/"
+              and signed with 
+              = succeed "." do
+                =link_to "this key", "https://sdk.gnome.org/nightly/keys/nightly.gpg"
+              To add this repository, run:
+            :preserve
+              <pre>
+              <span class="unselectable">$ </span>flatpak remote-add --from gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
+              </pre>
+            %p
+              All nightly runtimes have master as the version:
+
+            %table
+              %tbody
+                %tr
+                  %td ID
+                  %td Description
+                %tr
+                  %td org.gnome.Platform
+                  %td Runtime
+                %tr
+                  %td org.gnome.Platform.locale
+                  %td Runtime translations (extension)
+                %tr
+                  %td org.gnome.Sdk
+                  %td SDK
+                %tr
+                  %td org.gnome.Sdk.debug
+                  %td SDK debug information (extension)
+                %tr
+                  %td org.gnome.Sdk.locale
+                  %td SDK translations (extension)
+
+            %h3 Runtime details
+            %p
+              The latest version of the GNOME runtime is 3.22. It includes everything from the 1.4 Freedesktop runtime, as well as:
+
+:javascript
+$(function () {
+
+});
