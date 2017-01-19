@@ -27,10 +27,10 @@ description: Applications distributed as Flatpaks, ready to download.
 
             .appslist.row            
               = app_download "Libre Office", "http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak"
-              = app_download "Telegram", "#"
-              = app_download "Spotify", "#"
-              = app_download "Skype", "#"
-              = app_download "MonoDevelop", "#"
+              = app_download "Telegram", "https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref"
+              = app_download "Spotify", "https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref"
+              = app_download "Skype", "https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref"
+              = app_download "MonoDevelop", "https://download.mono-project.com/repo/monodevelop.flatpakref"
               = app_download "Blender", "https://www.daitauha.fr/static/flatpak/blender.flatpakref"
 
                   
@@ -42,46 +42,47 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "GNOME MPV", "#"
               = app_download "Corebird", "#"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
-              
-            .appslist.row
-              .col-xs-12
-                %h4 GNOME Stable Apps
-              = app_download "Builder", "#"
-              = app_download "Calculator", "#"
-              = app_download "Calendar", "#"
-              = app_download "Clocks", "#"
-              = app_download "Dictionary", "#"
-              = app_download "Evince", "#"
-              = app_download "Eye of GNOME", "#"
-              = app_download "Gedit", "#"
-              = app_download "Iagno", "#"
-              = app_download "Maps", "#"
-              = app_download "Notes", "#"
-              = app_download "Polari", "#"
-              = app_download "Rhythmbox", "#"
-              = app_download "Todo", "#"
-              = app_download "Weather", "#"
-              = app_download "Web", "#"
+            
+            /
+              .appslist.row
+                .col-xs-12
+                  %h4 GNOME Stable Apps
+                = app_download "Builder", "#"
+                = app_download "Calculator", "#"
+                = app_download "Calendar", "#"
+                = app_download "Clocks", "#"
+                = app_download "Dictionary", "#"
+                = app_download "Evince", "#"
+                = app_download "Eye of GNOME", "#"
+                = app_download "Gedit", "#"
+                = app_download "Iagno", "#"
+                = app_download "Maps", "#"
+                = app_download "Notes", "#"
+                = app_download "Polari", "#"
+                = app_download "Rhythmbox", "#"
+                = app_download "Todo", "#"
+                = app_download "Weather", "#"
+                = app_download "Web", "#"
 
-            .appslist.row
-              .col-xs-12
-                %h4 GNOME Untable Apps
-              = app_download "Builder", "#"
-              = app_download "Calculator", "#"
-              = app_download "Calendar", "#"
-              = app_download "Clocks", "#"
-              = app_download "Dictionary", "#"
-              = app_download "Evince", "#"
-              = app_download "Eye of GNOME", "#"
-              = app_download "Gedit", "#"
-              = app_download "Iagno", "#"
-              = app_download "Maps", "#"
-              = app_download "Notes", "#"
-              = app_download "Polari", "#"
-              = app_download "Rhythmbox", "#"
-              = app_download "Todo", "#"
-              = app_download "Weather", "#"
-              = app_download "Web", "#"
+              .appslist.row
+                .col-xs-12
+                  %h4 GNOME Untable Apps
+                = app_download "Builder", "#"
+                = app_download "Calculator", "#"
+                = app_download "Calendar", "#"
+                = app_download "Clocks", "#"
+                = app_download "Dictionary", "#"
+                = app_download "Evince", "#"
+                = app_download "Eye of GNOME", "#"
+                = app_download "Gedit", "#"
+                = app_download "Iagno", "#"
+                = app_download "Maps", "#"
+                = app_download "Notes", "#"
+                = app_download "Polari", "#"
+                = app_download "Rhythmbox", "#"
+                = app_download "Todo", "#"
+                = app_download "Weather", "#"
+                = app_download "Web", "#"
               
           %div#cli.tab-pane.fade{:role => "tabpanel"}
 
@@ -119,6 +120,43 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
 
+            %a{:name => "spotify"}
+            %h4 Spotify
+
+            %p
+              Builds of the latest 
+              = link_to "Spotify", "https://spotify.com/"
+              desktop client are being produced by Alex Larsson.
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.spotify.Client
+
+            %a{:name => "skype"}
+            %h4 Skype
+
+            Builds of the alpha version of the 
+            = link_to "Skype", "http://skype.com"
+            desktop client are being made available by Alex Larsson.
+            
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.skype.Client
+
+            %a{:name => "monodevelop"}
+            %h4 MonoDevelop
+
+            MonoDevelop is available as a Flatpak preview from Xamarin. See the 
+            = link_to "MonoDevelop Linux download page", "http://www.monodevelop.com/download/linux/"
+            for more information.
+            
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.xamarin.MonoDevelop
+                
             %a{:name => "blender"}
             %h4 Blender
 
@@ -136,7 +174,7 @@ description: Applications distributed as Flatpaks, ready to download.
             %h4 Picard
 
             Experimental builds of the
-            = link_to "MusicBrainz's Picard" "https://picard.musicbrainz.org/"
+            = link_to "MusicBrainz's Picard", "https://picard.musicbrainz.org/"
             releases are being produced by
             = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
             
@@ -145,20 +183,6 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
 
-            %a{:name => "spotify"}
-            %h4 Spotify
 
-            %p
-              Builds of the latest 
-              = link_to "Spotify", "https://spotify.com/"
-              desktop client are being produced by Alex Larsson.
 
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.spotify.Client
 
-:javascript
-$(function () {
-
-});
