@@ -533,6 +533,11 @@ body {
   :not(.right) { padding-top: 7px; }
 }
 
+.capheight {
+  max-height: 20em;
+  overflow-y: auto;
+}
+
 table {
   border-collapse: collapse;
   margin-bottom: 3em;
