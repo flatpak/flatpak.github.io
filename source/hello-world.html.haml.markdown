@@ -7,7 +7,7 @@ description: Create a Flatpak application in five minutes.
 
   # Hello World
 
-  Developers can quickly get started using the tutorial below. More detailed information is available in the [Flatpak developer documentation](http://flatpak.readthedocs.io/').
+  Developers can quickly get started using the tutorial below. More detailed information is available in the [Flatpak developer documentation](http://docs.flatpak.org/).
 
   ## 1. Install Flatpak
 
@@ -103,6 +103,6 @@ description: Create a Flatpak application in five minutes.
 
   This will print `Hello world, from a sandbox`.
 
-  Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many of these steps are simplified by Flatpak's built in tools. For information on how to use them, as well as how to build and distribute more complex apps see the [developers page](developer.html).
+  Ta da! That's it: you've successfully built, installed and run your first Flatpak. Many of these steps are simplified by Flatpak's built in tools. For information on how to use them, as well as how to build and distribute more complex apps see the [developer documentation](http://docs.flatpak.org/).
 
 </div></div></div></section>
