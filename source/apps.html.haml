@@ -40,7 +40,7 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "Transmission Remote Gtk", "https://dl.tingping.se/flatpak/transmission-remote-gtk.flatpakref"
               = app_download "Pitivi", "http://flatpak.pitivi.org/pitivi.flatpakref"
               = app_download "GNOME MPV", "https://dl.tingping.se/flatpak/gnome-mpv.flatpakref"
-              / = app_download "Corebird", "#"
+              = app_download "Corebird", "https://github.com/baedert/corebird-flatpak/blob/master/org.baedert.corebird.flatpakref"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
             
             /
@@ -183,7 +183,7 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
 
-            %a{:name => "picard"}
+            %a{:name => "pitivi"}
             %h4 Pitivi
 
             Pitivi master (development version) can be installed
@@ -208,4 +208,15 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak run org.pitivi.Pitivi//0.96
 
+            %a{:name => "corebird"}
+            %h4 Corebird
 
+            Experimental builds of the
+            = link_to "Corebird", "http://corebird.baedert.org/"
+            releases are being produced by
+            = link_to "Timm Bäder", "http://baedert.org/"
+            
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://github.com/baedert/corebird-flatpak/blob/master/org.baedert.corebird.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.baedert.corebird
