@@ -38,7 +38,7 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "GNOME Twitch", "https://dl.tingping.se/flatpak/gnome-twitch.flatpakref"
               = app_download "Pithos", "https://dl.tingping.se/flatpak/pithos.flatpakref"
               = app_download "Transmission Remote Gtk", "https://dl.tingping.se/flatpak/transmission-remote-gtk.flatpakref"
-              / = app_download "Pitivi", "#"
+              = app_download "Pitivi", "http://flatpak.pitivi.org/pitivi.flatpakref"
               = app_download "GNOME MPV", "https://dl.tingping.se/flatpak/gnome-mpv.flatpakref"
               / = app_download "Corebird", "#"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
@@ -183,6 +183,29 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
 
+            %a{:name => "picard"}
+            %h4 Pitivi
 
+            Pitivi master (development version) can be installed
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --user http://flatpak.pitivi.org/pitivi-master.flatpakref
+
+            Pitivi release can be installed
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --user http://flatpak.pitivi.org/pitivi.flatpakref
+
+
+            You can now launch Pitivi from your applications menu as any other installed application. You can also re run the installer which launches Pitivi after updating to the latest version. To see if warning or error messages are printed in the console, run: 
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak run org.pitivi.Pitivi//stable
+
+            If for some reason you need to use an older Pitivi version, run: 
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak run org.pitivi.Pitivi//0.96
 
 
