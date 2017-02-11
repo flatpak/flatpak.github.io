@@ -74,7 +74,7 @@ description: Create a Flatpak application in five minutes.
 
   ## 4. Put the app in a repository
 
-  Congratulations, you've made an app! To be able to install it, you need to put it in a repository. This is done with the build-export command:
+  Congratulations, you've made an app! To be able to install it, you need to put it in a repository. This is done with the build-export command. Make sure you are in the parent directory of `hello/` and run the following:
 
   <pre>
   <span class="unselectable">$ </span>flatpak build-export repo hello
