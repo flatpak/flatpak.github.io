@@ -43,6 +43,7 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "Corebird", "https://raw.githubusercontent.com/baedert/corebird-flatpak/master/org.baedert.corebird.flatpakref"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
               = app_download "FeedReader", "http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref"
+              = app_download "Recipes", "https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref"
             
             /
               .appslist.row
@@ -234,3 +235,17 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.FeedReader
+                
+            %a{:name => "recipes"}
+            %h4 Recipes
+
+            %p
+              Builds of the latest 
+              = link_to "Recipes", "https://wiki.gnome.org/Apps/Recipes/" 
+              by
+              = link_to "Matthias Clasen", "https://blogs.gnome.org/mclasen/"
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
