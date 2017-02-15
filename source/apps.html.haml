@@ -40,7 +40,7 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "Transmission Remote Gtk", "https://dl.tingping.se/flatpak/transmission-remote-gtk.flatpakref"
               = app_download "Pitivi", "http://flatpak.pitivi.org/pitivi.flatpakref"
               = app_download "GNOME MPV", "https://dl.tingping.se/flatpak/gnome-mpv.flatpakref"
-              = app_download "Corebird", "https://github.com/baedert/corebird-flatpak/blob/master/org.baedert.corebird.flatpakref"
+              = app_download "Corebird", "https://raw.githubusercontent.com/baedert/corebird-flatpak/master/org.baedert.corebird.flatpakref"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
               = app_download "FeedReader", "http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref"
             
@@ -219,7 +219,7 @@ description: Applications distributed as Flatpaks, ready to download.
             
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://github.com/baedert/corebird-flatpak/blob/master/org.baedert.corebird.flatpakref
+                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/baedert/corebird-flatpak/master/org.baedert.corebird.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.baedert.corebird
                 
             
