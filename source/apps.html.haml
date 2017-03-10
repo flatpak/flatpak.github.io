@@ -225,13 +225,81 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.FeedReader
                 
-            %a{:name => "builder"}
-            %h4 Builder
-
+            %a{:name => "gnome-stable"}
+            %h4 Stable GNOME Applicatons
             %p
-              Builds of the latest 
-              = link_to "Builder", "https://wiki.gnome.org/Apps/Builder" 
+              Many GNOME applications are available as both stable or unstable development versions. Stable versions can be installed individually using the instructions in this section, or you can add the repository and browse its contents from the command line.
+            %p
+              To add the GNOME applications repository:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://sdk.gnome.org/gnome.flatpakrepo
+            %p
+              Then to list the applications in the repository, run:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak remote-ls gnome-apps
+
+            %a{:name => "builder-stable"}
+            %h5 Builder
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/tree/gnome-builder.flatpakref?h=gnome-3-22
+                <span class="unselectable">$ </span>flatpak run org.gnome.Builder
+
+            %a{:name => "documents-stable"}
+            %h5 Documents
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=gnome-3-22
+                <span class="unselectable">$ </span>flatpak run org.gnome.Documents
+
+            %a{:name => "photos-stable"}
+            %h5 Photos
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/tree/gnome-photos.flatpakref?h=gnome-3-22
+                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
+
+            %a{:name => "recipes"}
+            %h5 Recipes
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
+
+            %a{:name => "gnome-unstable"}
+            %h4 Unstable GNOME Applicatons
+            %p
+              Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
+            %p
+              To add the unstable GNOME applications repository:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://sdk.gnome.org/gnome-nightly.flatpakrepo
+            %p
+              Then to list the applications in the repository, run:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps
+
+            %a{:name => "builder-unstable"}
+            %h5 Builder
             %pre
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Builder                
+                <span class="unselectable">$ </span>flatpak run org.gnome.Builder
+
+            %a{:name => "documents-unstable"}
+            %h5 Documents
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/tree/gnome-documents.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Documents
+
+            %a{:name => "photos-unstable"}
+            %h5 Photos
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
