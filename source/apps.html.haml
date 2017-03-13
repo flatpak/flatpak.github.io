@@ -223,7 +223,7 @@ description: Applications distributed as Flatpaks, ready to download.
               To add the GNOME applications repository:
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://sdk.gnome.org/gnome.flatpakrepo
+                <span class="unselectable">$ </span>flatpak remote-add gnome https://sdk.gnome.org/gnome.flatpakrepo
             %p
               Then to list the applications in the repository, run:
             %pre
@@ -266,7 +266,7 @@ description: Applications distributed as Flatpaks, ready to download.
               To add the unstable GNOME applications repository:
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://sdk.gnome.org/gnome-nightly.flatpakrepo
+                <span class="unselectable">$ </span>flatpak remote-add gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
             %p
               Then to list the applications in the repository, run:
             %pre
