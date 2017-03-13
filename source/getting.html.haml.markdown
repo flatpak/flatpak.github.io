@@ -50,7 +50,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### openSUSE
 
-  A `flatpak` package is available for [openSUSE Tumbleweed](https://en.opensuse.org/Portal:Tumbleweed). To install, run the following:
+  Flatpak is available as a [1-click install](https://software.opensuse.org/package/flatpak) for Leap 42.1 and 42.2 and Tumbleweed. It can also be installed on Tumbleweed using Zypper:
 
   <pre>
   <span class="unselectable">$ </span>sudo zypper install flatpak
