@@ -214,7 +214,27 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.FeedReader
-                
+
+            %a{:name => "peek"}
+            %h4 Peek
+
+            %p
+              Stable builds of
+              = link_to "Peek", "https://github.com/phw/peek"
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/phw/peek/master/data/flatpak/peek-stable.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//stable
+
+            %p
+              Development builds of Peek
+
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/phw/peek/master/data/flatpak/peek-master.flatpakref
+                <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//master
+
             %a{:name => "gnome-stable"}
             %h4 Stable GNOME Applicatons
             %p
