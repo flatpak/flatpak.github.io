@@ -37,33 +37,36 @@ description: Applications distributed as Flatpaks, ready to download.
             .appslist.row
               = app_download "GNOME Twitch", "https://dl.tingping.se/flatpak/gnome-twitch.flatpakref"
               = app_download "Pithos", "https://dl.tingping.se/flatpak/pithos.flatpakref"
-              = app_download "Transmission Remote Gtk", "https://dl.tingping.se/flatpak/transmission-remote-gtk.flatpakref"
+              = app_download "Transmission", "https://dl.tingping.se/flatpak/transmission-remote-gtk.flatpakref"
               = app_download "Pitivi", "http://flatpak.pitivi.org/pitivi.flatpakref"
               = app_download "GNOME MPV", "https://dl.tingping.se/flatpak/gnome-mpv.flatpakref"
               = app_download "Corebird", "http://baedert.org/repo/org.baedert.corebird.flatpakref"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
               = app_download "FeedReader", "http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref"
 
-            .appslist.row
-              .col-xs-12
-                %h4 GNOME Stable Apps
-                = app_download "Builder", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=gnome-3-22"
-                = app_download "Documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=gnome-3-22"
-                = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=gnome-3-22"
-                = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=gnome-3-22"
-                = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=gnome-3-22"
-                = app_download "Recipes", "https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref"
-                = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=gnome-3-22"
 
             .appslist.row
               .col-xs-12
-                %h4 GNOME Unstable Apps
-                = app_download "Builder", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref"
-                = app_download "Documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref"
-                = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref"
-                = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref"
-                = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref"
-                = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref"
+                .row
+                  %h4.col-xs-12 GNOME Stable Apps
+                  = app_download "Builder", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=gnome-3-22"
+                  = app_download "Documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=gnome-3-22"
+                  = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=gnome-3-22"
+                  = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=gnome-3-22"
+                  = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=gnome-3-22"
+                  = app_download "Recipes", "https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref"
+                  = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=gnome-3-22"
+
+            .appslist.row
+              .col-xs-12
+                .row
+                  %h4.col-xs-12 GNOME Unstable Apps
+                  = app_download "Builder", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref"
+                  = app_download "Documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref"
+                  = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref"
+                  = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref"
+                  = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref"
+                  = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref"
               
           %div#cli.tab-pane.fade{:role => "tabpanel"}
 
