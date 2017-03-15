@@ -43,6 +43,7 @@ description: Applications distributed as Flatpaks, ready to download.
               = app_download "Corebird", "http://baedert.org/repo/org.baedert.corebird.flatpakref"
               = app_download "Picard", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
               = app_download "FeedReader", "http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref"
+              = app_download "Peek", "http://flatpak.uploadedlobster.com/peek-stable.flatpakref"
 
             .appslist.row
               .col-xs-12
@@ -224,7 +225,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/phw/peek/master/data/flatpak/peek-stable.flatpakref
+                <span class="unselectable">$ </span>flatpak install --from http://flatpak.uploadedlobster.com/peek-stable.flatpakref
                 <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//stable
 
             %p
@@ -232,7 +233,7 @@ description: Applications distributed as Flatpaks, ready to download.
 
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/phw/peek/master/data/flatpak/peek-master.flatpakref
+                <span class="unselectable">$ </span>flatpak install --from http://flatpak.uploadedlobster.com/peek-master.flatpakref
                 <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//master
 
             %a{:name => "gnome-stable"}
