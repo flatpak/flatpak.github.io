@@ -244,10 +244,15 @@ description: Applications distributed as Flatpaks, ready to download.
             %p
               Many GNOME applications are available as both stable or unstable development versions. Stable versions can be installed individually using the instructions in this section, or you can add the repository and browse its contents from the command line.
             %p
-              To add the GNOME applications repository:
+              First, make sure you have the GNOME runtimes repository:
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak remote-add gnome https://sdk.gnome.org/gnome.flatpakrepo
+                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+            %p
+              Now add the GNOME applications repository:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
             %p
               Then to list the applications in the repository, run:
             %pre
@@ -287,15 +292,20 @@ description: Applications distributed as Flatpaks, ready to download.
             %p
               Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
             %p
-              To add the unstable GNOME applications repository:
+              First, make sure you have the unstable GNOME runtimes repository:
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak remote-add gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
+                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
+            %p
+              Now add the unstable GNOME applications repository:
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak remote-add gnome-apps-nightly https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
             %p
               Then to list the applications in the repository, run:
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak remote-ls gnome-nightly-apps
+                <span class="unselectable">$ </span>flatpak remote-ls gnome-apps-nightly
 
             %a{:name => "builder-unstable"}
             %h5 Builder
