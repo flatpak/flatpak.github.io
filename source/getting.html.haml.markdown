@@ -10,9 +10,21 @@ description: How to download and install Flatpak on your system to get started.
 
   Once you've installed Flatpak, you can [get some apps](apps.html) or [create your own in 5 minutes](hello-world.html).
 
+  ### Alpine
+
+  A `flatpak` package is available in the testing repository.
+
+  <pre>
+  <span class="unselectable">$ </span>sudo apk add flatpak
+  </pre>
+
   ### Arch
 
   A `flatpak` package is available in the official repositories. `flatpak-git` is also available in the AUR for the latest development snapshot.
+
+  <pre>
+  <span class="unselectable">$ </span>sudo pacman -S flatpak
+  </pre>
 
   ### Debian
 
