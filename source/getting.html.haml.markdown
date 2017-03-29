@@ -42,7 +42,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Gentoo
 
-  An unofficial overlay is available [here](https://github.com/fosero/flatpak-overlay)
+  An unofficial overlay is available [here](https://github.com/fosero/flatpak-overlay).
 
   ### Mageia
 
