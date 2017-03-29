@@ -40,6 +40,8 @@
 
         = partial "navigation"
       / /.container-fluid
+    -if (current_page.url.start_with?('/docs'))
+      = partial 'docs_nav'
   = yield
   = partial "footer"
 

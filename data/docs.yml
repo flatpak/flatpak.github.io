@@ -1,0 +1,9 @@
+- title: Docs Home
+  link: "/docs"
+- title: Basics
+  link: "/docs/basics/example1.html"
+  submenu:
+  - title: Example doc 1
+    link: "/docs/basics/example1.html"
+  - title: Example doc 2
+    link: "/docs/basics/example1.html"
