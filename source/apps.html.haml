@@ -68,6 +68,7 @@ description: Applications distributed as Flatpaks, ready to download.
                   = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref"
                   = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref"
                   = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref"
+                  = app_download "Games", "https://git.gnome.org/browse/gnome-games/plain/flatpak/gnome-games-nightly.flatpakref"
               
           %div#cli.tab-pane.fade{:role => "tabpanel"}
 
@@ -327,3 +328,10 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.Photos
+
+            %a{:name => "games-unstable"}
+            %h5 Games
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-games/plain/flatpak/gnome-games-nightly.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Games
