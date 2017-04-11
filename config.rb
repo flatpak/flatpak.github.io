@@ -31,11 +31,15 @@ end
 helpers do
 
    # download app tile
-   def app_download(appname,uri)
-     "<div class='col-xs-6 col-sm-4'>#{appname}</div>
-     <div class='col-xs-6 col-sm-2 right'>
-     <a class='btn btn-default' href='#{uri}'>Download</a>
+   def app_download(appname,punchline='',uri)
+     html = "<div class='col-xs-12 col-sm-6 apptile'>
+     <div>
+      <h4>#{appname}</h4>"
+      html += "<p>#{punchline}</p>" unless (punchline === '')
+     html += "</div>
+     <a class='btn' href='#{uri}'></a>
      </div>"
+     return html
    end
 end
 
