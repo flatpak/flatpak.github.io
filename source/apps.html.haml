@@ -57,6 +57,7 @@ description: Applications distributed as Flatpaks, ready to download.
                   = app_download "Polari", "IRC chat client.", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable"
                   = app_download "Recipes", "Discover what to cook.", "https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref"
                   = app_download "Weather", "Monitor the weather anywhere.", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=stable"
+                  = app_download "Games", "Browse and play your games", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable"
 
             .appslist.row
               .col-xs-12
@@ -287,6 +288,13 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
+
+            %a{:name => "games-stable"}
+            %h5 Games
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable
+                <span class="unselectable">$ </span>flatpak run org.gnome.Games
 
             %a{:name => "gnome-unstable"}
             %h4 Unstable GNOME Applicatons
