@@ -68,7 +68,7 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-68811788-1' # Replace with your property ID.
 end
 
-activate :asset_hash
+#activate :asset_hash
 
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
 redirect "developer.html", to: "http://docs.flatpak.org"

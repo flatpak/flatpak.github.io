@@ -23,6 +23,8 @@ gem "middleman-deploy" #, "~> 2.0.0.pre.alpha"
 
 #bootstrap
 gem "bootstrap-sass" # "3.0.0"
+#bug in sprockets 3.1.2
+gem "middleman-sprockets", "~> 3.1.2"
 
 #Ubuntu specific gems
 gem "rb-inotify"
