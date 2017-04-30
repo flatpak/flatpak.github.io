@@ -29,7 +29,7 @@ description: How to download and install Flatpak on your system to get started.
   For development of Flatpak applications using `flatpak-builder` these dependencies are required:
   
   <pre>
-  <span class="unselectable">$ </span>sudo pacman -S --asdeps elfutils patch
+  <span class="unselectable">$ </span>sudo pacman -S --asdeps --needed elfutils patch
   </pre>
 
   ### Debian
