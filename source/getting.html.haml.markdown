@@ -27,7 +27,7 @@ description: How to download and install Flatpak on your system to get started.
   </pre>
   For development of Flatpak applications, `flatpak-builder` is available.
   <pre>
-  <span class="unselectable">$ </span>sudo pacman -S flatpak-builder elfutils
+  <span class="unselectable">$ </span>sudo pacman -S --asdeps elfutils patch
   </pre>
 
   ### Debian
