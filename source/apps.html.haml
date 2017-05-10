@@ -295,7 +295,7 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable
                 <span class="unselectable">$ </span>flatpak run org.gnome.Polari
 
-            %a{:name => "recipes"}
+            %a{:name => "recipes-stable"}
             %h5 Recipes
             %pre
               :preserve
@@ -370,6 +370,13 @@ description: Applications distributed as Flatpaks, ready to download.
               :preserve
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.Polari
+
+            %a{:name => "recipes-unstable"}
+            %h5 Polari
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
 
             %a{:name => "weather-unstable"}
             %h5 Weather
