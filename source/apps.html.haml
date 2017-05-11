@@ -56,7 +56,7 @@ description: Applications distributed as Flatpaks, ready to download.
                   = app_download "Gedit", "Text editor", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=stable"
                   = app_download "Photos", "Access, organize and share your photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=stable"
                   = app_download "Polari", "IRC chat client", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable"
-                  = app_download "Recipes", "Discover what to cook", "https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref"
+                  = app_download "Recipes", "Discover what to cook", "https://git.gnopme.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref"
                   = app_download "Weather", "Monitor the weather anywhere", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=stable"
                   = app_download "Games", "Browse and play your games", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable"
 
@@ -70,6 +70,7 @@ description: Applications distributed as Flatpaks, ready to download.
                   = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref"
                   = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref"
                   = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref"
+                  = app_download "Recipes", "https://git.gnopme.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref"
                   = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref"
                   = app_download "Games", "https://git.gnome.org/browse/gnome-games/plain/flatpak/gnome-games-nightly.flatpakref"
               
@@ -296,7 +297,7 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable
                 <span class="unselectable">$ </span>flatpak run org.gnome.Polari
 
-            %a{:name => "recipes"}
+            %a{:name => "recipes-stable"}
             %h5 Recipes
             %pre
               :preserve
@@ -358,6 +359,13 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.Gedit
 
+            %a{:name => "photos-unstable"}
+            %h5 Photos
+            %pre
+              :preserve
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
+
             %a{:name => "polari-unstable"}
             %h5 Polari
             %pre
@@ -365,12 +373,12 @@ description: Applications distributed as Flatpaks, ready to download.
                 <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref
                 <span class="unselectable">$ </span>flatpak run org.gnome.Polari
 
-            %a{:name => "photos-unstable"}
-            %h5 Photos
+            %a{:name => "recipes-unstable"}
+            %h5 Recipes
             %pre
               :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
+                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref
+                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
 
             %a{:name => "weather-unstable"}
             %h5 Weather
