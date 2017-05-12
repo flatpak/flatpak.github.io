@@ -21,59 +21,37 @@ description: Applications distributed as Flatpaks, ready to download.
         .tab-content.mediumgap
           %div#graphical.tab-pane.active.fade.in{:role => "tabpanel"}
 
+
             %p
               Click to download is available with Fedora 25, OpenSUSE Tumbleweed, Debian Testing, Arch, and Mageia 
               Cauldron, using GNOME Software. Some applications require the latest version, 3.22.6.
 
             .appslist.row            
-              = app_download "LibreOffice", "Popular office suite, direct from the developers", "http://download.documentfoundation.org/libreoffice/flatpak/LibreOffice.flatpakref"
-              = app_download "Telegram", "Secure instant messaging", "https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref"
-              = app_download "Spotify", "Music, podcast and video streaming service", "https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref"
-              = app_download "Skype", "Internet video and chat", "https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref"
-              = app_download "MonoDevelop", "Cross platform IDE for C#, F# and more", "https://download.mono-project.com/repo/monodevelop.flatpakref"
-              = app_download "Blender", "Open Source 3D creation", "https://www.daitauha.fr/static/flatpak/blender.flatpakref"
-
-
-            .appslist.row
-              = app_download "GNOME Twitch", "Watch live internet video broadcasts", "https://dl.tingping.se/flatpak/gnome-twitch.flatpakref"
-              = app_download "Pithos", "Radio client for the Pandora music service", "https://dl.tingping.se/flatpak/pithos.flatpakref"
-              = app_download "HexChat", "IRC client", "https://dl.tingping.se/flatpak/hexchat.flatpakref"
-              = app_download "Discord", "Voice and text chat client", "https://dl.tingping.se/flatpak/discord.flatpakref"
-              = app_download "Pitivi", "Personal video editing", "http://flatpak.pitivi.org/pitivi.flatpakref"
-              = app_download "GNOME MPV", "Video player", "https://dl.tingping.se/flatpak/gnome-mpv.flatpakref"
-              = app_download "Corebird", "Twitter client for Linux", "http://baedert.org/repo/org.baedert.corebird.flatpakref"
-              = app_download "Picard", "Music metadata editor", "https://www.daitauha.fr/static/flatpak/picard.flatpakref"
-              = app_download "FeedReader", "Internet RSS Newsfeed Reader", "http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref"
-              = app_download "Peek", "Short screencapture software that outputs GIF images", "http://flatpak.uploadedlobster.com/peek-stable.flatpakref"
-
-
-            .appslist.row
               .col-xs-12
                 .row
-                  %h4.col-xs-12 GNOME Stable Apps
-                  = app_download "Builder", "IDE for GNOME", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=stable"
-                  = app_download "Documents", "Manage your local and online documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=stable"
-                  = app_download "Gedit", "Text editor", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=stable"
-                  = app_download "Photos", "Access, organize and share your photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=stable"
-                  = app_download "Polari", "IRC chat client", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable"
-                  = app_download "Recipes", "Discover what to cook", "https://git.gnome.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref"
-                  = app_download "Weather", "Monitor the weather anywhere", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=stable"
-                  = app_download "Games", "Browse and play your games", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable"
-
-
-            .appslist.row
+                  %h4.col-xs-12 Stable Applications
+                  
+                  - data.apps.each do |i|
+                    - if (i.stable) 
+                      .col-xs-12.col-sm-6.apptile
+                        %div
+                          %h4 #{i.name}
+                          %p #{i.description}
+                        = link_to '', i.stable, :class => "btn"
+                        
+            .appslist.row            
               .col-xs-12
                 .row
-                  %h4.col-xs-12 GNOME Unstable Apps
-                  = app_download "Builder", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref"
-                  = app_download "Documents", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref"
-                  = app_download "Gedit", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref"
-                  = app_download "Polari", "https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref"
-                  = app_download "Photos", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref"
-                  = app_download "Recipes", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref"
-                  = app_download "Weather", "https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref"
-                  = app_download "Games", "https://git.gnome.org/browse/gnome-games/plain/flatpak/gnome-games-nightly.flatpakref"
-              
+                  %h4.col-xs-12 Nightly Builds of Applications (Unstable)
+                  
+                  - data.apps.each do |i|
+                    - if (i.nightly) 
+                      .col-xs-12.col-sm-6.apptile
+                        %div
+                          %h4 #{i.name}
+                          %p #{i.description}
+                        = link_to '', i.unstable, :class => "btn"
+
           %div#cli.tab-pane.fade{:role => "tabpanel"}
 
             %p
@@ -82,314 +60,54 @@ description: Applications distributed as Flatpaks, ready to download.
               information on how to update and manage your applications, see the 
               =link_to "command line tutorial.", "command-line.html"
 
-            %a{:name => "libreoffice"}
-            %h4 LibreOffice
-              
-            LibreOffice is available as a standalone Flatpak file.
-            
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
-                <span class="unselectable">$ </span>wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
-                <span class="unselectable">$ </span>flatpak install --bundle LibreOffice.flatpak
-
-            For more information, see the LibreOffice 
-            = succeed "." do
-              = link_to "Flatpak page", "http://www.libreoffice.org/download/flatpak/"
-
-            %a{:name => "telegram"}          
-            %h4 Telegram
-
-            Experimental nightly builds of the 
-            = link_to "Telegram", "https://telegram.org" 
-            desktop client are being produced by 
-            = link_to "Jan Grulich", "http://www.jgrulich.cz"
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.telegram.TelegramDesktopDevel
-
-            %a{:name => "spotify"}
-            %h4 Spotify
-
-            %p
-              Builds of the latest 
-              = link_to "Spotify", "https://spotify.com/"
-              desktop client are being produced by Alex Larsson.
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.spotify.Client
-
-            %a{:name => "skype"}
-            %h4 Skype
-
-            Builds of the alpha version of the 
-            = link_to "Skype", "http://skype.com"
-            desktop client are being made available by Alex Larsson.
-            
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.skype.Client
-
-            %a{:name => "monodevelop"}
-            %h4 MonoDevelop
-
-            MonoDevelop is available as a Flatpak preview from Xamarin. See the 
-            = link_to "MonoDevelop Linux download page", "http://www.monodevelop.com/download/linux/"
-            for more information.
-            
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.xamarin.MonoDevelop
+            - data.apps.each do |i|
+              - if (i.cli)
+                %a{:name => i.name}
+                %h4 #{i.name}
                 
-            %a{:name => "blender"}
-            %h4 Blender
+                - if (i.instructions)
+                  = i.instructions
+                  
+                - if (i.cli) 
+                  - i.cli.each do |j|
+                    %pre
+                      <span class="unselectable">$ </span>#{j}
 
-            Experimental builds of the
-            = link_to "Blender", "https://blender.org"
-            releases are being produced by
-            = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.blender.Blender
-
-            %a{:name => "picard"}
-            %h4 Picard
-
-            Experimental builds of the
-            = link_to "MusicBrainz's Picard", "https://picard.musicbrainz.org/"
-            releases are being produced by
-            = link_to "Mathieu Bridon", "https://mathieu.daitauha.fr"
+            %h2 GNOME
+            %p Many GNOME applications are available as both stable or unstable development versions. Stable versions can be installed individually using the instructions in this section, or you can add the repository and browse its contents from the command line.
             
+            %h3 Stable
+            %p First, make sure you have the GNOME runtimes repository:
             %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.musicbrainz.Picard
-
-            %a{:name => "pitivi"}
-            %h4 Pitivi
-
-            Pitivi master (development version) can be installed
-
+              <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+            %p Now add the GNOME applications repository:
             %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --user http://flatpak.pitivi.org/pitivi-master.flatpakref
+              <span class='unselectable'>$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
+            %p To install and run the stable version:
 
-            Pitivi release can be installed
+            - data.apps.each do |i| #one more time for gnome stable apps
+              - if (i.gnome && i.stable)
+                %h5 #{i.name}
+                %pre
+                  :preserve
+                    <span class='unselectable'>$ </span>flatpak install --from #{i.stable}
+                    <span class='unselectable'>$ </span>flatpak run #{i.appid}
+            
+            %h3 Development/Unstable
+            %p Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
+            %p First, make sure you have the unstable GNOME runtimes repository:
             %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --user http://flatpak.pitivi.org/pitivi.flatpakref
-
-            You can now launch Pitivi from your applications menu as any other installed application. You can also re run the installer which launches Pitivi after updating to the latest version. To see if warning or error messages are printed in the console, run: 
+              <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome-nightly.flatpakrepo
+            %p Now add the GNOME applications repository:
             %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak run org.pitivi.Pitivi//stable
+              <span class='unselectable'>$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
+            %p To install and run the unstable version:
 
-            If for some reason you need to use an older Pitivi version, run: 
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak run org.pitivi.Pitivi//0.96
+            - data.apps.each do |i| #aaand one more for gnome unstable apps
+              - if (i.gnome && i.nightly)
+                %h5 #{i.name}
+                %pre
+                  :preserve
+                    <span class='unselectable'>$ </span>flatpak install --from #{i.nightly}
+                    <span class='unselectable'>$ </span>flatpak run #{i.appid}
 
-            %a{:name => "corebird"}
-            %h4 Corebird
-
-            Experimental builds of the
-            = link_to "Corebird", "http://corebird.baedert.org/"
-            releases are being produced by
-            = link_to "Timm Bäder", "http://baedert.org/"
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://raw.githubusercontent.com/baedert/corebird-flatpak/master/org.baedert.corebird.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.baedert.corebird
-
-            %a{:name => "feedreader"}
-            %h4 FeedReader
-
-            %p
-              Builds of the latest 
-              = link_to "FeedReader", "https://jangernert.github.io/FeedReader/" 
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.FeedReader
-
-            %a{:name => "peek"}
-            %h4 Peek
-
-            %p
-              = link_to "Peek GIF screen recorder", "https://github.com/phw/peek"
-              is available as stable and development versions. To install and run the stable version:
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from http://flatpak.uploadedlobster.com/peek-stable.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//stable
-
-            %p
-              To install and run the development version:
-
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from http://flatpak.uploadedlobster.com/peek-master.flatpakref
-                <span class="unselectable">$ </span>flatpak run com.uploadedlobster.peek//master
-
-            %a{:name => "gnome-stable"}
-            %h4 Stable GNOME Applicatons
-            %p
-              Many GNOME applications are available as both stable or unstable development versions. Stable versions can be installed individually using the instructions in this section, or you can add the repository and browse its contents from the command line.
-            %p
-              First, make sure you have the GNOME runtimes repository:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
-            %p
-              Now add the GNOME applications repository:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
-            %p
-              Then to list the applications in the repository, run:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-ls gnome-apps
-
-            %a{:name => "builder-stable"}
-            %h5 Builder
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Builder
-
-            %a{:name => "documents-stable"}
-            %h5 Documents
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Documents
-
-            %a{:name => "gedit-stable"}
-            %h5 Gedit
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Gedit
-
-            %a{:name => "photos-stable"}
-            %h5 Photos
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
-
-            %a{:name => "polari-stable"}
-            %h5 Polari
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Polari
-
-            %a{:name => "recipes-stable"}
-            %h5 Recipes
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://matthiasclasen.github.io/recipes-releases/gnome-recipes.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
-
-            %a{:name => "weather-stable"}
-            %h5 Weather
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Weather
-
-            %a{:name => "games-stable"}
-            %h5 Games
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable
-                <span class="unselectable">$ </span>flatpak run org.gnome.Games
-
-            %a{:name => "gnome-unstable"}
-            %h4 Unstable GNOME Applicatons
-            %p
-              Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
-            %p
-              First, make sure you have the unstable GNOME runtimes repository:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
-            %p
-              Now add the unstable GNOME applications repository:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-add gnome-apps-nightly https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
-            %p
-              Then to list the applications in the repository, run:
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak remote-ls gnome-apps-nightly
-
-            %a{:name => "builder-unstable"}
-            %h5 Builder
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Builder
-
-            %a{:name => "documents-unstable"}
-            %h5 Documents
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Documents
-
-            %a{:name => "gedit-unstable"}
-            %h5 Gedit
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Gedit
-
-            %a{:name => "photos-unstable"}
-            %h5 Photos
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Photos
-
-            %a{:name => "polari-unstable"}
-            %h5 Polari
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Polari
-
-            %a{:name => "recipes-unstable"}
-            %h5 Recipes
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Recipes
-
-            %a{:name => "weather-unstable"}
-            %h5 Weather
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Weather
-
-            %a{:name => "games-unstable"}
-            %h5 Games
-            %pre
-              :preserve
-                <span class="unselectable">$ </span>flatpak install --from https://git.gnome.org/browse/gnome-games/plain/flatpak/gnome-games-nightly.flatpakref
-                <span class="unselectable">$ </span>flatpak run org.gnome.Games

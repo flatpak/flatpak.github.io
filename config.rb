@@ -30,17 +30,6 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
 
-   # download app tile
-   def app_download(appname,punchline='',uri)
-     html = "<div class='col-xs-12 col-sm-6 apptile'>
-     <div>
-      <h4>#{appname}</h4>"
-      html += "<p>#{punchline}</p>" unless (punchline === '')
-     html += "</div>
-     <a class='btn' href='#{uri}'></a>
-     </div>"
-     return html
-   end
 end
 
 # Build-specific configuration

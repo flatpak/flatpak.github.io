@@ -1,0 +1,156 @@
+- name: Builder
+  appid: org.gnome.Builder
+  description: IDE for GNOME
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-builder.flatpakref
+  gnome: true
+    
+- name: Documents
+  appid: org.gnome.Documents
+  description: Manage your local and online documents
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-documents.flatpakref
+  gnome: true
+
+- name: Gedit
+  appid: org.gnome.Gedit
+  description: text editor
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gedit.flatpakref
+  gnome: true
+  
+- name: Photos
+  appid: org.gnome.Photos
+  description: Access, organize and share your photos
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-photos.flatpakref
+  gnome: true
+
+- name: Polari
+  appid: org.gnome.Polari
+  description: IRC chat client
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/polari.flatpakref
+  gnome: true
+
+- name: Recipes
+  appid: org.gnome.Recipes
+  description: Discover what to cook
+  stable: https://git.gnome.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref
+  gnome: true
+
+- name: Weather
+  appid: org.gnome.Weather
+  description: Monitor the weather anywhere
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-weather.flatpakref
+  gnome: true
+
+- name: Games
+  appid: org.gnome.Games
+  description: Browse and play your games
+  stable: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref?h=stable
+  nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-games.flatpakref
+  gnome: true
+  
+- name: Peek
+  description: Short screencapture software that outputs GIF images
+  stable: http://flatpak.uploadedlobster.com/peek-stable.flatpakref
+
+- name: LibreOffice
+  description: Popular office suite, direct from the developers
+  stable: http://download.documentfoundation.org/libreoffice/flatpak/LibreOffice.flatpakref
+  cli:
+    - flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+    - wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
+    - flatpak install --bundle LibreOffice.flatpak
+  instructions: "Detailed instructions are available at the LibreOffice <a href='http://www.libreoffice.org/download/flatpak/'>Flatpak page</a>."
+
+- name: Telegram
+  description: Secure instant messaging
+  stable: https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref 
+  cli:
+    - flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
+    - flatpak run org.telegram.TelegramDesktopDevel
+
+- name: Spotify
+  description: Music, podcast and video streaming service
+  stable: https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+  instructions: "Builds of the latest <a href='https://spotify.com/'>Spotify</a> desktop client are being produced by Alex Larsson."
+  cli:
+    - flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
+    - flatpak run com.spotify.Client
+
+- name: Skype
+  description: Internet video and chat
+  stable: https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
+  instructions: "Builds of the alpha version of the <a href='http://www.skype.com'>Skype</a> desktop client are being made available by Alex Larsson."
+  cli:
+    - flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
+    - flatpak run com.skype.Client
+
+- name: MonoDevelop
+  description: Cross platform IDE for C#, F# and more
+  stable: https://download.mono-project.com/repo/monodevelop.flatpakref
+  instructions: "MonoDevelop is available as a Flatpak preview from Xamarin. See the <a href='http://www.monodevelop.com/download/linux/'>MonoDevelop Linux download page</a> for more information."
+  cli:
+    - flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
+    - flatpak run com.xamarin.MonoDevelop
+
+- name: Blender
+  description: Open Source 3D creation
+  stable: https://www.daitauha.fr/static/flatpak/blender.flatpakref
+  instructions: "Experimental builds of the <a href='https://blender.org'>Blender</a> releases are being produced by <a href='https://mathieu.daitauha.fr'>Mathieu Bridon</a>."
+  cli:
+    - flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
+    - flatpak run org.blender.Blender
+
+- name: Picard
+  description: Music metadata editor
+  stable: https://www.daitauha.fr/static/flatpak/picard.flatpakref
+  instructions: "Experimental builds of <a href='https://picard.musicbrainz.org/'>MusicBrainz's Picard</a> releases are being produced by <a href='https://mathieu.daitauha.fr'>Mathieu Bridon</a>."
+  cli:
+    - flatpak install --from https://www.daitauha.fr/static/flatpak/picard.flatpakref
+    - flatpak run org.musicbrainz.Picard
+
+- name: Pitivi
+  description: Personal video editing
+  stable: http://flatpak.pitivi.org/pitivi.flatpakref
+  instructions: "Pitivi master (development version) can be installed and run:<pre><span class='unselectable'>$ </span>flatpak install --user http://flatpak.pitivi.org/pitivi-master.flatpakref</pre><pre><span class='unselectable'>$ </span>flatpak run org.pitivi.Pitivi</pre><p>Release version can be installed:</p>"
+  cli:
+    - flatpak install --user http://flatpak.pitivi.org/pitivi.flatpakref
+    - flatpak run org.pitivi.Pitivi//stable
+
+- name: GNOME Twitch
+  description: Watch live internet video broadcasts
+  stable: https://dl.tingping.se/flatpak/gnome-twitch.flatpakref
+  cli:
+    - flatpak install --user https://dl.tingping.se/flatpak/gnome-twitch.flatpakref
+    - flatpak run com.vinszent.GnomeTwitch
+
+- name: Pithos
+  description: Radio client for the Pandora music service
+  stable: https://dl.tingping.se/flatpak/pithos.flatpakref
+
+- name: Hexchat
+  description: IRC CLient
+  stable: https://dl.tingping.se/flatpak/hexchat.flatpakref
+
+- name: Discord
+  description: Voice and text chat client
+  stable: https://dl.tingping.se/flatpak/discord.flatpakref
+
+- name: GNOME MPV
+  description: Video player
+  stable: https://dl.tingping.se/flatpak/gnome-mpv.flatpakref
+
+- name: Corebird
+  description: Twitter client for Linux
+  stable: http://baedert.org/repo/org.baedert.corebird.flatpakref
+
+- name: Feedreader
+  description: Internet RSS Newsfeed Reader
+  stable: http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
+
+
