@@ -134,7 +134,7 @@
   stable: https://dl.tingping.se/flatpak/pithos.flatpakref
 
 - name: Hexchat
-  description: IRC CLient
+  description: IRC Client
   stable: https://dl.tingping.se/flatpak/hexchat.flatpakref
 
 - name: Discord
