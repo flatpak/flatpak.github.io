@@ -52,7 +52,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Mageia
 
-  A `flatpak` package is available in Cauldron. To install, run the following as root:
+  A `flatpak` package is available for Mageia 6 and newer. To install, run the following as root:
 
   If using `DNF`
 
