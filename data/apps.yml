@@ -105,6 +105,14 @@
   cli:
     - flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
     - flatpak run org.blender.Blender
+    
+- name: Mypaint
+  description: Open Source Painting
+  stable: https://raw.githubusercontent.com/mypaint/mypaint/master/flatpak/mypaint-stable.flatpakref
+  instructions: "Stable builds of <a href='https://mypaint.org'>Mypaint</a> releases are being produced by Manuel Quiñones."
+  cli:
+    - flatpak install --from https://raw.githubusercontent.com/mypaint/mypaint/master/flatpak/mypaint-stable.flatpakref
+    - flatpak run org.mypaint.MyPaint
 
 - name: Picard
   description: Music metadata editor
