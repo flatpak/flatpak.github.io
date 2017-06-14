@@ -36,7 +36,7 @@
 - name: Recipes
   appid: org.gnome.Recipes
   description: Discover what to cook
-  stable: https://git.gnome.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref?h=stable
+  stable: https://git.gnome.org/browse/recipes/plain/flatpak/gnome-recipes.flatpakref
   nightly: https://git.gnome.org/browse/gnome-apps-nightly/plain/gnome-recipes.flatpakref
   gnome: true
 
