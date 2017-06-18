@@ -76,7 +76,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Ubuntu
 
-  For Ubuntu 16.04 and 16.10 a PPA is available. To install, run:
+  For Ubuntu 16.04, 16.10 and 17.04 a PPA is available. To install, run:
 
   <pre>
   <span class="unselectable">$ </span>sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -85,6 +85,6 @@ description: How to download and install Flatpak on your system to get started.
   </pre>
 
   A `flatpak` package is available in [Ubuntu 16.10](https://wiki.ubuntu.com/YakketyYak) and newer via universe, however this is
-  an older version, and its recommended that you use the one from the PPA.
+  an older version, and it's recommended that you use the one from the PPA.
 
 </div></div></div></section>
