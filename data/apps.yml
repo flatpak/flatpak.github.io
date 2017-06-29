@@ -90,6 +90,14 @@
     - flatpak install --from https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
     - flatpak run com.skype.Client
 
+- name: Linphone
+  description: Open Source VOIP
+  stable: https://linphone.org/flatpak/linphone.flatpakref
+  instructions: "Official desktop version from linphone.org"
+  cli:
+    - flatpak install --from https://linphone.org/flatpak/linphone.flatpakref
+    - flatpak run com.belledonnecommunications.linphone
+
 - name: MonoDevelop
   description: Cross platform IDE for C#, F# and more
   stable: https://download.mono-project.com/repo/monodevelop.flatpakref
