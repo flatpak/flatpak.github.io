@@ -22,4 +22,7 @@
   link: "/faq.html"
 - title: About & Contact
   link: "#about"
+- title: Flathub
+  link: "https://flathub.org/"
+  onlyfooter: true
 
