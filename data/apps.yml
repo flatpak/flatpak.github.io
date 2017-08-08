@@ -169,4 +169,19 @@
   description: Internet RSS Newsfeed Reader
   stable: http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
 
+- name: Firefox Developer
+  description: Browse the Web
+  nightly: https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxDevEdition.flatpakref
+  instructions: "Developer edition of Firefox"
+  cli:
+    - flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxDevEdition.flatpakref
+    - flatpak run org.mozilla.FirefoxDevEdition
+
+- name: Firefox Nightly
+  description: Browse the Web
+  nightly: https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref
+  instructions: "Nightly edition of Firefox"
+  cli:
+    - flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref
+    - flatpak run org.mozilla.FirefoxNightly
 
