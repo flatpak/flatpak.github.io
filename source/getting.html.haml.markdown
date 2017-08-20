@@ -41,6 +41,10 @@ description: How to download and install Flatpak on your system to get started.
   </pre>
 
   For Debian Jessie, a `flatpak` package is available in the official [backports repository](https://backports.debian.org/Instructions/).
+  
+  ### Endless OS
+  
+  Flatpak support is built into Endless OS 3.0.0 and newer. If you are using an older version, [upgrade to Endless OS 3](https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967).
 
   ### Fedora
 
