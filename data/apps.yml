@@ -185,3 +185,10 @@
     - flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref
     - flatpak run org.mozilla.FirefoxNightly
 
+- name: Scribus
+  description: Open Source Page Layout and Desktop Publishing (DTP)
+  nightly: http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref 
+  cli:
+    - flatpak install http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref
+    - flatpak run net.scribus.Scribus
+
