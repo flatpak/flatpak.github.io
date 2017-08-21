@@ -169,4 +169,11 @@
   description: Internet RSS Newsfeed Reader
   stable: http://feedreader.xarbit.net/feedreader-repo/feedreader.flatpakref
 
+- name: Scribus
+  description: Open Source Page Layout and Desktop Publishing (DTP)
+  nightly: http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref 
+  cli:
+    - flatpak install http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref
+    - flatpak run net.scribus.Scribus
+
 
