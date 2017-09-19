@@ -106,14 +106,6 @@
     - flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
     - flatpak run com.xamarin.MonoDevelop
 
-- name: Blender
-  description: Open Source 3D creation
-  stable: https://www.daitauha.fr/static/flatpak/blender.flatpakref
-  instructions: "Experimental builds of the <a href='https://blender.org'>Blender</a> releases are being produced by <a href='https://mathieu.daitauha.fr'>Mathieu Bridon</a>."
-  cli:
-    - flatpak install --from https://www.daitauha.fr/static/flatpak/blender.flatpakref
-    - flatpak run org.blender.Blender
-    
 - name: Mypaint
   description: Open Source Painting
   stable: https://raw.githubusercontent.com/mypaint/mypaint/master/flatpak/mypaint-stable.flatpakref
