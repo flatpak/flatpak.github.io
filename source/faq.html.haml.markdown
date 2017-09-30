@@ -67,7 +67,7 @@ description: FAQ about the Flatpak project.
   Some standards such as desktop files and appstream metadata are incorporated as mandatory parts in the flatpak definition.
   By relying on these standards we are building on years of investment and support under Linux.
   
-  Other standards, like the XDG base directory specification, are violated by placing files in a `.var/` directory inside a user's home directory.
+  Flatpak does not adhere to other standards, like the XDG base directory specification, by placing files in a `.var/` directory inside a user's home directory.
 
   ### Can Flatpak be used on servers too?
   
