@@ -74,14 +74,6 @@
     - flatpak install --from https://jgrulich.fedorapeople.org/telegram/telegram.flatpakref
     - flatpak run org.telegram.TelegramDesktopDevel
 
-- name: Spotify
-  description: Music, podcast and video streaming service
-  stable: https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
-  instructions: "Builds of the latest <a href='https://spotify.com/'>Spotify</a> desktop client are being produced by Alex Larsson."
-  cli:
-    - flatpak install --from https://s3.amazonaws.com/alexlarsson/spotify-repo/spotify.flatpakref
-    - flatpak run com.spotify.Client
-
 - name: Skype
   description: Internet video and chat
   stable: https://s3.amazonaws.com/alexlarsson/skype-repo/skype.flatpakref
@@ -109,7 +101,6 @@
 - name: Mypaint
   description: Open Source Painting
   stable: https://raw.githubusercontent.com/mypaint/mypaint/master/flatpak/mypaint-stable.flatpakref
-  instructions: "Stable builds of <a href='https://mypaint.org'>Mypaint</a> releases are being produced by Manuel Quiñones."
   cli:
     - flatpak install --from https://raw.githubusercontent.com/mypaint/mypaint/master/flatpak/mypaint-stable.flatpakref
     - flatpak run org.mypaint.MyPaint
