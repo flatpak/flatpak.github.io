@@ -58,6 +58,6 @@ activate :google_analytics do |ga|
 end
 
 #activate :asset_hash
-
+activate :directory_indexes
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
 redirect "developer.html", to: "http://docs.flatpak.org"
