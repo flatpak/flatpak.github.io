@@ -45,7 +45,7 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak tied to systemd?
 
-  No. Versions of flatpak 0.6.10 relied on systemd for cgroups setup, but this is no longer required.
+  No. Versions of flatpak before 0.6.10 relied on systemd for cgroups setup, but this is no longer required.
 
   ### Is Flatpak the same as xdg-app?
 
@@ -69,7 +69,8 @@ description: FAQ about the Flatpak project.
 
   ### Can Flatpak be used on servers too?
   
-  Flatpak is designed to run inside a desktop session and relies on certain session services, such as a dbus session bus and a systemd --user instance. This makes Flatpak not a good match for a server.
+  Flatpak is designed to run inside a desktop session and relies on certain session services, such as a dbus session bus
+  and, optionally, a systemd --user instance. This makes Flatpak not a good match for a server.
 
   However, the build features of Flatpak run fine outside a session, so you can build things on a server.
 
