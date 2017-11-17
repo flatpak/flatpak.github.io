@@ -58,6 +58,10 @@ description: How to download and install Flatpak on your system to get started.
 
   An unofficial overlay is available [here](https://github.com/fosero/flatpak-overlay).
 
+  ### Linux Mint
+  
+  Flatpak support is built into Linux Mint 18.3 and newer.
+
   ### Mageia
 
   A `flatpak` package is available for Mageia 6 and newer. To install, run the following as root:
