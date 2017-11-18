@@ -12,9 +12,6 @@ description: Applications distributed as Flatpaks, ready to download.
           to try them. If you don't have it already, you'll need to
           =link_to "get Flatpak.", "getting.html"
 
-          More applications can be found
-          =link_to "on Flathub.", "https://flathub.org/apps.html"
-
         %ul#tabs.nav.nav-tabs{"role" => "tablist"}
           %li.active{:role => "presentation"}
             %a{:href => "#graphical", :role => "tab", "data-toggle" => "tab"} Click to Download
@@ -33,7 +30,10 @@ description: Applications distributed as Flatpaks, ready to download.
               .col-xs-12
                 .row
                   %h4.col-xs-12 Stable Applications
-                  
+
+                  Majority of stable applications have found a new home, 
+                  =link_to "Flathub.", "https://flathub.org/apps.html"
+
                   - data.apps.each do |i|
                     - if (i.stable) 
                       .col-xs-12.col-sm-6.apptile
