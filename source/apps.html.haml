@@ -31,8 +31,9 @@ description: Applications distributed as Flatpaks, ready to download.
                 .row
                   %h4.col-xs-12 Stable Applications
 
-                  Majority of stable applications have found a new home, 
-                  =link_to "Flathub.", "https://flathub.org/apps.html"
+                  %p.col-xs-12
+                    Majority of stable applications have found a new home, 
+                    =link_to "Flathub.", "https://flathub.org/apps.html"
 
                   - data.apps.each do |i|
                     - if (i.stable) 
