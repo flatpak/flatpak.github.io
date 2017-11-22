@@ -101,10 +101,10 @@ description: Applications distributed as Flatpaks, ready to download.
             %p Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
             %p First, make sure you have the unstable GNOME runtimes repository:
             %pre
-              <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome-nightly.flatpakrepo
+              <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
             %p Now add the GNOME applications repository:
             %pre
-              <span class='unselectable'>$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
+              <span class='unselectable'>$ </span>flatpak remote-add gnome-apps-nightly https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
             %p To install and run the unstable version:
 
             - data.apps.each do |i| #aaand one more for gnome unstable apps
