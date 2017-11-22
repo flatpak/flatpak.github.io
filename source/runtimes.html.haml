@@ -13,12 +13,11 @@ description: Available Flatpak runtimes.
           for more information about how to install runtimes and SDKs.
         %h2 Available runtimes
         %p
-          There are currently two main runtimes available: Freedesktop and GNOME. The Freedesktop runtime is the standard runtime that can be used for any application and contains a set of essential libraries and services, including D-Bus, GLib, PulseAudio, X11 and Wayland.
+          There are currently three main runtimes available: Freedesktop, GNOME and KDE. The Freedesktop runtime is the standard runtime that can be used for any application and contains a set of essential libraries and services, including D-Bus, GLib, PulseAudio, X11 and Wayland.
         %p
           The GNOME runtime is based on the Freedesktop runtime and adds the GNOME platform, including libraries like GStreamer, GTK+, GVFS and more. It is appropriate for any application that makes use of the GNOME platform.
         %p
-          A KDE runtime is 
-          =link_to "in development.", "https://community.kde.org/Flatpak#KDE_Runtime"
+          The KDE runtime is also based on the Freedesktop runtime and adds Qt and KDE Frameworks. It is appropriate for any application that makes use of the KDE platform and most Qt-based applications.
 
         %ul#tabs.nav.nav-tabs{"role" => "tablist"}
           %li.active{:role => "presentation"}
@@ -27,22 +26,24 @@ description: Available Flatpak runtimes.
             %a{:href => "#gnome", :role => "tab", "data-toggle" => "tab"} GNOME
           %li{:role => "presentation"}
             %a{:href => "#gnome-nightlies", :role => "tab", "data-toggle" => "tab"} GNOME Nightlies
+          %li{:role => "presentation"}
+            %a{:href => "#kde", :role => "tab", "data-toggle" => "tab"} KDE
         
         .tab-content.mediumgap
           %div#freedesktop.tab-pane.active.fade.in{:role => "tabpanel"}
 
             %p
               Freedesktop runtimes are hosted at 
-              =link_to "sdk.gnome.org", "https://sdk.gnome.org/repo/"
+              =link_to "flathub.org", "https://flathub.org/repo/"
               and signed with 
               = succeed "." do
-                =link_to "this key", "https://sdk.gnome.org/keys/gnome-sdk.gpg"
+                =link_to "this key", "https://flathub.org/repo/flathub.gpg"
               To add this repository, run:
 
             %p
             :preserve
               <pre>
-              <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+              <span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
               </pre>
             %p
               Available runtimes:
@@ -343,14 +344,14 @@ description: Available Flatpak runtimes.
 
             %p
               GNOME runtimes are hosted at 
-              =link_to "sdk.gnome.org", "https://sdk.gnome.org/repo/"
+              =link_to "flathub.org", "https://flathub.org/repo/"
               and signed with 
               = succeed "." do
-                =link_to "this key", "https://sdk.gnome.org/keys/gnome-sdk.gpg"
+                =link_to "this key", "https://flathub.org/repo/flathub.gpg"
               To add this repository, run:
             :preserve
               <pre>
-              <span class="unselectable">$ </span>flatpak remote-add --from gnome https://sdk.gnome.org/gnome.flatpakrepo
+              <span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
               </pre>
             %p
               Available runtimes:
@@ -466,6 +467,43 @@ description: Available Flatpak runtimes.
                   %td SDK debug information (extension)
                 %tr
                   %td org.gnome.Sdk.locale
+                  %td SDK translations (extension)
+
+          %div#kde.tab-pane.fade{:role => "tabpanel"}
+
+            %p
+              KDE runtimes are hosted at 
+              =link_to "flathub.org", "https://flathub.org/repo/"
+              and signed with 
+              = succeed "." do
+                =link_to "this key", "https://flathub.org/repo/flathub.gpg"
+              To add this repository, run:
+            :preserve
+              <pre>
+              <span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+              </pre>
+            %p
+              Available runtimes:
+
+            %table
+              %tbody
+                %tr
+                  %td ID
+                  %td Description
+                %tr
+                  %td org.kde.Platform
+                  %td Runtime
+                %tr
+                  %td org.kde.Platform.locale
+                  %td Runtime translations (extension)
+                %tr
+                  %td org.kde.Sdk
+                  %td SDK
+                %tr
+                  %td org.kde.Sdk.debug
+                  %td SDK debug information (extension)
+                %tr
+                  %td org.kde.Sdk.locale
                   %td SDK translations (extension)
 
 :javascript
