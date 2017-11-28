@@ -7,8 +7,19 @@ description: Applications distributed as Flatpaks, ready to download.
     .row
       .col-lg-10.col-lg-offset-1
         %h1 Flatpak Applications
-        %p 
-          This page lists some of the apps that are available as Flatpaks, along with instructions for how 
+        %p
+          Flatpak applications are distributed in repositories. Anyone can set up a repository for their applications, and
+          the users only need to add the repository to the local configuration to get full integration in both the
+          command line and the graphical installation tools (such as gnome-software).
+        %p
+          However, most flatpak applications are available in a repository known as Flathub. See the
+          =link_to "flathub site", "https://flathub.org/index.html#using"
+          for details about how to use it.
+          There is also a list of
+          =link_to "all applications on flathub", "https://flathub.org/apps.html"
+          that you can browse.
+        %p
+          This page lists some of the other repositories that are available, along with instructions for how
           to try them. If you don't have it already, you'll need to
           =link_to "get Flatpak.", "getting.html"
 
@@ -29,11 +40,7 @@ description: Applications distributed as Flatpaks, ready to download.
             .appslist.row            
               .col-xs-12
                 .row
-                  %h4.col-xs-12 Stable Applications
-
-                  %p.col-xs-12
-                    Majority of stable applications have found a new home, 
-                    =link_to "Flathub.", "https://flathub.org/apps.html"
+                  %h4.col-xs-12 Stable Applications outside flathub
 
                   - data.apps.each do |i|
                     - if (i.stable) 
@@ -77,41 +84,20 @@ description: Applications distributed as Flatpaks, ready to download.
                     %pre
                       <span class="unselectable">$ </span>#{j}
 
-            %h2 GNOME
-            %p Many GNOME applications are available as both stable or unstable development versions. Stable versions can be installed individually using the instructions in this section, or you can add the repository and browse its contents from the command line.
-            
-            %h3 Stable
-            %p First, make sure you have the GNOME runtimes repository:
-            %pre
-              <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
-            %p Now add the GNOME applications repository:
-            %pre
-              <span class='unselectable'>$ </span>flatpak remote-add gnome-apps https://sdk.gnome.org/gnome-apps.flatpakrepo
-            %p To install and run the stable version:
+            %h2 GNOME unstable snapshots
+            %p
+              The stable builds of GNOME applications are available on flathub, but unstable development builds are available in a separate repository.
+              Note that these are builds directly from the latest git version and have no guarantees that they work on any given date.
 
-            - data.apps.each do |i| #one more time for gnome stable apps
-              - if (i.gnome && i.stable)
-                %h5 #{i.name}
-                %pre
-                  :preserve
-                    <span class='unselectable'>$ </span>flatpak install --from #{i.stable}
-                    <span class='unselectable'>$ </span>flatpak run #{i.appid}
-            
-            %h3 Development/Unstable
-            %p Unstable development versions of the GNOME applications can be installed individually or by adding and browsing the repository from the command line.
             %p First, make sure you have the unstable GNOME runtimes repository:
             %pre
               <span class='unselectable'>$ </span>flatpak remote-add --if-not-exists gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
             %p Now add the GNOME applications repository:
             %pre
               <span class='unselectable'>$ </span>flatpak remote-add gnome-apps-nightly https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
-            %p To install and run the unstable version:
-
-            - data.apps.each do |i| #aaand one more for gnome unstable apps
-              - if (i.gnome && i.nightly)
-                %h5 #{i.name}
-                %pre
-                  :preserve
-                    <span class='unselectable'>$ </span>flatpak install --from #{i.nightly}
-                    <span class='unselectable'>$ </span>flatpak run #{i.appid}
-
+            %p You can now list the available unstable gnome applications with:
+            %pre
+              <span class='unselectable'>$ </span>flatpak remote-ls gnome-apps-nightly
+            %p And install them for example like:
+            %pre
+              <span class='unselectable'>$ </span>flatpak install gnome-apps-nightly org.gnome.Maps
