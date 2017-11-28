@@ -85,14 +85,14 @@ description: Create a Flatpak application in five minutes.
           {
               "name": "hello",
               "buildsystem": "simple",
+              "build-commands": [
+                  "install -D hello.sh /app/bin/hello.sh"
+              ],
               "sources": [
                   {
                       "type": "file",
                       "path": "hello.sh"
                   }
-              ],
-              "build-commands": [
-                  "install -D hello.sh /app/bin/hello.sh"
               ]
           }
       ]
