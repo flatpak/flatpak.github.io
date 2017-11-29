@@ -80,12 +80,12 @@ description: How to use the command line to manage installed applications.
 
   Runtimes are collections of dependencies that are used by applications. They are provided by repositories, in much the same way as repositories of packages. When installing an application, Flatpak will automatically install any required runtimes if they are available. This does require that the repositories containing those runtimes are added first.
 
-  In most cases, the GNOME SDK repository contains all the runtimes you might need. To add it, run:
+  In most cases, the flathub repository contains all the runtimes you might need. To add it, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists gnome https://sdk.gnome.org/gnome.flatpakrepo
+  <span class="unselectable">$ </span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   </pre>
 
-  `--if-not-exists` means that the repository will only be added if it isn't there already and `gnome` is the name for the repository.
+  `--if-not-exists` means that the repository will only be added if it isn't there already and `flathub` is the name for the repository.
 
 </div></div></div></section>
