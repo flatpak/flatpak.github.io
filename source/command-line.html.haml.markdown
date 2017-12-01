@@ -59,7 +59,7 @@ description: How to use the command line to manage installed applications.
   With Flatpak, repositories can include one or many applications. They can either be added manually or as part of installing an application. To list the Flatpak repositories that you have added, run:
 
   <pre>
-  <span class="unselectable">$ </span>flatpak remote-list
+  <span class="unselectable">$ </span>flatpak remotes
   </pre>
 
   It is then possible to list all the applications in each repository using:
@@ -68,7 +68,7 @@ description: How to use the command line to manage installed applications.
   <span class="unselectable">$ </span>flatpak remote-ls --app REPOSITORY
   </pre>
 
-  `REPOSITORY` should be replaced by the repository name given by `flatpak remote-list`. The `--app` option means that only applications will be listed. Without it, runtimes that are provided by the repository will also be listed.
+  `REPOSITORY` should be replaced by the repository name given by `flatpak remotes`. The `--app` option means that only applications will be listed. Without it, runtimes that are provided by the repository will also be listed.
 
   Finally, it is possible to remove a repository using:
 
