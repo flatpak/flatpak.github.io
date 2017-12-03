@@ -85,7 +85,15 @@ description: How to download and install Flatpak on your system to get started.
   <pre>
   <span class="unselectable">$ </span>sudo zypper install flatpak
   </pre>
+  
+  ### Solus
 
+  Flatpak package is available for Solus too. Install it using `eopkg`.
+
+  <pre>
+  <span class="unselectable">$ </span>sudo eopkg install flatpak
+  </pre>
+  
   ### Ubuntu
 
   For Ubuntu 16.04, 16.10, 17.04 and 17.10 a PPA is available. To install, run:
@@ -98,14 +106,6 @@ description: How to download and install Flatpak on your system to get started.
 
   A `flatpak` package is available in [Ubuntu 16.10](https://wiki.ubuntu.com/YakketyYak) and newer via universe, however this is
   an older version, and it's recommended that you use the one from the PPA.
-
-  ### Solus
-
-  Flatpak package is available for Solus too. Install it using `eopkg`.
-
-  <pre>
-  <span class="unselectable">$ </span>sudo eopkg install flatpak
-  </pre>
 
 
 </div></div></div></section>
