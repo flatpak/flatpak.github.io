@@ -91,5 +91,7 @@ description: FAQ about the Flatpak project.
   Flatpak repositories can't (currently) be put on github in a convenient way.
   As an alternative, you can create a single-file bundle, and put that up on github
   as a 'release'. Note that bundles have some drawbacks, compared to a repository.
+  Another option you have is to get your app on [Flathub](https://flathub.org/)
+  which will allow your users to get updates.
 
 </div></div></div></section>
