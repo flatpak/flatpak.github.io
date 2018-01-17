@@ -2,47 +2,58 @@
 title: Flatpak - the future of application distribution
 description: The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!
 ---
-%header
-  .header-content
-    .header-content-inner
-      %h1 the future of application distribution
-      %hr
-        %p Flatpak is the next-generation technology for building and installing desktop applications. It has the power to revolutionize the Linux desktop ecosystem.
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#features"} Learn More
 
-%section#features.bg-primary
+%section.bg-primary-neutral
   .container
-    .row
-      .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Flatpak Features
-        %hr.light
-    .row
-      .col-lg-2.col-sm-3.col-lg-offset-1
-        %h3 For users
-      .col-lg-8.col-sm-9
-        %ul
+    .row.largegap
+      .col-lg-12
+        %h1.section-heading the best way to get apps on Linux
+        %p Choose from a growing collection of apps.
+        %a#flathubbtn.btn.btn-default.btn-xl.page-scroll{:href => "http://flathub.org/apps.html"} Browse apps on Flathub
+        %p.spaced
+          %a#toggleuser.page-scroll{:href=>'#userperspective'} Learn more…
+
+    .row#userperspective.offbydefault
+      .col-sm-8.col-sm-offset-2
+        %ul.dotless.largegap
           %li
-            %h4 Access a wide variety of applications
-            %p The list of Flatpak applications is growing all the time and includes Spotify, Skype and Telegram.
+            %h2 Flatpak is a new way to get apps on Linux
           %li
-            %h4 Get new versions faster
-            %p New releases of applications appear sooner with Flatpak.
+            %h4 Access a growing collection of applications
+            %p 
+              The number of Flatpak apps is growing all the time and includes 
+              %em Spotify,
+              %em Skype
+              and 
+              %em Telegram.
+          %li
+            %h4 Newer versions of applications
+            %p Get the latest versions faster, direct from their authors.
           %li
             %h4 Safely update your apps without having to reboot
-            %p Unlike package managers, Flatpak can safely update applications on the fly.
+            %p Unlike with package managers, Flatpak applications can be safely updated on the fly.
           %li
-            %h4 Install different versions of the same application
-            %p Simultaneously install multiple versions of the same application.
+            %h4 Forward compatibility
+            %p Flatpak apps continue to work after operating system upgrades.
           %li
-            %h4 Secure, sandboxed applications
-            %p Flatpak's sandboxing technology prevents exploits and hinders malicious applications.
+            %h4 Safety built-in
+            %p Flatpak has sandboxing technology at its heart.
           %li
-            %a.btn.btn-primary.btn-xl{:href => "apps.html"} Install Flatpak Applications
+      .col-lg-8.col-lg-offset-2.centered
+        =partial "app-grid.svg"
+      .col-lg-8.col-lg-offset-2.largegapafter.centered
+        %a.btn.btn-default.btn-xl{:href => "http://flathub.org/apps.html"} Install on Flathub
+
+%section#devsplash.bg-primary
+  .container
     .row.largegap
-      .col-lg-2.col-sm-3.col-lg-offset-1
-        %h3 For developers
-      .col-lg-8.col-sm-9
-        %ul
+      .col-sm-8.col-sm-offset-2
+        %h1.section-heading publish apps on every linux distribution
+        %p Build for every Linux distribution with ease.
+
+    .row#devperspective.offbydefault
+      .col-sm-8.col-sm-offset-2
+        %ul.dotless
           %li
             %h4 Run the same app on all the main Linux distributions
             %p Create one app bundle and distribute it to the entire Linux desktop market.
@@ -63,10 +74,15 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           %li
             %h4 Future-proof builds
             %p Runtimes are forward compatible, irrespective of distribution changes. Flatpak applications run on new Linux distribution versions as they are released.
-          %li
-            %a.btn.btn-primary.btn-xl{:href => "hello-world.html"} Create an Application in 5 minutes
 
-    
+    .row
+      .col-sm-8.col-sm-offset-2
+        .largegap
+          %a.btn.btn-primary.btn-xl.page-scroll{:href => "/hello-world.html"} 5 Minute Tutorial
+          %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer Guide
+        %p.spaced
+          %a#toggledev.page-scroll{:href=>'#devperspective'} Learn more…
+
 %section#about
   .container
     .row
@@ -109,3 +125,23 @@ description: The days of chasing multiple Linux distributions are over. Standalo
       .col-lg-4.col-xs-8
         See our
         =link_to "Github project", "https://github.com/flatpak/flatpak"
+
+:javascript
+
+(function($) {
+    "use strict"; // Start of use strict
+
+
+    $("#toggleuser").click(function (event) {
+      event.preventDefault();
+      $("#userperspective").show("slow");
+      $(this).hide();
+      $("#flathubbtn").hide();
+    });
+    $("#toggledev").click(function (event) {
+      event.preventDefault();
+      $("#devperspective").show("slow");
+      $(this).hide();
+    });
+
+})(jQuery); // End of use strict

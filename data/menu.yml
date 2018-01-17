@@ -1,28 +1,15 @@
-- title: Features
-  link: "#features"
-- title: Get Flatpak
-  link: "/getting"
-- title: Applications
-  link: "/apps"
-- title: Command Line
-  link: "/command-line"
+- title: Find Applications
+  link: "http://flathub.org/apps"
   onlyfooter: true
-- title: Hello World
-  link: "/hello-world"
-- title: Developer Docs
+- title: Developer Documentation
   link: "http://docs.flatpak.org/"
-  onlyfooter: true
-- title: Runtimes
-  link: "/runtimes"
   onlyfooter: true
 - title: Press
   link: "/press"
   onlyfooter: true
 - title: FAQ
   link: "/faq"
+  onlyfooter: true
 - title: About & Contact
   link: "#about"
-- title: Flathub
-  link: "https://flathub.org/"
-  onlyfooter: true
 

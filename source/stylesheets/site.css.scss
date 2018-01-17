@@ -42,9 +42,18 @@ a {
   transition: all .35s;
 }
 
-ul { font-size: 12pt; }
-
-
+ul { 
+  font-size: 12pt; 
+  &.dotless {
+    display: block;
+    padding: 0;
+    li {
+      list-style: none;
+      display: block;
+      margin-bottom: 3em;
+    }
+  }
+}
 
 a:hover,
 a:focus {
@@ -70,18 +79,37 @@ h6 {
   &.voffset { margin-top: 3em; }
 }
 
-h1 { font-size: 200%; }
-h2 { font-size: 180%; }
+h1 { font-size: 180%; }
+h2 { font-size: 160%; }
 h3 { font-size: 130%; font-weight: 800; color: $neutral_color; }
 h4 { font-size: 120%; font-weight: 600; color: $neutral_color; }
 
 p {
   margin-bottom: 1.5em;
   line-height: 1.5;
+  &.spaced {
+    margin: 3em 0;
+  }
+}
+
+.offbydefault {
+  display: none;
+}
+
+.bg-primary-neutral {
+  background-image: url(/img/whitetoblue.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 8em;
+  background-position: bottom center;
 }
 
 .bg-primary {
   background-color: $key_color;
+  background-image: url(/img/bluetowhite.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 8em;
+  background-position: bottom center;
+  padding-bottom: 16em;
   h3, h4 { 
     color: transparentize(#fff,0.5);
     margin-bottom: 0;
@@ -105,6 +133,10 @@ p {
   .btn-primary {
     color: $key_color;
   }
+}
+
+#devsplash {
+  padding-top: 0;
 }
 
 .bg-dark {
@@ -242,14 +274,9 @@ header {
   text-align: center;
   color: #fff;
   background-color: $key_color;
-  background-image: linear-gradient(to bottom, transparentize($key_color,1),
-                                               transparentize($key_color,.3),
-                                               transparentize($key_color,.3),
-                                               transparentize($key_color,1)),
-                    url(../img/header.png),
-                    linear-gradient(to bottom, desaturate($key_color,80%), $key_color);
   background-position: center, center top, center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .header-content {
@@ -309,8 +336,10 @@ pre {
   }
 }
 
+
 .section-heading {
   margin-top: 0;
+  text-transform: uppercase; 
 }
 
 .service-box {
@@ -353,14 +382,12 @@ pre {
 }
 
 .btn-default {
-  border-color: $key_color;
   color: #fff;
   background-color: $key_color;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
   .hader-content &, .bg-primary & {
-    border-color: #fff;
     color: #222;
     background-color: #fff;
   }
@@ -372,7 +399,6 @@ pre {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  border-color: #ededed;
   color: #222;
   background-color: #f2f2f2;
 }
@@ -381,6 +407,7 @@ pre {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-image: none;
+  border-color: rgba(0,0,0,0);
 }
 
 .btn-default.disabled,
@@ -401,7 +428,6 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  border-color: #fff;
   background-color: #fff;
 }
 
@@ -411,7 +437,6 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  border-color: darken($key_color,10%);
   color: $key_color;
   background-color: #fff;
   -webkit-transition: all .35s;
@@ -421,7 +446,6 @@ fieldset[disabled] .btn-default.active {
   &:focus,
   &.focus,
   .open > .dropdown-toggle.btn-primary {
-    border-color: darken($key_color,5%);
     color: #fff;
     background-color: lighten($key_color,10%);
   }
@@ -433,6 +457,13 @@ fieldset[disabled] .btn-default.active {
   .badge {
     color: #f05f40;
     background-color: #fff;
+  }
+  &:hover,
+  &:focus {
+    border-color: rgba(0,0,0,0.1);
+  }
+  &:active { /* fixme */
+    border-color: rgba(0,0,0,0);
   }
   
   &.disabled,
@@ -453,27 +484,26 @@ fieldset[disabled] .btn-default.active {
   &.disabled.active,
   &[disabled].active,
   fieldset[disabled] &.active {
-      border-color: #f05f40;
       background-color: #f05f40;
   }
 }
 
-
-
-
-
 .btn {
-  border: 0;
-  border-radius: 300px;
+  border-radius: 6px;
   text-transform: uppercase;
   font-weight: 700;
   .appslist & {
     margin: 4px;
   }
+  border-width: 0 0 2px 0;
+  border-color: rgba(0,0,0,0.05);
+  &:active {
+    border-color: rgba(0,0,0,0);
+  }
 }
 
 .btn-xl {
-  padding: 15px 30px;
+  padding: 15px 30px 13px 30px;
 }
 
 ::-moz-selection {
@@ -522,10 +552,11 @@ body {
 .wide { width: 100%; }
 .largegap { margin-top: 5em; }
 .mediumgap { margin-top: 2em; }
+.largegapafter { margin-bottom: 10em; }
 .right { text-align: right; }
 .floatright { display: inline-block; float: right; }
 .toneddown { opacity: 0.5; }
-
+.centered { text-align: center; }
 .appslist {
   margin-top: 3em;
   &:first-child { margin-top: 1em; }
