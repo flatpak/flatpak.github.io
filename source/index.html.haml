@@ -3,85 +3,54 @@ title: Flatpak - the future of application distribution
 description: The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!
 ---
 
-%section.bg-primary-neutral
+%section.bg-primary-neutral.centered
   .container
     .row.largegap
       .col-lg-12
         %h1.section-heading the best way to get apps on Linux
         %p Choose from a growing collection of apps.
-        %a#flathubbtn.btn.btn-default.btn-xl.page-scroll{:href => "http://flathub.org/apps.html"} Browse apps on Flathub
-        %p.spaced
-          %a#toggleuser.page-scroll{:href=>'#userperspective'} Learn more…
+        %p
+          =partial "app-grid.svg"
 
-    .row#userperspective.offbydefault
-      .col-sm-8.col-sm-offset-2
-        %ul.dotless.largegap
-          %li
-            %h2 Flatpak is a new way to get apps on Linux
-          %li
-            %h4 Access a growing collection of applications
-            %p 
-              The number of Flatpak apps is growing all the time and includes 
-              %em Spotify,
-              %em Skype
-              and 
-              %em Telegram.
-          %li
-            %h4 Newer versions of applications
-            %p Get the latest versions faster, direct from their authors.
-          %li
-            %h4 Safely update your apps without having to reboot
-            %p Unlike with package managers, Flatpak applications can be safely updated on the fly.
-          %li
-            %h4 Forward compatibility
-            %p Flatpak apps continue to work after operating system upgrades.
-          %li
-            %h4 Safety built-in
-            %p Flatpak has sandboxing technology at its heart.
-          %li
-      .col-lg-8.col-lg-offset-2.centered
-        =partial "app-grid.svg"
-      .col-lg-8.col-lg-offset-2.largegapafter.centered
-        %a.btn.btn-default.btn-xl{:href => "http://flathub.org/apps.html"} Install on Flathub
+        %a#flathubbtn.btn.btn-default.btn-xl.page-scroll{:href => "http://flathub.org/apps.html"} Browse apps on Flathub
+
 
 %section#devsplash.bg-primary
   .container
-    .row.largegap
+    .row.largegap.centered
       .col-sm-8.col-sm-offset-2
         %h1.section-heading publish apps on every linux distribution
         %p Build for every Linux distribution with ease.
 
-    .row#devperspective.offbydefault.largegap
-      .col-sm-6.col-sm-offset-4
-        %ul.dotless
-          %li
-            %h4 Run the same app on all the main Linux distributions
-            %p Create one app bundle and distribute it to the entire Linux desktop market.
-          %li
-            %h4 Consistent environment for development, testing and deployment
-            %p Develop and test your application in an environment that's identical to the one users have.
-          %li
-            %h4 Easy-to-use, fully-documented build tools
-            %p 
-              Flatpak's build tools are simple and easy to use, and come with a 
-              =link_to 'full set of documentation.', 'http://docs.flatpak.org/'
-          %li
-            %h4 Maintained collections of essential dependencies
-            %p Runtimes provide stable sets of dependencies that can be used by applications.
-          %li
-            %h4 Pick and choose application dependencies
-            %p Dependencies that aren't in a runtime can be bundled as part of an application. Versions of the dependencies that are used can be fixed and patched.
-          %li
-            %h4 Future-proof builds
-            %p Runtimes are forward compatible, irrespective of distribution changes. Flatpak applications run on new Linux distribution versions as they are released.
+    .row.largegap
+      .col-sm-5.col-sm-offset-1
+        %h4 Cross-distro
+        %p Create one app bundle and distribute it to the entire Linux desktop market.
+      .col-sm-5
+        %h4 Stable platforms
+        %p Runtimes provide stable sets of dependencies that can be used by applications.
+    .row
+      .col-sm-5.col-sm-offset-1
+        %h4 Consistent environments
+        %p Develop and test your application in an environment that's identical to the one users have.
+      .col-sm-5
+        %h4 Control over dependencies
+        %p Dependencies that aren't in a runtime can be bundled as part of an application. Versions of the dependencies that are used can be fixed and patched.
+    .row
+      .col-sm-5.col-sm-offset-1
+        %h4 Easy build tools
+        %p 
+          Flatpak's build tools are simple and easy to use, and come with a 
+          =link_to 'full set of documentation.', 'http://docs.flatpak.org/'
+      .col-sm-5
+        %h4 Future-proof builds
+        %p Runtimes are forward compatible, irrespective of distribution changes. Flatpak applications run on new Linux distribution versions as they are released.
 
     .row
-      .col-sm-8.col-sm-offset-2
+      .col-sm-8.col-sm-offset-2.centered
         .largegap
           %a.btn.btn-primary.btn-xl.page-scroll{:href => "/hello-world.html"} 5 Minute Tutorial
           %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer Guide
-        %p.spaced
-          %a#toggledev.page-scroll{:href=>'#devperspective'} Learn more…
 
 %section#about
   .container
@@ -126,27 +95,3 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         See our
         =link_to "Github project", "https://github.com/flatpak/flatpak"
 
-:javascript
-
-(function($) {
-    "use strict"; // Start of use strict
-
-
-    $("#toggleuser").click(function (event) {
-      event.preventDefault();
-      $("#userperspective").show("slow");
-      $("#toggledev").show();
-      $("#devperspective").hide("slow");
-      $(this).hide();
-      $("#flathubbtn").hide();
-    });
-    $("#toggledev").click(function (event) {
-      event.preventDefault();
-      $("#toggleuser").show();
-      $("#flathubbtn").show();
-      $("#userperspective").hide("slow");
-      $("#devperspective").show("slow");
-      $(this).hide();
-    });
-
-})(jQuery); // End of use strict

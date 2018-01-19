@@ -99,7 +99,7 @@ p {
 .bg-primary-neutral {
   background-image: url(/img/whitetoblue.svg);
   background-repeat: no-repeat;
-  background-size: 100% 8em;
+  background-size: 100% 2em;
   background-position: bottom center;
 }
 
@@ -107,7 +107,7 @@ p {
   background-color: $key_color;
   background-image: url(/img/bluetowhite.svg);
   background-repeat: no-repeat;
-  background-size: 100% 8em;
+  background-size: 100% 2em;
   background-position: bottom center;
   padding-bottom: 16em;
   h3, h4 { 
@@ -137,7 +137,6 @@ p {
 
 #devsplash {
   padding-top: 0;
-  text-align: right;
   ul {
     text-align: left;
   }
@@ -494,7 +493,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn {
   border-radius: 6px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   .appslist & {
     margin: 4px;
