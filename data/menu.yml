@@ -1,5 +1,5 @@
 - title: Find Applications
-  link: "http://flathub.org/apps"
+  link: "https://flathub.org/apps.html"
   onlyfooter: true
 - title: Developer Documentation
   link: "http://docs.flatpak.org/"
