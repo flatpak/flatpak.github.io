@@ -51,8 +51,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h1.section-heading publish apps on every linux distribution
         %p Build for every Linux distribution with ease.
 
-    .row#devperspective.offbydefault
-      .col-sm-8.col-sm-offset-2
+    .row#devperspective.offbydefault.largegap
+      .col-sm-6.col-sm-offset-4
         %ul.dotless
           %li
             %h4 Run the same app on all the main Linux distributions
@@ -135,11 +135,16 @@ description: The days of chasing multiple Linux distributions are over. Standalo
     $("#toggleuser").click(function (event) {
       event.preventDefault();
       $("#userperspective").show("slow");
+      $("#toggledev").show();
+      $("#devperspective").hide("slow");
       $(this).hide();
       $("#flathubbtn").hide();
     });
     $("#toggledev").click(function (event) {
       event.preventDefault();
+      $("#toggleuser").show();
+      $("#flathubbtn").show();
+      $("#userperspective").hide("slow");
       $("#devperspective").show("slow");
       $(this).hide();
     });
