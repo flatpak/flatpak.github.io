@@ -128,6 +128,10 @@ p {
   }
 }
 
+.bg-secondary {
+  background-color: lighten($neutral_color,40%);
+}
+
 #devsplash {
   padding-top: 0;
   ul {
@@ -564,6 +568,16 @@ body {
   overflow-y: auto;
 }
 
+blockquote {
+  font-style: italic;
+  border-width: 0;
+  
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
 table {
   border-collapse: collapse;
   margin-bottom: 3em;
@@ -661,24 +675,5 @@ table {
   font-size: 90%;
 }
 
-/* Flexbox App Download */
 
-.apptile {
-  display: flex;
-  align-items: center;
-  div {
-    flex: 1;
-  }
-  h4 { 
-    font-size: 120%; font-weight: 300;
-    color: #000;
-    margin: 0;
-  }
-  p { font-size: 90%; }
-  .btn {
-    width: 32px; 
-    height: 32px;
-    overflow: hidden;
-    background: url('/img/download.svg') no-repeat center;
-  }
-}
+

@@ -13,17 +13,31 @@ description: The days of chasing multiple Linux distributions are over. Standalo
       .col-lg-8.col-lg-offset-2
         %p
           =partial "app-grid.svg"
-
+          
         %a#flathubbtn.btn.btn-default.btn-xl.page-scroll{:href => "http://flathub.org/apps.html"} Browse apps on Flathub
 
 
-%section#devsplash.bg-primary
+%section#devsplash.bg-secondary
   .container
     .row.largegap.centered
-      .col-sm-8.col-sm-offset-2
-        %h1.section-heading publish apps on every linux distribution
-        %p Build for every Linux distribution with ease.
+      .col-sm-6.col-sm-offset-3
+        %h2 Publish apps on every linux distribution
+        %p Flatpak is distro anostic. Developers can distribute on every Linux distribution simultaneously and with ease.
+    .row
+      .col-lg-8.col-lg-offset-2
+        %p
+          =partial "distro-grid.svg"
+    .row
+      .col-sm-8.col-sm-offset-2.centered
+        %a.btn.btn-default.btn-xl.page-scroll{:href => "/hello-world.html"} 5 Minute Tutorial
+        %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer Guide
 
+
+%section.bg-primary-neutral
+  .container
+    .row.centered
+      .col-sm-6.col-sm-offset-3
+        %h2 A new world for application developers
     .row.largegap
       .col-sm-5.col-sm-offset-1
         %h4 Cross-distro
@@ -48,9 +62,34 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h4 Future-proof builds
         %p Runtimes are forward compatible, irrespective of distribution changes. Flatpak applications run on new Linux distribution versions as they are released.
 
+%section.bg-primary
+  .container
+    .row.centered
+      .col-sm-6.col-sm-offset-3
+        %h2 What people are sying about Flatpak
+    .row.largegap
+      .col-sm-6
+        %blockquote
+          %p
+            Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS's stability and flexibility.
+          %p
+            %em Lisa Boyd
+      .col-sm-6
+        %blockquote
+          %p
+            At Endless, we’re proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps.
+          %p 
+            %em Ördög Mirabella
     .row
-      .col-sm-8.col-sm-offset-2.centered
-        .largegap
-          %a.btn.btn-primary.btn-xl.page-scroll{:href => "/hello-world.html"} 5 Minute Tutorial
-          %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer Guide
-
+      .col-sm-6
+        %blockquote
+          %p
+            The Fedora Workstation team are very excited about Flatpak and the prospects it brings for making the Linux desktop easier to develop for.
+          %p 
+            %em Finn Simon
+      .col-sm-6
+        %blockquote
+          %p
+            Flatpak will enable us (as a Linux ISV) to distribute a better LibreOffice, with up-to-date dependencies and a platform that can run on many systems. I'm excited to see that happen.
+          %p 
+            %em Britt Laurent
