@@ -48,7 +48,7 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Fedora
 
-  A `flatpak` package is available for Fedora 23 and newer and is installed by default on Fedora Workstation. If you do not use Fedora Workstation, you can install Flatpak by running:
+  A `flatpak` package is available for Fedora 24 and newer and is installed by default on Fedora Workstation. If you do not use Fedora Workstation, you can install Flatpak by running:
 
   <pre>
   <span class="unselectable">$ </span>sudo dnf install flatpak
