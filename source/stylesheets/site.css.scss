@@ -97,18 +97,11 @@ p {
 }
 
 .bg-primary-neutral {
-  background-image: url(/img/whitetoblue.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 2em;
-  background-position: bottom center;
+
 }
 
 .bg-primary {
   background-color: $key_color;
-  background-image: url(/img/bluetowhite.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 2em;
-  background-position: bottom center;
   padding-bottom: 16em;
   h3, h4 { 
     color: transparentize(#fff,0.5);

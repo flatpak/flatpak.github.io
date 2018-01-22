@@ -8,8 +8,8 @@
   link: "/press"
   onlyfooter: true
 - title: FAQ
-  link: "/faq"
+  link: "/faq.html"
   onlyfooter: true
 - title: About & Contact
-  link: "#about"
+  link: "/about.html"
 
