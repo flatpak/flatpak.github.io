@@ -19,7 +19,6 @@
   font-weight: 300;
 }
 
-*/
 
 @font-face {
   font-family: "Overpass";
@@ -40,6 +39,8 @@
   font-style: italic;
   font-weight: 700;
 }
+*/
+
 
 /* Normal */
 
@@ -62,7 +63,7 @@
   font-weight: 300;
 }
 
-*/
+
 @font-face {
   font-family: "Overpass";
   src: local("Overpass Regular"),
@@ -82,6 +83,7 @@
   font-style: normal;
   font-weight: 700;
 }
+*/
 
 @font-face {
   font-family: "Source Sans Pro";
