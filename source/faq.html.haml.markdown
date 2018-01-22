@@ -33,9 +33,10 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak tied to Fedora?
 
-  No. The people developing Flatpak have a background in Fedora, and solving the application problem for distributions like Fedora is
-  a strong motivation. But Flatpak was built to be distribution agnostic and allow deployment on any Linux operating system out there.
-  We've reached out and discussed Flatpak with representatives of other distributions from very early on in the project.
+  No. In fact, Flatpak and even [Flathub](https://flathub.org) are enabled by default on Endless OS and Linux Mint.
+  The people developing Flatpak have a long history in contributing to and building Linux distributions like Debian,
+  Fedora, and others, and solving the problems that arise when shipping applications for these platforms. Flatpak
+  was built to be distribution agnostic and allow deployment on any Linux operating system out there.
 
   ### Is Flatpak tied to Linux?
 
