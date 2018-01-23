@@ -11,37 +11,34 @@ description: About Flatpak
         %hr.primary
         %p
           Flatpak might be a new technology, but it's not a new idea. It grew out of the experience of long-standing Linux desktop engineers, and has been in the planning for years.
-          
-        %p 
-          Flatpak is developed by an independent community, made up of volunteers and contributors from supporting organizations. Its lead developer is Alex Larsson, Principal Engineer at Red Hat. Alex has been working on critical open source projects for almost 20 years.
         %p
-          All our code is freely available, with no contributor agreement required. We collaborate and liaise with other communities and projects as much as possible, and welcome their input.
+          Flatpak is developed by an independent community, made up of contributors, volunteers and supporting organizations. Its lead developer is Alex Larsson, Principal Engineer at Red Hat. Alex has been working on critical open source projects for almost 20 years and is an expert in containerization and Linux subsystems.
         %p
-          For more information, see our 
-          = succeed "," do
-            = link_to "FAQ", "faq.html"
-          =link_to "command line","http://docs.flatpak.org/en/latest/command-reference.html"
-          and 
-          = link_to "developer guidelines", "http://docs.flatpak.org/"
-          and the 
-          = succeed "." do
-            = link_to "developer wiki", "https://github.com/flatpak/flatpak/wiki"
+          All our code is freely available, with no contributor agreement required. We have strong links with other Free Software projects, including the Freedesktop project. If you are a member of a Free Software project, we'd love to have you involved.
     .row.largegap
-      .col-lg-12.text-center
-        %h3 Contact
+      .col-lg-10.col-lg-offset-1
+        %h3 Get involved
+        %p
+          Flatpak's goals are ambitious and there are many opportunities to help - new contributors and participating organizations are extremely welcome, and we encourage you to get in touch.
+        .col-lg-12.text-center
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
         .right.toneddown Mailing list
-      .col-lg-4.col-xs-8          
+      .col-lg-4.col-xs-8
         =link_to "flatpak@lists.freedesktop.org", "http://lists.freedesktop.org/mailman/listinfo/flatpak"
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
         .right.toneddown IRC
-      .col-lg-4.col-xs-8          
-        \#flatpak on Freenode
+      .col-lg-4.col-xs-8
+        =link_to "#flatpak on Freenode", "irc://freenode.net:6697/flatpak"
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
-        .right.toneddown Code, Issues and Wiki
+        .right.toneddown Github project
       .col-lg-4.col-xs-8
-        See our
-        =link_to "Github project", "https://github.com/flatpak/flatpak"
+        =link_to "github.com/flatpak/flatpak", "https://github.com/flatpak/flatpak"
+    .row.largegap
+      .col-lg-10.col-lg-offset-1
+        %p
+          Issues with this website can be reported through its
+          = succeed "." do
+            =link_to "Github project", "https://github.com/flatpak/flatpak.github.io/issues"#
