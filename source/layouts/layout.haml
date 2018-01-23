@@ -33,10 +33,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          -if (current_page.path == 'index.html')
-            = link_to "Flatpak", "#page-top", :class => "navbar-brand page-scroll"
-          -else
-            = link_to "Flatpak", "index.html", :class => "navbar-brand page-scroll"
+            = link_to "Flatpak", "/index.html", :class => "navbar-brand page-scroll"
 
         = partial "navigation"
       / /.container-fluid
