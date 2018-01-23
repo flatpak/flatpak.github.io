@@ -577,6 +577,16 @@ blockquote {
     font-weight: bold;
     font-style: normal;
   }
+  
+  .author {
+    margin: 1em 0;
+  }
+  .title {
+    display: block;
+    font-size: 80%;
+    font-style: normal;
+    opacity: 0.5;
+  }
 }
 
 table {
