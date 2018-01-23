@@ -1,7 +1,7 @@
-- title: Find Applications
-  link: "https://flathub.org/apps.html"
+- title: Install Applications
+  link: "https://flathub.org/"
   onlyfooter: true
-- title: Developer Documentation
+- title: Developer guide
   link: "http://docs.flatpak.org/"
   onlyfooter: true
 - title: Press
