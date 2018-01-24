@@ -10,7 +10,7 @@
  
 $key_color: #4a90d9;
 $neutral_color: #919191;
-$overpass: 'Source Sans Pro', 'Source Sans', sans-serif;
+$fontface: 'Source Sans Pro', 'Source Sans', sans-serif;
 
 html,
 body {
@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $overpass;
+  font-family: $fontface;
   margin-top: 1.5em;
   &:first-child { margin-top: 0.3em; }
   &.voffset { margin-top: 3em; }
@@ -635,7 +635,7 @@ table {
     padding-top: 0;
     color: #fff;
     text-transform: uppercase;
-    font-family: $overpass;
+    font-family: $fontface;
     font-weight: bold;
     height: inherit;
   }
