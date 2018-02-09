@@ -628,7 +628,7 @@ table {
   /* grid-template-rows: repeat(4, minmax(16px,128px)); */
   grid-auto-flow: row;
   grid-gap: 16px;
-  grid-auto-row: 64px;
+  grid-auto-row: minmax(64px, auto);
   margin: 16px;
   justify-items: center;
   align-items: center;
