@@ -622,6 +622,26 @@ table {
   }
 }
 
+.appgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, minmax(16px,128px));
+  grid-auto-flow: row;
+  grid-gap: 16px;
+  margin: 16px;
+  
+  .icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &.featured {
+      /* grid-row: span 2; */
+    }
+    &:nth-child(5) { grid-row: 1 / span 2; }
+    /* &:nth-child(7) { grid-row: 3 / span 2; grid-column: 3; } */
+  }
+}
+
 #footer {
   font-size: 90%;
   a {

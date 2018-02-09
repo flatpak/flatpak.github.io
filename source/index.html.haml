@@ -10,10 +10,14 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h1.section-heading the best way to get apps on Linux
         %p Choose from a growing collection of apps.
     .row
-      .col-lg-8.col-lg-offset-2
-        %p
-          =partial "app-grid.svg"
-          
+      .appgrid
+        - data.apps.each do |i|
+          - if i.icons["128"]
+            .icon.featured{:style => "background-image: url(#{i.icons['128']})"}
+          - elsif i.icons["64"]
+            .icon{:style => "background-image: url(#{i.icons['64']})"}
+    .row
+      .col-lg-12
         %a#flathubbtn.btn.btn-default.btn-xl.page-scroll{:href => "http://flathub.org/"} Install apps on Flathub
 
 

@@ -1,38 +1,109 @@
-- name: Linphone
-  description: Open Source VOIP
-  stable: https://linphone.org/flatpak/linphone.flatpakref
-  instructions: "Official desktop version from linphone.org"
-  cli:
-    - flatpak install --from https://linphone.org/flatpak/linphone.flatpakref
-    - flatpak run com.belledonnecommunications.linphone
+- name:     "Telegram"
+  id:       "org.telegram.desktop"
+  ref:      "app/org.telegram.desktop/x86_64/stable"
+  summary:  "Desktop messenger"
+  color:    "#6DA9D6"
+  featured: "yes"
+  "flatpakref": "https://flathub.org/repo/appstream/org.telegram.desktop.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.telegram.desktop.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.telegram.desktop.png"
 
-- name: MonoDevelop
-  description: Cross platform IDE for C#, F# and more
-  stable: https://download.mono-project.com/repo/monodevelop.flatpakref
-  instructions: "MonoDevelop is available as a Flatpak preview from Xamarin. See the <a href='http://www.monodevelop.com/download/linux/'>MonoDevelop Linux download page</a> for more information."
-  cli:
-    - flatpak install --from https://download.mono-project.com/repo/monodevelop.flatpakref
-    - flatpak run com.xamarin.MonoDevelop
+- name:     "Slack"
+  id:       "com.slack.Slack"
+  ref:      "app/com.slack.Slack/x86_64/stable"
+  summary:  "Chat with your team"
+  color:    "#C5BFB5"
+  "flatpakref": "https://flathub.org/repo/appstream/com.slack.Slack.flatpakref"
+  icons:
+    "64":   "https://lh3.googleusercontent.com/Dq-mZ5mmdE6aFPeD61DNlVTwYSI75UwHBYDq_BxBZOMSzCBnQ5OCC4-LjfP42tDlyw=w64"
+    
+- name:     "Inkscape"
+  id:       "org.inkscape.Inkscape"
+  ref:      "app/org.inkscape.Inkscape/x86_64/stable"
+  summary:  "Vector graphics editor"
+  color:    "#C5BFB5"
+  "flatpakref": "https://flathub.org/repo/appstream/org.inkscape.Inkscape.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.inkscape.Inkscape.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.inkscape.Inkscape.png"
 
-- name: Scribus
-  description: Open Source Page Layout and Desktop Publishing (DTP)
-  nightly: http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref 
-  cli:
-    - flatpak install http://drjurf.tk/scribus-flatpak/scribus-nightly.flatpakref
-    - flatpak run net.scribus.Scribus
+- name:     "Spotify"
+  id:       "com.spotify.Client"
+  ref:      "app/com.spotify.Client/x86_64/stable"
+  summary:  "Online music streaming service"
+  color:    "#1DC558"
+  "flatpakref": "https://flathub.org/repo/appstream/com.spotify.Client.flatpakref"
+  icons:
+    "64":   "https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w64"
+    
+- name:     "Steam"
+  id:       "com.valvesoftware.Steam"
+  ref:      "app/com.valvesoftware.Steam/x86_64/stable"
+  summary:  "Manage and play games distributed by Steam"
+  featured: "yes"
+  color:    "#7C8699"
+  "flatpakref": "https://flathub.org/repo/appstream/com.valvesoftware.Steam.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/com.valvesoftware.Steam.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/com.valvesoftware.Steam.png"
 
-- name: Firefox Developer
-  description: Browse the Web
-  nightly: https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxDevEdition.flatpakref
-  instructions: "Developer edition of Firefox"
-  cli:
-    - flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxDevEdition.flatpakref
-    - flatpak run org.mozilla.FirefoxDevEdition
+- name:     "GIMP"
+  id:       "org.gimp.GIMP"
+  ref:      "app/org.gimp.GIMP/x86_64/stable"
+  summary:  "Create images and edit photographs"
+  color:    "#837E77"
+  "flatpakref": "https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.gimp.GIMP.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.gimp.GIMP.png"
+    
+- name:     "Atom"
+  id:       "io.atom.Atom"
+  ref:      "app/io.atom.Atom/x86_64/stable"
+  summary:  "A hackable text editor for the 21st Century"
+  color:    "#96CBA5"
+  "flatpakref": "https://flathub.org/repo/appstream/io.atom.Atom.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/io.atom.Atom.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/io.atom.Atom.png"
 
-- name: Firefox Nightly
-  description: Browse the Web
-  nightly: https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref
-  instructions: "Nightly edition of Firefox"
-  cli:
-    - flatpak install --from https://firefox-flatpak.mojefedora.cz/org.mozilla.FirefoxNightly.flatpakref
-    - flatpak run org.mozilla.FirefoxNightly
+- name:     "Kdenlive"
+  id:       "org.kde.kdenlive"
+  ref:      "app/org.kde.kdenlive/x86_64/stable"
+  summary:  "Video editor"
+  color:    "#8596C6"
+  "flatpakref": "https://flathub.org/repo/appstream/org.kde.kdenlive.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.kde.kdenlive.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.kde.kdenlive.png"
+    
+- name:     "Skype"
+  id:       "com.skype.Client"
+  ref:      "app/com.skype.Client/x86_64/stable"
+  summary:  "Call and message Skype users"
+  color:    "#C5BFB5"
+  "flatpakref": "https://flathub.org/repo/appstream/com.skype.Client.flatpakref"
+  icons:
+    "64":   "https://lh3.googleusercontent.com/QfAEt_ya6-n8w_TD9-PsghFC2DMSO7fLGNZB4cQ3RtbBbHFkXJE_gxOc3l32-j6LXg=w64"
+
+    
+- name:     "VLC"
+  id:       "org.videolan.VLC"
+  ref:      "app/org.videolan.VLC/x86_64/stable"
+  summary:  "Open-source multimedia player"
+  color:    "#DB946C"
+  "flatpakref": "https://flathub.org/repo/appstream/org.videolan.VLC.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.videolan.VLC.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.videolan.VLC.png"
+
+- name:     "Blender"
+  id:       "org.blender.Blender"
+  ref:      "app/org.blender.Blender/x86_64/stable"
+  summary:  "3D modelling and animation"
+  color:    "#D89C7F"
+  "flatpakref": "https://flathub.org/repo/appstream/com.slack.Slack.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.blender.Blender.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.blender.Blender.png"
