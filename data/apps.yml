@@ -87,6 +87,16 @@
   icons:
     "64":   "https://lh3.googleusercontent.com/QfAEt_ya6-n8w_TD9-PsghFC2DMSO7fLGNZB4cQ3RtbBbHFkXJE_gxOc3l32-j6LXg=w64"
 
+- name:     "Google Play Music"
+  id:       "com.googleplaymusicdesktopplayer.GPMDP"
+  ref:      "app/com.googleplaymusicdesktopplayer.GPMDP/x86_64/stable"
+  summary:  "Google Play Music desktop app"
+  color:    "#FAA22B"
+  featured: "yes"
+  "flatpakref": "https://flathub.org/repo/appstream/com.googleplaymusicdesktopplayer.GPMDP.flatpakref"
+  icons:
+    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/com.googleplaymusicdesktopplayer.GPMDP.png"
+    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/com.googleplaymusicdesktopplayer.GPMDP.png"
     
 - name:     "VLC"
   id:       "org.videolan.VLC"
