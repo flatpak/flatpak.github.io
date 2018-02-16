@@ -20,16 +20,10 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Arch
 
-  A `flatpak` package is available in the official repositories. `flatpak-git` is also available in the AUR for the latest development snapshot.
+  A `flatpak` package is available in the official repositories.
 
   <pre>
   <span class="unselectable">$ </span>sudo pacman -S flatpak
-  </pre>
-  
-  For development of Flatpak applications using `flatpak-builder` these dependencies are required:
-  
-  <pre>
-  <span class="unselectable">$ </span>sudo pacman -S --asdeps --needed elfutils patch
   </pre>
 
   ### Debian
