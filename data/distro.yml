@@ -6,18 +6,47 @@
         <h2>Install Flatpak</h2>
         <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
-          $ sudo add-apt-repository ppa:alexlarsson/flatpak
-          $ sudo apt update
-          $ sudo apt install flatpak
+          <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
+          <span class="unselectable">$</span> sudo apt update
+          <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
       </li>
       <li>
         <h2>Install the Software Flatpak plugin</h2>
         <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line. To install, run:</p>
         <pre><code>
-          $ sudo apt install gnome-software-plugin-flatpak
+          <span class="unselectable">$</span> sudo apt install gnome-software-plugin-flatpak
         </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+      </li>
     </ol>
     
 - name: "Fedora"
   logo: "fedora.svg"
+  info: FIXME
+  
+- name: "Endless OS"
+  logo: "endless.svg"
+  info: FIXME
+  
+- name: "openSUSE"
+  logo: "opensuse.svg"
+  info: FIXME
+  
+- name: "Debian"
+  logo: "debian.svg"
+  info: FIXME
+  
+- name: "Gentoo"
+  logo: "gentoo.svg"
+  info: FIXME
