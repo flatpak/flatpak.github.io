@@ -633,6 +633,28 @@ table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+ol.distrotut {
+  list-style-type: none;
+  margin: 0; padding: 0;
+  
+  li {
+    counter-increment: step-counter;
+    padding: 0 0 10px 100px;
+    
+    &::before {
+      position: absolute;
+      content: counter(step-counter);
+      margin-left: -90px;
+      font-size: 140%;
+      font-weight: 300;
+      background-color: $neutral_color;
+      padding: .6em 1em;
+      border-radius: 50%;
+      color: #fff;
+    }
+  }
+}
+
 .appgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
