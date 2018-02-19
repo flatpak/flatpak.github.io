@@ -12,6 +12,7 @@ description: Quick Setup
           Select your distro to get set up.
           
     .row
-      .col-lg-12
+      .distrogrid
         - data.distro.each do |i|
-          = i.name
+          %a{:href => "/quicksetup/#{i.name}/"}
+            %img{ :src => "/img/distro/#{i.logo}"}

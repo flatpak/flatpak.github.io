@@ -1,5 +1,5 @@
 - name: "Ubuntu"
-  logo: "ubuntu.png"
+  logo: "ubuntu.svg"
   info: >  
     <ol class="distrotut">
       <li>
@@ -20,4 +20,4 @@
     </ol>
     
 - name: "Fedora"
-  logo: "fedora.png"
+  logo: "fedora.svg"

@@ -19,6 +19,9 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Source Sans Pro', 'Source Sans', sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -97,6 +100,9 @@ p {
 }
 
 .bg-primary-neutral {
+  .btn-primary {
+    background-color: lighten($neutral_color,40%);
+  }
 
 }
 
@@ -155,6 +161,7 @@ p {
 
 section {
   padding: 100px 0;
+  flex: 1;
 }
 
 aside {
@@ -622,6 +629,10 @@ table {
   }
 }
 
+.distrogrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 .appgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -650,6 +661,7 @@ table {
 
 #footer {
   font-size: 90%;
+  flex: 0.3;
   a {
     font-weight: bold;
     color: $neutral_color;
