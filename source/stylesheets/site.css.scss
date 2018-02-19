@@ -632,7 +632,12 @@ table {
 .distrogrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  
+  a:hover {
+    transform: scale(1.1);
+  }
 }
+
 ol.distrotut {
   list-style-type: none;
   margin: 0; padding: 0;
