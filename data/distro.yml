@@ -1,0 +1,23 @@
+- name: "Ubuntu"
+  logo: "ubuntu.png"
+  info: >  
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
+        <pre><code>
+          $ sudo add-apt-repository ppa:alexlarsson/flatpak
+          $ sudo apt update
+          $ sudo apt install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Install the Software Flatpak plugin</h2>
+        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line. To install, run:</p>
+        <pre><code>
+          $ sudo apt install gnome-software-plugin-flatpak
+        </code></pre>
+    </ol>
+    
+- name: "Fedora"
+  logo: "fedora.png"

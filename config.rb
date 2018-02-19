@@ -16,6 +16,10 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
+data.distro.each do |i|
+  proxy "/quicksetup/#{i.name}.html", "/distro-template.html", :locals => { :name => i.name, :logo => i.logo, :info => i.info }, :ignore => true
+end
+
 # General configuration
 
 # Reload the browser automatically whenever files change
@@ -58,7 +62,7 @@ activate :google_analytics do |ga|
 end
 
 #activate :asset_hash
-#activate :directory_indexes
+activate :directory_indexes
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
 redirect "developer.html", to: "http://docs.flatpak.org"
 #redirect "/hello-world.html", to: "/hello-world/"

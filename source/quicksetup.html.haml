@@ -1,0 +1,17 @@
+---
+title: Flatpak - the future of application distribution
+description: Quick Setup
+---
+
+%section#setup
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1.centered Quick Setup
+        %p.centered
+          Select your distro to get set up.
+          
+    .row
+      .col-lg-12
+        - data.distro.each do |i|
+          = i.name
