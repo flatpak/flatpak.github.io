@@ -33,20 +33,108 @@
     
 - name: "Fedora"
   logo: "fedora.svg"
-  info: FIXME
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak, run the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo dnf install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+      </li>
+    </ol>
   
 - name: "Endless OS"
   logo: "endless.svg"
-  info: FIXME
+  info: >
+    <p>Flatpak support is built into Endless OS 3.0.0 and newer, so you don't need to do anything to get setup! If you are using an older version, <a href="https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967">upgrade to Endless OS 3</a>.</p>
   
 - name: "openSUSE"
   logo: "opensuse.svg"
-  info: FIXME
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>Flatpak can be installed on Leap 42.1, Leap 42.2 and Tumbleweed using a 1-click install.</p>
+        <p>On Tumbleweed, Flatpak can also be installed using Zypper:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo zypper install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Install the Software Flatpak plugin</h2>
+        <p>FIXME</p>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+      </li>
+    </ol>
   
 - name: "Debian"
   logo: "debian.svg"
-  info: FIXME
+  info:  >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>A flatpak package is available in Debian Stretch and newer. To install it, run the following as root:</p>
+        <pre><code>
+          <span class="unselectable">#</span> apt install flatpak
+        </code></pre>
+        <p>For Debian Jessie, a flatpak package is available in the <a href="https://backports.debian.org/Instructions/">official backports repository</a>.</p>
+      </li>
+      <li>
+        <h2>Install the Software Flatpak plugin</h2>
+        <p>FIXME</p>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+      </li>
+    </ol>
   
 - name: "Gentoo"
   logo: "gentoo.svg"
-  info: FIXME
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>Flatpak can be installed on Gentoo using the Flatpak overlay. See <a href="https://github.com/fosero/flatpak-overlay">the readme for instructions</a>.</p>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+      </li>
+    </ol>
