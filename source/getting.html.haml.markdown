@@ -20,16 +20,10 @@ description: How to download and install Flatpak on your system to get started.
 
   ### Arch
 
-  A `flatpak` package is available in the official repositories. `flatpak-git` is also available in the AUR for the latest development snapshot.
+  A `flatpak` package is available in the official repositories.
 
   <pre>
   <span class="unselectable">$ </span>sudo pacman -S flatpak
-  </pre>
-  
-  For development of Flatpak applications using `flatpak-builder` these dependencies are required:
-  
-  <pre>
-  <span class="unselectable">$ </span>sudo pacman -S --asdeps --needed elfutils patch
   </pre>
 
   ### Debian
@@ -41,9 +35,9 @@ description: How to download and install Flatpak on your system to get started.
   </pre>
 
   For Debian Jessie, a `flatpak` package is available in the official [backports repository](https://backports.debian.org/Instructions/).
-  
+
   ### Endless OS
-  
+
   Flatpak support is built into Endless OS 3.0.0 and newer. If you are using an older version, [upgrade to Endless OS 3](https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967).
 
   ### Fedora
@@ -59,7 +53,7 @@ description: How to download and install Flatpak on your system to get started.
   An unofficial overlay is available [here](https://github.com/fosero/flatpak-overlay).
 
   ### Linux Mint
-  
+
   Flatpak support is built into Linux Mint 18.3 and newer.
 
   ### Mageia
@@ -85,7 +79,7 @@ description: How to download and install Flatpak on your system to get started.
   <pre>
   <span class="unselectable">$ </span>sudo zypper install flatpak
   </pre>
-  
+
   ### Solus
 
   Flatpak package is available for Solus too. Install it using `eopkg`.
@@ -93,7 +87,7 @@ description: How to download and install Flatpak on your system to get started.
   <pre>
   <span class="unselectable">$ </span>sudo eopkg install flatpak
   </pre>
-  
+
   ### Ubuntu
 
   For Ubuntu 16.04 and newer a PPA is available. To install, run:
