@@ -67,10 +67,6 @@
         </code></pre>
       </li>
       <li>
-        <h2>Install the Software Flatpak plugin</h2>
-        <p>FIXME</p>
-      </li>
-      <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
@@ -80,6 +76,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
+        <p>Note: Flatpak applications can only be installed using the graphical Software application on either Tumbleweed or Leap 15.0 and later.</p>
       </li>
     </ol>
 
