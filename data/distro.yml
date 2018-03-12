@@ -122,13 +122,16 @@
       </li>
       <li>
         <h2>Install the Software Flatpak plugin</h2>
-        <p>FIXME</p>
+        <p>If you are running GNOME, it is also a good idea to install the Flatpak plugin for GNOME Software. To do this, run:</p>
+        <pre><code>
+          <span class="unselectable">#</span> pkexec apt install gnome-software-plugin-flatpak
+        </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">#</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
