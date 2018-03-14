@@ -633,8 +633,12 @@ table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   
-  a:hover {
-    transform: scale(1.1);
+  a {
+    display: block;
+    margin: 20%;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
