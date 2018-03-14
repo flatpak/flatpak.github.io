@@ -29,10 +29,11 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %h2 Publish apps on every linux distribution
         %p Flatpak is distro agnostic. Developers can distribute on every Linux distribution simultaneously and with ease.
     .row
-      .col-lg-8.col-lg-offset-2
-        %p
-          =partial "distro-grid.svg"
-    .row
+      .appgrid
+        - data.distro.each do |i|
+          .icon{:style => "background-image: url(/img/distro/#{i.logo})"}
+        
+    .row.largegap
       .col-sm-8.col-sm-offset-2.centered
         %a.btn.btn-default.btn-xl.page-scroll{:href => "/hello-world.html"} 5 minute tutorial
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer guide
