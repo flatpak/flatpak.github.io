@@ -18,16 +18,16 @@ description: The days of chasing multiple Linux distributions are over. Standalo
             .icon{:style => "background-image: url(#{i.icons['64']})"}
     .row.largegap
       .col-lg-12
-        %a#quicksetupbtn.btn-default.btn.btn-xl.page-scroll{:href => "/quicksetup"} Quick Setup
-        %a#flathubbtn.btn-primary.btn.btn-xl.page-scroll{:href => "http://flathub.org/"} Install apps on Flathub
+        %a#quicksetupbtn.btn-default.btn.btn-xl.page-scroll{:href => "/quicksetup"} Quick setup
+        %a#flathubbtn.btn-primary.btn.btn-xl.page-scroll{:href => "http://flathub.org/"} Install apps
 
 
 %section#devsplash.bg-secondary
   .container
     .row.largegap.centered
       .col-sm-6.col-sm-offset-3
-        %h2 Publish apps on every linux distribution
-        %p Flatpak is distro agnostic. Developers can distribute on every Linux distribution simultaneously and with ease.
+        %h1 Publish apps on every Linux distribution
+        %p Developers can simultaneously distribute on every Linux distribution.
     .row
       .appgrid
         - data.distro.each do |i|
@@ -35,7 +35,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         
     .row.largegap
       .col-sm-8.col-sm-offset-2.centered
-        %a.btn.btn-default.btn-xl.page-scroll{:href => "/hello-world.html"} 5 minute tutorial
+        %a.btn.btn-default.btn-xl.page-scroll{:href => "/hello-world.html"} Build your first app
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer guide
 
 
