@@ -631,11 +631,11 @@ table {
 
 .distrogrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(128px,1fr)); /* autofit for smaller than 768px */
+  grid-gap: 16px;
   
   a {
     display: block;
-    margin: 20%;
     &:hover {
       transform: scale(1.2);
     }
@@ -740,6 +740,9 @@ ol.distrotut {
 
 //2 column footer nav for large sizes
 @media(min-width:768px) {
+  .distrogrid {
+    grid-template-columns: repeat(8, 1fr);
+  }
   #footer ul {
     @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
      #{$quirk}column-count: 2;
