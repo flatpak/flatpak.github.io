@@ -741,7 +741,7 @@ ol.distrotut {
 //2 column footer nav for large sizes
 @media(min-width:768px) {
   .distrogrid {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   #footer ul {
     @each $quirk in ('-moz-','-ms-', '-webkit-', '') {
