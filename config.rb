@@ -65,4 +65,5 @@ end
 activate :directory_indexes
 redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
 redirect "developer.html", to: "http://docs.flatpak.org"
+redirect "getting.html", to: "/setup/"
 #redirect "/hello-world.html", to: "/hello-world/"
