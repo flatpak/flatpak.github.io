@@ -17,7 +17,7 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 data.distro.each do |i|
-  proxy "/quicksetup/#{i.name}.html", "/distro-template.html", :locals => { :name => i.name, :logo => i.logo, :info => i.info }, :ignore => true
+  proxy "/setup/#{i.name}.html", "/distro-template.html", :locals => { :name => i.name, :logo => i.logo, :info => i.info }, :ignore => true
 end
 
 # General configuration

@@ -14,5 +14,5 @@ description: Quick Setup
     .row
       .distrogrid.col-lg-8.col-lg-offset-2
         - data.distro.each do |i|
-          %a{:href => "/quicksetup/#{i.name}/"}
+          %a{:href => "/setup/#{i.name}/"}
             %img{ :src => "/img/distro/#{i.logo}", :alt => "#{i.name}", :title => "#{i.name}"}
