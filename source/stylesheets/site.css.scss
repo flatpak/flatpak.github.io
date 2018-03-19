@@ -101,7 +101,7 @@ p {
 
 .bg-primary-neutral {
   .btn-primary {
-    background-color: lighten($neutral_color,40%);
+
   }
 
 }
@@ -406,8 +406,9 @@ pre {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222;
-  background-color: #f2f2f2;
+  background-color: lighten($key_color,10%);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 
 .btn-default:active,
@@ -445,7 +446,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: $key_color;
-  background-color: #fff;
+  background-color: lighten($neutral_color,37%);
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -453,8 +454,8 @@ fieldset[disabled] .btn-default.active {
   &:focus,
   &.focus,
   .open > .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: lighten($key_color,10%);
+    color: #333;
+    background-color: lighten($neutral_color,40%);
   }
   &:active,
   &.active,
