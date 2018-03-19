@@ -22,7 +22,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -38,7 +38,7 @@
       <!-- Flatpak has been installed by default on Fedora Workstation since F25. Previous versions are past end of life, so don't need to be mentioned. -->
       <p>Flatpak is installed by default on Fedora Workstation. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. To do this, run the following in a terminal:</p>
       <pre><code>
-        <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+        <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       </code></pre>
       <p>Now all you have to do is <a href="https://flathub.org/apps/">install some apps</a>!</p>
     </ol>
@@ -70,7 +70,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -96,7 +96,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -128,7 +128,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -149,7 +149,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -174,7 +174,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -199,7 +199,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -228,7 +228,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exist flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
