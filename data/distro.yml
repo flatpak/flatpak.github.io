@@ -24,6 +24,7 @@
         <pre><code>
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
+        <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       </li>
       <li>
         <h2>Restart</h2>
@@ -40,6 +41,7 @@
       <pre><code>
         <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       </code></pre>
+      <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
 
@@ -67,6 +69,7 @@
         <pre><code>
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
+        <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       </li>
       <li>
         <h2>Restart</h2>
@@ -97,6 +100,7 @@
         <pre><code>
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
+        <p>Alternatively, if running Tumbleweed or Leap 15.0 and later, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       </li>
       <li>
         <h2>Restart</h2>
@@ -123,6 +127,7 @@
         <pre><code>
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
+        <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       </li>
       <li>
         <h2>Restart</h2>
@@ -155,6 +160,7 @@
         <pre><code>
           <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
+        <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
       </li>
       <li>
         <h2>Restart</h2>
