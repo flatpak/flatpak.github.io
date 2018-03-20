@@ -247,7 +247,7 @@
         <p>Or, to install with <code>urpmi</code>, run:</p>
         <pre><code>
           <span class="unselectable">#</span> urpmi flatpak
-        </pre>
+        </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
