@@ -42,7 +42,7 @@ description: FAQ about the Flatpak project.
 
   Yes. We are explicitly using many features of the linux kernel (bind mounts, namespaces, seccomp, etc) to create the sandbox that
   Flatpak apps are running in. It may be possible to use equivalent technologies on other kernels, but that would be a non-trivial
-  amount of work, and we don't consider this one of our priorities.
+  amount of work, and we don’t consider this one of our priorities.
 
   ### Is Flatpak tied to systemd?
 
@@ -56,7 +56,7 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak a container technology?
 
-  It can be, but it doesn't have to be. Since a desktop application would require quite extensive changes in order to
+  It can be, but it doesn’t have to be. Since a desktop application would require quite extensive changes in order to
   be usable when run inside a container you will likely see Flatpak mostly deployed as a convenient library bundling technology
   early on, with the sandboxing or containerization being phased in over time for most applications. In general though we
   try to avoid using the term container when speaking about Flatpak as it tends to cause comparisons with Docker and rkt,
@@ -77,7 +77,7 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak compatible with other desktop isolation frameworks?
 
-  In general unprivileged container systems can't stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
+  In general unprivileged container systems can’t stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
 
   It is certainly possible for Flatpak and Flatpak applications to coexist with applications that are packaged in other ways, on the same host system.
 
@@ -85,13 +85,13 @@ description: FAQ about the Flatpak project.
 
   Yes!
 
-  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected flatpak runtime and any external dependencies. Support for running your application inside flatpak is also supported. By developing your application within the exact same environment as your users you can squash those "Works for me" bugs before they reach your users!
+  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected flatpak runtime and any external dependencies. Support for running your application inside flatpak is also supported. By developing your application within the exact same environment as your users you can squash those “Works for me” bugs before they reach your users!
 
   ### Can I host my flatpak app on github?
 
-  Flatpak repositories can't (currently) be put on github in a convenient way.
+  Flatpak repositories can’t (currently) be put on github in a convenient way.
   As an alternative, you can create a single-file bundle, and put that up on github
-  as a 'release'. Note that bundles have some drawbacks, compared to a repository.
+  as a “release”. Note that bundles have some drawbacks, compared to a repository.
   Another option you have is to get your app on [Flathub](https://flathub.org/)
   which will allow your users to get updates.
 
