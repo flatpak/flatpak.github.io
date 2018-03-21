@@ -120,15 +120,8 @@
           <span class="unselectable">$</span> sudo pacman -S flatpak
         </code></pre>
       </li>
+      <!-- On arch, Flathub is added when the Flatpak package is installed. -->
       <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there's no need to separately install it -->
-      <li>
-        <h2>Add the Flathub repository</h2>
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-        </code></pre>
-        <p>Alternatively, you can <a href="https://flathub.org/repo/flathub.flatpakrepo">download</a> the Flathub repository file and install it with GNOME Software.</p>
-      </li>
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
