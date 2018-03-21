@@ -116,6 +116,7 @@
           <span class="unselectable">$</span> sudo pacman -S flatpak
         </code></pre>
       </li>
+      <!-- On arch, Flathub is added when the Flatpak package is installed. -->
       <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there's no need to separately install it -->
       <li>
         <h2>Restart</h2>
