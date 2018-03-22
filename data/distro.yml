@@ -35,7 +35,7 @@
   logo: "fedora.svg"
   info: >
     <ol class="distrotut">
-      <!-- Flatpak has been installed by default on Fedora Workstation since F25. Previous versions are past end of life, so don't need to be mentioned. -->
+      <!-- Flatpak has been installed by default on Fedora Workstation since F25. Previous versions are past end of life, so don’t need to be mentioned. -->
       <p>Flatpak is installed by default on Fedora Workstation. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
@@ -43,7 +43,7 @@
 - name: "Endless OS"
   logo: "endless.svg"
   info: >
-    <h1>Flatpak support is built into Endless OS 3.0.0 and newer - no setup required!</h1>
+    <h1>Flatpak support is built into Endless OS 3.0.0 and newer—no setup required!</h1>
     <p>If you are using an older version, <a href="https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967">upgrade to Endless OS 3</a>.</p>
 
 - name: "Red Hat Enterprise Linux"
@@ -57,7 +57,7 @@
           <span class="unselectable">$</span> sudo dnf install flatpak
         </code></pre>
       </li>
-      <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there's no need to separately install it -->
+      <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there’s no need to separately install it -->
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
