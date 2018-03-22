@@ -63,7 +63,7 @@ end
 
 #activate :asset_hash
 activate :directory_indexes
-redirect "press/index.html", to: "press/2016-06-21-flatpak-released.html"
-redirect "developer.html", to: "http://docs.flatpak.org"
-redirect "getting.html", to: "/setup/"
 #redirect "/hello-world.html", to: "/hello-world/"
+#
+#redirects happening in nginx
+#https://github.com/flatpak/flatpak.github.io/issues/241
