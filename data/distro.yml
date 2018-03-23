@@ -54,7 +54,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Red Hat Enterprise Linux 7, run the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> sudo dnf install flatpak
+          <span class="unselectable">$</span> sudo yum install flatpak
         </code></pre>
       </li>
       <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there’s no need to separately install it -->
