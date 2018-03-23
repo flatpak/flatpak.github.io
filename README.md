@@ -1,5 +1,6 @@
-Flatpak.org website
-===================
+# Flatpak.org website
+
+## Installation and setup
 
 To set up middleman locally on Fedora:
 
@@ -10,6 +11,8 @@ the needed modules in their appropriate vesions.
 
 Add the middleman binary location (probably ~/bin) to $PATH.
 
+## Testing
+
 To run a local web server to test the site:
 
     bundle exec middleman server
@@ -17,8 +20,13 @@ To run a local web server to test the site:
 Edit the haml/scss files and commit your changes, pushing to 
 origin/source.
 
-to deploy your changes:
+## Deployment
 
+**You must be on the source branch to deploy.**
+
+To deploy your changes:
+
+    rm -rf build
     bundle exec middleman build
     bundle exec middleman deploy
 
