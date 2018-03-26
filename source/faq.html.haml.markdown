@@ -46,7 +46,7 @@ description: FAQ about the Flatpak project.
 
   ### Is Flatpak tied to systemd?
 
-  No. Versions of flatpak before 0.6.10 relied on systemd for cgroups setup, but this is no longer required.
+  No. Versions of Flatpak before 0.6.10 relied on systemd for cgroups setup, but this is no longer required.
 
   ### Is Flatpak the same as xdg-app?
 
@@ -63,21 +63,21 @@ description: FAQ about the Flatpak project.
   comparisons which quickly stop making technical sense due to the very different problem spaces these technologies
   try to address. And thus we prefer using the term sandboxing.
 
-  ### How does Flatpak relate to freedesktop.org technologies such as desktop files and appstream metadata?
+  ### How does Flatpak relate to freedesktop.org technologies such as desktop files and AppStream metadata?
 
-  These standards are incorporated as mandatory parts in the flatpak definition. By relying on these standards
+  These standards are incorporated as mandatory parts in the Flatpak definition. By relying on these standards
   we are building on years of investment and support under Linux.
 
   ### Can Flatpak be used on servers too?
   
-  Flatpak is designed to run inside a desktop session and relies on certain session services, such as a dbus session bus
-  and, optionally, a systemd --user instance. This makes Flatpak not a good match for a server.
+  Flatpak is designed to run inside a desktop session and relies on certain session services, such as a D-Bus session bus
+  and, optionally, a systemd `--user` instance. This makes Flatpak not a good match for a server.
 
   However, the build features of Flatpak run fine outside a session, so you can build things on a server.
 
   ### Is Flatpak compatible with other desktop isolation frameworks?
 
-  In general unprivileged container systems can’t stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
+  In general unprivileged container systems can’t stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, Firejail can never work inside Flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.
 
   It is certainly possible for Flatpak and Flatpak applications to coexist with applications that are packaged in other ways, on the same host system.
 
@@ -85,13 +85,13 @@ description: FAQ about the Flatpak project.
 
   Yes!
 
-  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected flatpak runtime and any external dependencies. Support for running your application inside flatpak is also supported. By developing your application within the exact same environment as your users you can squash those “Works for me” bugs before they reach your users!
+  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected Flatpak runtime and any external dependencies. Support for running your application inside Flatpak is also supported. By developing your application within the exact same environment as your users you can squash those “Works for me” bugs before they reach your users!
 
-  ### Can I host my flatpak app on github?
+  ### Can I host my Flatpak app on GitHub?
 
-  Flatpak repositories can’t (currently) be put on github in a convenient way.
-  As an alternative, you can create a single-file bundle, and put that up on github
-  as a “release”. Note that bundles have some drawbacks, compared to a repository.
+  Flatpak repositories can’t (currently) be put on GitHub in a convenient way.
+  As an alternative, you can create a single-file bundle, and put that up on GitHub
+  as a “release.” Note that bundles have some drawbacks, compared to a repository.
   Another option you have is to get your app on [Flathub](https://flathub.org/)
   which will allow your users to get updates.
 
