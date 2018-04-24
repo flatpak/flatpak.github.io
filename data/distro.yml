@@ -74,7 +74,8 @@
 - name: "Linux Mint"
   logo: "mint.svg"
   info: >
-    <h1>Flatpak support is built into Linux Mint 18.3 and newer. No setup required!</h1>
+    <h1>Flatpak support is built into Linux Mint 18.3 and newer—no setup required!</h1>
+    <p>If you are using an older version, <a href="https://blog.linuxmint.com/?p=3462">upgrade to Linux Mint 18.3</a>.</p>
 
 - name: "openSUSE"
   logo: "opensuse.svg"
