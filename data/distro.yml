@@ -184,7 +184,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> sudo eopkg install flatpak
+          <span class="unselectable">$</span> sudo eopkg install flatpak xdg-desktop-portal-gtk
         </code></pre>
       </li>
       <li>
