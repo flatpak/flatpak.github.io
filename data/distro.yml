@@ -254,3 +254,34 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with Mageia.</p>
       </li>
     </ol>
+
+- name: "Pop!_OS"
+  logo: "pop-os.svg"
+  info: >  
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>For Pop!_OS OS 17.10, first add the official Flatpak PPA by running the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install software-properties-common --no-install-recommends
+          <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
+        </code></pre>
+        <p>For all versions of Pop!_OS, install flatpak from a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt update
+          <span class="unselectable">$</span> sudo apt install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with elementary OS.</p>
+      </li>
+    </ol>
