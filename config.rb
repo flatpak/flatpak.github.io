@@ -62,7 +62,7 @@ activate :google_analytics do |ga|
 end
 
 #activate :asset_hash
-#activate :directory_indexes
+activate :directory_indexes
 # we have reditects on nginx side
 #redirect "/hello-world.html", to: "/hello-world/"
 #
