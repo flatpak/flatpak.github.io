@@ -261,13 +261,10 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>For elementary OS 0.4 Loki, first add the official Flatpak PPA by running the following in the Terminal:</p>
+        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in the Terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install software-properties-common --no-install-recommends
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
-        </code></pre>
-        <p>For all versions of elementary OS, install flatpak from the Terminal:</p>
-        <pre><code>
           <span class="unselectable">$</span> sudo apt update
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
