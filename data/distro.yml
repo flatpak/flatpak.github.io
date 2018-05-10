@@ -261,13 +261,10 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>For Pop!_OS OS 17.10, first add the official Flatpak PPA by running the following in a terminal:</p>
+        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install software-properties-common --no-install-recommends
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
-        </code></pre>
-        <p>For all versions of Pop!_OS, install flatpak from a terminal:</p>
-        <pre><code>
           <span class="unselectable">$</span> sudo apt update
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
