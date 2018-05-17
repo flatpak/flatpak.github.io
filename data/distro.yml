@@ -279,7 +279,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: graphical installation of Flatpak apps may not be possible with elementary OS.</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Pop!_OS.</p>
       </li>
     </ol>
 - name: "elementary OS"
