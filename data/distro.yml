@@ -309,3 +309,27 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with elementary OS.</p>
       </li>
     </ol>
+- name: "Raspbian"
+  logo: "raspbian.svg"
+  info: >  
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>A flatpak package is available in Raspbian Stretch and newer. To install it, run the following as root:</p>
+        <pre><code>
+          <span class="unselectable">#</span> apt install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Raspbian.</p>
+      </li>
+    </ol>
