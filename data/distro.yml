@@ -276,6 +276,13 @@
         </code></pre>
       </li>
       <li>
+        <h2>Install the Pop! theme</h2>
+        <p>For tighter integration of Flatpaks into Pop!_OS, you'll want to install the Pop! theme from Flathub. To do so, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak install flathub org.gtk.Gtk3theme.Pop
+        </code></pre>
+      </li>
+      <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Pop!_OS.</p>
@@ -300,6 +307,13 @@
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Install the elementary theme</h2>
+        <p>For tighter integration of Flatpaks into elementary OS, you'll want to install the elementary theme from Flathub. To do so, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak install flathub org.gtk.Gtk3theme.elementary
         </code></pre>
       </li>
       <li>
