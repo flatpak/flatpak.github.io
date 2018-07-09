@@ -281,6 +281,7 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with Pop!_OS.</p>
       </li>
     </ol>
+
 - name: "elementary OS"
   logo: "elementary-os.svg"
   info: >  
@@ -308,6 +309,7 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with elementary OS.</p>
       </li>
     </ol>
+
 - name: "Raspbian"
   logo: "raspbian.svg"
   info: >  
