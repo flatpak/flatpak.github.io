@@ -5,11 +5,10 @@
   link: "http://docs.flatpak.org/"
   onlyfooter: true
 - title: Press
-  link: "/press"
+  link: "/press.html"
   onlyfooter: true
 - title: FAQ
   link: "/faq.html"
   onlyfooter: true
-- title: About & Contact
+- title: About Us / Contact / Get Involved
   link: "/about.html"
-
