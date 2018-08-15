@@ -1,7 +1,7 @@
-- title: Install Applications
+- title: Browse Apps 🡥
   link: "https://flathub.org/"
   onlyfooter: true
-- title: Developer guide
+- title: Developer guide 🡥
   link: "http://docs.flatpak.org/"
   onlyfooter: true
 - title: Press
@@ -10,5 +10,5 @@
 - title: FAQ
   link: "/faq.html"
   onlyfooter: true
-- title: About Us / Contact / Get Involved
+- title: About Us & Contact
   link: "/about.html"
