@@ -99,6 +99,13 @@ p {
   display: none;
 }
 
+.imagebanner {
+  background: url(/img/banner.svg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 2px 1px rgba(0,0,0,0.4);
+}
+
 .bg-primary {
   background-color: $key_color;
   padding-bottom: 16em;

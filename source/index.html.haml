@@ -3,13 +3,16 @@ title: Flatpak—the future of application distribution
 description: The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!
 ---
 
-%section.bg-primary-neutral.centered
+%section.imagebanner.centered
   .container
     .row.largegap
       .col-lg-12
-        %h1.section-heading the best way to get apps on Linux
-        %p Choose from a growing collection of apps.
-    .row
+        %h1.section-heading The future of apps on Linux
+        %p Flatpak is a next-generation technology for building and distributing desktop applications on Linux
+
+%section.bg-primary-neutral.centered
+  .container
+    .row.largegap
       .appgrid
         - data.apps.each do |i|
           - if i.icons["128"]
