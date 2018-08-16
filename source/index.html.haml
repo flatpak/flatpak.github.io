@@ -17,35 +17,26 @@ description: The days of chasing multiple Linux distributions are over. Standalo
     .row
       .col-lg-8.col-lg-offset-2
         = image_tag '/img/delivery_truck2.png'
-    .row
-      .appgrid
-        - data.apps.each do |i|
-          - if i.icons["128"]
-            .icon.featured{:style => "background-image: url(#{i.icons['128']})"}
-          - elsif i.icons["64"]
-            .icon{:style => "background-image: url(#{i.icons['64']})"}
-    .row.largegap
-      .col-lg-12
-        %a#quicksetupbtn.btn-default.btn.btn-xl.page-scroll{:href => "/setup"} Quick setup
-        %a#flathubbtn.btn-primary.btn.btn-xl.page-scroll{:href => "http://flathub.org/"} Install apps
 
-
-%section#devsplash.bg-primary
+%section#appsplash.bg-primary
   .container
-    .row.largegap
-      .col-sm-6
+    .row
+      .col-sm-6.col-sm-offset-1
         %h3 
-          Flatpak can be used with a total of
-          = data.distro.count
-          distros
-        %p
-          See the 
-          = link_to "complete list", "/setup"
-      .col-sm-6
-        .distrogrid
-          - 0.upto(4) do |i|
-            .icon{:style => "background-image: url(/img/distro/#{data.distro[i].logo})"}
+          Start using Flatpak and install from a growing collection of apps
+        .appgrid
+          - 0.upto(6) do |i|
+            - if data.apps[i].icons["128"]
+              .icon.featured{:style => "background-image: url(#{data.apps[i].icons['128']})"}
+            - elsif data.apps[i].icons["64"]
+              .icon{:style => "background-image: url(#{data.apps[i].icons['64']})"}
+      .col-sm-4.col-sm-offset-1.centered
+        %a#quicksetupbtn.btn-default.btn.btn-xl.page-scroll{:href => "/setup"} Get setup
         
+        %p.small.mediumgap
+          Already set up? Head over to
+          = link_to "Flathub", "http://flathub.org"
+          to install some apps.
 
 
 
@@ -95,6 +86,22 @@ description: The days of chasing multiple Linux distributions are over. Standalo
       .col-sm-6.col-sm-offset-4
         %a.btn.btn-default.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/getting-started.html"} 5 minute tutorial
         %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Read the docs
+
+%section#devsplash.bg-secondary
+  .container
+    .row.largegap
+      .col-sm-5.col-sm-offset-1
+        %h3 
+          Flatpak can be used with a total of
+          = data.distro.count
+          distros
+        %p
+          See the 
+          = link_to "complete list", "/setup"
+      .col-sm-6
+        .distrogrid
+          - 0.upto(4) do |i|
+            .icon{:style => "background-image: url(/img/distro/#{data.distro[i].logo})"}
 
 %section.bg-primary
   .container
