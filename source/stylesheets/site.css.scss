@@ -689,7 +689,7 @@ ol.distrotut {
 
 .appgrid {
   max-width: 900px;
-  margin: 32px auto 0;
+  margin: 32px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(64px,1fr)); /* repeat(6, 1fr); */
   grid-auto-flow: row;
