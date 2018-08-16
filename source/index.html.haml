@@ -12,9 +12,12 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           %span.emphasize apps on Linux
         %p Flatpak is a next-generation technology for building and distributing desktop applications on Linux
 
-%section.bg-primary-neutral.centered
+%section.illustration.centered
   .container
-    .row.largegap
+    .row
+      .col-lg-8.col-lg-offset-2
+        = image_tag '/img/delivery_truck2.png'
+    .row
       .appgrid
         - data.apps.each do |i|
           - if i.icons["128"]

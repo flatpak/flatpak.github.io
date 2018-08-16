@@ -99,16 +99,7 @@ p {
   display: none;
 }
 
-.imagebanner {
-  background: url(/img/banner.svg) no-repeat center bottom;
-  background-size: cover;
-  color: rgba(0,0,0,0.5);
-  min-height: 500px;
-  p {
-    max-width: 30em;
-    margin: auto;
-  }
-}
+
 
 .bg-primary {
   background-color: $key_color;
@@ -167,6 +158,22 @@ section {
   padding: 100px 0;
   flex: 1;
 }
+
+  .imagebanner {
+    background: url(/img/banner.svg) no-repeat center bottom;
+    background-size: cover;
+    color: rgba(0,0,0,0.5);
+    min-height: 500px;
+    p {
+      max-width: 30em;
+      margin: auto;
+    }
+  }
+
+  .illustration {
+    margin-top: -330px;
+    margin-bottom: 0;
+  }
 
 aside {
   padding: 50px 0;
