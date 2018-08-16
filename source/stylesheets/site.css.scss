@@ -134,7 +134,7 @@ p {
 }
 
 #devsplash {
-  padding-top: 0;
+  padding: 0 0 3em 0;
   ul {
     text-align: left;
   }
@@ -655,6 +655,13 @@ table {
       transform: scale(1.2);
     }
   }
+  
+  .icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 64px; min-height: 64px;
+  }
 }
 
 ol.distrotut {
@@ -705,6 +712,8 @@ ol.distrotut {
     */
   }
 }
+
+
 
 #footer {
   font-size: 90%;

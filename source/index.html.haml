@@ -30,25 +30,31 @@ description: The days of chasing multiple Linux distributions are over. Standalo
         %a#flathubbtn.btn-primary.btn.btn-xl.page-scroll{:href => "http://flathub.org/"} Install apps
 
 
-%section#devsplash.bg-secondary
+%section#devsplash.bg-primary
   .container
-    .row.largegap.centered
-      .col-sm-6.col-sm-offset-3
-        %h1 Publish apps on every Linux distribution
-        %p Developers can simultaneously distribute on every Linux distribution.
-    .row
-      .appgrid
-        - data.distro.each do |i|
-          .icon{:style => "background-image: url(/img/distro/#{i.logo})"}
-        
     .row.largegap
-      .col-sm-8.col-sm-offset-2.centered
-        %a.btn.btn-default.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/getting-started.html"} Build your first app
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Developer guide
+      .col-sm-6
+        %h3 
+          Flatpak can be used with a total of
+          = data.distro.count
+          distros
+        %p
+          See the 
+          = link_to "complete list", "/setup"
+      .col-sm-6
+        .distrogrid
+          - 0.upto(4) do |i|
+            .icon{:style => "background-image: url(/img/distro/#{data.distro[i].logo})"}
+        
+
 
 
 %section.bg-primary-neutral
   .container
+    .row.centered
+      .col-sm-6.col-sm-offset-3
+        %iframe{'width'=>'100%','height'=>'500', 'src'=>'https://www.youtube.com/embed/', 'frameborder'=>'0', 'allowfullscreen'=>'true'}
+          =link_to 'Flatpak 1.0', 'https://www.youtube.com/watch?v='
     .row.centered
       .col-sm-6.col-sm-offset-3
         %h2 A new world for application developers
@@ -85,6 +91,10 @@ description: The days of chasing multiple Linux distributions are over. Standalo
       .col-sm-5
         %h4 An independent project
         %p Flatpak is developed by an independent community, with no lock-in to a single vendor.
+    .row.largegap
+      .col-sm-6.col-sm-offset-4
+        %a.btn.btn-default.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/getting-started.html"} 5 minute tutorial
+        %a.btn.btn-primary.btn-xl.page-scroll{:href => "http://docs.flatpak.org/en/latest/"} Read the docs
 
 %section.bg-primary
   .container
