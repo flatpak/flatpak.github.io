@@ -744,6 +744,7 @@ ol.distrotut {
     color: $neutral_color;
     font-weight: bold;
     letter-spacing: 0.1em;
+    @media(min-width:768px) { text-align: right; }
   }
 
 #footer {
