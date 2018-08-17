@@ -1,3 +1,6 @@
+- title: Get Setup
+  link: "https://flatpak.org/setup/"
+  onlyfooter: true
 - title: Browse Apps 🡥
   link: "https://flathub.org/"
   onlyfooter: true
