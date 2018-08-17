@@ -10,7 +10,7 @@ description: Announcing Flatpak – Next Generation Linux Applications
 
   ## Build once, run anywhere
 
-  <img alt="" src="/img/logo2.svg" class="fright">
+  <img alt="" src="/img/logo-press.svgz" class="fright">
   
   The Linux desktop has long been held back by platform fragmentation. This has been a burden on developers, and creates a high barrier to entry for third party application developers. Flatpak aims to change all that. From the very start its primary goal has been to allow the same application to run across a myriad of Linux distributions and operating systems. In doing so, it greatly increases the number of users that application developers can easily reach.
 

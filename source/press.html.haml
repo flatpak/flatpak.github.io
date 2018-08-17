@@ -23,7 +23,9 @@ description: Press
       .col-lg-8.col-lg-offset-2
         %h3 Graphics and Logo
         %p
-          The Flatpak logo is licensed ____ and can be downloaded here.
+          The Flatpak logo is licensed ____ and can be 
+          = succeed "." do
+            =link_to "downloaded here", "/img/logo-press.png"
     .row
       .col-lg-8.col-lg-offset-2
         %h3 Contact
