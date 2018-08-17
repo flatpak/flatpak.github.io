@@ -715,17 +715,15 @@ ol.distrotut {
 }
 
 #quicksetupbtn {
-  background-color: darken($key_color, 20%);
-  color: #fff;
+
   width: 100%;
   
   &:focus, &:hover {
-    background-color: darken($key_color, 5%);
-    border-color: darken($key_color, 10%);
+
   }
   
   &:active {
-    background-color: darken($key_color, 35%);
+
   }
 }
 
