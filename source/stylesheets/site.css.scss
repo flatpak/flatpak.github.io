@@ -732,10 +732,13 @@ ol.distrotut {
 .timeline {
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 15px;
+  column-gap: 15px;
+  row-gap: 15px;
   align-items: baseline;
 
-  @media(min-width:768px) { grid-template-columns: 1fr 2fr; }
+  @media(min-width:768px) { 
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
   
@@ -744,7 +747,11 @@ ol.distrotut {
     color: $neutral_color;
     font-weight: bold;
     letter-spacing: 0.1em;
-    @media(min-width:768px) { text-align: right; }
+    margin-top: 2em;
+    @media(min-width:768px) { 
+      text-align: right;
+      margin-top: 0;
+    }
   }
 
 #footer {
