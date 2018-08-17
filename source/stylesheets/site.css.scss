@@ -729,6 +729,21 @@ ol.distrotut {
   }
 }
 
+.timeline {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 15px;
+
+  @media(min-width:768px) { grid-template-columns: 1fr 2fr; }
+}
+
+  
+  .date {
+    font-size: 90%;
+    color: $neutral_color;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
 
 #footer {
   font-size: 90%;
