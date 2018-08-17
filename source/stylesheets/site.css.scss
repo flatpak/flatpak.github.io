@@ -732,8 +732,7 @@ ol.distrotut {
 .timeline {
   display: grid;
   grid-template-columns: 100%;
-  column-gap: 15px;
-  row-gap: 15px;
+  grid-gap: 15px;
   align-items: baseline;
 
   @media(min-width:768px) { 

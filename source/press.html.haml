@@ -7,9 +7,6 @@ description: Press
   .container
     .row
       .col-lg-8.col-lg-offset-2
-        = image_tag '/img/delivery_truck.png'
-    .row
-      .col-lg-8.col-lg-offset-2
         %h1.section-heading.text-center Press Information
         %hr.primary
         %p
@@ -17,13 +14,18 @@ description: Press
     .row
       .col-lg-8.col-lg-offset-2
         %h3 Press releases
-        %p
-          =link_to "21 June 2016 - Announcing Flatpak – Next Generation Linux Applications", "press/2016-06-21-flatpak-released.html"
-    .row
+        .timeline.mediumgap
+          .date 20 Augist 2018
+          .description
+            =link_to "Flatpak 1.0 — First Stable Release", "press/2018-08-20-flatpak-1.0.html"
+          .date 21 June 2016
+          .description
+            =link_to "Announcing Flatpak – Next Generation Linux Applications", "press/2016-06-21-flatpak-released.html"
+    .row.largegap
       .col-lg-8.col-lg-offset-2
         %h3 Graphics and Logo
         %p
-          The Flatpak logo is licensed ____ and can be 
+          The Flatpak logo is licensed Creative Commons Attribution 3.0 and can be 
           = succeed "." do
             =link_to "downloaded here", "/img/logo-press.png"
     .row
