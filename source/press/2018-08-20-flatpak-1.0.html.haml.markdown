@@ -10,7 +10,7 @@ description: Flatpak 1.0 – First Stabel Release
   
   **Stockholm, Sweden, 20 August 2018**: Flatpak, the Linux desktop app distribution framework, reached an important milestone today, with the release of its 1.0 version.
 
-  For those who don't know, once an app has been built as a Flatpak, it can be installed on virtually any Linux distribution. As explained in their [new promotional video](), this model is designed to make Linux a more attractive option for desktop app developers, and provides developers with a more stable platform on which to build and develop.
+  For those who don't know, once an app has been built as a Flatpak, it can be installed on virtually any Linux distribution. This model is designed to make Linux a more attractive option for desktop app developers, and provides developers with a more stable platform on which to build and develop.
 
   Discussing the release, Flatpak’s lead developer, Alexander Larsson, has said: “A lot of work has gone into Flatpak 1.0 and we're confident that it's ready for wider use. Flatpak's goal has always been to revolutionize the Linux ecosystem and this is an important step towards that.” A 1.0 release generally marks the point at which software has become “feature complete”, so the fact that the developers are calling this a 1.0 is significant. But what does it mean in practice?
 
