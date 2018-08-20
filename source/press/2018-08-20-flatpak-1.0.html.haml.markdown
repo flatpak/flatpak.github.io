@@ -24,7 +24,7 @@ description: Flatpak 1.0 – First Stabel Release
 
   Another significant development in the Flatpak ecosystem relates to their “runtimes” - the platforms that applications are built and run against. The main “Freedesktop” runtime that is used by most Flatpak apps is having a major release to coincide with the Flatpak 1.0. This 18.08 release has a new lifecycle policy, which includes a regular release schedule and guarantees for support periods and security updates. This gives Flatpak’s app platforms a similar level of support to commercial operating system offerings.
 
-  Flatpak's developers also point to other areas where the framework has matured. Their [developer documentation](http://docs.flatpak.org/en/latest/) has been rewritten and is much more complet. Flatpak’s website also includes [tutorials for setting up Flatpak on a lot more Linux distributions](https://flatpak.org/setup/) .
+  Flatpak's developers also point to other areas where the framework has matured. Their [developer documentation](http://docs.flatpak.org/en/latest/) has been rewritten and is much more complete. Flatpak’s website also includes [tutorials for setting up Flatpak on a lot more Linux distributions](https://flatpak.org/setup/) .
 
   The big question is what this means for the Linux landscape. Last November, Linux Mint, one of the larger Linux distributions, started using Flatpak by default, and Fedora is planning to start building its own Flatpaks very soon. It might just be that a tipping point has been reached.
 
