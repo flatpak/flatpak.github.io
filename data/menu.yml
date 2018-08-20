@@ -1,10 +1,10 @@
 - title: Get Setup
   link: "/setup/"
   onlyfooter: true
-- title: Browse Apps 🡥
+- title: Browse Apps &#8599;
   link: "https://flathub.org/"
   onlyfooter: true
-- title: Developer guide 🡥
+- title: Developer guide &#8599;
   link: "http://docs.flatpak.org/"
   onlyfooter: true
 - title: Press
