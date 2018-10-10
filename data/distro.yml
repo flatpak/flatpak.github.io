@@ -128,11 +128,11 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>A flatpak package is available in Debian Stretch and newer. To install it, run the following as root:</p>
+        <p>A flatpak package is available in Debian Buster and newer. To install it, run the following as root:</p>
         <pre><code>
           <span class="unselectable">#</span> apt install flatpak
         </code></pre>
-        <p>For Debian Jessie, a flatpak package is available in the <a href="https://backports.debian.org/Instructions/">official backports repository</a>.</p>
+        <p>For Debian Jessie and Stretch, a flatpak package is available in the <a href="https://backports.debian.org/Instructions/">official backports repository</a>.</p>
       </li>
       <li>
         <h2>Install the Software Flatpak plugin</h2>
