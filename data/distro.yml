@@ -342,3 +342,14 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with Raspbian.</p>
       </li>
     </ol>
+
+- name: "Clear Linux"
+  logo: "clearlinux.svg"
+  info: >
+    <ol class="distrotut">
+      <p>Flatpak is installed and Flathub repository is pre-configured by default on Clear Linux when installing the desktop bundle.</p>
+      <pre><code>
+        <span class="unselectable">$</span> sudo swupd bundle-add desktop
+      </code></pre>
+      <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+    </ol>
