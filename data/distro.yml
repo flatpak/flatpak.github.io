@@ -357,7 +357,7 @@
 - name: "Chrome OS"
   logo: "chrome-os.svg"
   info: >
-    <p>Flatpak applications can be installed on Chrome OS with the Crostini Linux compatibility layer. This is not available for all Chrome OS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>. Also note that prior to Version 69, Chrome OS required to be changed to the <strong>Developer channel</strong> before Crostini could be installed.</p>
+    <p>Flatpak applications can be installed on Chrome OS with the Crostini Linux compatibility layer. This is not available for all Chrome OS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>.</p>
     <ol class="distrotut">
       <li>
         <h2>Enable Linux support</h2>
