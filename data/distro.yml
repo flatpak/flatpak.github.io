@@ -353,3 +353,36 @@
       </code></pre>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
+
+- name: "Chrome OS"
+  logo: "chrome-os.svg"
+  info: >
+    <p>Flatpak applications can be installed on Chrome OS with the Crostini Linux compatibility layer. This is not available for all Chrome OS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>.</p>
+    <ol class="distrotut">
+      <li>
+        <h2>Enable Linux support</h2>
+        <p>Navigate to <a href="chrome://settings">chrome://settings</a>, and scroll down to <strong>Linux (Beta)</strong> and turn it on. Chrome OS will take some time downloading and installing Linux.</p>
+      </li>
+      <li>
+        <h2>Start a Linux terminal</h2>
+        <p>Press the Search/Launcher key, type "Terminal", and launch the Terminal app.</p>
+      </li>
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak, run the following in the terminal:</p>
+        <pre><code>
+          <span class="unselectable">#</span> sudo apt install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
