@@ -277,8 +277,8 @@
         </code></pre>
       </li>
         <li>
-        <h2>Install Gnome Software Integration</h2>
-        <p>This plugin integrates flatpak files with the Gnome software manager in POP_OS.</p>
+        <h2>Install the GNOME Software Application</h2>
+        <p>GNOME's Software app can be used to install and manage Flatpak apps. To install it, run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install gnome-software-plugin-flatpak
         </code></pre>
