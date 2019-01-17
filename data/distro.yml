@@ -4,7 +4,11 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
+        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install flatpak
+        </code></pre>        
+        <p>With older Ubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
           <span class="unselectable">$</span> sudo apt update
