@@ -184,6 +184,43 @@
       </li>
     </ol>
 
+- name: "Kubuntu"
+  logo: "kubuntu.svg"
+  info: >  
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak on Kubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install flatpak
+        </code></pre>        
+        <p>With older Kubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
+          <span class="unselectable">$</span> sudo apt update
+          <span class="unselectable">$</span> sudo apt install flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Install the Discover Flatpak backend</h2>
+        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line (available on Kubuntu 18.04 and newer). To install, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install plasma-discover-flatpak-backend
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
+
 - name: "Solus"
   logo: "solus.svg"
   info: >
