@@ -368,7 +368,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following:</p>
         <pre><code>
-          <span class="unselectable">#</span> xbps-install -S flatpak
+          <span class="unselectable">#</span> sudo xbps-install -S flatpak
         </code></pre>
       </li>
       <li>
