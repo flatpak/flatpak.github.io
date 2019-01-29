@@ -16,5 +16,8 @@
 - title: Presentations & Articles
   link: "/presentations.html"
   onlyfooter: true
+- title: Blog Posts
+  link: "/blog-posts.html"
+  onlyfooter: true
 - title: About Us & Contact
   link: "/about.html"
