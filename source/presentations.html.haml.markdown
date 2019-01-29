@@ -13,6 +13,9 @@ description: Presentations and articles about Flatpak
 
   ## 2018
 
+  [**Alexander Larsson: Flatpak - a technical walk-through**](https://people.gnome.org/~alexl/presentations/all-systems-go-2018.pdf)  
+  All Systems Go! Berlin, Germany, September 2018
+
   [**Robert McQueen & Jorge García: Flathub, app store and build service for flatpak apps**](https://www.youtube.com/watch?v=Hga20qlyknw)  
   GUADEC, Almeria, Spain, July 2018
 
