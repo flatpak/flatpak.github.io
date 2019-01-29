@@ -30,13 +30,13 @@ description: Presentations and articles about Flatpak
   [**Alexander Larsson: Taking back the apps from the distributions**](https://www.youtube.com/watch?v=IUA38lvb_tM)  
   LAS GNOME, October 2016, Portland, USA
 
-  [**Jorge Garcia:Building a Flatpak based app store**](https://www.youtube.com/watch?v=7HLXWxhc4EY)  
+  [**Jorge Garcia:Building a Flatpak based app store**](https://www.youtube.com/watch?v=MFue217zmyk)  
   GUADEC, August 2017, Manchester, UK
 
-  [**Jan Grulich & Martin Bříza: Flatpak and KDE & the state of Qt integration in GNOME**](https://www.youtube.com/watch?v=QruQ3N5t0EU)  
+  [**Jan Grulich & Martin Bříza: Flatpak and KDE & the state of Qt integration in GNOME**](https://www.youtube.com/watch?v=U8zlbXYTN2U)  
   GUADEC, August 2017, Manchester, UK
 
-  [**Richard Brown: Resurrecting Dinosaurs - what could possibly go wrong?**](https://www.youtube.com/watch?v=SPr--u4n8Xo)  
+  [**Richard Brown: Resurrecting Dinosaurs - what could possibly go wrong?**](https://www.youtube.com/watch?v=RPblTKt4Klo)  
   GUADEC, August 2017, Manchester, UK
 
   [**Simon McVittie: Flatpak and Debian**](https://www.collabora.com/news-and-blog/blog/2017/08/17/debconf-17-flatpak-and-debian/)  
