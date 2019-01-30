@@ -67,14 +67,14 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following in the terminal:</p>
         <pre><code>
-          <span class="unselectable">#</span> sudo apt install flatpak
+          <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -438,14 +438,14 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following:</p>
         <pre><code>
-          <span class="unselectable">#</span> sudo xbps-install -S flatpak
+          <span class="unselectable">$</span> sudo xbps-install -S flatpak
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
@@ -462,14 +462,14 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following:</p>
         <pre><code>
-          <span class="unselectable">#</span> sudo  nix-env -iA nixos.flatpak
+          <span class="unselectable">$</span> sudo nix-env -iA nixos.flatpak
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
