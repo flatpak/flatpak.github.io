@@ -4,7 +4,7 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
+        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or Ubuntu 19.04 (Disco Dingo), simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>        
@@ -38,7 +38,7 @@
 - name: "Fedora"
   logo: "fedora.svg"
   info: >
-    <ol class="distrotut">
+    <ol /home/dan/Projects/gaphor/flatpakclass="distrotut">
       <!-- Flatpak has been installed by default on Fedora Workstation since F25. Previous versions are past end of life, so don’t need to be mentioned. -->
       <p>Flatpak is installed by default on Fedora Workstation. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
