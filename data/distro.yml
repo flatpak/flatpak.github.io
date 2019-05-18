@@ -486,7 +486,7 @@
         <h2>Install Flatpak</h2>
         <p>Flatpak can be installed using Guix's default repositories:</p>
         <pre><code>
-          <span class="unselectable">$</span> guix install flatpak
+          <span class="unselectable">$</span> # guix install flatpak
         </code></pre>
       </li>
       <li>
