@@ -339,12 +339,10 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
-        <pre><code>
-          <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
-          <span class="unselectable">$</span> sudo apt update
+        <p>To install Flatpak on Pop!_OS, simply run:</p>
+       <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>
+        </code></pre>  
       </li>
         <li>
         <h2>Install the GNOME Software Application</h2>
