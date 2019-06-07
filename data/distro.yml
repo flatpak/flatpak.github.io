@@ -31,7 +31,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
     
@@ -79,7 +79,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -100,7 +100,7 @@
         <p>Flathub is the best way to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -131,7 +131,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: Flatpak applications can only be installed using the graphical Software application on either Tumbleweed or Leap 15.0 and later.</p>
       </li>
     </ol>
@@ -151,7 +151,7 @@
       <!-- Apparently the GNOME Software Flatpak plugin is shipped as part of the GNOME Software package, so there's no need to separately install it -->
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -183,7 +183,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -212,7 +212,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Gentoo.</p>
       </li>
     </ol>
@@ -250,7 +250,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -274,7 +274,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Solus.</p>
       </li>
     </ol>
@@ -299,7 +299,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Alpine.</p>
       </li>
     </ol>
@@ -328,7 +328,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Mageia.</p>
       </li>
     </ol>
@@ -362,7 +362,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -389,7 +389,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with elementary OS.</p>
       </li>
     </ol>
@@ -414,7 +414,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Raspbian.</p>
       </li>
     </ol>
@@ -450,7 +450,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
@@ -474,6 +474,6 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart your system (or log out of your desktop, and then log back in). Now go <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
