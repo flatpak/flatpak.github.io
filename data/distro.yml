@@ -339,18 +339,9 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>The official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
-        <pre><code>
-          <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
-          <span class="unselectable">$</span> sudo apt update
+        <p>To install Flatpak on Pop!_OS, simply run:</p>
+       <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>
-      </li>
-        <li>
-        <h2>Install the GNOME Software Application</h2>
-        <p>GNOME's Software app can be used to install and manage Flatpak apps. To install it, run:</p>
-        <pre><code>
-          <span class="unselectable">$</span> sudo apt install gnome-software-plugin-flatpak
         </code></pre>
       </li>
       <li>
@@ -363,6 +354,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Pop!_OS.</p>
       </li>
     </ol>
 
