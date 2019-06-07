@@ -4,7 +4,7 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
+        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or Ubuntu 19.04 (Disco Dingo), simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>        
