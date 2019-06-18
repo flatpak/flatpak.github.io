@@ -1,12 +1,12 @@
 !!!5
 %html
   %head
-    %title 
+    %title
       =current_page.data.title
     %meta{content: "text/html; charset=UTF8", "http-equiv" => "content-type"}/
     %meta{content: "#{current_page.data.description}", name: "description"}/
     %meta{content: "bundle,application,runtime,flatpak,xdg-app", name: "keywords"}/
-    %meta{content: "width=device-width,initial-scale=1", name: "viewport" }/ 
+    %meta{content: "width=device-width,initial-scale=1", name: "viewport" }/
     %link{rel:"icon", "type" => "image/png", href:"img/favicon.png"}/
     %link{rel:"shortcut icon", "type" => "image/x-icon", href:"/favicon.ico"}/
     %link{rel:"apple-touch-icon", "sizes" => "57x57", href:"img/favicon57.png"}/
@@ -21,7 +21,7 @@
   = javascript_include_tag "jquery.toc.min"
   = javascript_include_tag :bootstrap
   = javascript_include_tag :all
-  = google_analytics_universal_tag
+  = matomo_tag
 
   %body#page-top
     %nav#mainNav.navbar.navbar-default.navbar-fixed-top
