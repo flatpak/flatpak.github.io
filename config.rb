@@ -59,7 +59,7 @@ set :markdown, :tables => true #, :autolink => true, :gh_blockcode => true, :fen
 
 activate :matomo do |p|
   p.domain = 'webstats.gnome.org'
-  p.site_id = 12
+  p.site_id = 13
 end
 
 #activate :asset_hash
