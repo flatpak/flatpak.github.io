@@ -116,8 +116,9 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>Flatpak can be installed on Leap 42.1, Leap 42.2 and Tumbleweed using a 1-click install.</p>
-        <p>On Tumbleweed, Flatpak can also be installed using Zypper:</p>
+        <p>Flatpak is available in the default repositories of all currently maintained openSUSE Leap and openSUSE Tumbleweed versions.</p>
+        <p>If you prefer a graphical installation, you can install Flatpak using a "1-click installer" from <a href="https://software.opensuse.org/package/flatpak">software.opensuse.org</a>. If your distribution version is not shown by default, click <em>Show flatpak for other distributions</em> first and then select from the list.</p>
+        <p>Alternatively, install Flatpak from the command line using Zypper:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo zypper install flatpak
         </code></pre>
@@ -132,7 +133,6 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: Flatpak applications can only be installed using the graphical Software application on either Tumbleweed or Leap 15.0 and later.</p>
       </li>
     </ol>
 
