@@ -481,16 +481,6 @@
   logo: "pureos.svg"
   info:  >
     <ol class="distrotut">
-      <li>
-        <h2>Add the Flathub repository</h2>
-        <p>Flatpak is installed by default on PureOS. You just need to enable the Flathub repository. There are two ways.</p>
-            <h3>Download the repo file </h3>
-              <p>Download the repofile and open it with the Software application
-                <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>
-            <h3>Install using the terminal</h3>
-        <pre><code>
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-        </code></pre>
-        <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-      </li>
+      <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
