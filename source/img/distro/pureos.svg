@@ -1,94 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="128mm"
-   height="128mm"
-   viewBox="0 0 128 128"
+   id="svg17226"
    version="1.1"
-   id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="pureos.svg">
-  <title
-     id="title926">PureOS Logo</title>
+   viewBox="0 0 128 128.00001"
+   height="128"
+   width="128">
   <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.60392157"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="-227.68223"
-     inkscape:cy="188.18544"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:snap-text-baseline="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="true" />
+     id="defs17220" />
   <metadata
-     id="metadata5">
+     id="metadata17223">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>PureOS Logo</dc:title>
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+        <dc:title></dc:title>
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Tavolo 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-87.104249,-24.49962)">
-    <circle
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:4.15113831;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path905"
-       cx="151.10425"
-       cy="88.499611"
-       r="61.924431" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.82522982"
-       x="98.38047"
-       y="102.25448"
-       id="text903"
-       transform="scale(1.0402679,0.96129083)"><tspan
-         sodipodi:role="line"
-         id="tspan901"
-         x="98.38047"
-         y="102.25448"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.82522982">PureOS</tspan></text>
+     transform="translate(0,-994.5197)"
+     id="layer1">
+    <g
+       transform="matrix(0.95898235,0,0,0.95898235,4.5111821,31.019715)"
+       id="g831">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell Ultra-Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994"
+         x="60.648491"
+         y="1110.3148"
+         id="text12310-3"><tspan
+           id="tspan12308-6"
+           x="60.648491"
+           y="1110.3148"
+           style="stroke-width:0.99999994">PureOS</tspan></text>
+      <rect
+         y="1036.3151"
+         x="31.22212"
+         height="34.99995"
+         width="59.999825"
+         id="rect12312-75"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.99999952;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
