@@ -62,7 +62,7 @@ activate :matomo do |p|
   p.site_id = 13
 end
 
-#activate :asset_hash
+activate :asset_hash
 activate :directory_indexes
 # we have reditects on nginx side
 #redirect "/hello-world.html", to: "/hello-world/"
