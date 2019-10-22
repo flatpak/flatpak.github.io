@@ -1,0 +1,178 @@
+---
+kind: Template
+apiVersion: v1
+metadata:
+  name: flatpak-web
+  annotations:
+    openshift.io/display-name: "flatpak.org"
+    description:  >-
+      Openshift template for flatpak.org
+
+parameters:
+- description: Namespace where ImageStream resides
+  displayName: Namespace
+  name: IS_NAMESPACE
+  value: flatpak-web
+- description: The OpenShift ImageStream name.
+  displayName: ImageStream name
+  name: IS_NAME
+  value: flatpak-web
+- description:
+  displayName: Image Stream version
+  name: IS_VERSION
+  value: latest
+
+objects:
+- kind: DeploymentConfig
+  apiVersion: v1
+  metadata:
+    name: flatpak-web
+    generation: 1
+    labels:
+      app: flatpak-web
+    annotations: {}
+  spec:
+    strategy:
+      type: Rolling
+      rollingParams:
+        updatePeriodSeconds: 1
+        intervalSeconds: 1
+        timeoutSeconds: 180
+        maxUnavailable: 25%
+        maxSurge: 25%
+      resources: {}
+      activeDeadlineSeconds: 21600
+    triggers:
+    - type: ConfigChange
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+        - flatpak-web
+        from:
+          kind: ImageStreamTag
+          namespace: "${IS_NAMESPACE}"
+          name: "${IS_NAME}:${IS_VERSION}"
+    replicas: 1
+    revisionHistoryLimit: 10
+    test: false
+    selector:
+      app: flatpak-web
+      deploymentconfig: flatpak-web
+    template:
+      metadata:
+        labels:
+          app: flatpak-web
+          deploymentconfig: flatpak-web
+        annotations: {}
+      spec:
+        containers:
+        - name: flatpak-web
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          env:
+          resources: {}
+          livenessProbe:
+            httpGet:
+              path: "/"
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 60
+            timeoutSeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 10
+          readinessProbe:
+            httpGet:
+              path: "/"
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 10
+            timeoutSeconds: 2
+            periodSeconds: 10
+            successThreshold: 1
+            failureThreshold: 10
+          terminationMessagePath: "/dev/termination-log"
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+        restartPolicy: Always
+        terminationGracePeriodSeconds: 30
+        dnsPolicy: ClusterFirst
+        securityContext: {}
+        schedulerName: default-scheduler
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: flatpak-web
+    labels:
+      app: flatpak-web
+  spec:
+    ports:
+    - name: web
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+    selector:
+      app: flatpak-web
+      deploymentconfig: flatpak-web
+    type: ClusterIP
+    sessionAffinity: None
+  status:
+    loadBalancer: {}
+- kind: Route
+  apiVersion: v1
+  metadata:
+    name: flatpak-web
+    creationTimestamp:
+    labels:
+      app: flatpak-web
+  spec:
+    host: "flatpak.oscp.flathub.org"
+    to:
+      kind: Service
+      name: flatpak-web
+      weight: 100
+    port:
+      targetPort: web
+    tls:
+      termination: reencrypt
+      insecureEdgeTerminationPolicy: "Redirect"
+    wildcardPolicy: None
+- apiVersion: build.openshift.io/v1
+  kind: "BuildConfig"
+  metadata:
+    name: "flatpak-web"
+  spec:
+    runPolicy: "Serial"
+    source:
+      git:
+        uri: https://github.com/flatpak/flatpak.github.io.git
+        ref: source
+      contextDir: oscp
+    strategy:
+      dockerStrategy:
+        dockerfilePath: Dockerfile
+    output:
+      to:
+        kind: "ImageStreamTag"
+        name: ${IS_NAME}:${IS_VERSION}
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    generation: 2
+    labels:
+    name: flatpak-web
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations: null
+      from:
+        kind: DockerImage
+        name: ${IS_NAME}:${IS_VERSION}
+      generation: 2
+      importPolicy: {}
+      name: ${IS_VERSION}
+      referencePolicy:
+        type: Source
