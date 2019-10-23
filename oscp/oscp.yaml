@@ -101,6 +101,7 @@ objects:
         dnsPolicy: ClusterFirst
         securityContext: {}
         schedulerName: default-scheduler
+
 - kind: Service
   apiVersion: v1
   metadata:
@@ -120,6 +121,7 @@ objects:
     sessionAffinity: None
   status:
     loadBalancer: {}
+
 - kind: Route
   apiVersion: v1
   metadata:
@@ -139,10 +141,11 @@ objects:
       termination: reencrypt
       insecureEdgeTerminationPolicy: "Redirect"
     wildcardPolicy: None
+
 - apiVersion: build.openshift.io/v1
   kind: "BuildConfig"
   metadata:
-    name: "flatpak-web"
+    name: flatpak-web
   spec:
     runPolicy: "Serial"
     source:
@@ -157,11 +160,11 @@ objects:
       to:
         kind: "ImageStreamTag"
         name: ${IS_NAME}:${IS_VERSION}
+
 - apiVersion: image.openshift.io/v1
   kind: ImageStream
   metadata:
     generation: 2
-    labels:
     name: flatpak-web
   spec:
     lookupPolicy:
@@ -175,4 +178,42 @@ objects:
       importPolicy: {}
       name: ${IS_VERSION}
       referencePolicy:
-        type: Source
+        type: Sourceype: Source
+
+- apiVersion: build.openshift.io/v1
+  kind: "BuildConfig"
+  metadata:
+    name: middleman
+  spec:
+    runPolicy: "Serial"
+    source:
+      git:
+        uri: https://github.com/flatpak/flatpak.github.io.git
+        ref: source
+      contextDir: oscp
+    strategy:
+      dockerStrategy:
+        dockerfilePath: Dockerfile.middleman
+    output:
+      to:
+        kind: "ImageStreamTag"
+        name: middleman:latest
+
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    generation: 2
+    name: middleman
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations: null
+      from:
+        kind: DockerImage
+        name: middleman:latest
+      generation: 2
+      importPolicy: {}
+      name: latest
+      referencePolicy:
+        type: Sourceype: Source
