@@ -1,4 +1,4 @@
-FROM middleman
+FROM docker-registry.default.svc:5000/flatpak-web/middleman
 
 RUN git clone https://github.com/flatpak/flatpak.github.io && \
     cd flatpak.github.io && bundle install && middleman build
