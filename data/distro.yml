@@ -372,7 +372,8 @@
         <h2>Install Some Apps</h2>
         <!-- Curated apps in elementary OS will move to Flatpak by default, but Flathub is not included -->
         <!-- However, the Flathub remote will be added automatically when installing a Flathub app for the first time with Sideload -->
-        <p>elementary OS 5.1 and newer comes with Flatpak support out of the box. For non-curated apps, head to <a href="https://flathub.org/">Flathub</a> to install some apps! After installing one, all Flathub apps will also automatically show up in AppCenter.</p>
+        <p>elementary OS 5.1 and newer comes with Flatpak support out of the box. For non-curated apps, head to <a href="https://flathub.org/">Flathub</a> to install any app using the big "Install" button, and open the downloaded `.flatpakref` file with Sideload.</p>
+        <p>Note: After installing one app from a remote like Flathub, all other apps from that remote will also automatically show up in AppCenter.</p>
       </li>
     </ol>
 
