@@ -11,6 +11,9 @@ description: Blog posts about Flatpak
 
   If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
   
+  [**Matthias Clasen: More On Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/12/19/9100/)
+  December 2019
+
   [**Matthias Clasen: Flatpak commandline design**](https://blogs.gnome.org/mclasen/2018/12/19/flatpak-commandline-design/)  
   December 2018
 
