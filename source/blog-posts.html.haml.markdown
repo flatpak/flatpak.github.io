@@ -14,19 +14,46 @@ description: Blog posts about Flatpak
   [**Matthias Clasen: More On Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/12/19/9100/)
   December 2019
 
+  [**Matthias Clasen: Some Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/10/03/some-flatpak-updates/)
+  October 2019
+
+  [**Matthias Clasen: Settings, In a Sandbox World**](https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-world/)
+  July 2019
+
+  [**Alexander Larsson: Introducing flat-manager**](https://blogs.gnome.org/alexl/2019/03/19/introducing-flat-manager/)
+  March 2019
+
+  [**Alexander Larsson: Changes in Flathub land**](https://blogs.gnome.org/alexl/2019/02/19/changes-in-flathub-land/)
+  February 2019
+
+  [**Matthias Clasen: What's New In Flatpak 1.2**](https://blogs.gnome.org/mclasen/2019/01/28/whats-new-in-flatpak-1-2/)
+  January 2019
+
   [**Matthias Clasen: Flatpak commandline design**](https://blogs.gnome.org/mclasen/2018/12/19/flatpak-commandline-design/)  
   December 2018
 
   [**Matthias Clasen: An update on Flatpak updates**](https://blogs.gnome.org/mclasen/2018/11/26/an-update-on-flatpak-updates/)  
   November 2018
 
+  [**Alexander Larsson: Moving away from the 1.6 freedesktop runtime**](https://blogs.gnome.org/alexl/2018/10/11/moving-away-from-the-1-6-freedesktop-runtime/)
+  October 2018
+
   [**Matthias Clasen: Flatpak, after 1.0**](https://blogs.gnome.org/mclasen/2018/10/08/flatpak-after-1-0/)  
   October 2018
+
+  [**Alexander Larsson: Flatpak on windows**](https://blogs.gnome.org/alexl/2018/09/17/flatpak-on-windows/)
+  September 2018
 
   [**Matthias Clasen: On Flatpak dependencies**](https://blogs.gnome.org/mclasen/2018/09/07/on-flatpak-dependencies/)  
   September 2018
 
   [**Matthias Clasen: About Flatpak installations**](https://blogs.gnome.org/mclasen/2018/08/26/about-flatpak-installations/)  
+  August 2018
+
+  [**Alexander Larsson: Kick-starting the revolution 1.0**](https://blogs.gnome.org/alexl/2018/08/21/kick-starting-the-revolution-1-0/)
+  August 2018
+
+  [**Alexander Larsson: The birth of a new runtime**](https://blogs.gnome.org/alexl/2018/08/10/the-birth-of-a-new-runtime/)
   August 2018
 
   [**Matthias Clasen: Flatpak portal experiments**](https://blogs.gnome.org/mclasen/2018/08/03/flatpak-portal-experiments/)  
