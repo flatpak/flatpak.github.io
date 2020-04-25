@@ -477,7 +477,7 @@
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
     
- - name: "SulinOS"
+- name: "SulinOS"
   logo: "sulinos.svg"
   info: >
     <ol class="distrotut">
