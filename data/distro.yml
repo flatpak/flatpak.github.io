@@ -476,3 +476,32 @@
       <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
+    
+- name: "SulinOS"
+  logo: "sulinos.svg"
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak, run the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> su
+          <span class="unselectable">#</span> inary it flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> su
+          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with SulinOS.</p>
+      </li>
+    </ol>
+
+
