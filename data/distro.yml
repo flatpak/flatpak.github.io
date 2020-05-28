@@ -75,6 +75,7 @@
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
+        <p>A more up to date flatpak package is available in the <a href="https://backports.debian.org/Instructions/">Debian backports repository</a>. </p>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
@@ -82,7 +83,6 @@
         <pre><code>
           <span class="unselectable">$</span> flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
-        <p>A more up to date flatpak package is available in the <a href="https://backports.debian.org/Instructions/">Debian backports repository</a>. </p>
       </li>
       <li>
         <h2>Restart</h2>
