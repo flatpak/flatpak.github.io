@@ -379,13 +379,13 @@
       </li>
     </ol>
 
-- name: "Raspbian"
-  logo: "raspbian.svg"
+- name: "Raspberry Pi OS"
+  logo: "raspberry-pi-os.svg"
   info: >  
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>A flatpak package is available in Raspbian Stretch and newer. To install it, run the following as root:</p>
+        <p>A flatpak package is available in Raspberry Pi OS (previously called Raspbian) Stretch and newer. To install it, run the following as root:</p>
         <pre><code>
           <span class="unselectable">#</span> apt install flatpak
         </code></pre>
@@ -400,7 +400,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: graphical installation of Flatpak apps may not be possible with Raspbian.</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Raspberry Pi OS.</p>
       </li>
     </ol>
 
