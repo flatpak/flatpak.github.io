@@ -357,7 +357,7 @@
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
