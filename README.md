@@ -1,4 +1,4 @@
-# Flatpak.org website
+# Flatpak.org website - Easy for testing
 
 ## Installation and setup
 
