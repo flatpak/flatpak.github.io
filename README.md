@@ -7,7 +7,7 @@ To set up middleman locally on Fedora:
     dnf install ruby rubygems rubygem-bundler rubygem-json
 
 In the git checkout, do a `bundle install`. This installs all
-the needed modules in their appropriate vesions.
+the needed modules in their appropriate versions.
 
 Add the middleman binary location (probably ~/bin) to $PATH.
 
