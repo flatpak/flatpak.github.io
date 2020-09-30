@@ -1,4 +1,4 @@
-# Flatpak.org website
+# Flatpak.org website - An Amazing Project
 
 ## Installation and setup
 
