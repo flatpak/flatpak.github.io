@@ -1,5 +1,6 @@
 # Flatpak.org website
 
+Hello all the developers out there! Welcome to the repository. 
 ## Installation and setup
 
 To set up middleman locally on Fedora:
