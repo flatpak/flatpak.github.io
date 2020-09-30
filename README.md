@@ -1,4 +1,4 @@
-# Flatpak.org website
+# Flatpak.org amazing website
 
 ## Installation and setup
 
@@ -11,7 +11,7 @@ the needed modules in their appropriate vesions.
 
 Add the middleman binary location (probably ~/bin) to $PATH.
 
-## Testing
+## Testing.....
 
 To run a local web server to test the site:
 
