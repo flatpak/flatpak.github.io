@@ -1,6 +1,6 @@
-# Flatpak.org website
+# Flatpak.org website.
 
-## Installation and setup
+## Installation and setup.
 
 To set up middleman locally on Fedora:
 
@@ -11,7 +11,7 @@ the needed modules in their appropriate versions.
 
 Add the middleman binary location (probably ~/bin) to $PATH.
 
-## Testing
+## Testing.
 
 To run a local web server to test the site:
 
@@ -20,7 +20,7 @@ To run a local web server to test the site:
 Edit the haml/scss files and commit your changes, pushing to
 origin/source.
 
-## Deployment
+## Deployment.
 
 Pushing new commits automatically causes to trigger new build
 and deployment on OpenShift. It usually takes few minutes for
