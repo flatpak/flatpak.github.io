@@ -613,19 +613,19 @@
         <h2>Install Flatpak</h2>
         <p>A flatpak package is available in Pisi 2.1 and newer. To install it, run the following as root:</p>
         <pre><code>
-          <span class="unselectable">#</span> sudo pisi it flatpak
+          <span class="unselectable">$</span> sudo pisi it flatpak
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">#</span> sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: For now, graphical installation of Flatpak apps is not possible on Pisi GNU/Linux.</p>
+        <p>Note: for now, graphical installation of Flatpak apps is not possible on Pisi GNU/Linux.</p>
       </li>
     </ol>
