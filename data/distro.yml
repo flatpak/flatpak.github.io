@@ -210,7 +210,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, enable the ~amd64 keyword for sys-apps/flatpak, acct-user/flatpak and acct-group/flatpak:</p>
         <pre><code>
-          <span class="unselectable">#</span> echo 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64' >> /etc/portage/accept_keywords/flatpak
+          <span class="unselectable">#</span> echo 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64\ndev-util/ostree ~amd64' >> /etc/portage/accept_keywords/flatpak
         </code></pre>
         <p>Then, install Flatpak:</p>
           <span class="unselectable">#</span> emerge sys-apps/flatpak
