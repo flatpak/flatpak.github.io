@@ -635,3 +635,20 @@
         <p>Note: for now, graphical installation of Flatpak apps is not possible on Pisi GNU/Linux.</p>
       </li>
     </ol>
+
+- name: "KDE Neon"
+  logo: "kde-neon.svg"
+  info: >  
+    <h1>KDE Neon 5.19 and later has Flatpak installed by default.</h1>
+    <p>To activate Flatpak's built-in support just go to Discover > Settings > Flatpak > Add Flathub and mark Flatpak as Default.</p>
+    <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+    <p></p>
+    <p>In previous versions you must add the URI of the repository to enable Flathub:</p>
+    <ol>
+      <li>
+        <p>Download the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      </li>
+      <li>
+        <p>Go to Discover > Sources > Add Source and select the repository file.</p>
+      </li>
+    <ol>
