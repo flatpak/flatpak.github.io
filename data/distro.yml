@@ -652,3 +652,22 @@
         <p>Go to Discover > Sources > Add Source and select the repository file.</p>
       </li>
     <ol>
+
+- name: "OpenMandriva"
+  logo: "openmandriva-blu.svg"
+  info: >  
+    <h1>Flatpak and the Discover backend can be installed from Dnfdragora (software manager) starting from OpenMandravia LX 4.</h1>
+    <ol>
+      <li>
+        <p>Download the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      </li>
+      <li>
+        <p>Go to Discover > Sources > Add Source and select the repository file.</p>
+      </li>
+      <li>
+        <p>Then mark Flatpak as Default. It is suggested to restart the system.</p>
+      </li>
+      <li>
+        <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
