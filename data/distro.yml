@@ -208,7 +208,13 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>Flatpak can be installed on Gentoo using the Flatpak overlay. See <a href="https://github.com/fosero/flatpak-overlay">the readme for instructions</a>.</p>
+        <p>To install Flatpak, enable the ~amd64 keyword for sys-apps/flatpak, acct-user/flatpak and acct-group/flatpak:</p>
+        <pre><code>
+          <span class="unselectable">#</span> echo 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64\ndev-util/ostree ~amd64' >> /etc/portage/accept_keywords/flatpak
+        </code></pre>
+        <p>Then, install Flatpak:</p>
+          <span class="unselectable">#</span> emerge sys-apps/flatpak
+        </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
