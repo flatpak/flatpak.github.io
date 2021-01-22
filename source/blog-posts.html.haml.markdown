@@ -11,6 +11,18 @@ description: Blog posts about Flatpak
 
   If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+  [**Phaedrus Leeds: Cleaning Up Unused Flatpak Runtimes**](https://blogs.gnome.org/mwleeds/2021/01/11/cleaning-up-unused-flatpak-runtimes/)
+  January 2021
+
+  [**Alexander Larsson: Scaling Flathub 100x**](https://blogs.gnome.org/alexl/2020/11/20/scaling-flathub/)
+  November 2020
+
+  [**Alexander Larsson: Compatibility in a sandboxed world**](https://blogs.gnome.org/alexl/2020/08/11/compatibility-in-a-sandboxed-world/)
+  August 2020
+
+  [**Alexander Larsson: Putting container updates on a diet**](https://blogs.gnome.org/alexl/2020/05/13/putting-container-updates-on-a-diet/)
+  May 2020
+
   [**Matthias Clasen: More on Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/12/19/9100/)
   December 2019
 
