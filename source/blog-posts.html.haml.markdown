@@ -26,8 +26,14 @@ description: Blog posts about Flatpak
   [**Matthias Clasen: More on Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/12/19/9100/)
   December 2019
 
+  [**TingPing: Hardening Flatpak Permissions Over Time**](https://blog.tingping.se/2019/10/06/hardening-flatpak-permissions.html)
+  October 2019
+
   [**Matthias Clasen: Some Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/10/03/some-flatpak-updates/)
   October 2019
+
+  [**Robert McQueen: Flathub, brought to you by...**](https://ramcq.net/2019/08/12/flathub-brought-to-you-by/)
+  August 2019
 
   [**Matthias Clasen: Settings, in a Sandbox World**](https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-world/)
   July 2019
@@ -47,6 +53,9 @@ description: Blog posts about Flatpak
   [**Matthias Clasen: An Update on Flatpak Updates**](https://blogs.gnome.org/mclasen/2018/11/26/an-update-on-flatpak-updates/)
   November 2018
 
+  [**Robert McQueen: Flatpak, sandboxes and security**](https://ramcq.net/2018/10/15/flatpak-sandbox-security/)
+  October 2018
+
   [**Alexander Larsson: Moving away from the 1.6 freedesktop runtime**](https://blogs.gnome.org/alexl/2018/10/11/moving-away-from-the-1-6-freedesktop-runtime/)
   October 2018
 
@@ -62,7 +71,13 @@ description: Blog posts about Flatpak
   [**Matthias Clasen: About Flatpak Installations**](https://blogs.gnome.org/mclasen/2018/08/26/about-flatpak-installations/)
   August 2018
 
+  [**TingPing: Using host Nvidia driver with Flatpak**](https://blog.tingping.se/2018/08/26/flatpak-host-extensions.html)
+  August 2018
+
   [**Alexander Larsson: Kick-starting the revolution 1.0**](https://blogs.gnome.org/alexl/2018/08/21/kick-starting-the-revolution-1-0/)
+  August 2018
+
+  [**TingPing: Easier Flatpak manifest editing with VSCode**](https://blog.tingping.se/2018/08/19/flatpak-schema.html)
   August 2018
 
   [**Alexander Larsson: The birth of a new runtime**](https://blogs.gnome.org/alexl/2018/08/10/the-birth-of-a-new-runtime/)
@@ -95,11 +110,17 @@ description: Blog posts about Flatpak
   [**Alexander Larsson: Flatpak inception**](https://blogs.gnome.org/alexl/2018/04/27/flatpak-inception/)
   April 2018
 
+  [**TingPing: Flatpaking application plugins**](https://blog.tingping.se/2018/03/18/flatpaking-plugins.html)
+  March 2018
+
   [**PointestStick: Flatpak support in Discover**](https://pointieststick.com/2018/01/13/flatpak-support-in-discover/)
   January 2018
 
   [**TingPing: Status of emulators Flatpak'd**](https://blog.tingping.se/2017/10/31/flatpaked-emulators.html)
   October 2017
+
+  [**Robert McQueen: Welcome, Flathub!**](https://ramcq.net/2017/07/29/welcome-flathub/)
+  July 2017
 
   [**TingPing: Flatpak now supports themes**](https://blog.tingping.se/2017/05/11/flatpak-theming.html)
   May 2017
