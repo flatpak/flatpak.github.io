@@ -119,13 +119,25 @@ description: Blog posts about Flatpak
   [**TingPing: Status of emulators Flatpak'd**](https://blog.tingping.se/2017/10/31/flatpaked-emulators.html)
   October 2017
 
+  [**Simon McVittie: DebConf 17: Flatpak and Debian**](http://smcv.pseudorandom.co.uk/2017/flatpak_and_debian/)
+  August 2017
+
   [**Robert McQueen: Welcome, Flathub!**](https://ramcq.net/2017/07/29/welcome-flathub/)
   July 2017
 
   [**TingPing: Flatpak now supports themes**](https://blog.tingping.se/2017/05/11/flatpak-theming.html)
   May 2017
 
+  [**Simon McVittie: GTK hackfest 2017: D-Bus communication with containers**](http://smcv.pseudorandom.co.uk/2017/dbus_and_containers/)
+  March 2017
+
   [**Matthias Clasen: Debugging a Flatpak Application**](https://blogs.gnome.org/mclasen/2017/01/20/debugging-a-flatpak-application/)
   January 2017
+
+  [**Simon McVittie: Flatpak in Debian**](http://smcv.pseudorandom.co.uk/2016/flatpak/)
+  June 2016
+
+  [**Simon McVittie: GNOME Developer Experience hackfest: xdg-app + Debian**](https://smcv.pseudorandom.co.uk/2016/xdg-app/)
+  January 2016
 
 </div></div></div></section>
