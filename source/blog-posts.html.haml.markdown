@@ -11,8 +11,12 @@ description: Blog posts about Flatpak
 
   If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+  ## 2021
+
   [**Phaedrus Leeds: Cleaning Up Unused Flatpak Runtimes**](https://blogs.gnome.org/mwleeds/2021/01/11/cleaning-up-unused-flatpak-runtimes/)
   January 2021
+
+  ## 2020
 
   [**Alexander Larsson: Scaling Flathub 100x**](https://blogs.gnome.org/alexl/2020/11/20/scaling-flathub/)
   November 2020
@@ -22,6 +26,8 @@ description: Blog posts about Flatpak
 
   [**Alexander Larsson: Putting container updates on a diet**](https://blogs.gnome.org/alexl/2020/05/13/putting-container-updates-on-a-diet/)
   May 2020
+
+  ## 2019
 
   [**Matthias Clasen: More on Flatpak Updates**](https://blogs.gnome.org/mclasen/2019/12/19/9100/)
   December 2019
@@ -46,6 +52,8 @@ description: Blog posts about Flatpak
 
   [**Matthias Clasen: What's New in Flatpak 1.2**](https://blogs.gnome.org/mclasen/2019/01/28/whats-new-in-flatpak-1-2/)
   January 2019
+
+  ## 2018
 
   [**Matthias Clasen: Flatpak Commandline Design**](https://blogs.gnome.org/mclasen/2018/12/19/flatpak-commandline-design/)
   December 2018
@@ -116,6 +124,8 @@ description: Blog posts about Flatpak
   [**PointestStick: Flatpak support in Discover**](https://pointieststick.com/2018/01/13/flatpak-support-in-discover/)
   January 2018
 
+  ## 2017
+
   [**TingPing: Status of emulators Flatpak'd**](https://blog.tingping.se/2017/10/31/flatpaked-emulators.html)
   October 2017
 
@@ -133,6 +143,8 @@ description: Blog posts about Flatpak
 
   [**Matthias Clasen: Debugging a Flatpak Application**](https://blogs.gnome.org/mclasen/2017/01/20/debugging-a-flatpak-application/)
   January 2017
+
+  ## 2016
 
   [**Simon McVittie: Flatpak in Debian**](http://smcv.pseudorandom.co.uk/2016/flatpak/)
   June 2016
