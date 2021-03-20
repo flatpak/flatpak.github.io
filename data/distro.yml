@@ -1,13 +1,13 @@
 - name: "Ubuntu"
   logo: "ubuntu.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or later, simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>        
+        </code></pre>
         <p>With older Ubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -201,7 +201,7 @@
       <p>Flatpak is installed by default on CentOS 7, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
-  
+
 - name: "Gentoo"
   logo: "gentoo.svg"
   info: >
@@ -233,14 +233,14 @@
 
 - name: "Kubuntu"
   logo: "kubuntu.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Kubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>        
+        </code></pre>
         <p>With older Kubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -349,7 +349,7 @@
 
 - name: "Pop!_OS"
   logo: "pop-os.svg"
-  info: >  
+  info: >
     <h1>Pop!_OS 20.04 has Flatpak installed and Flathub configured by default. The Pop!_Shop can be used to install flatpaks.</h1>
     <p>For older versions of Pop!_OS, see the instructions below.</p>
     <ol class="distrotut">
@@ -390,7 +390,7 @@
 
 - name: "Raspberry Pi OS"
   logo: "raspberry-pi-os.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
@@ -487,7 +487,7 @@
       <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
-    
+
 - name: "SulinOS"
   logo: "sulinos.svg"
   info: >
@@ -638,7 +638,7 @@
 
 - name: "KDE Neon"
   logo: "kde-neon.svg"
-  info: >  
+  info: >
     <h1>KDE Neon 5.19 and later has Flatpak installed by default.</h1>
     <p>To activate Flatpak's built-in support just go to Discover > Settings > Flatpak > Add Flathub and mark Flatpak as Default.</p>
     <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
@@ -655,7 +655,7 @@
 
 - name: "OpenMandriva"
   logo: "openmandriva-blu.svg"
-  info: >  
+  info: >
     <h1>Flatpak and the Discover backend can be installed from Dnfdragora (software manager) starting from OpenMandravia LX 4.</h1>
     <ol>
       <li>
@@ -671,8 +671,8 @@
         <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
- 
- - name: "PCLinuxOS"
+
+- name: "PCLinuxOS"
   logo: "pclinuxos.svg"
   info: >
     <ol class="distrotut">
