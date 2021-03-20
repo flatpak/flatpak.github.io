@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2021
 
+  [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.frama.io/2021/02/11/response-to-flatkill-org.html)
+  February 2021
+
   [**Phaedrus Leeds: Cleaning Up Unused Flatpak Runtimes**](https://blogs.gnome.org/mwleeds/2021/01/11/cleaning-up-unused-flatpak-runtimes/)
   January 2021
 
