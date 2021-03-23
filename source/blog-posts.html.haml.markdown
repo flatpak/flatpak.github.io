@@ -132,6 +132,9 @@ description: Blog posts about Flatpak
   [**TingPing: Status of emulators Flatpak'd**](https://blog.tingping.se/2017/10/31/flatpaked-emulators.html)
   October 2017
 
+  [**Alexander Larsson: On application sizes and bloat in flatpak**](https://blogs.gnome.org/alexl/2017/10/02/on-application-sizes-and-bloat-in-flatpak/)
+  October 2017
+
   [**Simon McVittie: DebConf 17: Flatpak and Debian**](http://smcv.pseudorandom.co.uk/2017/flatpak_and_debian/)
   August 2017
 
