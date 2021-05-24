@@ -1,13 +1,13 @@
 - name: "Ubuntu"
   logo: "ubuntu.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or later, simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>        
+        </code></pre>
         <p>With older Ubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -35,7 +35,7 @@
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
-    
+
 - name: "Fedora"
   logo: "fedora.svg"
   info: >
@@ -201,7 +201,7 @@
       <p>Flatpak is installed by default on CentOS 7, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
-  
+
 - name: "Gentoo"
   logo: "gentoo.svg"
   info: >
@@ -233,14 +233,14 @@
 
 - name: "Kubuntu"
   logo: "kubuntu.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Kubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
-        </code></pre>        
+        </code></pre>
         <p>With older Kubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -250,9 +250,13 @@
       </li>
       <li>
         <h2>Install the Discover Flatpak backend</h2>
-        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line (available on Kubuntu 18.04 and newer). To install, run:</p>
+        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line (available on Kubuntu 18.04 and newer). To install on 18.04, run:</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install plasma-discover-flatpak-backend
+        </code></pre>
+        <p>On Kubuntu 20.04 or later, you should run this instead:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install plasma-discover-backend-flatpak
         </code></pre>
       </li>
       <li>
@@ -349,7 +353,7 @@
 
 - name: "Pop!_OS"
   logo: "pop-os.svg"
-  info: >  
+  info: >
     <h1>Pop!_OS 20.04 has Flatpak installed and Flathub configured by default. The Pop!_Shop can be used to install flatpaks.</h1>
     <p>For older versions of Pop!_OS, see the instructions below.</p>
     <ol class="distrotut">
@@ -376,7 +380,7 @@
 
 - name: "elementary OS"
   logo: "elementary-os.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <!-- As of elementary OS 5.1 up-to-date Flatpak is installed, AppCenter supports it ootb, and Sideload handles .flatpakref files -->
       <li>
@@ -390,7 +394,7 @@
 
 - name: "Raspberry Pi OS"
   logo: "raspberry-pi-os.svg"
-  info: >  
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
@@ -487,7 +491,7 @@
       <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
-    
+
 - name: "SulinOS"
   logo: "sulinos.svg"
   info: >
