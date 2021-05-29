@@ -56,19 +56,12 @@
     <ol class="distrotut">
       <li>
         <h2>Enable Flatpak through the Software Manager</h2>
-        <p>To enable Flatpak through the Software Manager, you must be running <strong>Manjaro 20 or higher</strong></p>
-        <p>Flatpak is installed by default on Manjaro, navigate to the <strong>Software manager</strong>(Add/Remove Programs)</p>
+        <p>Flatpak is installed by default on Manjaro 20 or higher.</p>
+        <p>To enable its support, navigate to the <strong>Software Manager</strong>(Add/Remove Programs)</p>
         <p>Click on the triple line menu [or dots depending on the Desktop Environment] on the right, in the drop down menu select "Preferences"</p>
         <p>Navigate to the tab "Flatpak" and slide the toggle to Enable Flatpak support (It is also possible to enable checking for updates, which is recommended).</p>
         <p>Note: The installation of the Flathub repository is automatic on Manjaro.</p>
         <p>Now you just need to exit and restart your system to get Flatpak support through the Software Manager.</p>
-      </li>
-      <li>
-        <h2>Install Flatpak through the terminal</h2>
-        <p>To install Flatpak, run the following in a terminal:</p>
-        <pre><code>
-          <span class="unselectable">$</span> sudo pacman -S flatpak
-        </code></pre>
       </li>
       <li>
         <h2>Restart</h2>
