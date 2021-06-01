@@ -49,6 +49,23 @@
         </code></pre>
       </p>
     </ol>
+    
+- name: "Manjaro"
+  logo: "manjaro.svg"
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Enable Flatpak through the Software Manager</h2>
+        <p>Flatpak is installed by default on Manjaro 20 or higher.</p>
+        <p>To enable its support, navigate to the <strong>Software Manager</strong> (Add/Remove Programs)</p>
+        <p>Click on the triple line menu [or dots depending on the Desktop Environment] on the right, in the drop down menu select "Preferences"</p>
+        <p>Navigate to the "Flatpak" tab and slide the toggle to Enable Flatpak support (it is also possible to enable checking for updates, which is recommended).</p>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
 
 - name: "Endless OS"
   logo: "endless.svg"
