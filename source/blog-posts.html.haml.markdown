@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2021
 
+  [**Lionir Deadman: Flathub, runtimes and stats**](https://thelion.website/flathub-runtimes-and-stats/)
+  June 2021
+
   [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.frama.io/2021/02/11/response-to-flatkill-org.html)
   February 2021
 
