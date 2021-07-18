@@ -80,7 +80,7 @@
     <ol class="distrotut">
       <li>
         <h2>Enable Linux support</h2>
-        <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development enviroment</i>. Chrome OS will take some time downloading and installing Linux.</p>
+        <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. Chrome OS will take some time downloading and installing Linux.</p>
       </li>
       <li>
         <h2>Start a Linux terminal</h2>
