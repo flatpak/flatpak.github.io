@@ -297,14 +297,14 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> sudo eopkg install flatpak xdg-desktop-portal-gtk
+          <span class="unselectable">$</span> sudo eopkg install xdg-desktop-portal-gtk
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
