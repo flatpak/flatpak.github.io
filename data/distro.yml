@@ -80,7 +80,7 @@
     <ol class="distrotut">
       <li>
         <h2>Enable Linux support</h2>
-        <p>Navigate to <a href="chrome://settings">chrome://settings</a>, and scroll down to <strong>Linux (Beta)</strong> and turn it on. Chrome OS will take some time downloading and installing Linux.</p>
+        <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. Chrome OS will take some time downloading and installing Linux.</p>
       </li>
       <li>
         <h2>Start a Linux terminal</h2>
@@ -103,7 +103,7 @@
       </li>
       <li>
         <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>To complete setup, restart Linux. You can do this by right-clicking terminal, and then clicking "Shut down Linux". Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
 
