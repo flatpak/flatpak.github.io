@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2021
 
+  [**Peter Hutterer: Flatpak portals - how do they work?**](https://who-t.blogspot.com/2021/08/flatpak-portals-how-do-they-work.html)
+  September 2021
+
   [**Lionir Deadman: Flathub, runtimes and stats**](https://thelion.website/flathub-runtimes-and-stats/)
   June 2021
 
