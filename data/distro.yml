@@ -41,7 +41,7 @@
   info: >
     <ol class="distrotut">
       <!-- Flatpak has been installed by default on Fedora Workstation since F25. Previous versions are past end of life, so don’t need to be mentioned. -->
-      <p>Flatpak is installed by default on Fedora Workstation. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      <p>Flatpak is installed by default on Fedora Workstation and Fedora Silverblue. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       <p>The above links should work on the default GNOME and KDE Fedora installations, but if they fail for some reason you can manually add the Flathub remote by running:
         <pre><code>
