@@ -657,3 +657,16 @@
         <p>Note: for now, graphical installation of Flatpak apps is not possible on Pisi GNU/Linux.</p>
       </li>
     </ol>
+    
+- name: "Future OS"
+  logo: "future.svg"
+  info: >
+    <ol class="distrotut">
+      <p>Flatpak is installed by default on Future OS Workstation. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      <p>The above links should work on the default GNOME and KDE Future OS installations, but if they fail for some reason you can manually add the Flathub remote by running:
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </p>
+    </ol>
