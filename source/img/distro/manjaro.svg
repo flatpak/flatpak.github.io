@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-filename="logo.png"
    inkscape:export-ydpi="90"
    inkscape:export-xdpi="90"
-   sodipodi:docname="Manjaro 128x128.svg"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="manjaro.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    version="1.1"
    id="svg0"
    viewBox="0 0 256 256"
    height="128"
-   width="128">
+   width="128"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs0" />
   <sodipodi:namedview
      inkscape:document-rotation="0"
      inkscape:showpageshadow="false"
      inkscape:window-maximized="1"
-     inkscape:window-y="28"
+     inkscape:window-y="0"
      inkscape:window-x="0"
-     inkscape:window-height="716"
-     inkscape:window-width="1366"
+     inkscape:window-height="1401"
+     inkscape:window-width="2560"
      inkscape:snap-midpoints="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:object-nodes="true"
@@ -37,15 +37,16 @@
      showgrid="false"
      inkscape:current-layer="layer0"
      inkscape:document-units="px"
-     inkscape:cy="97.151492"
-     inkscape:cx="-95.67978"
+     inkscape:cy="97"
+     inkscape:cx="-401"
      inkscape:zoom="1"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base">
+     id="base"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        id="grid4136"
        type="xygrid" />
@@ -58,7 +59,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,7 +68,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Ebene 0">
     <g
-       transform="matrix(3.4375,0,0,3.4375,18,-174)"
+       transform="matrix(2.96875,0,0,2.96875,33,-159)"
        id="logo">
       <path
          style="opacity:1;fill:#35bf5c;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
