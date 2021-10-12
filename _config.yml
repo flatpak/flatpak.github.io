@@ -1,0 +1,11 @@
+# Site settings
+title: flatpak
+baseurl: "/flatpak-org/" # the subpath of your site, e.g. /blog/
+url: "https://jimmac.github.io" # the base hostname & protocol for your site
+sourceurl: "https://github.com/flatpak/flatpak.github.io"
+description: "The Future of Apps on Linux"
+
+permalink: /:title/
+
+# Build settings
+markdown: kramdown

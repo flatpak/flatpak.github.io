@@ -2,22 +2,23 @@
 
 ## Installation and setup
 
-To set up middleman locally on Fedora:
+To set up jekyll locally on Fedora:
 
-    dnf install ruby rubygems rubygem-bundler rubygem-json
+    dnf install ruby rubygems rubygem-bundler
 
 In the git checkout, do a `bundle install`. This installs all
 the needed modules in their appropriate versions.
 
-Add the middleman binary location (probably ~/bin) to $PATH.
 
 ## Testing
 
 To run a local web server to test the site:
 
-    bundle exec middleman server
+```
+bundle exec jekyll s
+```
 
-Edit the haml/scss files and commit your changes, pushing to
+Edit the markdown files and commit your changes, pushing to
 origin/source.
 
 ## Deployment

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffa348"><!-- primary color -->
+
+  <title>Flatpak Released</title>
+
+  <link rel="canonical" href="http://localhost:4000/flatpak-org//press/2016-06-21-flatpak-released/">
+  <link rel="alternate" type="application/rss+xml" title="flatpak" href="http://localhost:4000/flatpak-org//feed.xml" />
+
+  <link rel="stylesheet" href="/flatpak-org//style.css">
+  
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" sizes="144x144" href="apple-touch-icon.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:title" content="flatpak">
+  <meta property="twitter:image" content="http://localhost:4000/assets/card.png" />
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="The Future of Apps on Linux">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="flatpak">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:description" content="The Future of Apps on Linux">
+  <meta property="og:image" content="http://localhost:4000/assets/card.png">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+  <h1 id="logo"><a href="/flatpak-org//">flatpak</a></h1>
+</header>
+
+
+    <div class="container">
+      <h1 id="announcing-flatpak--next-generation-linux-applications">Announcing Flatpak – Next Generation Linux Applications</h1>
+
+<p>Stockholm, Sweden – 21<sup>st</sup> June 2016 – The development team behind Flatpak is excited to announce the general availablity of their new framework for desktop applications on Linux. Previously named xdg-app, <a href="http://flatpak.org/getting.html">Flatpak is available on a range of major Linux distributions</a>.</p>
+
+<h2 id="build-once-run-anywhere">Build once, run anywhere</h2>
+
+<p>The Linux desktop has long been held back by platform fragmentation. This has been a burden on developers, and creates a high barrier to entry for third party application developers. Flatpak aims to change all that. From the very start its primary goal has been to allow the same application to run across a myriad of Linux distributions and operating systems. In doing so, it greatly increases the number of users that application developers can easily reach.</p>
+
+<p>Speaking about the goals behind Flatpak, Alexander Larsson, its lead developer, said: “Application developers on Linux have always been prevented from having a direct relationship with their users. With Flatpak we’re aiming to change that, so developers know exactly what their users are getting. With this launch we are making that goal a reality.”</p>
+
+<p>Flatpak has been available for a range of Linux distributions for several weeks. It allows application developers to build against a series of stable platforms (known as runtimes), as well as to bundle libraries directly within their applications. Flatpak is also standards compliant, offering support for the <a href="https://www.opencontainers.org/">Open Container Initiative</a> specification.</p>
+
+<p>A growing range of applications are already available as Flatpaks, including LibreOffice, the GIMP, InkScape, MyPaint, Darktable, and a large number of stock GNOME applications. <a href="/apps.html">flatpak.org provides instructions on how to easily try these yourself</a>. Linux desktops are also adopting Flatpak. A fully functional GNOME runtime has been available since March: this allows application developers to build and distribute Flatpaks using the GNOME development stack. Work on a similar runtime for KDE is proceeding.</p>
+
+<p>Not only does Flatpak provide cross-distribution installation, but it also allows forward compatibility. Michael Meeks, Director of <a href="https://www.documentfoundation.org/">The Document Foundation</a>, said: “Until now, building a LibreOffice that works for every Linux user has involved some horrible compromises caused by the need to build our binaries on an ancient Linux version to get good forward compatibility. Flatpak will enable us (as a Linux ISV) to distribute a better LibreOffice, with up-to-date dependencies and a platform that can run on many systems. I’m excited to see that happen.”</p>
+
+<h2 id="security-first">Security first</h2>
+
+<p>Another area where the Linux desktop has been weak is security: it has never had a viable model for isolating applications, or for gatekeeping access to user data. This is another area where Flatpak aims to upset the status quo. To this end, it has been built from the ground up with security in mind.</p>
+
+<p>Flatpak apps are sandboxed. From within the sandbox, the only things the app can “see” are itself and a limited set of libraries and operating system interfaces. This effectively isolates apps from each other as well as from the host system and makes it much harder for applications to steal user data or exploit one another.</p>
+
+<p>Initial Flatpak releases have concentrated on application building, distribution and installation, and while the foundations of sandboxing are in place, there are still missing pieces. “The next major Flatpak release will be all about sandboxing”, says Larsson. “Application authors will see a much more complete set of interfaces for interacting with the operating system from within a sandbox.”</p>
+
+<p>Another major part of this work is the widescale move towards the Wayland display server on Linux. X11 is inherently insecure, which makes it impossible to sandbox applications that are using it. In that sense, the growing maturity of Wayland complements Flatpak’s emergence, and paves the way for much more complete security model for Linux distributions.</p>
+
+<h2 id="background-to-flatpak">Background to Flatpak</h2>
+
+<p><a href="CC-BY-SA-4.0-Garrett-LeSage.jpg"><img src="CC-BY-SA-4.0-Garrett-LeSage-sm.jpg" alt="Alexander Larsson. Photo by Garrett LeSage" title="Alexander Larsson. Photo by Garrett LeSage" /></a></p>
+
+<p>Flatpak is the brainchild of Alexander Larsson, Principal Software Engineer at Red Hat. Larsson has been working in the Linux desktop space for 18 years. He was the principal author of GVfs (GNOME’s Virtual Filesystem) and has done critical work on Docker, the SPICE protocol, the Gecko rendering engine, GLib and GTK+. He has considerable experience in the area of application bundling.</p>
+
+<p>Flatpak builds on several cutting edge technologies. Under the hood, it makes significant use of <a href="https://ostree.readthedocs.org">OSTree</a>, which can be described as “Git for large binaries”. This provides much of the functionality for hosting software repositories. It also makes Flatpak extremely efficient: applications and libraries that are installed with Flatpak are de-duplicated, saving disk space; “static deltas” reduce the size of downloads for software updates.</p>
+
+<p>For sandboxing, Flatpak makes use of the <a href="https://github.com/projectatomic/bubblewrap">Bubblewrap</a> utility, as well as several Linux kernel features (such as cgroups and namespaces), which helps to make it portable across distributions.</p>
+
+<h2 id="rapid-community-growth-and-adoption">Rapid community growth and adoption</h2>
+
+<p>It is well known that Fedora is making plans around Flatpak. Commenting on Flatpak, Christian F.K. Schaller (Senior Manager at Red Hat and member of the Fedora Workstation Working Group) stated: “The Fedora Workstation team are very excited about Flatpak and the prospects it brings for making the Linux desktop easier to develop for. We plan to continue supporting this effort going forward and help advocate it to a wider audience.”</p>
+
+<p>There is also interest from other parties. One early adopter of Flatpak is <a href="https://endlessm.com/">Endless Computers</a>. Speaking about the launch of Flatpak, Jonathan Blandford (VP of Software Engineering at Endless) said: “The Flatpak launch represents a major milestone in providing a unified context for Linux developers. At Endless, we’re proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps. We encourage others to do so as well in what we hope to be a revolution among Linux app creation and adoption.”</p>
+
+<p><img src="endless-apps.png" alt="Endless Computers and its App ecosystem" title="Endless Computers and its App ecosystem" /></p>
+
+<p>Other distributions are showing interest, as well as other Free Software companies. Simon McVittie is Senior Software Engineer at Collabora and a Debian developer, and is himself looking to Flatpak: “Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS’s stability and flexibility. Flatpak also retains the ability to deploy security updates, making it a significant enhancement for the many Debian-based desktop and embedded distributions, both in the community and in commercial products.”</p>
+
+<p>One reason for the increasing interest in Flatpak is due to its adaptability and the fact that it is a genuinely upstream project. It can be used and adapted as part of downstream and bespoke solutions, is hosted on Freedesktop.org and Github, and is licensed with the LGPL, with no copyright assignment or contributor license agreement required.</p>
+
+<p>Larsson is obviously pleased by the momentum behind Flatpak. “It’s exciting to see the growing interest in what we are doing, as developers realise the possibilities of the technology,” he said.</p>
+
+<p>More information about Flatpak can be found on <a href="http://flatpak.org/">flatpak.org</a>.</p>
+
+
+    </div>
+
+    <footer class="site-footer">
+  <p>&copy; flatpak, 2021</p>
+
+  <p><a href="https://github.com/flatpak/flatpak.github.io">Website source</a></p>
+</footer>
+
+
+  </body>
+
+</html>
