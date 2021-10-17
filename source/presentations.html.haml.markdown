@@ -11,6 +11,42 @@ description: Presentations and articles about Flatpak
 
   If you know of a presentation or article that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+  ## 2021
+
+  [**Will Thompson: Automate your Flatpak manifest updates today**](https://www.youtube.com/watch?v=c_dG_ngnJk4)
+  Linux App Summit, May 2021
+
+  [**Jan Beran: Making flatpaks from Fedora RPMs**](https://www.youtube.com/watch?v=IuxHidCdbPo)
+  Linux App Summit, May 2021
+
+  [**Valentin David: Freedesktop SDK on RISC-V**](https://www.youtube.com/watch?v=INTbqkck258)
+  Linux App Summit, May 2021
+
+  ## 2020
+
+  [**Alexander Larsson: Flatpak, an introduction (Lightning Talk)**](https://www.youtube.com/watch?v=0yeXTounX3E)
+  Linux App Summit, November 2020
+
+  [**Bartłomiej Piotrowski: Flathub: The State of the Union**](https://www.youtube.com/watch?v=IqHEx-Lug8k)
+  Linux App Summit, November 2020
+
+  ## 2019
+
+  [**Robert McQueen: Building an app store with Flathub**](https://www.youtube.com/watch?v=ZGAfYP3OiAI)
+  Linux App Summit, Barcelone, Spain, November 2019
+
+  [**Alexander Larsson: Maintaining a Flatpak Repository**](https://www.youtube.com/watch?v=q-_fKWby0ds&list=PLkmRdYgttscEuv9v2-H9P5FBj8-td_Nri&index=24)
+  GUADEC, Thessaloniki, Greece, August 2019
+
+  [**Valentin David, Adam Jones: Freedesktop-sdk Status Update and Future Plans**](https://www.youtube.com/watch?v=ky-inEefWpE&list=PLkmRdYgttscEuv9v2-H9P5FBj8-td_Nri&index=20)
+  GUADEC, Thessaloniki, Greece, August 2019
+
+  [**Richard Brown: Help, I'm Falling in Love with Flatpak**](https://www.youtube.com/watch?v=7p4y9Meyy0M&list=PLkmRdYgttscEuv9v2-H9P5FBj8-td_Nri&index=12)
+  GUADEC, Thessaloniki, Greece, August 2019
+
+  [**Matthias Clasen: Portals - Principles and Practice**](https://www.youtube.com/watch?v=bIzJyp8sb70&list=PLkmRdYgttscEuv9v2-H9P5FBj8-td_Nri&index=9)
+  GUADEC, Thessaloniki, Greece, August 2019
+
   ## 2018
 
   [**Alexander Larsson: Flatpak - a technical walk-through**](https://people.gnome.org/~alexl/presentations/all-systems-go-2018.pdf)  
