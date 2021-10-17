@@ -30,6 +30,9 @@ description: Presentations and articles about Flatpak
   [**Bartłomiej Piotrowski: Flathub: The State of the Union**](https://www.youtube.com/watch?v=IqHEx-Lug8k)
   Linux App Summit, November 2020
 
+  [**Felipe Borges: Application sandboxing with Flatpak Portals**](https://www.youtube.com/watch?v=3rCIEzfZw1I)
+  DevConf.CZ, Brno, Czechia, January 2020
+
   ## 2019
 
   [**Robert McQueen: Building an app store with Flathub**](https://www.youtube.com/watch?v=ZGAfYP3OiAI)
@@ -47,7 +50,19 @@ description: Presentations and articles about Flatpak
   [**Matthias Clasen: Portals - Principles and Practice**](https://www.youtube.com/watch?v=bIzJyp8sb70&list=PLkmRdYgttscEuv9v2-H9P5FBj8-td_Nri&index=9)
   GUADEC, Thessaloniki, Greece, August 2019
 
+  [**Owen Taylor: Flatpaks in Fedora - an update**](https://www.youtube.com/watch?v=mpCXK6PqvDk)
+  DevConf.CZ, Brno, Czechia, January 2019
+
+  [**Jiří Janoušek: Fight Linux fragmentation with Flatpak**](https://www.youtube.com/watch?v=_ZmgdnhvjvM)
+  DevConf.CZ, Brno, Czechia, January 2019
+
+  [**Felipe Borges: Running virtual machines in the Flatpak sandbox**](https://www.youtube.com/watch?v=EdrSJMKikUM)
+  DevConf.CZ, Brno, Czechia, January 2019
+
   ## 2018
+
+  [**Jiří Janoušek: Why and How I Switched to Flatpak**](https://www.youtube.com/watch?v=OuySHov0gdA)
+  LinuxDays, Prague, Czechia, October 2018
 
   [**Alexander Larsson: Flatpak - a technical walk-through**](https://people.gnome.org/~alexl/presentations/all-systems-go-2018.pdf)
   All Systems Go! Berlin, Germany, September 2018
@@ -60,6 +75,15 @@ description: Presentations and articles about Flatpak
 
   [**Matthew Leeds: P2P Distribution of Flatpaks and OSTrees**](https://www.youtube.com/watch?v=SIPOfPv1z1s)
   GUADEC, Almeria, Spain, July 2018
+
+  [**Owen Taylor: A distribution approach to building Flatpaks**](https://www.youtube.com/watch?v=EbvxZa2Blgs)
+  DevConf.CZ, Brno, Czechia, January 2018
+
+  [**Robert McQueen: Desktop OS of the future: ostree + flatpak**](https://www.youtube.com/watch?v=FcykFHJEDUU)
+  DevConf.CZ, Brno, Czechia, January 2018
+
+  [**Alexander Larsson: Flatpaking your app for fame and fortune**](https://www.youtube.com/watch?v=SBWGwwrGR8M)
+  DevConf.CZ, Brno, Czechia, January 2018
 
   ## 2017
 
