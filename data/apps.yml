@@ -61,11 +61,3 @@
     "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/org.libreoffice.LibreOffice.png"
     "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/org.libreoffice.LibreOffice.png"
 
-- name:     "Flatseal"
-  id:       "com.github.tchx84.Flatseal"
-  ref:      "app/com.github.tchx84.Flatseal/x86_64/stable"
-  summary:  "Manage Flatpak permissions"
-  "flatpakref": "https://flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref"
-  icons:
-    "128":  "https://flathub.org/repo/appstream/x86_64/icons/128x128/com.github.tchx84.Flatseal.png"
-    "64":   "https://flathub.org/repo/appstream/x86_64/icons/64x64/com.github.tchx84.Flatseal.png"
