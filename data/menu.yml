@@ -7,8 +7,8 @@
 - title: Developer guide &#8599;
   link: "https://docs.flatpak.org/"
   onlyfooter: true
-- title: Press
-  link: "/press.html"
+- title: Donate &#8599;
+  link: "https://opencollective.com/flatpak"
   onlyfooter: true
 - title: FAQ
   link: "/faq.html"
@@ -21,3 +21,6 @@
   onlyfooter: true
 - title: About Us & Contact
   link: "/about.html"
+- title: Press
+  link: "/press.html"
+  onlyfooter: true
