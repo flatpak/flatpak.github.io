@@ -510,6 +510,40 @@
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
 
+- name: "Trisuqel"
+  logo: "trisquel.svg"
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak on Trisquel simply open the Terminal ( MATE Terminal ) and type :</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install flatpak
+        </code></pre>
+        <p>Then just press enter. APT may also ask you to confirm you want to install the application.</p>
+      </li>
+      <li>
+        <h2>Install the Software Flatpak plugin</h2>
+        <p>Flatpak does not currently have a plugin for MATE's Add/Remove Software Application but you can install Flatpak apps with a Graphic Interface using GNOME Software:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo apt install gnome-software
+          <span class="unselectable">$</span> sudo apt install gnome-software-plugin-flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>To enable <a href="https://flathub.org/">Flathub</a>, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+        <p>Or you can also enable flathub by downloading the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a></p>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
+
 - name: "SulinOS"
   logo: "sulinos.svg"
   info: >
