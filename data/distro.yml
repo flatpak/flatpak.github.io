@@ -516,7 +516,7 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>To install Flatpak on Trisquel simply open the Terminal ( MATE Terminal ) and type :</p>
+        <p>To install Flatpak on Trisquel simply open the Terminal ( MATE Terminal ) and enter :</p>
         <pre><code>
           <span class="unselectable">$</span> sudo apt install flatpak
         </code></pre>
