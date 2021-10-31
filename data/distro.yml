@@ -510,7 +510,7 @@
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
 
-- name: "Trisuqel"
+- name: "Trisquel"
   logo: "trisquel.svg"
   info: >
     <ol class="distrotut">
