@@ -672,3 +672,31 @@
         <p>Note: for now, graphical installation of Flatpak apps is not possible on Pisi GNU/Linux.</p>
       </li>
     </ol>
+
+- name: "EndeavourOS"
+  logo: "endeavouros.svg"
+  info: >
+    <ol class="distrotut">
+      <li>
+        <h2>Install Flatpak</h2>
+        <p>To install Flatpak on EndeavorOS, you must first make sure your installation is up to date, run the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">$</span> sudo pacman -Syu
+        </code></pre>
+        <p>Then install Flatpak:</p>
+          <pre><code>
+          <span class="unselectable">$</span> sudo pacman -S flatpak
+        </code></pre>
+      </li>
+      <li>
+        <h2>Add the Flathub repository</h2>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+        </code></pre>
+      </li>
+      <li>
+        <h2>Restart</h2>
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      </li>
+    </ol>
