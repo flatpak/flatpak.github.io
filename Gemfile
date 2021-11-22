@@ -26,4 +26,4 @@ gem "middleman-sprockets", "~> 3.1.2"
 
 #Ubuntu specific gems
 gem "rb-inotify"
-gem "mini_racer"
+gem "mini_racer", "~> 0.4.0"
