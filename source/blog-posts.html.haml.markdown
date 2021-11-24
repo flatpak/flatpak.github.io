@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2021
 
+  [**Will Thompson: On Flatpak disk usage and deduplication**](https://blogs.gnome.org/wjjt/2021/11/24/on-flatpak-disk-usage-and-deduplication/)
+  November 2021
+
   [**Peter Hutterer: Flatpak portals - how do they work?**](https://who-t.blogspot.com/2021/08/flatpak-portals-how-do-they-work.html)
   September 2021
 
