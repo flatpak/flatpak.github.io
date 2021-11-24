@@ -701,3 +701,15 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with EndeavourOS.</p>
       </li>
     </ol>
+
+- name: "KDE neon"
+  logo: "kdeneon.svg"
+  info: >
+    <ol class="distrotut">
+        <h2>Enable Flatpak through the Software Manager</h2>
+        <p>Flatpak support is built in by default from KDE neon 19 and later. To activate the <a href="https://flathub.org/">Flathub</a> repository in Discover, just follow the instructions below:</p>
+        <p>Open Discover and click on Settings (lower left corner).</p2> 
+        <p>Check that in the Flatpak section the box is checked.</p>
+        <p>Note: with this Flathub app search will be integrated in Discover, if you want to limit the app search to Flathub you can mark Flatpak as default by clicking on the star.</p>
+    </ol>
+    
