@@ -49,7 +49,7 @@
         </code></pre>
       </p>
     </ol>
-    
+
 - name: "Manjaro"
   logo: "manjaro.svg"
   info: >
@@ -216,6 +216,14 @@
   info: >
     <ol class="distrotut">
       <p>Flatpak is installed by default on CentOS 7 and newer, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+      <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+    </ol>
+
+- name: "AlmaLinux"
+  logo: "almalinux.svg"
+  info: >
+    <ol class="distrotut">
+      <p>Flatpak is installed by default on AlmaLinux 8 and newer, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
 
@@ -640,7 +648,7 @@
       <li>
         <h2>Enable Flatpak through the Software Manager</h2>
         <p>Flatpak support is built in from MX 18 and later. It is only required to activate the Flathub repository following these instructions:</p>
-        <p>Open <strong>MX Package Installer</strong> (open the menu and look in MX Tools), select the "Flatpaks" tab, to activate the repository you will need to enter the root password.</p> 
+        <p>Open <strong>MX Package Installer</strong> (open the menu and look in MX Tools), select the "Flatpaks" tab, to activate the repository you will need to enter the root password.</p>
       </li>
       <li>
         <h2>Restart</h2>
