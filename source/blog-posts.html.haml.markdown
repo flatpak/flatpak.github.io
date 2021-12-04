@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2021
 
+  [**Phaedrus Leeds: A Quick PSA on Writing Portal-friendly Application Code**](https://blogs.gnome.org/mwleeds/2021/12/03/a-quick-psa-on-writing-portal-friendly-application-code/)
+  December 2021
+
   [**Will Thompson: On Flatpak disk usage and deduplication**](https://blogs.gnome.org/wjjt/2021/11/24/on-flatpak-disk-usage-and-deduplication/)
   November 2021
 
