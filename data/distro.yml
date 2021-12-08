@@ -45,7 +45,7 @@
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       <p>The above links should work on the default GNOME and KDE Fedora installations, but if they fail for some reason you can manually add the Flathub remote by running:
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          <span class="unselectable">$</span> flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </p>
     </ol>
