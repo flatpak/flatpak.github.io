@@ -16,14 +16,6 @@
         </code></pre>
       </li>
       <li>
-        <h2>Install the Software Flatpak plugin</h2>
-        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line. To install, run:</p>
-        <pre><code>
-          <span class="unselectable">$</span> sudo apt install gnome-software-plugin-flatpak
-        </code></pre>
-        <p>Note: the Software app is distributed as a Snap since Ubuntu 20.04 and does not support graphical installation of Flatpak apps. Installing the Flatpak plugin will also install a deb version of Software and result in two Software apps being installed at the same time.</p>
-      </li>
-      <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
@@ -33,6 +25,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Ubuntu.</p>
       </li>
     </ol>
 
