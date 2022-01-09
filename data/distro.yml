@@ -721,7 +721,7 @@
         <p>Note: with this Flathub app search will be integrated in Discover, if you want to limit the app search to Flathub you can mark Flatpak as default by clicking on the star.</p>
     </ol>
 
- - name: "GNU Guix"
+- name: "GNU Guix"
   logo: "guix.svg"
   info: >
     <ol class="distrotut">
