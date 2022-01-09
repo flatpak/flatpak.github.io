@@ -1,0 +1,29 @@
+name: "Build and deploy"
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo $GITHUB_TOKEN | docker login --username $GITHUB_ACTOR --password-stdin docker.pkg.github.com
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: actions/checkout@v1
+
+    - name: Build
+      uses: ./.github/actions/middleman-build
+
+    - name: Deploy
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan webapps.flathub.org >> ~/.ssh/known_hosts
+        eval "$(ssh-agent -s)"
+        ssh-add - <<< "${DEPLOY_KEY}"
+        rsync -rP --delete build/ deploy@webapps.flathub.org:
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}

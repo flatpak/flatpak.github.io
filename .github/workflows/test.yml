@@ -1,0 +1,16 @@
+name: "Test build"
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo $GITHUB_TOKEN | docker login --username $GITHUB_ACTOR --password-stdin docker.pkg.github.com
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v1
+
+    - name: Build
+      uses: ./.github/actions/middleman-build

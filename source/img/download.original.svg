@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg7384">
+  <metadata
+     id="metadata90">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnome Symbolic Icon Theme</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title9167">Gnome Symbolic Icon Theme</title>
+  <defs
+     id="defs7386" />
+  <g
+     style="display:inline"
+     id="layer9"
+     transform="translate(-80,-648)" />
+  <g
+     id="layer10"
+     transform="translate(-80,-648)" />
+  <g
+     id="layer11"
+     transform="translate(-80,-648)" />
+  <g
+     id="layer12"
+     transform="translate(-80,-648)">
+    <path
+       id="rect4390-9"
+       transform="translate(80,648)"
+       d="M 7 1 L 7 6.5625 L 5.71875 5.28125 C 5.53059 5.0931 5.2653 5.00001 5 5 L 4 5 L 4 6 C 4.00001 6.2653 4.0931 6.53058 4.28125 6.71875 L 7.28125 9.71875 L 7.5625 10 L 8.4375 10 L 8.71875 9.71875 L 11.71875 6.71875 C 11.90694 6.53058 11.99999 6.2653 12 6 L 12 5 L 11 5 C 10.7347 5.00001 10.46941 5.0931 10.28125 5.28125 L 9 6.5625 L 9 1 L 7 1 z M 4.4941406 8.9921875 A 0.50005 0.50005 0 0 0 4.40625 9 A 0.50005 0.50005 0 0 0 4.09375 9.21875 L 3.09375 10.71875 A 0.50005 0.50005 0 0 0 3 11.265625 L 3 15 L 13 15 L 13 11.265625 A 0.50005 0.50005 0 0 0 12.90625 10.71875 L 11.90625 9.21875 A 0.50005 0.50005 0 0 0 11.40625 9 A 0.50005 0.50005 0 0 0 11.09375 9.78125 L 11.90625 11 L 4.09375 11 L 4.90625 9.78125 A 0.50005 0.50005 0 0 0 4.4941406 8.9921875 z M 9.5 12.429688 C 9.76418 12.429688 10.00373 12.67334 10 12.9375 L 10 13 C 10 13.54535 9.54535 14 9 14 L 7 14 C 6.45465 14 6 13.54535 6 13 L 6 12.9375 C 5.9892 12.72044 6.13723 12.50516 6.34375 12.4375 C 6.36455 12.4365 6.38545 12.4365 6.40625 12.4375 C 6.69721 12.3819 7.00523 12.64133 7 12.9375 L 7 13 L 9 13 L 9 12.9375 C 8.996 12.67334 9.23582 12.429688 9.5 12.429688 z "
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#bebebe;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+  </g>
+  <g
+     id="layer13"
+     transform="translate(-80,-648)" />
+  <g
+     id="layer14"
+     transform="translate(-80,-648)" />
+  <g
+     style="display:inline"
+     id="layer15"
+     transform="translate(-80,-648)" />
+</svg>

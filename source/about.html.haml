@@ -17,23 +17,31 @@ description: About Flatpak
       .col-lg-8.col-lg-offset-2
         %h1.section-heading.text-center Contact
         %hr.primary
-        %p
-          All our code is freely available, with no contributor agreement required. Volunteers and contributing organizations are welcome, as equal partners.
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
         .right.toneddown Mailing list
       .col-lg-4.col-xs-8
-        =link_to "flatpak@lists.freedesktop.org", "http://lists.freedesktop.org/mailman/listinfo/flatpak"
+        =link_to "flatpak at lists.freedesktop.org", "https://lists.freedesktop.org/mailman/listinfo/flatpak"
+    .row
+      .col-lg-4.col-xs-2.col-lg-offset-2
+        .right.toneddown Private mailing list for security issues
+      .col-lg-4.col-xs-8
+        =link_to "flatpak-security at lists.freedesktop.org", "https://lists.freedesktop.org/mailman/listinfo/flatpak-security"
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
-        .right.toneddown IRC
+        .right.toneddown Matrix
       .col-lg-4.col-xs-8
-        =link_to "#flatpak on Freenode", "irc://freenode.net:6697/flatpak"
+        =link_to "#flatpak on Matrix.org", "https://matrix.to/#/#flatpak:matrix.org"
     .row
       .col-lg-2.col-xs-4.col-lg-offset-4
-        .right.toneddown GitHub project
+        .right.toneddown GitHub
       .col-lg-4.col-xs-8
-        =link_to "github.com/flatpak/flatpak", "https://github.com/flatpak"
+        =link_to "github.com/flatpak", "https://github.com/flatpak"
+    .row
+      .col-lg-2.col-xs-4.col-lg-offset-4
+        .right.toneddown Forum
+      .col-lg-4.col-xs-8
+        =link_to "discourse.flathub.org", "https://discourse.flathub.org/"
     .row.largegap
       .col-lg-8.col-lg-offset-2
         %p
@@ -45,16 +53,16 @@ description: About Flatpak
         %h1.section-heading.text-center Flatpak History
         %hr.primary
         .timeline.mediumgap
-          .date August 2007 
-          .description 
+          .date August 2007
+          .description
             Alexander Larsson releases Glick, his first app bundling framework
           .date November 2011
           .description
             Glick 2 is released, a modernized version of the first Glick framework
-          .date July 2012 
+          .date July 2012
           .decription
             “GNOME OS” session held at GUADEC, includes initial planning for a new app bundling format
-          .date September 2012 
+          .date September 2012
           .description
             Alexander Larsson releases experimental “bundler” framework
           .date January 2013
@@ -71,7 +79,7 @@ description: About Flatpak
             GNOME's “Software” gains the ability to install xdg-app applications
           .date May 2016
           .description
-            xdg-app renamed to Flatpak, 0.6.0 released; 
+            xdg-app renamed to Flatpak, 0.6.0 released;
             = succeed " included endorsements by Red Hat, Endless Computers and Collabora" do
               =link_to "accompanying press release", "https://flatpak.org/press/2016-06-21-flatpak-released.html"
           .date June 2016
@@ -107,3 +115,6 @@ description: About Flatpak
           .date August 2018
           .description
             Flatpak 1.0 released, the first release in a new stable series, with major new features; Flathub beta period ends; Freedesktop runtime 18.08 released with new support period policy
+          .date December 2019
+          .description
+            elementary OS 5.1 Hera released, includes out of the box Flatpak integration

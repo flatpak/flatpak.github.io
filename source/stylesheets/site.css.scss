@@ -165,6 +165,7 @@ section {
     background-size: cover;
     color: rgba(0,0,0,0.5);
     min-height: 500px;
+    z-index: 1;
     p {
       max-width: 30em;
       margin: auto;
@@ -174,7 +175,7 @@ section {
   .illustration {
     margin-top: -330px;
     margin-bottom: 0;
-    
+    z-index: 2; /* under the headline; issue #326 */
     @media(max-width:420px) {
       display: none;
     }

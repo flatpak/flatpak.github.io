@@ -57,11 +57,12 @@ end
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true #, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-77917849-1' # Replace with your property ID.
+activate :matomo do |p|
+  p.domain = 'webstats.gnome.org'
+  p.site_id = 13
 end
 
-#activate :asset_hash
+activate :asset_hash
 activate :directory_indexes
 # we have reditects on nginx side
 #redirect "/hello-world.html", to: "/hello-world/"

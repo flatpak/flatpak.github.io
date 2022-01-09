@@ -1,9 +1,7 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem "middleman", "~> 3"#, github: "middleman/middleman", branch: "v3-stable"
-gem "middleman-google-analytics", '~> 2.1'
+gem "middleman-matomo", github: "barthalion/middleman-matomo"
 #gem "middleman-blog"
 gem "middleman-livereload" #3.1.0
 gem "nokogiri" #1.6.0 (xml html smarts)
@@ -28,4 +26,4 @@ gem "middleman-sprockets", "~> 3.1.2"
 
 #Ubuntu specific gems
 gem "rb-inotify"
-gem "therubyracer"
+gem "mini_racer", "~> 0.4.0"
