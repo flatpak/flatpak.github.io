@@ -9,14 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo $GITHUB_TOKEN | docker login --username $GITHUB_ACTOR --password-stdin docker.pkg.github.com
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2
 
-    - uses: actions/checkout@v1
-
-    - name: Build
-      uses: ./.github/actions/middleman-build
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - name: Install ruby dependencies
+      run: bundle install
+    - name: Bulid with middleman
+      run: bundle exec middleman build
 
     - name: Deploy
       run: |
