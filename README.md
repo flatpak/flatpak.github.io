@@ -15,10 +15,16 @@ Add the middleman binary location (probably ~/bin) to $PATH.
 
 To run a local web server to test the site:
 
+```sh
     bundle exec middleman server
+```
 
 Edit the haml/scss files and commit your changes, pushing to
 origin/source.
+
+## Devcontainer
+
+You can also use the devcontainer, for e.g. with VSCode. It should setup automatically and just expects you to run the testing command from above or command you would like to run.
 
 ## Deployment
 
