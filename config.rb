@@ -49,7 +49,7 @@ end
 #set :relative_links, true
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch   = 'master' # default: gh-pages
 end
 
@@ -57,9 +57,10 @@ end
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true #, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 
-activate :matomo do |p|
+activate :matomomiddleman do |p|
   p.domain = 'webstats.gnome.org'
-  p.site_id = 13
+  p.url = 'flatpak.org'
+  p.id = 13
 end
 
 activate :asset_hash

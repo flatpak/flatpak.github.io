@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~> 3"#, github: "middleman/middleman", branch: "v3-stable"
-gem "middleman-matomo", github: "barthalion/middleman-matomo"
+gem "middleman", "~> 4"#, github: "middleman/middleman", branch: "v3-stable"
+gem 'matomo-middleman'
 #gem "middleman-blog"
 gem "middleman-livereload" #3.1.0
 gem "nokogiri" #1.6.0 (xml html smarts)
@@ -16,14 +16,14 @@ gem "sass" #3.2.12
 # gem "middleman-syntax"
 
 #deployment
-gem "middleman-deploy" #, "~> 2.0.0.pre.alpha"
+gem "middleman-deploy", "~> 2.0.0.pre.alpha"
 #gem "middleman-gh-pages"
 
 #bootstrap
 gem "bootstrap-sass" # "3.0.0"
 #bug in sprockets 3.1.2
-gem "middleman-sprockets", "~> 3.1.2"
+gem "middleman-sprockets", "~> 4.1.1"
 
 #Ubuntu specific gems
 gem "rb-inotify"
-gem "mini_racer", "~> 0.4.0"
+gem "mini_racer", "~> 0.6.2"
