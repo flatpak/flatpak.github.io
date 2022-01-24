@@ -59,7 +59,6 @@ set :markdown, :tables => true #, :autolink => true, :gh_blockcode => true, :fen
 
 activate :matomomiddleman do |p|
   p.domain = 'webstats.gnome.org'
-  p.url = 'flatpak.org'
   p.id = 13
 end
 
