@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~> 4"#, github: "middleman/middleman", branch: "v3-stable"
-gem 'matomo-middleman'
+gem "matomo-middleman", github: "flatpak/middleman-matomo"
 #gem "middleman-blog"
 gem "middleman-livereload" #3.1.0
 gem "nokogiri" #1.6.0 (xml html smarts)
