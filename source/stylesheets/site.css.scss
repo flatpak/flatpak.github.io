@@ -9,13 +9,66 @@
  */
 
 $key_color: #4a90d9;
+
 $neutral_color: #919191;
+
+$neutral_color_dark: #333;
+$text_color_dark: rgba(255, 255, 255, 0.6);
+$background_color_dark: #262626;
+
 $fontface: "Source Sans Pro", "Source Sans", sans-serif;
 
 html,
 body {
   width: 100%;
   height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $background_color_dark;
+    color: $text_color_dark;
+  }
+
+  .navbar-default {
+    background-color: $background_color_dark !important;
+    color: $text_color_dark;
+    border-color: $background_color_dark !important;
+  }
+
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: $text_color_dark !important;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: $neutral_color_dark;
+  }
+
+  .navbar-collapse {
+    border-color: $background_color_dark !important;
+  }
+
+  pre,
+  code {
+    border-color: darken($background_color_dark, 5%);
+    background-color: darken($background_color_dark, 5%);
+    color: $text_color_dark;
+  }
+
+  h3 {
+    color: $text_color_dark;
+  }
+
+  h4 {
+    color: $text_color_dark;
+  }
+
+  .bg-secondary {
+    background-color: $neutral_color_dark !important;
+    color: $text_color_dark;
+  }
 }
 
 body {
