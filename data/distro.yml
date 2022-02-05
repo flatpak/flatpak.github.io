@@ -405,6 +405,7 @@
 
 - name: "elementary OS"
   logo: "elementary-os.svg"
+  logo_dark: "elementary-os-dark.svg"
   info: >
     <ol class="distrotut">
       <!-- As of elementary OS 5.1 up-to-date Flatpak is installed, AppCenter supports it ootb, and Sideload handles .flatpakref files -->
