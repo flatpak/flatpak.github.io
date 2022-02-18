@@ -25,7 +25,7 @@ description: Blog posts about Flatpak
   [**Lionir Deadman: Flathub, runtimes and stats**](https://thelion.website/flathub-runtimes-and-stats/)
   June 2021
 
-  [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.frama.io/2021/02/11/response-to-flatkill-org.html)
+  [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.gitlab.io/2021/02/11/response-to-flatkill-org.html)
   February 2021
 
   [**Phaedrus Leeds: Cleaning Up Unused Flatpak Runtimes**](https://blogs.gnome.org/mwleeds/2021/01/11/cleaning-up-unused-flatpak-runtimes/)
@@ -38,6 +38,9 @@ description: Blog posts about Flatpak
 
   [**Alexander Larsson: Compatibility in a sandboxed world**](https://blogs.gnome.org/alexl/2020/08/11/compatibility-in-a-sandboxed-world/)
   August 2020
+
+  [**Hubert Figuière: Getting a stack trace with debug symbols out of a flatpak**](https://www.figuiere.net/technotes/notes/tn001/)
+  June 2020
 
   [**Alexander Larsson: Putting container updates on a diet**](https://blogs.gnome.org/alexl/2020/05/13/putting-container-updates-on-a-diet/)
   May 2020

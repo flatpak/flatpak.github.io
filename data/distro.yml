@@ -181,7 +181,7 @@
 
 - name: "Debian"
   logo: "debian.svg"
-  info:  >
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
@@ -405,6 +405,7 @@
 
 - name: "elementary OS"
   logo: "elementary-os.svg"
+  logo_dark: "elementary-os-dark.svg"
   info: >
     <ol class="distrotut">
       <!-- As of elementary OS 5.1 up-to-date Flatpak is installed, AppCenter supports it ootb, and Sideload handles .flatpakref files -->
@@ -456,6 +457,7 @@
 
 - name: "Void Linux"
   logo: "void.svg"
+  logo_dark: "void-dark.svg"
   info: >
     <ol class="distrotut">
       <li>
@@ -512,7 +514,8 @@
 
 - name: "PureOS"
   logo: "pureos.svg"
-  info:  >
+  logo_dark: "pureos-dark.svg"
+  info: >
     <ol class="distrotut">
       <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
@@ -547,6 +550,7 @@
 
 - name: "Ataraxia Linux"
   logo: "ataraxia.svg"
+  logo_dark: "ataraxia-dark.svg"
   info: >
     <ol class="distrotut">
       <li>
@@ -571,7 +575,7 @@
 
 - name: "Zorin OS"
   logo: "zorin-os.svg"
-  info:  >
+  info: >
     <ol class="distrotut">
       <p>Flatpak is installed by default on Zorin OS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
@@ -611,7 +615,7 @@
 
 - name: "Pardus"
   logo: "pardus.svg"
-  info:  >
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
@@ -658,7 +662,8 @@
 
 - name: "Pisi GNU/Linux"
   logo: "pisi.svg"
-  info:  >
+  logo_dark: "pisi-dark.svg"
+  info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
@@ -683,6 +688,7 @@
 
 - name: "EndeavourOS"
   logo: "endeavouros.svg"
+  logo_dark: "endeavouros-dark.svg"
   info: >
     <ol class="distrotut">
       <li>
@@ -721,7 +727,7 @@
         <p>Note: with this Flathub app search will be integrated in Discover, if you want to limit the app search to Flathub you can mark Flatpak as default by clicking on the star.</p>
     </ol>
     
-    - name: "PCLinuxOS"
+- name: "PCLinuxOS"
   logo: "pclinuxos.svg"
   info: >
     <ol class="distrotut">
