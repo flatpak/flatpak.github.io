@@ -83,6 +83,21 @@
         <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. Chrome OS will take some time downloading and installing Linux.</p>
       </li>
       <li>
+        <h2>Enable nested containers</h2>
+        <ul>
+          <li>Close the Linux environment, if it is already active</li>
+          <li>Open a Chrome browser</li>
+          <li>Press Ctrl-Alt-T</li>
+        </ul>
+        <p>In the <code>crosh</code> tab that will open, use these commands to enable nested containers:</p>
+        <pre><code>
+          <span class="unselectable">$</span> vmc start termina
+          <span class="unselectable">$</span> lxc config set penguin security.nesting true
+          <span class="unselectable">$</span> exit
+          <span class="unselectable">$</span> vmc stop termina
+        </code></pre>
+      </li>
+      <li>
         <h2>Start a Linux terminal</h2>
         <p>Press the Search/Launcher key, type "Terminal", and launch the Terminal app.</p>
       </li>
