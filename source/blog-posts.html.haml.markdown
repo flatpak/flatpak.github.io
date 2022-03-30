@@ -62,6 +62,9 @@ description: Blog posts about Flatpak
   [**Matthias Clasen: Settings, in a Sandbox World**](https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-world/)
   July 2019
 
+  [**Christian Hergert: Flatpaking Terminals**](https://blogs.gnome.org/chergert/2019/04/25/flatpaking-terminals/)
+  April 2019
+
   [**Alexander Larsson: Introducing flat-manager**](https://blogs.gnome.org/alexl/2019/03/19/introducing-flat-manager/)
   March 2019
 
