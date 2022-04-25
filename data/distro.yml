@@ -84,12 +84,9 @@
       </li>
       <li>
         <h2>Enable nested containers</h2>
-        <ul>
-          <li>Close the Linux environment, if it is already active</li>
-          <li>Open a Chrome browser</li>
-          <li>Press Ctrl-Alt-T</li>
-        </ul>
-        <p>In the <code>crosh</code> tab that will open, use these commands to enable nested containers:</p>
+        <p>2.1- Close the Linux environment, if it is already active.</p>
+        <p>2.2- Open a Chrome browser, then press Ctrl-Alt-T</p>
+        <p>2.3- In the <code>crosh</code> tab that will open, use these commands to enable nested containers:</p>
         <pre><code>
           <span class="unselectable">$</span> vmc start termina
           <span class="unselectable">$</span> lxc config set penguin security.nesting true
