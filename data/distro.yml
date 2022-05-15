@@ -48,6 +48,11 @@
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </p>
+      <p>Since Fedora 36 Flathub is explicitly disabled so it needs to be manually enabled with this command:
+        <pre><code>
+          <span class="unselectable">$</span> flatpak remote-modify --enable flathub
+        </code></pre>
+      </p>
     </ol>
 
 - name: "Manjaro"
