@@ -83,6 +83,18 @@
         <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. Chrome OS will take some time downloading and installing Linux.</p>
       </li>
       <li>
+        <h2>Enable nested containers</h2>
+        <p>2.1- Close the Linux environment, if it is already active.</p>
+        <p>2.2- Open a Chrome browser, then press Ctrl-Alt-T</p>
+        <p>2.3- In the <code>crosh</code> tab that will open, use these commands to enable nested containers:</p>
+        <pre><code>
+          <span class="unselectable">$</span> vmc start termina
+          <span class="unselectable">$</span> lxc config set penguin security.nesting true
+          <span class="unselectable">$</span> exit
+          <span class="unselectable">$</span> vmc stop termina
+        </code></pre>
+      </li>
+      <li>
         <h2>Start a Linux terminal</h2>
         <p>Press the Search/Launcher key, type "Terminal", and launch the Terminal app.</p>
       </li>
@@ -235,7 +247,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, enable the ~amd64 keyword for sys-apps/flatpak, acct-user/flatpak and acct-group/flatpak:</p>
         <pre><code>
-          <span class="unselectable">#</span> echo 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64\ndev-util/ostree ~amd64' >> /etc/portage/accept_keywords/flatpak
+          <span class="unselectable">#</span> echo -e 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64\ndev-util/ostree ~amd64' >> /etc/portage/package.accept_keywords/flatpak
         </code></pre>
         <p>Then, install Flatpak:</p>
         <pre><code>
@@ -577,8 +589,7 @@
   logo: "zorin-os.svg"
   info: >
     <ol class="distrotut">
-      <p>Flatpak is installed by default on Zorin OS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
-      <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+      <h2>Flatpak is installed by default on Zorin OS. You can use the Software Store app to download flatpak apps.</h2>
     </ol>
 
 - name: "Deepin"
@@ -661,6 +672,7 @@
     </ol>
 
 - name: "Pisi GNU/Linux"
+  slug: "Pisi GNU Linux"
   logo: "pisi.svg"
   logo_dark: "pisi-dark.svg"
   info: >
@@ -722,7 +734,7 @@
     <ol class="distrotut">
         <h2>Enable Flatpak through the Software Manager</h2>
         <p>Flatpak support is built in by default from KDE neon 19 and later. To activate the <a href="https://flathub.org/">Flathub</a> repository in Discover, just follow the instructions below:</p>
-        <p>Open Discover and click on Settings (lower left corner).</p2> 
+        <p>Open Discover and click on Settings (lower left corner).</p2>
         <p>Check that in the Flatpak section the box is checked.</p>
         <p>Note: with this Flathub app search will be integrated in Discover, if you want to limit the app search to Flathub you can mark Flatpak as default by clicking on the star.</p>
     </ol>
