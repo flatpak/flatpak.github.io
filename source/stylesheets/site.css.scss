@@ -279,7 +279,6 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
   font-family: $fontface;
-  text-transform: uppercase;
   font-weight: 700;
   font-variation-settings: 'wght' 700;
   color: $key_color;
@@ -292,7 +291,6 @@ aside {
 
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-  text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   font-variation-settings: 'wght' 700;
@@ -893,7 +891,6 @@ ol.distrotut {
     display: block;
     padding-top: 0;
     color: #fff;
-    text-transform: uppercase;
     font-family: $fontface;
     font-weight: bold;
     font-variation-settings: 'wght' 600;
@@ -907,9 +904,7 @@ ol.distrotut {
     li {
       list-style: none;
       display: block;
-      font-size: 80%;
       &.toplevel {
-        text-transform: uppercase;
         margin-bottom: 1em;
       }
       a {

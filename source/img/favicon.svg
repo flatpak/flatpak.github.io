@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 16 16"
+   height="16"
+   width="16"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     units="px"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="560"
+     inkscape:cx="400"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1"
+     bordercolor="#383838"
+     pagecolor="#1f1f1f"
+     id="base"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#1f1f1f">
+    <inkscape:grid
+       type="xygrid"
+       id="grid190" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g3214"
+       transform="matrix(0.04764281,0,0,0.04764281,-8.374002,-7.7694898)"
+       style="mix-blend-mode:normal;fill:#ffffff">
+      <path
+         style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 474.6092,255.1181 1e-5,151.18111 -130.92667,75.59055 v -151.1811 z"
+         id="path2452"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 343.68252,330.70866 V 179.52756 L 212.75586,255.1181 Z"
+         id="path2454" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:82.9362;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 218.61226,233.26169 c -13.54108,7.81795 -21.85641,22.22052 -21.85641,37.85641 v 119.18111 c 0,15.63589 8.31533,30.03846 21.85641,37.85641 l 103.21385,59.59055 c 13.54108,7.81794 30.17174,7.81794 43.71282,0 l 103.21386,-59.59055 c 13.54108,-7.81795 21.85641,-22.22052 21.85641,-37.85641 V 271.1181 c 0,-15.63589 -8.31533,-30.03846 -21.85641,-37.85641 L 365.53893,173.67115 c -13.54108,-7.81794 -30.17174,-7.81794 -43.71282,0 z m 130.92667,-31.87772 103.21386,59.59054 c 3.60767,2.08289 5.85641,5.97781 5.85641,10.14359 v 119.18111 c 0,4.16578 -2.24874,8.0607 -5.85641,10.14359 l -103.21386,59.59055 c -3.60767,2.08289 -8.10515,2.08289 -11.71282,0 L 234.61226,400.4428 c -3.60767,-2.08289 -5.85641,-5.97781 -5.85641,-10.14359 V 271.1181 c 0,-4.16578 2.24874,-8.0607 5.85641,-10.14359 l 103.21385,-59.59054 c 3.60767,-2.08289 8.10515,-2.08289 11.71282,0 z"
+         id="path2456" />
+    </g>
+  </g>
+</svg>
