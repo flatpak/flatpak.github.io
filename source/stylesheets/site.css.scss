@@ -16,7 +16,7 @@ $neutral_color_dark: #333;
 $text_color_dark: rgba(255, 255, 255, 0.6);
 $background_color_dark: #262626;
 
-$fontface: "Source Sans Pro", "Source Sans", sans-serif;
+$fontface: Inter, sans-serif;
 
 html,
 body {
@@ -75,9 +75,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Source Sans Pro", "Source Sans", sans-serif;
+  font-family: $fontface;
   font-size: 13pt;
   font-weight: 400;
+  font-variation-settings: 'wght' 400;
   font-style: normal;
 }
 
@@ -149,11 +150,13 @@ h2 {
 h3 {
   font-size: 130%;
   font-weight: 800;
+  font-variation-settings: 'wght' 800;
   color: $neutral_color;
 }
 h4 {
   font-size: 120%;
   font-weight: 600;
+  font-variation-settings: 'wght' 600;
   color: $neutral_color;
 }
 
@@ -190,6 +193,7 @@ p {
   a {
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
+    font-variation-settings: 'wght' 600;
     &:hover {
       color: #fff;
     }
@@ -274,9 +278,10 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-  font-family: "Overpass", "Source Sans Pro", "Source Sans", sans-serif;
+  font-family: $fontface;
   text-transform: uppercase;
   font-weight: 700;
+  font-variation-settings: 'wght' 700;
   color: $key_color;
 }
 
@@ -290,6 +295,7 @@ aside {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
+  font-variation-settings: 'wght' 700;
   color: #222;
 }
 
@@ -394,6 +400,7 @@ header .header-content .header-content-inner p {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: 600;
+  font-variation-settings: 'wght' 600;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -595,6 +602,7 @@ fieldset[disabled] .btn-default.active {
   border-radius: 6px;
   /* text-transform: uppercase; */
   font-weight: 700;
+  font-variation-settings: 'wght' 700;
   .appslist & {
     margin: 4px;
   }
@@ -701,6 +709,7 @@ blockquote {
 
   em {
     font-weight: bold;
+    font-variation-settings: 'wght' 600;
     font-style: normal;
   }
 
@@ -727,6 +736,7 @@ table {
     padding: 0.4em 0.5em;
     &:first-child {
       font-weight: bold;
+      font-variation-settings: 'wght' 600;
       font-size: 90%;
       color: $neutral_color;
     }
@@ -789,6 +799,7 @@ ol.distrotut {
       margin-left: -90px;
       font-size: 140%;
       font-weight: 300;
+      font-variation-settings: 'wght' 300;
       background-color: $neutral_color;
       padding: 0.6em 1em;
       border-radius: 50%;
@@ -854,6 +865,7 @@ ol.distrotut {
   font-size: 80%;
   color: $neutral_color;
   font-weight: bold;
+  font-variation-settings: 'wght' 600;
   letter-spacing: 0.1em;
   margin-top: 2em;
   @media (min-width: 768px) {
@@ -867,6 +879,7 @@ ol.distrotut {
   flex: 0.3;
   a {
     font-weight: bold;
+    font-variation-settings: 'wght' 600;
     color: $neutral_color;
     &:hover {
       color: lighten($neutral_color, 20%);
@@ -883,6 +896,7 @@ ol.distrotut {
     text-transform: uppercase;
     font-family: $fontface;
     font-weight: bold;
+    font-variation-settings: 'wght' 600;
     height: inherit;
   }
   ul {
@@ -937,5 +951,6 @@ ol.distrotut {
   }
   color: $neutral_color;
   font-weight: bold;
+  font-variation-settings: 'wght' 600;
   font-size: 90%;
 }
