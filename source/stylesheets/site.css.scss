@@ -233,26 +233,19 @@ section {
 }
 
 .imagebanner {
-  background: url(/img/banner.svgz) no-repeat center bottom;
+  background: url(/img/container.webp) no-repeat center bottom;
   @media (prefers-color-scheme: dark) {
     filter: brightness(70%);
   }
   background-size: cover;
-  color: rgba(0, 0, 0, 0.5);
-  min-height: 500px;
+  color: #fff;
+  min-height: 50vh;
   z-index: 1;
+  font-weight: 800;
+  font-variation-settings: 'wght' 800;
   p {
     max-width: 30em;
     margin: auto;
-  }
-}
-
-.illustration {
-  margin-top: -330px;
-  margin-bottom: 0;
-  z-index: 2; /* under the headline; issue #326 */
-  @media (max-width: 420px) {
-    display: none;
   }
 }
 
@@ -435,7 +428,6 @@ pre {
 
 .section-heading {
   margin-top: 0;
-  text-transform: capitalize;
 
   .emphasize {
     color: $key_color;

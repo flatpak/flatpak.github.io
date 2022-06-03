@@ -4,3 +4,6 @@
 /.cache
 .DS_Store
 /Gemfile.lock
+.jekyll-cache
+.gem
+_site
