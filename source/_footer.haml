@@ -2,8 +2,8 @@
   .container
     .row
       .col-lg-3.col-lg-offset-1.col-sm-3.hidden-xs
-        %a.navbar-brand.page-scroll{:href => "#page-top"} 
-          =image_tag '/img/logo.svgz', :title => 'Flatpak', :class => 'full'
+        %a.navbar-brand.page-scroll{:href => "#page-top"}
+          =partial "logo.svg"
       %ul.col-lg-7.col-lg-offset-0.col-sm-8.col-sm-offset-0.col-xs-7.col-xs-offset-2
         %li.toplevel
           = link_to "Home", "/index.html"
