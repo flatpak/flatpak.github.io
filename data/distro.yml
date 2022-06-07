@@ -48,9 +48,10 @@
           <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </p>
-      <p>Flathub is explicitly disabled since Fedora 36 and needs to be manually enabled with this command:
+      <p>Fedora has a "filtered" Flathub remote added but disabled. It needs to be removed and added again to get the full repository when you enable it.
         <pre><code>
-          <span class="unselectable">$</span> flatpak remote-modify --enable flathub
+          <span class="unselectable">$</span> flatpak remote-delete flathub 
+          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </p>
     </ol>
