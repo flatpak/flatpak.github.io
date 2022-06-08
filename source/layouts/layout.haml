@@ -7,14 +7,24 @@
     %meta{content: "#{current_page.data.description}", name: "description"}/
     %meta{content: "bundle,application,runtime,flatpak,xdg-app", name: "keywords"}/
     %meta{content: "width=device-width,initial-scale=1", name: "viewport" }/
-    %link{rel:"icon", "type" => "image/png", href:"img/favicon.png"}/
+    %link{rel:"icon", "type" => "image/svg+xml", href:"img/favicon.svg"}/
     %link{rel:"shortcut icon", "type" => "image/x-icon", href:"/favicon.ico"}/
-    %link{rel:"apple-touch-icon", "sizes" => "57x57", href:"img/favicon57.png"}/
-    %link{rel:"apple-touch-icon", "sizes" => "152x152", href:"img/favicon152.png"}/
+    %link{rel:"apple-touch-icon", "sizes" => "180x180", href:"img/apple-touch-icon.png"}/
     = stylesheet_link_tag :fonts
     = stylesheet_link_tag :site
     = stylesheet_link_tag :animate
-    /= stylesheet_link_tag "http://overpass-30e2.kxcdn.com/overpass.css"
+    %meta{content: "#{data.site.name}", name: "title" }/
+    %meta{content: "#{data.site.punchline}", name: "description" }/
+
+    %meta{content: "#{data.site.name}", name: "twitter:title" }/
+    %meta{content: "#{data.site.domain}#{url_for 'img/card.png'}", name: "twitter:image" }/
+    %meta{content: "summary_large_image", name: "twitter:card" }/
+    %meta{content: "#{data.site.punchline}", name: "twitter:description" }/
+
+    %meta{content: "#{data.site.name}", name: "og:title" }/
+    %meta{content: "#{data.site.domain}", name: "og:url" }/
+    %meta{content: "#{data.site.domain}#{url_for 'img/card.png'}", name: "og:image" }/
+    %meta{content: "#{data.site.punchline}", name: "og:description" }/
 
   = javascript_include_tag "jquery-2.2.4.min"
   = javascript_include_tag "jquery.easing.min"
