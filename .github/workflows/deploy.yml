@@ -17,6 +17,12 @@ jobs:
     - run: bundle install
     - run: bundle exec middleman build
 
+    - id: variables
+      run: |
+        [[ ! -f .ruby-version ]] && exit 1
+        RUBY_VERSION="$(< .ruby-version)"
+        echo "::set-output name=RUBY_VERSION::${RUBY_VERSION}"
+
     - uses: docker/setup-buildx-action@v2
     - uses: docker/login-action@v2
       with:
@@ -31,6 +37,8 @@ jobs:
         tags: |
           ghcr.io/flatpak/flatpak.github.io:${{ github.sha }}
           ghcr.io/flatpak/flatpak.github.io:latest
+        build-args: |
+          RUBY_VERSION=${{ steps.variables.outputs.RUBY_VERSION }}
         labels: |
           org.opencontainers.image.revision=${{ github.sha }}
           org.opencontainers.image.source=ssh://git@github.com:${{ github.repository }}.git
