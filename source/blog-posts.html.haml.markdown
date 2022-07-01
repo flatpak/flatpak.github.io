@@ -25,6 +25,9 @@ description: Blog posts about Flatpak
   [**Will Thompson: Evince, Flatpak, and GTK print previews**](https://blogs.gnome.org/wjjt/2022/05/30/evince-flatpak-and-gtk-print-previews/)
   May 2022
 
+  [**Jan Grulich: How to use Libportal/libportal-qt**](https://jgrulich.cz/2022/02/10/how-to-use-libportal-libportal-qt/)
+  February 2022
+
   ## 2021
 
   [**Phaedrus Leeds: A Quick PSA on Writing Portal-friendly Application Code**](https://blogs.gnome.org/mwleeds/2021/12/03/a-quick-psa-on-writing-portal-friendly-application-code/)
