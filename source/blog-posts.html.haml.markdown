@@ -25,6 +25,9 @@ description: Blog posts about Flatpak
   [**Will Thompson: Evince, Flatpak, and GTK print previews**](https://blogs.gnome.org/wjjt/2022/05/30/evince-flatpak-and-gtk-print-previews/)
   May 2022
 
+  [**TheEvilSkeleton: Response to "Flatpak Is Not the Future"**](https://theevilskeleton.gitlab.io/2022/05/16/response-to-flatpak-is-not-the-future.html)
+  May 2022
+
   [**Jan Grulich: How to use Libportal/libportal-qt**](https://jgrulich.cz/2022/02/10/how-to-use-libportal-libportal-qt/)
   February 2022
 
