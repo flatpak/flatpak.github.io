@@ -120,7 +120,7 @@ description: Presentations and articles about Flatpak
   [**Matthias Clasen: Flatpak – A new way to distribute applications**](https://mclasen.fedorapeople.org/devconf-flatpak.pdf)
   January 2017, devconf.cz, Brno, Czech Republic
   
-  [**Kukuh Syafaat: Flatpak & Appimage Usage on openSUSE. Which One Suitable for openSUSE Users?**](https://events.opensuse.org/conferences/summitasia17/program/proposals/1502)
+  [**Kukuh Syafaat: Flatpak & AppImage Usage on openSUSE. Which One Suitable for openSUSE Users?**](https://events.opensuse.org/conferences/summitasia17/program/proposals/1502)
   openSUSE.Asia Summit 2017, October 2017, Chofu, Tokyo, Japan
 
   ## 2016
