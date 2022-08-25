@@ -13,6 +13,9 @@ description: Blog posts about Flatpak
 
   ## 2022
 
+  [**Hubert Figuière: RTKit, portals, and Pipewire**](https://www.figuiere.net/hub/wlog/rtkit-portal-pipewire/)
+  August 2022
+
   [**Will Thompson: How many Flathub apps reuse other package formats?**](https://blogs.gnome.org/wjjt/2022/06/14/how-many-flathub-apps-reuse-other-package-formats/)
   June 2022
 
