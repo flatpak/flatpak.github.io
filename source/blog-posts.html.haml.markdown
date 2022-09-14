@@ -11,6 +11,29 @@ description: Blog posts about Flatpak
 
   If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+  ## 2022
+
+  [**Hubert Figuière: RTKit, portals, and Pipewire**](https://www.figuiere.net/hub/wlog/rtkit-portal-pipewire/)
+  August 2022
+
+  [**Will Thompson: How many Flathub apps reuse other package formats?**](https://blogs.gnome.org/wjjt/2022/06/14/how-many-flathub-apps-reuse-other-package-formats/)
+  June 2022
+
+  [**Jakub Steiner: Flatpak Brand Refresh**](https://blog.jimmac.eu/2022/flatpak-refresh/)
+  June 2022
+
+  [**Martín Abente Lahaye: Flatseal 1.8.0**](https://blogs.gnome.org/tchx84/2022/05/31/flatseal-1-8-0/)
+  May 2022
+
+  [**Will Thompson: Evince, Flatpak, and GTK print previews**](https://blogs.gnome.org/wjjt/2022/05/30/evince-flatpak-and-gtk-print-previews/)
+  May 2022
+
+  [**TheEvilSkeleton: Response to "Flatpak Is Not the Future"**](https://theevilskeleton.gitlab.io/2022/05/16/response-to-flatpak-is-not-the-future.html)
+  May 2022
+
+  [**Jan Grulich: How to use Libportal/libportal-qt**](https://jgrulich.cz/2022/02/10/how-to-use-libportal-libportal-qt/)
+  February 2022
+
   ## 2021
 
   [**Phaedrus Leeds: A Quick PSA on Writing Portal-friendly Application Code**](https://blogs.gnome.org/mwleeds/2021/12/03/a-quick-psa-on-writing-portal-friendly-application-code/)
@@ -19,13 +42,19 @@ description: Blog posts about Flatpak
   [**Will Thompson: On Flatpak disk usage and deduplication**](https://blogs.gnome.org/wjjt/2021/11/24/on-flatpak-disk-usage-and-deduplication/)
   November 2021
 
+  [**Martín Abente Lahaye: Flatseal 1.7.5**](https://blogs.gnome.org/tchx84/2021/11/20/flatseal-1-7-5/)
+  November 2021
+
   [**Peter Hutterer: Flatpak portals - how do they work?**](https://who-t.blogspot.com/2021/08/flatpak-portals-how-do-they-work.html)
   September 2021
 
   [**Lionir Deadman: Flathub, runtimes and stats**](https://thelion.website/flathub-runtimes-and-stats/)
   June 2021
 
-  [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.frama.io/2021/02/11/response-to-flatkill-org.html)
+  [**Martín Abente Lahaye: Flatseal 1.7.0**](https://blogs.gnome.org/tchx84/2021/04/23/flatseal-1-7-0/)
+  April 2021
+
+  [**TheEvilSkeleton: Response to flatkill.org**](https://theevilskeleton.gitlab.io/2021/02/11/response-to-flatkill-org.html)
   February 2021
 
   [**Phaedrus Leeds: Cleaning Up Unused Flatpak Runtimes**](https://blogs.gnome.org/mwleeds/2021/01/11/cleaning-up-unused-flatpak-runtimes/)
@@ -38,6 +67,9 @@ description: Blog posts about Flatpak
 
   [**Alexander Larsson: Compatibility in a sandboxed world**](https://blogs.gnome.org/alexl/2020/08/11/compatibility-in-a-sandboxed-world/)
   August 2020
+
+  [**Martín Abente Lahaye: Flatseal 1.6.0**](https://blogs.gnome.org/tchx84/2020/06/26/flatseal-1-6-0-and-beyond/)
+  June 2020
 
   [**Hubert Figuière: Getting a stack trace with debug symbols out of a flatpak**](https://www.figuiere.net/technotes/notes/tn001/)
   June 2020
@@ -61,6 +93,9 @@ description: Blog posts about Flatpak
 
   [**Matthias Clasen: Settings, in a Sandbox World**](https://blogs.gnome.org/mclasen/2019/07/12/settings-in-a-sandbox-world/)
   July 2019
+
+  [**Christian Hergert: Flatpaking Terminals**](https://blogs.gnome.org/chergert/2019/04/25/flatpaking-terminals/)
+  April 2019
 
   [**Alexander Larsson: Introducing flat-manager**](https://blogs.gnome.org/alexl/2019/03/19/introducing-flat-manager/)
   March 2019
