@@ -794,3 +794,33 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with GNU Guix.</p>
       </li>
     </ol>
+    
+    
+- name: "PCLinuxOS"
+  logo: "pclinuxos.svg"
+  info: >
+    <ol class="distrotut">
+<li>
+    <h2>Install Flatpak</h2>
+    <p>The flatpak package is available in the PCLinuxOS repositories, it can be installed using Synaptic Package Manager or by running the following in the terminal:</p>
+    <pre><code>
+      <span class="unselectable">$</span> su {Enter the root password}
+    </code></pre>
+    <p>Then install Flatpak:</p>
+      <pre><code>
+      <span class="unselectable">$</span> apt-get install flatpak
+    </code></pre>
+  </li>
+  <li>
+    <h2>Add the Flathub repository</h2>
+    <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
+    <pre><code>
+      <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    </code></pre>
+  </li>
+  <li>
+    <h2>Restart</h2>
+    <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
+    <p>Note: graphical installation of Flatpak apps may not be possible with PCLinuxOS.</p>
+  </li>
+</ol>
