@@ -806,7 +806,7 @@
         <pre><code>
           <span class="unselectable">$</span> su
         <pre><code>
-          <span class="unselectable">$</span> apt-get install flatpak
+          <span class="unselectable">#</span> apt-get install flatpak
         </code></pre>
       </li>
       <li>
