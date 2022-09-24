@@ -804,7 +804,7 @@
         <h2>Install Flatpak</h2>
         <p>The flatpak package is available in the PCLinuxOS repositories, it can be installed using Synaptic Package Manager or by running the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> su {Enter the root password}
+          <span class="unselectable">$</span> su
         </code></pre>
         <p>Then install Flatpak:</p>
         <pre><code>
