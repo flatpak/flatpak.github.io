@@ -794,7 +794,7 @@
         <p>Note: graphical installation of Flatpak apps may not be possible with GNU Guix.</p>
       </li>
     </ol>
-    
+
 - name: "PCLinuxOS"
   logo: "pclinuxos.svg"
   info: >
