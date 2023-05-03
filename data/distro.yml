@@ -772,6 +772,7 @@
 
 - name: "GNU Guix"
   logo: "guix.svg"
+  logo_dark: "guix-dark.svg"
   info: >
     <ol class="distrotut">
       <li>
