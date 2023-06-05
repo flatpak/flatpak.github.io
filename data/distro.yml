@@ -564,30 +564,41 @@
       <p>Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
     </ol>
 
-- name: "SulinOS"
-  logo: "sulinos.svg"
+- name: "Turkman Linux"
+  logo: "turkman.svg"
   info: >
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>To install Flatpak, run the following in a terminal:</p>
+        <p>To install Flatpak on Turkman Linux, run the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> su
-          <span class="unselectable">#</span> inary it flatpak
+          <span class="unselectable">Emerge way</span>
+          <span class="unselectable">#</span> ymp install build-base --no-emerge
+          <span class="unselectable">#</span> ymp install flatpak
+          <span class="unselectable">No emerge way</span>
+          <span class="unselectable">#</span> ymp install flatpak --no-emerge
+        </code></pre>
+      </li>
+      <li>
+        <h2>Enable services</h2>
+        <p>To enable services on Turkman Linux, run the following in a terminal:</p>
+        <pre><code>
+          <span class="unselectable">#</span> rc-service add devfs
+          <span class="unselectable">#</span> rc-service add fuse
+          <span class="unselectable">#</span> rc-service add hostname
         </code></pre>
       </li>
       <li>
         <h2>Add the Flathub repository</h2>
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
         <pre><code>
-          <span class="unselectable">$</span> su
-          <span class="unselectable">#</span> flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+           <span class="unselectable">$</span> flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
         </code></pre>
       </li>
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: graphical installation of Flatpak apps may not be possible with SulinOS.</p>
+        <p>Note: graphical installation of Flatpak apps may not be possible with Turkman Linux.</p>
       </li>
     </ol>
 
