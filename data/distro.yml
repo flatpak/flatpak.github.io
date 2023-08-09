@@ -73,7 +73,7 @@
     <h2>Flatpak support is built into Endless OS 3.0.0 and newer—no setup required!</h2>
     <p>If you are using an older version, <a href="https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967">upgrade to Endless OS 3</a>.</p>
 
-- name: "ChromeOS"
+- name: "Chrome OS"
   logo: "chrome-os.svg"
   info: >
     <p>Flatpak applications can be installed on ChromeOS with the Crostini Linux compatibility layer. This is not available for all ChromeOS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>.</p>
