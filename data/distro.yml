@@ -73,26 +73,14 @@
     <h2>Flatpak support is built into Endless OS 3.0.0 and newer—no setup required!</h2>
     <p>If you are using an older version, <a href="https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967">upgrade to Endless OS 3</a>.</p>
 
-- name: "Chrome OS"
+- name: "ChromeOS"
   logo: "chrome-os.svg"
   info: >
-    <p>Flatpak applications can be installed on Chrome OS with the Crostini Linux compatibility layer. This is not available for all Chrome OS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>.</p>
+    <p>Flatpak applications can be installed on ChromeOS with the Crostini Linux compatibility layer. This is not available for all ChromeOS devices, so you should ensure your device is compatible before proceeding. A list of compatible devices is maintained <a href="https://www.reddit.com/r/Crostini/wiki/getstarted/crostini-enabled-devices">here</a>.</p>
     <ol class="distrotut">
       <li>
         <h2>Enable Linux support</h2>
-        <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. Chrome OS will take some time downloading and installing Linux.</p>
-      </li>
-      <li>
-        <h2>Enable nested containers</h2>
-        <p>2.1- Close the Linux environment, if it is already active.</p>
-        <p>2.2- Open a Chrome browser, then press Ctrl-Alt-T</p>
-        <p>2.3- In the <code>crosh</code> tab that will open, use these commands to enable nested containers:</p>
-        <pre><code>
-          <span class="unselectable">$</span> vmc start termina
-          <span class="unselectable">$</span> lxc config set penguin security.nesting true
-          <span class="unselectable">$</span> exit
-          <span class="unselectable">$</span> vmc stop termina
-        </code></pre>
+        <p>Navigate to <a href="chrome://os-settings">chrome://os-settings</a>, and scroll down to <strong>Developers</strong> and turn on <i>Linux development environment</i>. ChromeOS will take some time downloading and installing Linux.</p>
       </li>
       <li>
         <h2>Start a Linux terminal</h2>
