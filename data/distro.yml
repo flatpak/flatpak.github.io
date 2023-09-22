@@ -362,7 +362,8 @@
           <span class="unselectable">$</span> doas apk add flatpak
         </code></pre>
       </li>
-      <h2>Install the Software Flatpak plugin</h2>
+      <li>
+        <h2>Install the Software Flatpak plugin</h2>
         <p>You can install the Flatpak plugin for either the GNOME Software (since v3.13) or KDE Discover (since v3.11), making it possible to install apps without needing the command line. To install, for GNOME Software run:</p>
         <pre><code>
           <span class="unselectable">$</span> doas apk add gnome-software-plugin-flatpak
