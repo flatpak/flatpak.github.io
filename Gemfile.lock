@@ -104,7 +104,7 @@ GEM
     net-sftp (3.0.0)
       net-ssh (>= 5.0.0, < 7.0.0)
     net-ssh (6.1.0)
-    nokogiri (1.14.3-x86_64-linux)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
@@ -165,4 +165,4 @@ DEPENDENCIES
   sass
 
 BUNDLED WITH
-   2.2.33
+   2.3.5

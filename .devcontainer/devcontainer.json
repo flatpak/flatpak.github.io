@@ -17,4 +17,8 @@
 	"postCreateCommand": "gem install bundler:2.3.5 && bundle install",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
+	"workspaceMount": "",
+	"runArgs": [
+		"--volume=${localWorkspaceFolder}:/workspaces/${localWorkspaceFolderBasename}:Z"
+	]
 }
