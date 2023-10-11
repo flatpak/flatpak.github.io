@@ -7,10 +7,11 @@
     %meta{content: "#{current_page.data.description}", name: "description"}/
     %meta{content: "bundle,application,runtime,flatpak,xdg-app", name: "keywords"}/
     %meta{content: "width=device-width,initial-scale=1", name: "viewport" }/
-    %link{rel:"icon", "type" => "image/png", href:"img/favicon.png"}/
+    %meta{content: "Flatpak", property: "og:site_name"}/
+    %meta{content: current_page.data.title, property: "og:title"}/
+    %meta{content: image_path('/img/favicon.svg'), property: "og:image"}/
+    %meta{content: "website", property: "og:type"}/
     %link{rel:"shortcut icon", "type" => "image/x-icon", href:"/favicon.ico"}/
-    %link{rel:"apple-touch-icon", "sizes" => "57x57", href:"img/favicon57.png"}/
-    %link{rel:"apple-touch-icon", "sizes" => "152x152", href:"img/favicon152.png"}/
     = stylesheet_link_tag :fonts
     = stylesheet_link_tag :site
     = stylesheet_link_tag :animate
