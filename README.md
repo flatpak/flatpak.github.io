@@ -17,7 +17,7 @@ Add the middleman binary location (probably ~/bin) to $PATH.
 
 To run a local web server to test the site:
 
-```sh
+```shell
 bundle exec middleman server
 ```
 
