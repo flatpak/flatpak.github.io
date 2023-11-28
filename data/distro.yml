@@ -338,7 +338,7 @@
         <h2>Install Flatpak</h2>
         <p>To install Flatpak, run the following in a terminal:</p>
         <pre><code>
-          <span class="unselectable">$</span> sudo eopkg install flatpak xdg-desktop-portal-gtk
+          <span class="unselectable">$</span> sudo eopkg install flatpak
         </code></pre>
       </li>
       <li>
@@ -351,7 +351,7 @@
       <li>
         <h2>Restart</h2>
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-        <p>Note: graphical installation of Flatpak apps may not be possible with Solus.</p>
+        <p>Note: graphical installation of Flatpak apps is not yet be possible with Solus, but will be available in the near future.</p>
       </li>
     </ol>
 
