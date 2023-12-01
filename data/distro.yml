@@ -251,7 +251,7 @@
         <p>To install Flatpak, enable the ~amd64 keyword for sys-apps/flatpak, acct-user/flatpak and acct-group/flatpak:</p>
         <terminal-command>
           echo -e 'sys-apps/flatpak ~amd64\nacct-user/flatpak ~amd64\nacct-group/flatpak ~amd64\ndev-util/ostree ~amd64' >> /etc/portage/package.accept_keywords/flatpak
-        </terminal-commande>
+        </terminal-command>
         <p>Then, install Flatpak:</p>
         <terminal-command>emerge sys-apps/flatpak</terminal-command>
       </li>
