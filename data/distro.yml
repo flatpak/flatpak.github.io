@@ -126,8 +126,10 @@
 - name: "Linux Mint"
   logo: "mint.svg"
   info: >
-    <h2>Flatpak support is built into Linux Mint 18.3 and newer—no setup required!</h2>
-    <p>If you are using an older version, <a href="https://blog.linuxmint.com/?p=3462">upgrade to Linux Mint 18.3</a>.</p>
+    <ol class="distrotut">
+      <h2>Flatpak support is built into Linux Mint 18.3 and newer—no setup required!</h2>
+      <p>If you are using an older version, <a href="https://blog.linuxmint.com/?p=3462">upgrade to Linux Mint 18.3</a>.</p>
+    </ol>
 
 - name: "openSUSE"
   logo: "opensuse.svg"
@@ -403,9 +405,9 @@
 - name: "Pop!_OS"
   logo: "pop-os.svg"
   info: >
-    <h2>Pop!_OS 20.04 has Flatpak installed and Flathub configured by default. The Pop!_Shop can be used to install flatpaks.</h2>
-    <p>For older versions of Pop!_OS, see the instructions below.</p>
     <ol class="distrotut">
+      <h2>Pop!_OS 20.04 has Flatpak installed and Flathub configured by default. The Pop!_Shop can be used to install flatpaks.</h2>
+      <p>For older versions of Pop!_OS, see the instructions below.</p>
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Pop!_OS 19.10 and earlier, simply run:</p>
