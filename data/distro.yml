@@ -549,11 +549,13 @@
       <li>
         <h2>Install Flatpak</h2>
         <p>To install Flatpak on Turkman Linux, run the following in a terminal:</p>
+        <p>Emerge way</p>
         <terminal-command>
-          <span class="unselectable">Emerge way</span>
           ymp install build-base --no-emerge
           ymp install flatpak
-          <span class="unselectable">No emerge way</span>
+        </terminal-command>
+        <p>No emerge way</p>
+        <terminal-command>
           ymp install flatpak --no-emerge
         </terminal-command>
       </li>
