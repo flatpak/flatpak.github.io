@@ -16,8 +16,9 @@
   color:    "#C5BFB5"
   "flatpakref": "https://dl.flathub.org/repo/appstream/com.slack.Slack.flatpakref"
   icons:
-    "64":   "https://lh3.googleusercontent.com/Dq-mZ5mmdE6aFPeD61DNlVTwYSI75UwHBYDq_BxBZOMSzCBnQ5OCC4-LjfP42tDlyw=w64"
-    
+    "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.slack.Slack.png"
+    "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/com.slack.Slack.png"
+
 - name:     "Inkscape"
   id:       "org.inkscape.Inkscape"
   ref:      "app/org.inkscape.Inkscape/x86_64/stable"
@@ -35,8 +36,9 @@
   color:    "#1DC558"
   "flatpakref": "https://dl.flathub.org/repo/appstream/com.spotify.Client.flatpakref"
   icons:
-    "64":   "https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w64"
-    
+    "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.spotify.Client.png"
+    "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/com.spotify.Client.png"
+
 - name:     "Steam"
   id:       "com.valvesoftware.Steam"
   ref:      "app/com.valvesoftware.Steam/x86_64/stable"
@@ -57,7 +59,7 @@
   icons:
     "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gimp.GIMP.png"
     "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.gimp.GIMP.png"
-    
+
 - name:     "Firefox"
   id:       "org.mozilla.firefox"
   ref:      "app/org.mozilla.firefox/x86_64/stable"
@@ -77,7 +79,7 @@
   icons:
     "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.kde.kdenlive.png"
     "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.kde.kdenlive.png"
-    
+
 - name:     "Skype"
   id:       "com.skype.Client"
   ref:      "app/com.skype.Client/x86_64/stable"
@@ -85,7 +87,8 @@
   color:    "#C5BFB5"
   "flatpakref": "https://dl.flathub.org/repo/appstream/com.skype.Client.flatpakref"
   icons:
-    "64":   "https://lh3.googleusercontent.com/QfAEt_ya6-n8w_TD9-PsghFC2DMSO7fLGNZB4cQ3RtbBbHFkXJE_gxOc3l32-j6LXg=w64"
+    "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.skype.Client.png"
+    "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/com.skype.Client.png"
 
 - name:     "Google Play Music"
   id:       "com.googleplaymusicdesktopplayer.GPMDP"
@@ -97,7 +100,7 @@
   icons:
     "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.googleplaymusicdesktopplayer.GPMDP.png"
     "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/com.googleplaymusicdesktopplayer.GPMDP.png"
-    
+
 - name:     "VLC"
   id:       "org.videolan.VLC"
   ref:      "app/org.videolan.VLC/x86_64/stable"
