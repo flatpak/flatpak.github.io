@@ -277,7 +277,7 @@
     <ol class="distrotut">
       <li>
         <h2>Install Flatpak</h2>
-        <p>To install Flatpak on Kubuntu 18.10 (Cosmic Cuttlefish), simply run:</p>
+        <p>To install Flatpak on Kubuntu 18.10 (Cosmic Cuttlefish) or later, simply run:</p>
         <terminal-command>sudo apt install flatpak</terminal-command>
         <p>With older Kubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <terminal-command>
