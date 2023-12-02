@@ -109,3 +109,13 @@
   icons:
     "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.blender.Blender.png"
     "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/org.blender.Blender.png"
+
+- name:     "Podman Desktop"
+  id:       "io.podman_desktop.PodmanDesktop"
+  ref:      "app/io.podman_desktop.PodmanDesktop/x86_64/stable"
+  summary:  "Manage Podman and other container engines from a single UI and tray"
+  color:    "#A337D4"
+  "flatpakref": "https://dl.flathub.org/repo/appstream/io.podman_desktop.PodmanDesktop.flatpakref"
+  icons:
+    "128":  "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.podman_desktop.PodmanDesktop.png"
+    "64":   "https://dl.flathub.org/repo/appstream/x86_64/icons/64x64/io.podman_desktop.PodmanDesktop.png"
