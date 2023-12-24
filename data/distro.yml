@@ -22,7 +22,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '
       <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -118,7 +118,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '
       <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -152,7 +152,7 @@
         <terminal-command>
           flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         </terminal-command>'
-    - name: 'Restart'
+    - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -169,7 +169,7 @@
         <terminal-command>
           flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         </terminal-command>'
-    - name: 'Restart'
+    - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -206,7 +206,7 @@
         <terminal-command>
           flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Gentoo.</p>'
@@ -240,7 +240,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>'
-    - name: 'Restart'
+    - name: Restart
       text: '
       <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -257,7 +257,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>'
-    - name: 'Restart'
+    - name: Restart
       text: '
       <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       <p>Note: graphical installation of Flatpak apps is not yet possible with Solus, but will be available in the near future.</p>'
@@ -281,7 +281,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '
       <p>To complete the setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>'
 
@@ -300,7 +300,7 @@
         <terminal-command>
           flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Mageia.</p>'
@@ -320,7 +320,7 @@
       <terminal-command>
         flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '<p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
             <p>Note: graphical installation of Flatpak apps may not be possible with Pop!_OS 19.10 and earlier.</p>'
 
@@ -349,7 +349,7 @@
           flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         </terminal-command>
         <p><b>Important note:</b> As of March 2021, Raspberry Pi computers still ship with the 32-bit version of Raspberry Pi OS. However Flathub started phasing out support for that architecture. If you consider Flathub as an important source of applications, it is recommended to use Raspberry Pi OS 64-bit as newer applications are more likely to be available for that platform.</p>"
-    - name: 'Restart'
+    - name: Restart
       text: '<p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       <p>Note: graphical installation of Flatpak apps may not be possible with Raspberry Pi OS.</p>'
 
@@ -560,7 +560,7 @@
   logo: "endeavouros.svg"
   logo_dark: "endeavouros-dark.svg"
   steps:
-    - name:  'Install Flatpak'
+    - name: Install Flatpak
       text: '
       <p>To install Flatpak on EndeavorOS, you must first make sure your installation is up to date, run the following in a terminal:</p>
       <terminal-command>
@@ -575,7 +575,7 @@
       <terminal-command>
         flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
       </terminal-command>"
-    - name: 'Restart'
+    - name: Restart
       text: '<p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       <p>Note: graphical installation of Flatpak apps may not be possible with EndeavourOS.</p>'
 
