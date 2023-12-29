@@ -12,7 +12,7 @@ class TerminalCommand extends HTMLElement {
   connectedCallback() {
     const commands = this.textContent
       .trim()
-      .split("\\n")
+      .split(/\n|\\n/)
       .map((command) => command.trim())
       .filter(Boolean);
 
