@@ -282,7 +282,7 @@ name: OpenMandriva Lx
     <p>"Flatpak comes with the pre-configured Flathub repository."</p>
   steps:
     - name: How to install Flatpak packages
-      text: "<p>Flatpak packages can be installed using the command line as well as graphical tools such as Discover for the Plasma release and GNOME Software for the GNOME release. Additionally, there are also tools available such as YumexNG (installable via <terminal-command> sudo dnf install yumex </terminal-command> ) and our custom FlatDrake ( <terminal-command> sudo dnf install flatdrake </terminal-command> ).</p>"
+      text: "<p>Flatpak packages can be installed using the command line as well as graphical tools such as Discover for the Plasma release and GNOME Software for the GNOME release. Additionally, there are also tools available such as YumexNG installable via <terminal-command> sudo dnf install yumex </terminal-command> and our custom FlatDrake <terminal-command> sudo dnf install flatdrake </terminal-command> .</p>"
 
 - name: "Pop!_OS"
   logo: "pop-os.svg"
