@@ -823,32 +823,3 @@
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
       </li>
     </ol>
-
-- name: "Crystal Linux"
-  logo: "crystallinux.svg"
-  info: >
-    <ol class="distrotut">
-      <h2>Flatpak is installed by default on Crystal Linux. However, if you didn't use jade_gui to install crystal or selected not to install it, you can set Flatpak up by using the following steps.<h3>
-      <li>
-        <h2>Install Flatpak</h2>
-        <p>To install Flatpak in Crystal Linux, you must first make sure your packages are up to date, run the following in a terminal:</p>
-        <pre><code>
-          <span class="unselectable">$</span> ame upg
-        </code></pre>
-        <p>Then install Flatpak:</p>
-          <pre><code>
-          <span class="unselectable">$</span> ame ins flatpak
-        </code></pre>
-      </li>
-      <li>
-        <h2>Add the Flathub repository</h2>
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <pre><code>
-          <span class="unselectable">$</span> flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-        </code></pre>
-      </li>
-      <li>
-        <h2>Restart</h2>
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install some apps</a>!</p>
-      </li>
-    </ol>
