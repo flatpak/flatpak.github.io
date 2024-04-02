@@ -944,3 +944,25 @@ ol.distrotut {
   font-variation-settings: 'wght' 600;
   font-size: 90%;
 }
+
+terminal-command {
+  @extend pre;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  code {
+    flex: 1;
+    padding: 1em;
+  }
+  button {
+    padding: 0.5em;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}

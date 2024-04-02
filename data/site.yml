@@ -1,5 +1,5 @@
 name: Flatpak
-domain: http://flatpak.org
+domain: https://flatpak.org
 punchline: The Future of Application Distribution
 
 ## If unspecified, timezone defaults to UTC

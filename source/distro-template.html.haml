@@ -7,12 +7,18 @@ description: #{locals[:name]} Quick Setup
   .container
     .row
       .col-lg-10.col-lg-offset-1
-        %h1.centered 
+        %h1.centered
           = locals[:name]
           Quick Setup
         %p.centered
           Follow these simple steps to start using Flatpak
-         
+
     .row.largegap
       .col-lg-12
-        = locals[:info]
+        %ol.distrotut
+          - if locals[:introduction]
+            = locals[:introduction]
+          - Array(locals[:steps]).each_with_index do |step, i|
+            %li
+              %h2= step[:name]
+              %p= step[:text]
