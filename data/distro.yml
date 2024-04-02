@@ -280,9 +280,6 @@ name: OpenMandriva Lx
   introduction:
     <h2>Flatpak support is built into OpenMandriva for all actively supported versions, starting from the stable/fixed release 'Rock 5.0,' through the development release 'Cooker,' and ending with the rolling release 'ROME'."</h2>
     <p>"Flatpak comes with the pre-configured Flathub repository."</p>
-  steps:
-    - name: How to install Flatpak packages
-      text: "<p>Flatpak packages can be installed using the command line as well as graphical tools such as Discover for the Plasma release and GNOME Software for the GNOME release. Additionally, there are also tools available such as YumexNG installable via <terminal-command> sudo dnf install yumex </terminal-command> and our custom FlatDrake <terminal-command> sudo dnf install flatdrake </terminal-command> .</p>"
 
 - name: "Pop!_OS"
   logo: "pop-os.svg"
