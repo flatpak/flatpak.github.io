@@ -546,8 +546,8 @@
 - name: Crystal Linux
   logo: "crystallinux.svg"
   introduction: >
-    <h2>Flatpak is installed by default on Crystal Linux.<h2>
-    <p>If you didn't use jade_gui to install crystal or selected not to install it, you can set Flatpak up by using the following steps.<p>
+    <h2>Flatpak is installed by default on Crystal Linux.</h2>
+    <p>If you didn't use jade_gui to install crystal or selected not to install it, you can set Flatpak up by using the following steps.</p>
   steps:
     - name: Install Flatpak
       text: "
