@@ -553,7 +553,7 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>To install Flatpak in Crystal Linux, you must first make sure your packages are up to date, run the following in a terminal:</p>
+        <p>To install Flatpak in Crystal Linux, you must first make sure your packages are up to date. Run the following in a terminal:</p>
         <terminal-command>ame upg</terminal-command>
         <p>Then install Flatpak:</p>
         <terminal-command>ame ins flatpak</terminal-command>"
