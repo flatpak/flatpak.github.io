@@ -7,9 +7,9 @@
         <terminal-command>sudo apt install flatpak</terminal-command>
         <p>With older Ubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <terminal-command>
-          sudo add-apt-repository ppa:flatpak/stable\n
-          sudo apt update\n
-          sudo apt install flatpak\n
+        sudo add-apt-repository ppa:flatpak/stable\n
+        sudo apt update\n
+        sudo apt install flatpak\n
         </terminal-command>"
     - name: Install the Software Flatpak plugin
       text: "
@@ -50,6 +50,30 @@
   introduction: >
     <h2>Flatpak support is built into Endless OS 3.0.0 and newer—no setup required!</h2>
     <p>If you are using an older version, <a href="https://community.endlessos.com/t/upgrade-from-endless-os-2-x-to-endless-os-3/967">upgrade to Endless OS 3</a>.</p>
+
+- name: ALT Linux
+  logo: "altlinux.svg"
+  logo_dark: "altlinux-dark.svg"
+  steps:
+    - name: Install Flatpak
+      text: "
+        <p>To install Flatpak on operating systems of the Alt family, simply run:</p>
+        <terminal-command>
+        su -\n
+        apt-get update\n
+        apt-get install flatpak\n
+        </terminal-command>"
+    - name: Add the Flathub repository
+      text: "
+        <p>Flathub is a great place to get Flatpak apps. To enable it on your Alt system, run:</p>
+        <terminal-command>
+        su -\n
+        apt-get update\n
+        apt-get install flatpak-repo-flathub\n
+        </terminal-command>"
+    - name: Restart
+      text: '
+        <p>Restart your device to complete the Flatpak installation. Now you can <a href="https://flathub.org/">install some apps</a>!</p>'
 
 - name: Chrome OS
   logo: "chrome-os.svg"
@@ -201,9 +225,9 @@
         <terminal-command>sudo apt install flatpak</terminal-command>
         <p>With older Kubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
         <terminal-command>
-          sudo add-apt-repository ppa:alexlarsson/flatpak\n
-          sudo apt update\n
-          sudo apt install flatpak\n
+        sudo add-apt-repository ppa:alexlarsson/flatpak\n
+        sudo apt update\n
+        sudo apt install flatpak\n
         </terminal-command>"
     - name: Install the Discover Flatpak backend
       text: "
@@ -381,8 +405,8 @@
         <p>To install Flatpak on Turkman Linux, run the following in a terminal:</p>
         <p>Emerge way</p>
         <terminal-command>
-          ymp install build-base --no-emerge\n
-          ymp install flatpak\n
+        ymp install build-base --no-emerge\n
+        ymp install flatpak\n
         </terminal-command>
         <p>No emerge way</p>
         <terminal-command>ymp install flatpak --no-emerge</terminal-command>'
@@ -390,9 +414,9 @@
       text: '
         <p>To enable services on Turkman Linux, run the following in a terminal:</p>
         <terminal-command>
-          rc-update add devfs\n
-          rc-update add fuse\n
-          rc-update add hostname\n
+        rc-update add devfs\n
+        rc-update add fuse\n
+        rc-update add hostname\n
         </terminal-command>'
     - name: Add the Flathub repository
       text: "
@@ -440,8 +464,8 @@
       text: '
         <p>To install light and dark themes, run:</p>
         <terminal-command>
-          flatpak install flathub org.gtk.Gtk3theme.deepin\n
-          flatpak install flathub org.gtk.Gtk3theme.deepin-dark\n
+        flatpak install flathub org.gtk.Gtk3theme.deepin\n
+        flatpak install flathub org.gtk.Gtk3theme.deepin-dark\n
         </terminal-command>'
     - name: Restart
       text: '
