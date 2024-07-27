@@ -59,17 +59,17 @@
       text: "
         <p>To install Flatpak on operating systems of the Alt family, simply run:</p>
         <terminal-command>
-         su -\n
-         apt-get update\n
-         apt-get install flatpak\n
+          su -\n
+          apt-get update\n
+          apt-get install flatpak\n
         </terminal-command>"
     - name: Add the Flathub repository
       text: "
         <p>Flathub is a great place to get Flatpak apps. To enable it on your Alt system, run:</p>
         <terminal-command>
-         su -\n
-         apt-get update\n
-         apt-get install flatpak-repo-flathub\n
+          su -\n
+          apt-get update\n
+          apt-get install flatpak-repo-flathub\n
         </terminal-command>"
     - name: Restart
       text: '
