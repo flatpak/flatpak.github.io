@@ -204,7 +204,7 @@
     - name: Install Flatpak
       text: "
         <p>To install Flatpak on Gentoo, simply run:</p>
-        <terminal-command>emerge --ask --verbose --sys-apps/flatpak</terminal-command>"
+        <terminal-command>emerge --ask --verbose sys-apps/flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: "
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
