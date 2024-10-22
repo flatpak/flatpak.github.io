@@ -34,6 +34,7 @@ jobs:
       with:
         file: Dockerfile
         push: ${{ github.event_name != 'pull_request' }}
+        platforms: linux/amd64,linux/arm64
         tags: |
           ghcr.io/flatpak/flatpak.github.io:${{ github.sha }}
           ghcr.io/flatpak/flatpak.github.io:latest
