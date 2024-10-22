@@ -11,6 +11,11 @@ description: Blog posts about Flatpak
 
   If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+  ## 2024
+
+  [**Cassidy James Blaede: 2 Billion Downloads & Other Milestones from 2024 So Far**](https://docs.flathub.org/blog/2-billion-downloads-2024/)
+  August 2024
+
   ## 2022
 
   [**Hubert Figuière: RTKit, portals, and Pipewire**](https://www.figuiere.net/hub/wlog/rtkit-portal-pipewire/)
