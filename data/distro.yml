@@ -3,9 +3,9 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or later, simply run:</p>
+        <p>To install Flatpak on <strong>Ubuntu 18.10 (Cosmic Cuttlefish) or later</strong>, open the Terminal app and run:</p>
         <terminal-command>sudo apt install flatpak</terminal-command>
-        <p>With older Ubuntu versions, the official Flatpak PPA is the recommended way to install Flatpak. To install it, run the following in a terminal:</p>
+        <p>For older versions <strong>up to Ubuntu 18.04 LTS (Bionic Beaver)</strong>, the official Flatpak PPA is required to install Flatpak and keep it up to date. To add the PPA and install Flatpak, open the Terminal app and run:</p>
         <terminal-command>
           sudo add-apt-repository ppa:flatpak/stable\n
           sudo apt update\n
