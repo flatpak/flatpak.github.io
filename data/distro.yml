@@ -11,11 +11,11 @@
           sudo apt update\n
           sudo apt install flatpak\n
         </terminal-command>"
-    - name: Install the Software Flatpak plugin
-      text: "
-        <p>The Flatpak plugin for the Software app makes it possible to install apps without needing the command line. To install, run:</p>
+    - name: Install GNOME Software Flatpak plugin
+      text: '
+        <p>The GNOME Software plugin makes it possible to install apps without needing the command line. To install, run:</p>
         <terminal-command>sudo apt install gnome-software-plugin-flatpak</terminal-command>
-        <p>Note: the Software app is distributed as a Snap since Ubuntu 20.04 and does not support graphical installation of Flatpak apps. Installing the Flatpak plugin will also install a deb version of Software and result in two Software apps being installed at the same time.</p>"
+        <p><strong>Note:</strong> Ubuntu distributes GNOME Software as a Snap in versions 20.04 to 23.04, and replaced it with App Center in 23.10 and newer—neither of which support installing Flatpak apps. Installing the Flatpak plugin will also install a deb version of GNOME Software, resulting in two "Software" apps being installed at the same time on Ubuntu 20.04 to 23.04, and a single new \"Software\" app on Ubuntu 23.10 and newer.</p>'
     - name: Add the Flathub repository
       text: "
         <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
