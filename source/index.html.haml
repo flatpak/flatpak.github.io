@@ -7,14 +7,14 @@ description: The days of chasing multiple Linux distributions are over. Standalo
   .container
     .row.largegap
       .col-lg-10.col-lg-offset-1
-        %h1.section-heading 
+        %h1.section-heading
           The future of apps on Linux
 
 %section#appsplash.bg-secondary
   .container
     .row
       .col-sm-6.col-sm-offset-1
-        %h3 
+        %h3
           Start using Flatpak and install from a growing collection of apps
         .appgrid
           - 0.upto(6) do |i|
@@ -24,11 +24,11 @@ description: The days of chasing multiple Linux distributions are over. Standalo
               .icon{:style => "background-image: url(#{data.apps[i].icons['64']})"}
       .col-sm-4.col-sm-offset-1.centered
         %a#quicksetupbtn.btn-default.btn.btn-xl.page-scroll{:href => "/setup"} Get set up
-        
+
         %p.small.mediumgap
           Already set up? Head over to
           = link_to "Flathub", "https://flathub.org"
-          to install some apps.
+          to install apps.
 
 
 
@@ -59,8 +59,8 @@ description: The days of chasing multiple Linux distributions are over. Standalo
     .row
       .col-sm-5.col-sm-offset-1
         %h4 Easy build tools
-        %p 
-          Flatpak’s build tools are simple and easy to use, and come with a 
+        %p
+          Flatpak’s build tools are simple and easy to use, and come with a
           =link_to 'full set of documentation.', 'https://docs.flatpak.org/'
       .col-sm-5
         %h4 Future-proof builds
@@ -68,7 +68,7 @@ description: The days of chasing multiple Linux distributions are over. Standalo
     .row
       .col-sm-5.col-sm-offset-1
         %h4 Distribution made easy
-        %p 
+        %p
           Make your app available to a rapidly growing audience of Flatpak users, with
           =link_to 'Flathub.', 'https://flathub.org/'
       .col-sm-5
@@ -83,12 +83,12 @@ description: The days of chasing multiple Linux distributions are over. Standalo
   .container
     .row.largegap
       .col-sm-5.col-sm-offset-1
-        %h3 
+        %h3
           Flatpak can be used with a total of
           = data.distro.count
           distros
         %p
-          See the 
+          See the
           = link_to "complete list.", "/setup"
       .col-sm-6
         .distrogrid
@@ -106,14 +106,14 @@ description: The days of chasing multiple Linux distributions are over. Standalo
           %p
             Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS's stability and flexibility.
           .author
-            %em Simon McVittie 
+            %em Simon McVittie
             .title Senior Software Engineer, Collabora
       .col-sm-5
         %blockquote
           %p
             At Endless, we’re proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps.
           .author
-            %em Jonathan Blandford 
+            %em Jonathan Blandford
             .title VP of Software Engineering, Endless
     .row
       .col-sm-5.col-sm-offset-1
