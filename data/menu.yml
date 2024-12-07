@@ -7,9 +7,6 @@
 - title: Developer guide &#8599;
   link: "https://docs.flatpak.org/"
   onlyfooter: true
-- title: Donate &#8599;
-  link: "https://opencollective.com/flatpak"
-  onlyfooter: true
 - title: FAQ
   link: "/faq.html"
   onlyfooter: true
