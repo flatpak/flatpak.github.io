@@ -85,7 +85,7 @@ description: FAQ about the Flatpak project.
 
   Yes!
 
-  Version 3.22.4 and newer of [GNOME Builder](https://wiki.gnome.org/Apps/Builder) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected Flatpak runtime and any external dependencies. Support for running your application inside Flatpak is also supported. By developing your application within the exact same environment as your users you can squash those “Works for me” bugs before they reach your users!
+  Version 3.22.4 and newer of [Builder](https://apps.gnome.org/Builder/) includes support for `flatpak-builder` manifests. This ensures your project is built using your selected Flatpak runtime and any external dependencies. Support for running your application inside Flatpak is also supported. By developing your application within the exact same environment as your users you can squash those “Works for me” bugs before they reach your users!
 
   ### Can I host my Flatpak app on GitHub?
 
