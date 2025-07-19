@@ -171,16 +171,10 @@
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
 
-- name: CentOS
-  logo: "cent-os.svg"
+- name: CentOS Stream
+  logo: "centos.svg"
   introduction: >
-    <p>Flatpak is installed by default on CentOS 7 and newer, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
-    <p>Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
-
-- name: EuroLinux
-  logo: "eurolinux.svg"
-  introduction: >
-    <p>Flatpak is installed by default on EuroLinux 8 and newer, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
+    <p>Flatpak is installed by default on CentOS Stream 8 and newer, when using GNOME. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
     <p>Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
 
 - name: AlmaLinux
@@ -314,13 +308,6 @@
         '<p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Raspberry Pi OS.</p>'
 
-- name: Clear Linux
-  logo: "clearlinux.svg"
-  introduction: >
-    <p>Flatpak is installed and Flathub repository is pre-configured by default on Clear Linux when installing the desktop bundle.</p>
-    <terminal-command>sudo swupd bundle-add desktop</terminal-command>
-    <p>Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
-
 - name: Void Linux
   logo: "void.svg"
   logo_dark: "void-dark.svg"
@@ -391,22 +378,6 @@
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
         <p>Note: graphical installation of Flatpak apps may not be possible with Turkman Linux.</p>'
-
-- name: Ataraxia Linux
-  logo: "ataraxia.svg"
-  logo_dark: "ataraxia-dark.svg"
-  steps:
-    - name: Install Flatpak
-      text: "
-        <p>To install Flatpak on Ataraxia Linux, run the following in a terminal:</p>
-        <terminal-command>sudo neko em flatpak</terminal-command>"
-    - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <terminal-command>flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
-    - name: Restart
-      text: '
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
 
 - name: Zorin OS
   logo: "zorin-os.svg"
