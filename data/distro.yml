@@ -349,36 +349,6 @@
     <p>Flatpak is installed by default on PureOS. To get started, all you need to do is enable Flathub, which is the best way to get Flatpak apps. Just download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a>.</p>
     <p>Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
 
-- name: Turkman Linux
-  logo: "turkman.svg"
-  steps:
-    - name: Install Flatpak
-      text: '
-        <p>To install Flatpak on Turkman Linux, run the following in a terminal:</p>
-        <p>Emerge way</p>
-        <terminal-command>
-          ymp install build-base --no-emerge\n
-          ymp install flatpak\n
-        </terminal-command>
-        <p>No emerge way</p>
-        <terminal-command>ymp install flatpak --no-emerge</terminal-command>'
-    - name: Enable services
-      text: '
-        <p>To enable services on Turkman Linux, run the following in a terminal:</p>
-        <terminal-command>
-          rc-update add devfs\n
-          rc-update add fuse\n
-          rc-update add hostname\n
-        </terminal-command>'
-    - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <terminal-command>flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
-    - name: Restart
-      text: '
-        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
-        <p>Note: graphical installation of Flatpak apps may not be possible with Turkman Linux.</p>'
-
 - name: Zorin OS
   logo: "zorin-os.svg"
   introduction: >
