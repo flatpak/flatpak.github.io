@@ -140,7 +140,7 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>A flatpak package is available in Debian 10 (Buster) and newer. To install it, run the following as root:</p>
+        <p>A Flatpak package is available in Debian 10 (Buster) and newer. To install it, run the following as root:</p>
         <terminal-command>sudo apt install flatpak</terminal-command>"
     - name: Install the Software Flatpak plugin
       text: "
@@ -258,7 +258,7 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>A flatpak package is available for Mageia 6 and newer. To install with DNF, run the following as root:</p>
+        <p>A Flatpak package is available for Mageia 6 and newer. To install with DNF, run the following as root:</p>
         <terminal-command>dnf install flatpak</terminal-command>
         <p>Or, to install with <code>urpmi</code>, run:</p>
         <terminal-command>urpmi flatpak</terminal-command>"
@@ -296,7 +296,7 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>A flatpak package is available in Raspberry Pi OS (previously called Raspbian) Stretch and newer. To install it, run the following as root:</p>
+        <p>A Flatpak package is available in Raspberry Pi OS (previously called Raspbian) Stretch and newer. To install it, run the following as root:</p>
         <terminal-command>sudo apt install flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: "
@@ -353,7 +353,7 @@
   logo: "zorin-os.svg"
   introduction: >
     <h2>Flatpak support is built into Zorin OS</h2>
-    <p>You can use the Software Store app to download flatpak apps.</p>
+    <p>You can use the Software Store app to download Flatpak apps.</p>
 
 - name: Deepin
   logo: "deepin.svg"
@@ -382,7 +382,7 @@
   steps:
     - name: Install Flatpak
       text: '
-        <p>A flatpak package is available in Pardus 2019 and newer. To install it, run the following as root:</p>
+        <p>A Flatpak package is available in Pardus 2019 and newer. To install it, run the following as root:</p>
         <terminal-command>sudo apt install flatpak</terminal-command>'
     - name: Install the Software Flatpak plugin
       text: "
@@ -414,7 +414,7 @@
   steps:
     - name: Install Flatpak
       text: "
-        <p>A flatpak package is available in Pisi 2.1 and newer. To install it, run the following as root:</p>
+        <p>A Flatpak package is available in Pisi 2.1 and newer. To install it, run the following as root:</p>
         <terminal-command>sudo pisi it flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: "
