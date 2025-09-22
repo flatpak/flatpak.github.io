@@ -1,6 +1,9 @@
 - name: Ubuntu
   logo: "ubuntu.svg"
   steps:
+    - name: Prerequisites
+      text: "
+        <p>You might need to enable the 'universe' repository, if you haven't done so already: <terminal-command>sudo add-apt-repository universe</terminal-command></p>"
     - name: Install Flatpak
       text: "
         <p>To install Flatpak on <strong>Ubuntu 18.10 (Cosmic Cuttlefish) or later</strong>, open the Terminal app and run:</p>
