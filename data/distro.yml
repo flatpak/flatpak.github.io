@@ -500,3 +500,35 @@
     <h2>Flatpak is installed by default on Salix since version 15.0—no setup required!</h2>
     <p>Flatpak comes preconfigured with the Flathub repository and desktop integration tools are included to allow 1-click install from Flathub.</p>
     <p>All you have to do is <a href="https://flathub.org/">install apps</a>!</p>
+
+- name: Slackware
+  logo: "slackware.svg"
+  steps:
+    - name: Install Flatpak
+      text: "
+        <p>A Flatpak package is available on SlackBuilds. To install it (assuming you use Sbopkg/sqg), first create the queuefile and run the following as root:</p>
+        <terminal-command>sqg -p flatpak</terminal-command>
+        <p>Then compile it. Load the queuefile, press 'Q', and wait:</p>
+        <terminal-command>sbopkg -i flatpak</terminal-command>"
+
+    - name: Enable audio support (optional)
+      text: "
+        <p>If you use Steam, Skype, or other applications that require audio, add:</p>
+        <terminal-command>
+cat <<EOF > ~/.xsession
+start-pulseaudio-x11
+pax11publish -i
+EOF
+        </terminal-command>"
+
+    - name: Add the Flathub repository
+      text: "
+        <p>Flathub is the main source for Flatpak apps. To enable it, download and install the 
+        <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> 
+        or run the following command:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+
+    - name: Restart
+      text: "
+        <p>To complete the setup, restart your system. After that, you can start installing apps from 
+        <a href="https://flathub.org/">Flathub</a>.</p>"
