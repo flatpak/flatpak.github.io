@@ -523,7 +523,7 @@ EOF
 
     - name: Add the Flathub repository
       text: "
-        <p>Flathub is the main source for Flatpak apps. To enable it, download and install the 
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the 
         <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> 
         or run the following command:</p>
         <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
