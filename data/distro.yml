@@ -530,5 +530,4 @@ EOF
 
     - name: Restart
       text: "
-        <p>To complete the setup, restart your system. After that, you can start installing apps from 
-        <a href="https://flathub.org/">Flathub</a>.</p>"
+        <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
