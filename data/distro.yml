@@ -511,16 +511,6 @@
         <p>Then compile it. Load the queuefile, press 'Q', and wait:</p>
         <terminal-command>sbopkg -i flatpak</terminal-command>"
 
-    - name: Enable audio support (optional)
-      text: "
-        <p>If you use Steam, Skype, or other applications that require audio, add:</p>
-        <terminal-command>
-cat <<EOF > ~/.xsession
-start-pulseaudio-x11
-pax11publish -i
-EOF
-        </terminal-command>"
-
     - name: Add the Flathub repository
       text: "
         <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the 
