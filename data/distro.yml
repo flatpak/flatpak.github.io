@@ -11,9 +11,9 @@
         <terminal-command>sudo apt install gnome-software-plugin-flatpak</terminal-command>
         <p><strong>Note:</strong> Ubuntu distributes GNOME Software as a Snap in versions 20.04 to 23.04, and replaced it with App Center in 23.10 and newer—neither of which support installing Flatpak apps. Installing the Flatpak plugin will also install a deb version of GNOME Software, resulting in two "Software" apps being installed at the same time on Ubuntu 20.04 to 23.04, and a single new "Software" app on Ubuntu 23.10 and newer.</p>'
     - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+      text: '
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
@@ -117,9 +117,9 @@
         <p>Alternatively, install Flatpak from the command line using Zypper:</p>
         <terminal-command>sudo zypper install flatpak</terminal-command>'
     - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+      text: '
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
@@ -150,7 +150,7 @@
         <terminal-command>sudo apt install plasma-discover-backend-flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: '
-        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run the following in a terminal:</p>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
         <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
@@ -165,7 +165,7 @@
         <terminal-command>sudo dnf install flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: '
-        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run the following in a terminal:</p>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
         <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
@@ -225,7 +225,7 @@
         <terminal-command>sudo eopkg install flatpak</terminal-command>"
     - name: Add the Flathub repository
       text: '
-        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run the following in a terminal:</p>
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
         <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
@@ -246,9 +246,9 @@
         <p>For KDE Discover run:</p>
         <terminal-command>doas apk add discover-backend-flatpak</terminal-command>"
     - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class='btn btn-default' href='https://dl.flathub.org/repo/flathub.flatpakrepo'>Flathub repository file</a> or run the following in a terminal:</p>
-        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+      text: '
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
         <p>To complete the setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
@@ -263,9 +263,9 @@
         <p>Or, to install with <code>urpmi</code>, run:</p>
         <terminal-command>urpmi flatpak</terminal-command>"
     - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class='btn btn-default' href='https://dl.flathub.org/repo/flathub.flatpakrepo'>Flathub repository file</a> or run the following in a terminal:</p>
-        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+      text: '
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>
@@ -389,9 +389,9 @@
         <p>If you are running GNOME, it is also a good idea to install the Flatpak plugin for GNOME Software. To do this, run:</p>
         <terminal-command>sudo apt install gnome-software-plugin-flatpak</terminal-command>"
     - name: Add the Flathub repository
-      text: "
-        <p>Flathub is the best place to get Flatpak apps. To enable it, run:</p>
-        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>"
+      text: '
+        <p>Flathub is the best place to get Flatpak apps. To enable it, download and install the <a class="btn btn-default" href="https://dl.flathub.org/repo/flathub.flatpakrepo">Flathub repository file</a> or run:</p>
+        <terminal-command>flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo</terminal-command>'
     - name: Restart
       text: '
         <p>To complete setup, restart your system. Now all you have to do is <a href="https://flathub.org/">install apps</a>!</p>'
