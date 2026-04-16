@@ -58,7 +58,7 @@
         </terminal-command>"
     - name: Add the Flathub repository
       text: "
-        <p>Flathub is a great place to get Flatpak apps. To enable it on your Alt system, run:</p>
+        <p>Flathub is the best place to get Flatpak apps. To enable it on your Alt system, run:</p>
         <terminal-command>
           su -\n
           apt-get update\n
