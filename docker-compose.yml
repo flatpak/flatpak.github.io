@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  rugby:
+    network_mode: "host"
+    container_name: rugby
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 3.0.4
