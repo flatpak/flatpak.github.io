@@ -525,8 +525,7 @@
   steps:
     - name: Install Flatpak
       text: '
-        <p>Flatpak is integrated natively into the desktop target profiles of T2 SDE Linux 26.5 (Mutos edition) and newer. 
-        For older versions, build and install Flatpak along with all its required dependencies by running the top-level build script inside the source tree:</p> 
+        <p>Build and install Flatpak along with all its required dependencies by running the top-level build script inside the source tree:</p> 
         <terminal-command>t2 install flatpak</terminal-command> 
         <p>If you lack a global symlink for the tool in your <code>$PATH</code> environment variable, use the local prefix instead:</p> 
         <terminal-command>./t2 install flatpak</terminal-command>'
