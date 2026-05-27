@@ -304,10 +304,15 @@ code {
   display: inline-block;
   font-size: 100%;
   white-space: nowrap;
-  padding: 0.6rem 1.5rem;
+  padding: 0.4rem 1rem;
+
+  &.btn-default {
+    font-size: 85%;
+    padding: 0.3rem 0.8rem;
+  }
   margin: .3rem;
   max-width: 20rem;
-  vertical-align: middle;
+  vertical-align: baseline;
   text-align: center;
   text-decoration: none;
   border-radius: var(--btnround);
