@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found{% endblock %}
+{% block description %}404 Page not Found{% endblock %}
+
+{% block hero_class %} compact{% endblock %}
+
+{% block hero %}
+  <div>
+    <h1>Page not found</h1>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="min-height: 40vh;">
+  <div class="full centered">
+    <img src="{{ get_url(path='img/404.svg') }}" alt="404" style="max-width: 300px; margin: 2rem auto;">
+    <p>Sorry, that page can't be found.</p>
+    <p><a class="btn suggested" href="{{ get_url(path='/') }}">Go to homepage</a></p>
+  </div>
+</div>
+{% endblock %}

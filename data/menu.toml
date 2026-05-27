@@ -1,0 +1,32 @@
+[[items]]
+title = "Get Setup"
+url = "setup"
+topnav = true
+
+[[items]]
+title = "Browse Apps ↗"
+url = "https://flathub.org/"
+external = true
+
+[[items]]
+title = "Developer Guide ↗"
+url = "https://docs.flatpak.org/"
+external = true
+
+[[items]]
+title = "FAQ"
+url = "faq"
+
+[[items]]
+title = "Presentations & Articles"
+url = "presentations"
+
+[[items]]
+title = "About"
+url = "about"
+topnav = true
+
+[[items]]
+title = "Press"
+url = "press"
+topnav = true

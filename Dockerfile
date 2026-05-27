@@ -1,11 +1,9 @@
-ARG RUBY_VERSION
-FROM docker.io/library/ruby:$RUBY_VERSION AS build
+FROM ghcr.io/getzola/zola:v0.19.2 AS build
 
 WORKDIR /builddir
 COPY . .
-RUN bundle install --deployment
-RUN bundle exec middleman build
+RUN ["zola", "build"]
 
 FROM docker.io/nginxinc/nginx-unprivileged:stable
-COPY --from=build /builddir/build /srv/http/
+COPY --from=build /builddir/public /srv/http/
 ADD nginx.conf /etc/nginx/conf.d/default.conf

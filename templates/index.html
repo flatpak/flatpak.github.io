@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}The future of apps on Linux{% endblock %}
+{% block description %}The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!{% endblock %}
+
+{% block hero %}
+  <div class="punchline">
+    <h1 id="subtitle">The future of apps on Linux</h1>
+  </div>
+{% endblock %}
+
+{% block content %}
+{# ---- App showcase ---- #}
+<div class="container">
+  <div class="left-img"><img alt="Popular apps available as Flatpaks" src="{{ get_url(path='img/apps-illustration.svg') }}"></div>
+  <div class="right-text">
+    <h2>Start using Flatpak</h2>
+    <p>Install from a growing collection of apps on <a href="https://flathub.org/">Flathub</a>.</p>
+    <p>
+      <a class="btn suggested" href="{{ get_url(path='setup') }}">Get set up</a>
+    </p>
+  </div>
+</div>
+
+{# ---- Developer benefits ---- #}
+<div class="container">
+  <h2 class="full">A new world for application developers</h2>
+  <p class="full caption">Flatpak changes app distribution for the better.</p>
+  <div class="full">
+    <div class="features" style="max-width: var(--pagewidth); margin: 2rem auto; text-align: left;">
+      <div>
+        <h4>Build for every distro</h4>
+        <p>Create one app and distribute it to the entire Linux desktop market.</p>
+      </div>
+      <div>
+        <h4>Stable platforms</h4>
+        <p>Runtimes provide platforms of common libraries that you can depend on.</p>
+      </div>
+      <div>
+        <h4>Consistent environments</h4>
+        <p>Develop and test your application in an environment that's identical to the one users have.</p>
+      </div>
+      <div>
+        <h4>Full control over dependencies</h4>
+        <p>Flatpak makes it easy to bundle your own libraries as part of your app.</p>
+      </div>
+      <div>
+        <h4>Easy build tools</h4>
+        <p>Flatpak's build tools are simple and easy to use, and come with a <a href="https://docs.flatpak.org/">full set of documentation.</a></p>
+      </div>
+      <div>
+        <h4>Future-proof builds</h4>
+        <p>Flatpak apps continue to be compatible with new versions of Linux distributions.</p>
+      </div>
+      <div>
+        <h4>Distribution made easy</h4>
+        <p>Make your app available to a rapidly growing audience of Flatpak users, with <a href="https://flathub.org/">Flathub.</a></p>
+      </div>
+      <div>
+        <h4>An independent project</h4>
+        <p>Flatpak is developed by an independent community, with no lock-in to a single vendor.</p>
+      </div>
+    </div>
+    <p>
+      <a class="btn" href="https://docs.flatpak.org/en/latest/getting-started.html">5 minute tutorial</a>
+      <a class="btn suggested" href="https://docs.flatpak.org/en/latest/">Developer guide</a>
+    </p>
+  </div>
+</div>
+
+{# ---- Distro showcase ---- #}
+{% set setup = get_section(path="setup/_index.md") %}
+<div class="colored-row">
+  <h2>Works with 38 distributions</h2>
+  <p>See the <a href="{{ get_url(path='setup') }}">complete list.</a></p>
+  <div style="max-width: var(--pagewidth); margin: 2rem auto; padding: 0 1rem;">
+    <div class="distrogrid">
+      {% for page in setup.pages | slice(end=5) %}
+        {% if page.extra.logo is defined %}
+        <a href="{{ page.permalink }}">
+          <img src="{{ get_url(path='img/distro/' ~ page.extra.logo) }}" alt="{{ page.title }}" title="{{ page.title }}" loading="lazy">
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{# ---- Testimonials ---- #}
+<div class="container">
+  <h2 class="full centered">What people are saying about Flatpak</h2>
+  <div class="full">
+    <div class="testimonials" style="max-width: var(--pagewidth); margin: 2rem auto; text-align: left;">
+      <blockquote>
+        <p>Bringing Flatpak technology into Debian enables us to run applications in a predictable environment with their most suitable library stack, without compromising the base OS's stability and flexibility.</p>
+        <div class="author">
+          <em>Simon McVittie</em>
+          <span class="title">Senior Software Engineer, Collabora</span>
+        </div>
+      </blockquote>
+      <blockquote>
+        <p>At Endless, we're proud to be a part of this movement and have fully embraced Flatpak by readily converting all of our applications for our upcoming release and continuing to build new Flatpak apps.</p>
+        <div class="author">
+          <em>Jonathan Blandford</em>
+          <span class="title">VP of Software Engineering, Endless</span>
+        </div>
+      </blockquote>
+      <blockquote>
+        <p>The Fedora Workstation team are very excited about Flatpak and the prospects it brings for making the Linux desktop easier to develop for. We plan to continue supporting this effort going forward.</p>
+        <div class="author">
+          <em>Christian F.K. Schaller</em>
+          <span class="title">Senior Manager, Red Hat</span>
+        </div>
+      </blockquote>
+      <blockquote>
+        <p>Flatpak will enable us (as a Linux ISV) to distribute a better LibreOffice, with up-to-date dependencies and a platform that can run on many systems. I'm excited to see that happen.</p>
+        <div class="author">
+          <em>Michael Meeks</em>
+          <span class="title">Director, The Document Foundation</span>
+        </div>
+      </blockquote>
+    </div>
+  </div>
+</div>
+{% endblock %}

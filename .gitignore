@@ -6,3 +6,4 @@
 .jekyll-cache
 .gem
 _site
+/public
