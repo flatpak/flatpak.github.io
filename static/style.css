@@ -490,6 +490,7 @@ p > .btn { margin: .5rem .5rem 0 0; }
 #logo {
   line-height: 1;
   margin: 0;
+  padding: 0;
 
   & svg {
     height: 1.4rem;
@@ -503,7 +504,8 @@ p > .btn { margin: .5rem .5rem 0 0; }
     color: inherit;
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.75rem;
+    min-height: 40px;
     margin-left: -0.75rem;
     border-radius: var(--btnround);
     transition: background-color 200ms ease-out;
@@ -526,7 +528,7 @@ section.header ul.nav {
 
 section.header li {
   list-style: none;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 ul.nav a {
