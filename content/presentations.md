@@ -26,6 +26,9 @@ Linux App Summit, Tirana, Albania, April 2025
 [**Shipping Flatpak applications with an image based system**](https://cfp.all-systems-go.io/all-systems-go-2025/talk/98W9EX/)
 All Systems Go!, October 2025
 
+[**Joe Brockmeier: The future of Flatpak**](https://lwn.net/Articles/1020571/)
+LWN.net, May 2025
+
 ## 2023
 
 [**Richard Brown: What could go wrong? I was wrong about Flatpak, AppImage, and Snap**](https://www.youtube.com/watch?v=4WuYGcs0t6I)
