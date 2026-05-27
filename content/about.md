@@ -135,4 +135,16 @@ Issues with this website can be reported through its [GitHub project](https://gi
 
   <div class="date">October 2023</div>
   <div>Discord adopts Flatpak to publish on Linux</div>
+
+  <div class="date">January 2024</div>
+  <div>Flathub surpasses one million active users</div>
+
+  <div class="date">July 2024</div>
+  <div>Flathub reaches 2 billion total downloads</div>
+
+  <div class="date">January 2025</div>
+  <div>Flatpak 1.16.0 released, the first stable release in over two years, packed with new features and improvements</div>
+
+  <div class="date">December 2025</div>
+  <div>Flathub closes the year with 438 million downloads, 21.6% year-over-year growth, and over 3,200 apps available</div>
 </div>
