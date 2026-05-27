@@ -5,6 +5,7 @@
 
 {% block hero %}
   <div class="punchline">
+    <img class="hero-illustration" alt="Flatpak hero illustration" src="{{ get_url(path='img/hero-illustration.svg') }}">
     <h1 id="subtitle">The future of apps on Linux</h1>
   </div>
 {% endblock %}
@@ -71,18 +72,16 @@
 {# ---- Distro showcase ---- #}
 {% set setup = get_section(path="setup/_index.md") %}
 <div class="colored-row">
-  <h2>Works with 38 distributions</h2>
+  <h2>Works with {{ setup.pages | length }} distributions</h2>
   <p>See the <a href="{{ get_url(path='setup') }}">complete list.</a></p>
-  <div style="max-width: var(--pagewidth); margin: 2rem auto; padding: 0 1rem;">
-    <div class="distrogrid">
-      {% for page in setup.pages | slice(end=5) %}
-        {% if page.extra.logo is defined %}
-        <a href="{{ page.permalink }}">
-          <img src="{{ get_url(path='img/distro/' ~ page.extra.logo) }}" alt="{{ page.title }}" title="{{ page.title }}" loading="lazy">
-        </a>
-        {% endif %}
-      {% endfor %}
-    </div>
+  <div class="distro-showcase">
+    {% set featured = ["ubuntu", "fedora", "red-hat-enterprise-linux", "debian", "linux-mint", "opensuse"] %}
+    {% for slug in featured %}
+      {% set page = get_page(path="setup/" ~ slug ~ ".md") %}
+      <a href="{{ page.permalink }}">
+        <img src="{{ get_url(path='img/distro/' ~ page.extra.logo) }}" alt="{{ page.title }}" title="{{ page.title }}" loading="lazy">
+      </a>
+    {% endfor %}
   </div>
 </div>
 
