@@ -1,0 +1,59 @@
+[[apps]]
+name = "Telegram"
+id = "org.telegram.desktop"
+icon = "img/apps/org.telegram.desktop.png"
+
+[[apps]]
+name = "Slack"
+id = "com.slack.Slack"
+icon = "img/apps/com.slack.Slack.png"
+
+[[apps]]
+name = "Inkscape"
+id = "org.inkscape.Inkscape"
+icon = "img/apps/org.inkscape.Inkscape.png"
+
+[[apps]]
+name = "Spotify"
+id = "com.spotify.Client"
+icon = "img/apps/com.spotify.Client.png"
+
+[[apps]]
+name = "Steam"
+id = "com.valvesoftware.Steam"
+icon = "img/apps/com.valvesoftware.Steam.png"
+
+[[apps]]
+name = "GIMP"
+id = "org.gimp.GIMP"
+icon = "img/apps/org.gimp.GIMP.png"
+
+[[apps]]
+name = "Firefox"
+id = "org.mozilla.firefox"
+icon = "img/apps/org.mozilla.firefox.png"
+
+[[apps]]
+name = "Kdenlive"
+id = "org.kde.kdenlive"
+icon = "img/apps/org.kde.kdenlive.png"
+
+[[apps]]
+name = "Skype"
+id = "com.skype.Client"
+icon = "img/apps/com.skype.Client.png"
+
+[[apps]]
+name = "VLC"
+id = "org.videolan.VLC"
+icon = "img/apps/org.videolan.VLC.png"
+
+[[apps]]
+name = "Blender"
+id = "org.blender.Blender"
+icon = "img/apps/org.blender.Blender.png"
+
+[[apps]]
+name = "Podman Desktop"
+id = "io.podman_desktop.PodmanDesktop"
+icon = "img/apps/io.podman_desktop.PodmanDesktop.png"

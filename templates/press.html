@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block hero_class %} compact{% endblock %}
+
+{% block hero %}
+  <div>
+    <h1>Press Information</h1>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="page-content">
+  <p>We are very happy to answer questions from journalists and tech writers. Interview opportunities can also be arranged.</p>
+
+  <h2>Press Releases</h2>
+  <ul class="press-list">
+    {% set press = get_section(path="press/_index.md") %}
+    {% for post in press.pages | reverse %}
+    <li>
+      <span class="press-date">{{ post.date | date(format="%d %B %Y") }}</span><br>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Graphics and Logo</h2>
+  <p>The Flatpak logo is licensed Creative Commons Attribution 3.0 and can be <a href="{{ get_url(path='img/flatpak-logos.zip') }}">downloaded here</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Press queries, including requests for comments and interviews can be directed to <a href="mailto:press@flatpak.org">press@flatpak.org</a>.</p>
+</div>
+{% endblock %}

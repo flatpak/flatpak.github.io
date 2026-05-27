@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ page.title | default(value=config.title) }}{% endblock %} — {{ config.title }}</title>
+  <meta name="description" content="{% block description %}{{ page.description | default(value=config.description) }}{% endblock %}">
+  <meta name="keywords" content="{{ config.extra.keywords | join(sep=', ') }}">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ config.title }}">
+  <meta property="og:title" content="{% block og_title %}{{ page.title | default(value=config.title) }}{% endblock %}">
+  <meta property="og:description" content="{{ page.description | default(value=config.description) }}">
+  <meta property="og:image" content="{{ get_url(path='img/favicon.svg') }}">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default(value=config.title) }}">
+  <meta name="twitter:description" content="{{ page.description | default(value=config.description) }}">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path='favicon.ico') }}">
+  <link rel="icon" type="image/svg+xml" href="{{ get_url(path='img/favicon.svg') }}">
+  <link rel="apple-touch-icon" href="{{ get_url(path='img/apple-touch-icon.png') }}">
+
+  {% if config.generate_feeds %}
+  <link rel="alternate" type="application/atom+xml" title="Flatpak Press" href="{{ get_url(path='press/atom.xml') }}">
+  {% endif %}
+</head>
+<body>
+  <div class="hero{% block hero_class %}{% endblock %}">
+    <section class="header">
+      <h2 id="logo" aria-hidden="true">
+        <a href="{{ get_url(path='/') }}" aria-label="Flatpak">
+          <svg viewBox="0 0 295 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g transform="translate(-1115.265,-580.863)"><g><path d="m1212.116,647.685h7.414v-14.486h14.264v-6.113h-14.264v-8.356h15.805v-6.113h-23.219z"/><path d="m1247.475,612.617h-7.294v35.068h7.294z"/><path d="m1260.796,648.182c3.887,0,6.404-1.695,7.688-4.144h.206v3.647h6.918v-17.74c0-6.267-5.308-8.904-11.164-8.904-6.301,0-10.445,3.014-11.455,7.808l6.746.548c.497-1.747,2.055-3.031,4.675-3.031,2.483,0,3.904,1.25,3.904,3.407v.103c0,1.695-1.798,1.918-6.37,2.363-5.205.48-9.88,2.226-9.88,8.099,0,5.206,3.716,7.843,8.733,7.843zm2.089-5.034c-2.243,0-3.853-1.045-3.853-3.048,0-2.055,1.695-3.065,4.264-3.425,1.592-.222,4.195-.599,5.068-1.181v2.791c0,2.757-2.277,4.863-5.479,4.863z"/><path d="m1295.265,621.384h-4.949v-6.301h-7.294v6.301h-3.596v5.479h3.596v13.699c-.034,5.154,3.476,7.705,8.767,7.483,1.884-.069,3.219-.445,3.955-.685l-1.147-5.428c-.36.069-1.13.24-1.815.24-1.456,0-2.466-.548-2.466-2.569v-12.739h4.949z"/><path d="m1300.008,657.548h7.294v-14.075h.223c1.01,2.192,3.219,4.64,7.466,4.64,5.993,0,10.668-4.743,10.668-13.544,0-9.041-4.88-13.527-10.651-13.527-4.4,0-6.507,2.62-7.483,4.76h-.325v-4.418h-7.192zm7.14-23.013c0-4.692,1.987-7.688,5.531-7.688,3.613,0,5.531,3.133,5.531,7.688,0,4.589-1.952,7.774-5.531,7.774-3.51,0-5.531-3.082-5.531-7.774z"/><path d="m1338.004,648.182c3.887,0,6.404-1.695,7.688-4.144h.206v3.647h6.918v-17.74c0-6.267-5.308-8.904-11.164-8.904-6.301,0-10.445,3.014-11.455,7.808l6.746.548c.497-1.747,2.055-3.031,4.675-3.031,2.483,0,3.904,1.25,3.904,3.407v.103c0,1.695-1.798,1.918-6.37,2.363-5.205.48-9.88,2.226-9.88,8.099,0,5.206,3.716,7.843,8.733,7.843zm2.089-5.034c-2.243,0-3.853-1.045-3.853-3.048,0-2.055,1.695-3.065,4.264-3.425,1.592-.222,4.195-.599,5.069-1.181v2.791c0,2.757-2.278,4.863-5.479,4.863z"/><path d="m1358.484,647.685h7.294v-8.356l1.969-2.243,7.175,10.599h8.544l-10.257-14.914,9.76-11.387h-8.373l-8.425,9.983h-.394v-18.75h-7.294z"/></g><g transform="matrix(.15364,0,0,.15364,1112.196,579.218)"><path d="m474.609,255.118v151.181l-130.927,75.591v-151.181z"/><path d="m343.683,330.709v-151.181l-130.927,75.59z"/><path fill-rule="nonzero" d="m218.612,233.262c-13.541,7.818-21.856,22.22-21.856,37.856v119.181c0,15.636,8.315,30.038,21.856,37.856l103.214,59.591c13.541,7.818,30.172,7.818,43.713,0l103.214-59.591c13.541-7.818,21.856-22.22,21.856-37.856v-119.181c0-15.636-8.315-30.038-21.856-37.856l-103.214-59.591c-13.541-7.818-30.172-7.818-43.713,0zm130.927-31.878,103.214,59.591c3.608,2.083,5.856,5.978,5.856,10.144v119.181c0,4.166-2.249,8.061-5.856,10.144l-103.214,59.59c-3.608,2.083-8.105,2.083-11.713,0l-103.214-59.59c-3.608-2.083-5.856-5.978-5.856-10.144v-119.181c0-4.166,2.249-8.061,5.856-10.144l103.214-59.591c3.608-2.083,8.105-2.083,11.713,0z"/></g></g></svg>
+        </a>
+      </h2>
+      {% set menu = load_data(path="data/menu.toml") %}
+      <ul class="nav">
+        {% for item in menu.items %}
+        {% if item.topnav %}
+        <li><a href="{% if item.external %}{{ item.url }}{% else %}{{ get_url(path=item.url) }}{% endif %}"{% if item.external %} rel="noopener"{% endif %}>{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+    {% block hero %}{% endblock %}
+  </div>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    {% set menu = load_data(path="data/menu.toml") %}
+    <ul class="bottomlinks">
+      {% for item in menu.items %}
+      <li><a href="{% if item.external %}{{ item.url }}{% else %}{{ get_url(path=item.url) }}{% endif %}"{% if item.external %} rel="noopener"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+      <li>
+        <a class="social" href="https://fosstodon.org/@FlatpakApps" rel="noopener" aria-label="Mastodon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28.074 11.554c0-5.64-3.694-7.294-3.694-7.294C22.516 3.34 18.33 3.006 14.008 3h-.08c-4.32 0-7.153.34-9.018 1.26 0 0-3.694 1.654-3.694 7.294 0 1.292-.025 2.836.016 4.478.131 5.536.984 10.993 5.948 12.348 2.29.625 4.255.756 5.838.666 2.869-.162 4.48-1.044 4.48-1.044l-.095-2.087s-2.051.647-4.354.568c-2.28-.078-4.688-.246-5.057-3.052a5.7 5.7 0 0 1-.051-.78s2.24.547 5.078.677c1.735.08 3.363-.102 5.014-.299 3.168-.378 5.926-2.33 6.272-4.113.546-2.806.5-6.858.5-6.858zm-4.358 7.06h-2.638v-6.27c0-1.322-.556-1.993-1.668-1.993-1.23 0-1.845.797-1.845 2.372v3.427h-2.622v-3.427c0-1.575-.615-2.372-1.845-2.372-1.112 0-1.668.671-1.668 1.993v6.27H8.792v-6.458c0-1.32.336-2.37 1.011-3.145.696-.776 1.608-1.174 2.74-1.174 1.31 0 2.303.503 2.96 1.51l.638 1.07.638-1.07c.657-1.007 1.65-1.51 2.96-1.51 1.132 0 2.044.398 2.74 1.174.675.776 1.011 1.825 1.011 3.145v6.457h.026z"/></svg>
+        </a>
+      </li>
+    </ul>
+    <p class="copy">© Flatpak Team — Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+  </footer>
+</body>
+</html>

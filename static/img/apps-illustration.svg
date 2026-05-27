@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" rx="24" fill="#c01c28" opacity="0.15"/>
+  <text x="250" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#c01c28">App icons collage</text>
+  <text x="250" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#c01c28" opacity="0.7">placeholder — replace me</text>
+</svg>

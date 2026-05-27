@@ -1,1 +1,0 @@
-FROM docker.io/library/ruby:3.0.4
