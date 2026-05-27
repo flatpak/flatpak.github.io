@@ -465,6 +465,7 @@ p > .btn { margin: .5rem .5rem 0 0; }
   background-size: cover;
   background-repeat: no-repeat;
   aspect-ratio: 21 / 9;
+  max-height: 30vh;
 
   @media (max-width: 700px) {
     aspect-ratio: 16 / 9;
