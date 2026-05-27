@@ -6,6 +6,21 @@ aliases = ["/blog-posts.html"]
 
 If you know of a blog post that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+## 2026
+
+[**Sebastian Wick: Improving the Flatpak Graphics Drivers Situation**](https://blog.sebastianwick.net/posts/flatpak-graphics-drivers/)
+January 2026
+
+
+
+## 2025
+
+[**Georges Stavracas: Flatpak 1.16 is out!**](https://feaneron.com/2025/01/14/flatpak-1-16-is-out/)
+January 2025
+
+[**Sebastian Wick: Testing with Portals**](https://blog.sebastianwick.net/posts/testing-with-portals/)
+2025
+
 ## 2024
 
 [**Cassidy James Blaede: 2 Billion Downloads & Other Milestones from 2024 So Far**](https://docs.flathub.org/blog/2-billion-downloads-2024/)
