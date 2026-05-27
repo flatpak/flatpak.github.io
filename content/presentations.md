@@ -6,6 +6,34 @@ aliases = ["/presentations.html"]
 
 If you know of a presentation or article that isn't listed, please [file an issue](https://github.com/flatpak/flatpak.github.io/issues/new) so we can add it!
 
+## 2026
+
+[**Sebastian Wick: Flatpak and Portals: A Status Update**](https://www.youtube.com/watch?v=Zt4cUf_AgUg)
+Linux App Summit, Berlin, Germany, May 2026
+
+[**Adrian Vovk & Sebastian Wick: The next generation of Flatpak and Portals**](https://www.youtube.com/live/1AXBfsiaQNk?t=16197)
+Linux App Summit, Berlin, Germany, May 2026
+
+
+## 2025
+
+[**Sebastian Wick: The Future of Flatpak**](https://www.youtube.com/watch?v=3HkYJ7M119I)
+Linux App Summit, Tirana, Albania, April 2025
+
+[**Jordan Petridis: Flathub: A paradigm shift for distributing applications**](https://www.youtube.com/watch?v=NxOH4wJkfLY)
+Linux App Summit, Tirana, Albania, April 2025
+
+[**Shipping Flatpak applications with an image based system**](https://cfp.all-systems-go.io/all-systems-go-2025/talk/98W9EX/)
+All Systems Go!, October 2025
+
+## 2023
+
+[**Richard Brown: What could go wrong? I was wrong about Flatpak, AppImage, and Snap**](https://www.youtube.com/watch?v=4WuYGcs0t6I)
+FOSDEM, Brussels, Belgium, February 2023
+
+[**Bartłomiej Piotrowski: Flathub in 2023: Revolutionizing the Linux App Ecosystem**](https://conf.linuxappsummit.org/event/5/contributions/173/)
+Linux App Summit, Brno, Czech Republic, April 2023
+
 ## 2021
 
 [**Will Thompson: Automate your Flatpak manifest updates today**](https://www.youtube.com/watch?v=c_dG_ngnJk4)
