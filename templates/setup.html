@@ -11,8 +11,7 @@
 
 {% block content %}
 <div class="container">
-  <div class="full">
-    <div class="distrogrid" style="max-width: var(--pagewidth); margin: 2rem auto;">
+    <div class="distrogrid">
       {% set setup = get_section(path="setup/_index.md") %}
       {% for page in setup.pages | sort(attribute="title") %}
         <a href="{{ page.permalink }}">
@@ -27,6 +26,5 @@
         </a>
       {% endfor %}
     </div>
-  </div>
 </div>
 {% endblock %}

@@ -454,6 +454,21 @@ p > .btn { margin: .5rem .5rem 0 0; }
   }
 }
 
+.punchline {
+  width: 100%;
+  max-width: var(--pagegridwidth);
+  margin: 0 auto;
+  padding: 0 var(--grid-gap) 3rem;
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  max-height: 60vh;
+  aspect-ratio: 3 / 2;
+  margin: 0 auto;
+}
+
 #subtitle {
   margin: 2rem 1rem 1rem 1rem;
   text-align: center;
@@ -582,12 +597,16 @@ ul.nav a {
    DISTRO GRID
    ===================== */
 .distrogrid {
+  grid-column: main;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
-  gap: 16px;
+  grid-template-columns: subgrid;
+  row-gap: 1rem;
+  margin-block: 2rem;
 
   & a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 200ms var(--slickease);
 
     &:hover { transform: scale(1.15); }
@@ -595,12 +614,39 @@ ul.nav a {
 
   & img {
     width: 100%;
+    max-width: 80px;
     height: 64px;
     object-fit: contain;
   }
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(6, 1fr);
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Front page distro showcase (inside .colored-row, no parent grid) */
+.distro-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  max-width: var(--pagewidth);
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 200ms var(--slickease);
+
+    &:hover { transform: scale(1.15); }
+  }
+
+  & img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
   }
 }
 
@@ -642,7 +688,7 @@ blockquote {
     font-style: normal;
   }
 
-  & .author { margin: 1em 0 0; }
+  & .author { margin: 1em 0 3em; }
 
   & .title {
     display: block;
