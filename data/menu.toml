@@ -18,6 +18,10 @@ title = "FAQ"
 url = "faq"
 
 [[items]]
+title = "Blog Posts"
+url = "blog-posts"
+
+[[items]]
 title = "Presentations & Articles"
 url = "presentations"
 

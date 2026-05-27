@@ -1013,8 +1013,8 @@ a.social {
     padding-inline: var(--grid-gap);
   }
 
-  & h1 { font-size: 180%; }
-  & h2 { font-size: 160%; }
+  & h1 { font-size: 180%; font-weight: 800; }
+  & h2 { font-size: 160%; font-weight: 800; }
   & h3 {
     font-size: 130%;
     font-weight: 600;
@@ -1028,6 +1028,22 @@ a.social {
 
   & ul.press-list {
     margin-left: 0;
+  }
+
+  & > p:has(a strong) {
+    font-size: 80%;
+    color: var(--light5);
+    margin-bottom: 1.5em;
+
+    & a {
+      display: block;
+
+      & strong {
+        font-size: calc(100% / 0.8);
+        font-weight: 600;
+        color: var(--fgcolor);
+      }
+    }
   }
 
   & table {
