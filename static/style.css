@@ -261,6 +261,8 @@ code {
 
   @media (max-width: 700px) {
     grid-column: main;
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 
