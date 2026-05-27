@@ -11,13 +11,17 @@
   <meta property="og:site_name" content="{{ config.title }}">
   <meta property="og:title" content="{% block og_title %}{{ page.title | default(value=config.title) }}{% endblock %}">
   <meta property="og:description" content="{{ page.description | default(value=config.description) }}">
-  <meta property="og:image" content="{{ get_url(path='img/favicon.svg') }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ config.base_url }}">
+  <meta property="og:image" content="{{ get_url(path='img/card.jpg') }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default(value=config.title) }}">
   <meta name="twitter:description" content="{{ page.description | default(value=config.description) }}">
+  <meta name="twitter:image" content="{{ get_url(path='img/card.jpg') }}">
 
   <link rel="stylesheet" href="/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="{{ get_url(path='favicon.ico') }}">
