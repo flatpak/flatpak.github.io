@@ -616,37 +616,6 @@ ul.nav a {
   }
 }
 
-/* =====================
-   DISTRO GRID
-   ===================== */
-.distrogrid {
-  grid-column: main;
-  display: grid;
-  grid-template-columns: subgrid;
-  row-gap: 1rem;
-  margin-block: 2rem;
-
-  & a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 200ms var(--slickease);
-
-    &:hover { transform: scale(1.15); }
-  }
-
-  & img {
-    width: 100%;
-    max-width: 80px;
-    height: 64px;
-    object-fit: contain;
-  }
-
-  @media (max-width: 767px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Front page distro showcase (inside .colored-row, no parent grid) */
 .distro-showcase {
   display: flex;
@@ -667,9 +636,10 @@ ul.nav a {
   }
 
   & img {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
+    image-rendering: pixelated;
   }
 }
 

@@ -1,6 +1,7 @@
 [[items]]
-title = "Get Setup"
-url = "setup"
+title = "Get Setup ↗"
+url = "https://flathub.org/setup"
+external = true
 topnav = true
 
 [[items]]
