@@ -3,12 +3,9 @@
 {% block title %}The future of apps on Linux{% endblock %}
 {% block description %}The days of chasing multiple Linux distributions are over. Standalone apps for Linux are here!{% endblock %}
 
-{% block hero %}
-  <div class="punchline">
-    <img class="hero-illustration" alt="Flatpak hero illustration" src="{{ get_url(path='img/hero-illustration.svg') }}">
-    <h1 id="subtitle">The future of apps on Linux</h1>
-  </div>
-{% endblock %}
+{% block hero_class %} landing{% endblock %}
+
+{% block hero %}{% endblock %}
 
 {% block content %}
 {# ---- App showcase ---- #}
@@ -26,7 +23,6 @@
 {# ---- Developer benefits ---- #}
 <div class="container">
   <h2 class="full">A new world for application developers</h2>
-  <p class="full caption">Flatpak changes app distribution for the better.</p>
   <div class="features">
     <div>
       <h4>Build for every distro</h4>
