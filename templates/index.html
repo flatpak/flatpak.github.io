@@ -15,7 +15,7 @@
     <h2>Start using Flatpak</h2>
     <p>Install from a growing collection of apps on <a href="https://flathub.org/">Flathub</a>.</p>
     <p>
-      <a class="btn suggested" href="{{ get_url(path='setup') }}">Get set up</a>
+      <a class="btn suggested" href="https://flathub.org/setup">Get set up</a>
     </p>
   </div>
 </div>
@@ -64,18 +64,16 @@
 </div>
 
 {# ---- Distro showcase ---- #}
-{% set setup = get_section(path="setup/_index.md") %}
 <div class="colored-row">
-  <h2>Works with {{ setup.pages | length }} distributions</h2>
-  <p>See the <a href="{{ get_url(path='setup') }}">complete list.</a></p>
+  <h2>Works with dozens of distributions</h2>
+  <p>See the <a href="https://flathub.org/setup">complete setup guide.</a></p>
   <div class="distro-showcase">
-    {% set featured = ["ubuntu", "fedora", "red-hat-enterprise-linux", "debian", "linux-mint", "opensuse"] %}
-    {% for slug in featured %}
-      {% set page = get_page(path="setup/" ~ slug ~ ".md") %}
-      <a href="{{ page.permalink }}">
-        <img src="{{ get_url(path='img/distro/' ~ page.extra.logo) }}" alt="{{ page.title }}" title="{{ page.title }}" loading="lazy">
-      </a>
-    {% endfor %}
+    <a href="https://flathub.org/setup/Ubuntu"><img src="{{ get_url(path='img/distro/ubuntu.png') }}" alt="Ubuntu" title="Ubuntu" loading="lazy"></a>
+    <a href="https://flathub.org/setup/Fedora"><img src="{{ get_url(path='img/distro/fedora.png') }}" alt="Fedora" title="Fedora" loading="lazy"></a>
+    <a href="https://flathub.org/setup/Red%20Hat%20Enterprise%20Linux"><img src="{{ get_url(path='img/distro/redhat.png') }}" alt="Red Hat Enterprise Linux" title="Red Hat Enterprise Linux" loading="lazy"></a>
+    <a href="https://flathub.org/setup/Debian"><img src="{{ get_url(path='img/distro/debian.png') }}" alt="Debian" title="Debian" loading="lazy"></a>
+    <a href="https://flathub.org/setup/Arch"><img src="{{ get_url(path='img/distro/archlinux.png') }}" alt="Arch Linux" title="Arch Linux" loading="lazy"></a>
+    <a href="https://flathub.org/setup/Endless%20OS"><img src="{{ get_url(path='img/distro/eos.png') }}" alt="Endless OS" title="Endless OS" loading="lazy"></a>
   </div>
 </div>
 
