@@ -4,8 +4,6 @@ description = "About Flatpak"
 aliases = ["/about.html"]
 +++
 
-## About Us
-
 Flatpak is developed by an independent community, made up of contributors, volunteers and supporting organizations. It is a true upstream open source project, dedicated to providing technology and services that can be used by all, with no vendor lock-in. We have strong links to other Free Software projects, including the Freedesktop project.
 
 All our code is freely available, with no contributor agreement required. Volunteers and contributing organizations are welcome, as equal partners.
