@@ -632,7 +632,7 @@ ul.nav a {
     justify-content: center;
     transition: transform 200ms var(--slickease);
 
-    &:hover { transform: scale(1.15); }
+    &:hover { transform: scale(2); }
   }
 
   & img {
