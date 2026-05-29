@@ -525,7 +525,8 @@
   steps:
     - name: Install Flatpak
       text: '
-        <p>Flatpak support is built into T2 SDE Linux 26.6 desktop and newer—no setup required!</p>
+        <p>Flatpak support is built into T2 SDE Linux 26.6 desktop and newer—no setup required! For older versions, open terminal and run the following as root:</p>
+        <terminal-command>t2 install flatpak</terminal-command>
 
     - name: Add the Flathub repository
       text: "
