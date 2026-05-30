@@ -11,7 +11,7 @@ If you know of a presentation or article that isn't listed, please [file an issu
 [**Sebastian Wick: Flatpak and Portals: A Status Update**](https://www.youtube.com/watch?v=Zt4cUf_AgUg)
 Linux App Summit, Berlin, Germany, May 2026
 
-[**Adrian Vovk & Sebastian Wick: The next generation of Flatpak and Portals**](https://www.youtube.com/live/1AXBfsiaQNk?t=16197)
+[**Adrian Vovk & Sebastian Wick: Flatpak Next**](https://www.youtube.com/watch?v=NsVhkz2Xl0E)
 Linux App Summit, Berlin, Germany, May 2026
 
 
