@@ -389,6 +389,7 @@ p > .btn { margin: .5rem .5rem 0 0; }
    ===================== */
 .hero {
   flex-shrink: 0;
+  width: 100%;            /* WebKit: prevent aspect-ratio from shrinking width */
   color: white;
   background: var(--flatpak);
   text-align: center;
