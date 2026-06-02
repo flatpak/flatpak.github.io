@@ -942,18 +942,24 @@ ul.bottomlinks {
   }
 }
 
+li:has(.social) {
+  column-span: all;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
 a.social {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin: 0;
+  width: 32px;
+  height: 32px;
+  margin: 0 0.4rem;
   vertical-align: middle;
 
   & svg {
     fill: rgba(255, 255, 255, 0.6);
     transition: fill 200ms ease-out;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 
   &:hover svg { fill: rgba(255, 255, 255, 1); }
