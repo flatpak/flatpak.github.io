@@ -1,4 +1,4 @@
-FROM ghcr.io/getzola/zola:v0.19.2 AS build
+FROM ghcr.io/getzola/zola:v0.22.1 AS build
 
 WORKDIR /builddir
 COPY . .
