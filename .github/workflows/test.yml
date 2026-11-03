@@ -7,13 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
+    - name: Install Zola
+      uses: taiki-e/install-action@v2
       with:
-        bundler-cache: true
-    - name: Install ruby dependencies
-      run: bundle install
-    - name: Bulid with middleman
-      run: bundle exec middleman build
+        tool: zola@0.22.1
+
+    - name: Build with Zola
+      run: zola build

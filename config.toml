@@ -16,3 +16,5 @@ paths = "safe"
 
 [extra]
 keywords = ["flatpak", "linux", "apps", "sandboxing", "xdg-app"]
+matomo_url = "https://webstats.gnome.org/"
+matomo_site_id = 13

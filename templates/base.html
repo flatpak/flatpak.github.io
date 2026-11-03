@@ -31,8 +31,26 @@
   {% if config.generate_feeds %}
   <link rel="alternate" type="application/atom+xml" title="Flatpak Press" href="{{ get_url(path='press/atom.xml') }}">
   {% endif %}
+
+  {% if config.extra.matomo_url and config.extra.matomo_site_id %}
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u = {{ config.extra.matomo_url | json_encode | safe }};
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '{{ config.extra.matomo_site_id }}']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  {% endif %}
 </head>
 <body>
+  {% if config.extra.matomo_url and config.extra.matomo_site_id %}
+  <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="{{ config.extra.matomo_url }}matomo.php?idsite={{ config.extra.matomo_site_id }}&amp;rec=1" style="border:0" alt="" /></p></noscript>
+  {% endif %}
   <div class="hero{% block hero_class %}{% endblock %}">
     <section class="header">
       <h2 id="logo" aria-hidden="true">
